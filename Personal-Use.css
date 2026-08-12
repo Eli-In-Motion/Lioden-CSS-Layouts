@@ -5,7 +5,7 @@
 
 /*Main Background*/
 body {
-    text-wrap: stable;
+    /* text-wrap: stable; */
     background-image: url(https://static.lioden.com/images/dynamic/backgrounds/palaceoasis.png);
     background-size: cover;
     background-attachment: fixed;
@@ -384,8 +384,20 @@ input#postComment {
     background-repeat: no-repeat;
 }
 
-#about .inner-table.auto {
+@media (max-width:730px) {
+    #lion_image .lion-image-block {
+        background-image:none !important;
+        width:0 !important;
+    }
+    #about .right td:has(a[href*="lion.php?mid=319237"]) {
+        display:none;
+    }
+}
+
+/*Lion About Area*/
+#about .inner-table.auto td {
     white-space: nowrap;
+    margin:-5px;
 }
 
 #about .inner-table.auto a {
@@ -393,14 +405,17 @@ input#postComment {
     text-decoration:underline;
     font-weight:normal;
     white-space: nowrap;
+    padding:5px;
 }
 
 #about .inner-table.auto .left{
     background-color:#abad74;
+    padding:5px;
 }
 
 #about .inner-table.auto .right {
     background-color:#d3d694;
+    padding:5px;
 }
 
 #about .bottom {
