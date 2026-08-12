@@ -1,0 +1,532 @@
+/*Color Pallet Dark>Light
+#140B01 #D1B13F #FFC800 #FFFFFF*/
+
+/*<link rel="stylesheet" type="text/css" href="" /> */
+
+/*Main Background*/
+body {
+    text-wrap: stable;
+    background-image: url(https://static.lioden.com/images/dynamic/backgrounds/palaceoasis.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*??penis*/
+.col-md-9.col-xs-12 > h1 {
+    color: #d3d694;
+    text-align:center;
+    font-size:0;
+    margin:0px;
+}
+
+.col-md-9.col-xs-12 > h1::before {
+    content: "✦ ";
+    font-size:xxx-large;
+}
+
+.col-md-9.col-xs-12> h1::after {
+    content: "Welcome Traveller ✦";
+    font-size:xxx-large;
+}
+
+/*Behind Main but need .col-md-9 as well*/
+.container.main {
+    background: none;
+    background-color: transparent;
+    box-shadow: none;
+    margin-top:1%;
+}
+
+/*Behind Main*/
+.col-md-9{
+    background: none;
+    background-color: transparent
+}
+
+/*Top Bar with Welcome Back and Currency*/
+.container.topbar {
+    background-color: transparent;
+    margin-top: 1%;
+}
+
+.welcomeback {
+    display:none
+}
+
+.badge {
+    background: #abad74;
+    color: #140B01;
+    border:2px solid #d3d694;
+    margin-left:1px;
+}
+
+/*Topbar ONLY MOBILE*/
+@media only screen and (max-width: 765px) {
+    .container.topbar {
+        float:inline-start;
+    }
+}
+
+.container.topbar a {
+    color: #d3d694;
+    text-decoration: underline;
+}
+
+.container.topbar a:hover {
+    color: #f9eda8;
+}
+
+/*Navbar when Uncollapsed*/
+ .navbar-header, .navbar.navbar-default {
+    background:none;
+    background-color: transparent;
+    color: #140B01;
+}
+
+#bs-example-navbar-collapse-1 {
+    background-color: transparent; 
+    border-color: transparent;
+    box-shadow: none;
+    margin:0px;
+}
+
+/*Navbar Collapse Button*/
+.navbar-toggle {
+    background:none;
+    background-color: transparent;
+}
+.navbar-toggle.collapsed {
+    background: none;
+    background-color: transparent;
+}
+.navbar.navbar-default button {
+    border-color: #d3d694;
+}
+
+.navbar-toggle .icon-bar {
+    background: none;
+    background-color: #d3d694 !important;
+}
+
+.navbar.navbar-default button:hover {
+    background: none;
+    background-color: #f9eda84f;
+    border-color: #f9eda8;
+}
+
+/*Navbar when big*/
+#bs-example-navbar-collapse-1 a {
+    color: #d3d694;
+    text-decoration:underline;
+    object-fit:contain;
+    justify-content:center;
+}
+
+#bs-example-navbar-collapse-1 a:hover {
+    background:none;
+    color:#f9eda8;
+}
+
+/*Home/Bookmark Bar*/
+.breadcrumb {
+
+    margin: 0;
+    background: transparent;
+}
+
+@media (min-width: 765px) and (max-width: 991px) {
+    .breadcrumb {
+        position: absolute;
+        top: -2.55%;
+        left: 15px;
+        }
+    .container.topbar li {
+        padding:0px;
+        margin:12px;
+    }
+}
+
+@media (min-width: 992px) {
+    ol.breadcrumb {
+        position: absolute;
+        top: -2.5%;
+        left:188px;
+        margin: 0;
+    }
+}
+
+.breadcrumb a {
+    color: #d3d694;
+    text-decoration:underline;
+}
+
+.breadcrumb-item.active {
+    color: #d3d694;
+}
+
+.floatright {
+    background: transparent;
+}
+
+/*Bookmark Button*/
+input[name=bookmark] {
+    background: #ffffffcc;
+    box-shadow:none;
+    border:none;
+    text-shadow:none;
+    color: #140B01;
+}
+
+input[name=bookmark]:hover {
+    background: #ffe6004a;
+    border:none;
+    color: #140B01;
+}
+
+/*Alerts*/
+.alert {
+    border: 1px solid #d3d694; 
+    color: #140B01;
+    background:#d3d694ab;
+    margin-top:0px;
+    margin-bottom: 0px;
+}
+
+.alert a {
+    color: #140B01;
+    text-decoration:underline;
+}
+
+.alert-danger, .alert-danger {
+    background: #D1B13F;
+    color: #140B01;
+}
+
+/*Personal Bio Area*/
+.bio {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 150px 150px auto;
+    gap: 10px;
+    color:#140B01;
+}
+
+.bio > br {
+    display: none;
+}
+
+.bio h1 {
+    text-align:center;
+    color:#140B01 !important;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+.bio h2 {
+    text-align:center;
+     color:#140B01 !important;
+}
+
+.bio h4 {
+    text-align:center;
+    font-size:small;
+}
+
+.bio-banner {
+    grid-column:1/3;
+    grid-row:1;
+    background-color:#d3d694ab;
+}
+
+.bio-art {
+    grid-column: 1;
+    grid-row: 2 / 4;
+    overflow-y:auto;
+    overflow-x:hidden;
+    max-height:310px;
+    background-color:#d3d694ab;
+    object-fit:cover;
+}
+
+.bio-art::-webkit-scrollbar {
+    background-color:#d3d694;
+    width:10px
+}
+
+.bio-art::-webkit-scrollbar-thumb {
+    background-color:#abad74;
+    border-radius:25px;
+}
+
+.bio-art img {
+    display:block;
+    width:100%;
+    height:auto;
+    margin-bottom: 10px;
+}
+
+.bio-goals {
+    grid-column: 2;
+    grid-row: 2;
+    overflow-y:auto;
+    overflow-x:hidden;
+    max-height:165px;
+    background-color:#d3d694ab
+}
+
+.bio-misc {
+    grid-column: 2;
+    grid-row: 3;
+    overflow-y:auto;
+    overflow-x:hidden;
+    max-height:165px;
+    background-color:#d3d694ab
+}
+
+.bio-nav {
+    grid-column:1/3;
+    grid-row:4;
+    background-color:#d3d694ab
+}
+
+/*Comment box*/
+div#commentBox {
+    border: 3px solid #d3d694;
+    background:#d3d694d6;
+}
+
+div#commentBox::-webkit-scrollbar {
+    background-color:#d3d694;
+    width:10px
+}
+
+div#commentBox::-webkit-scrollbar-thumb {
+    background-color:#abad74;
+    border-radius:25px    
+}
+
+.comment {
+    background: #d3d69442;
+}
+
+.comment a {
+    color: #140B01;
+    text-decoration:underline;
+}
+
+.text-muted {
+    color: #140B01;
+    font-size: x-small;
+}
+
+#commentBox .bad {
+    background: #d3d694;
+    border:1px solid #140B01;
+    color: #140B01;
+    text-shadow: none;
+}
+
+#makeComment {
+    background: transparent;
+    color: #140B01;
+    border: none;
+}
+
+#makeComment input {
+    background-color:#d3d694ab;
+    color: #140B01;
+    border: 3px solid #d3d694;
+    border-radius:4px;
+}
+
+#makeComment input:hover {
+    background-color:#d3d694ab;
+    border: 2px solid #d3d694;
+}
+
+#makeComment input[type="text"]::placeholder {
+    color: #140B01
+}
+
+input#postComment {
+    background: #d3d694;
+    border:1px solid #d3d694;
+    text-shadow: none;
+    color: #140B01;
+}
+
+/*King's Bio and Pride Overview*/
+#about.table {
+    border:3px solid #d3d694;
+    border-radius:10px;
+}
+
+/*About Header with anme*/
+.top.center {
+    background:#d3d694ab;
+    color:#140B01;
+}
+
+.top.center a {
+    color:#140B01 !important;
+    text-decoration:underline;
+}
+
+/*King Image*/
+#lion_image .lion-image-block img {
+    display: none;
+}
+
+#lion_image .lion-image-block {
+    background-image: url("https://i.imgur.com/abduPNs.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#about .inner-table.auto {
+    white-space: nowrap;
+}
+
+#about .inner-table.auto a {
+    color:#140B01;
+    text-decoration:underline;
+    font-weight:normal;
+    white-space: nowrap;
+}
+
+#about .inner-table.auto .left{
+    background-color:#abad74;
+}
+
+#about .inner-table.auto .right {
+    background-color:#d3d694;
+}
+
+#about .bottom {
+    background-color:#d3d694ab;
+}
+
+#about .bottom a {
+    color: #140B01;
+    font-weight:normal;
+}
+
+#about .bottom a:hover {
+    text-decoration:underline;
+}
+
+#about .bottom b {
+    font-weight:normal;
+}
+
+/*Player Information*/
+#player {
+    border:3px solid #d3d694;
+    border-radius:10px;
+}
+
+#player a {
+    color:#140B01;
+    text-decoration:underline;
+    font-weight:normal;
+}
+
+#player .top {
+    background-color:#d3d694ab;
+    color:#140B01;
+}
+
+#player .center.h3 {
+    color:#140B01;
+    margin-top:5px;
+}
+
+#player .inner-table.auto {
+    margin-top:5px !important;
+}
+
+#player .left {
+    background-color:#abad74;
+    color:#140B01;
+}
+
+#player td .right {
+    background-color:#d3d694;
+    color:#140B01;
+}
+
+#player hr {
+    display:none;
+}
+
+.center.xlarge {
+    margin-top:10px;
+}
+
+/*Nesting, Pregnant, Overview Icons*/
+#fraOrganizationBlock .cave-grid {
+    background-color:#d3d694ab;
+    color:#140B01;
+    border: 1px solid #d3d694;
+    display:flex;
+    flex-direction:column;
+    align-items:center !important;
+    justify-content:center;
+}
+
+#fraOrganizationBlock .cave-grid br {
+    display:none;
+}
+
+#fraOrganizationBlock img[src*="unsortedlionsbanner"] {
+    content:url(https://static.lioden.com/images/dynamic/backgrounds/DesertOasis.png);
+}
+
+#fraOrganizationBlock img[src*="nestingbanner"] {
+    content:url(https://static.lioden.com/images/dynamic/backgrounds/DesertOasis.png);
+}
+
+#fraOrganizationBlock img[src*="prideoverviewbanner"] {
+    content:url(https://static.lioden.com/images/dynamic/backgrounds/DesertOasis.png);
+}
+
+@media (max-width: 991px) {
+    
+    #fraOrganizationBlock {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    #fraOrganizationBlock > .col-md-4.col-xs-6.center {
+    width: auto;
+    float: none;
+    padding: 0;
+    margin: 0;
+    }
+    #fraOrganizationBlock > #fraCaveList {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    }
+    #fraOrganizationBlock > #fraCaveList > .col-md-4.col-xs-6.center {
+    width: auto;
+    float: none;
+    padding: 0;
+    margin: 0;
+    }
+    #fraOrganizationBlock > #fraMoundList {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    }
+    #fraOrganizationBlock > #fraMoundList > .col-md-3.col-xs-4.center {
+    width: auto;
+    float: none;
+    padding: 0;
+    margin: 0;
+    }
+}
+/*Cave Icons*/
