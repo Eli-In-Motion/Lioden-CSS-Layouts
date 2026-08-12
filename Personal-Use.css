@@ -47,6 +47,13 @@ body {
 .container.topbar {
     background-color: transparent;
     margin-top: 1%;
+    position: relative;
+    z-index: 10;
+}
+
+.navbar.navbar-default {
+    position: relative;  
+    z-index: 1;
 }
 
 .welcomeback {
@@ -63,8 +70,10 @@ body {
 /*Topbar ONLY MOBILE*/
 @media only screen and (max-width: 770px) {
     .toplinks {
+        float:unset !important;
+        display:inline-block;
         justify-self:right;
-        margin-right:52px !important;
+        margin-right:50px !important;
     }
     .toplinks li, a, ol {
         padding:3px;
@@ -76,12 +85,12 @@ body {
     .navbar.navbar-default {
         margin-top:-60px;
     }
+    .navbar-toggle {
+        float:right;
+    }
 }
 
 @media (min-width: 770px) and (max-width: 993px) {
-    .toplinks {
-        justify-self:right;
-    }
     .breadcrumb {
         transform:translateY(-93px)
         }
@@ -99,6 +108,15 @@ body {
     }
     #pageContainer {
         padding-top:0px;
+    }
+}
+
+@media (min-width: 992px) {
+    ol.breadcrumb {
+        transform:translate(180px, -95px);
+    }
+    #pageContainer {
+        padding-top:0px !important;
     }
 }
 
@@ -167,15 +185,6 @@ body {
 
     margin: 0;
     background: transparent;
-}
-
-@media (min-width: 992px) {
-    ol.breadcrumb {
-        position: absolute;
-        top: -2.5%;
-        left:188px;
-        margin: 0;
-    }
 }
 
 .breadcrumb a {
