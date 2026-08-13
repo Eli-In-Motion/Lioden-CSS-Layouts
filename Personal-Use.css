@@ -6,8 +6,12 @@
 /*Main Background*/
 body {
     /* text-wrap: stable; */
-    background-image: url(https://static.lioden.com/images/dynamic/backgrounds/palaceoasis.png);
-    background-size: cover;
+    background-color:#d3d694;
+    background-image: 
+        url("https://static.lioden.com/images/dynamic/backgrounds/palaceoasis.png"), url("https://static.lioden.com/images/dynamic/backgrounds/palaceoasis.png");
+    background-position: top center, bottom center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
     background-attachment: fixed;
 }
 
