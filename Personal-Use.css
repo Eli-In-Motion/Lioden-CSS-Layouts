@@ -637,12 +637,18 @@ b>span {
 }
 
 /*Allies*/
+#allies.table {
+    display:inline-block;
+    width:49%;
+    vertical-align:top;
+}
 #allies tr:not(:first-child) {
     display:none;
 }
 
 #allies:hover tr:not(:first-child) {
-    display:table-row;
+    display:inline-flex;
+    width:200%;
 }
 
 #allies { 
@@ -650,15 +656,13 @@ b>span {
     border:none;
     margin-top:20px;
     color:#140B01;
-    border: 3px solid #d3d694;
 }
-
+ 
 #allies .top, #allies .bottom { 
     background-color:#d3d694ab;
-    border:none;
-    margin-top:20px;
     color:#140B01;
     border: 3px solid #d3d694;
+    width:100%;
 }
 
 #allies a {
@@ -670,12 +674,23 @@ b>span {
     display:none;
 }
 
+/*Break between Allies and Clans*/
+#allies+p+p, #allies+p {
+    display:none;
+}
+
 /*Clans*/
+#clans.table {
+    display:inline-flex;
+    align-items:stretch !important;
+    width:49%;
+    vertical-align:top;
+}
 #clans { 
     background-color:transparent;
     border:none;
     margin-top:20px;
-    border: 3px solid #d3d694;
+    
 }
 
 #clans .top {
@@ -699,7 +714,8 @@ b>span {
 }
 
 #clans:hover tr:not(:first-child) {
-    display:table-row;
+    display:block;
+    width:200%;
 }
 
 /*Dynasty*/
