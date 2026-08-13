@@ -657,8 +657,14 @@ b>span {
     margin-top:20px;
     color:#140B01;
 }
- 
+
+#allies>tbody>tr:first-child {
+    display:block;
+    width:100%;
+}
+
 #allies .top, #allies .bottom { 
+    display:block;
     background-color:#d3d694ab;
     color:#140B01;
     border: 3px solid #d3d694;
