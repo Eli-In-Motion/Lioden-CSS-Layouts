@@ -525,16 +525,17 @@ input#postComment {
 }
 
 /*Cave Word Areas*/
+#fraOrganizationBlock div {
+    height:fit-content !important;
+}
+
 #fraOrganizationBlock .cave-grid, .mound-grid {
     background-color:#d3d694ab;
     color:#140B01;
     border: 1px solid #d3d694;
 }
 
-.mound-grid {
-    padding: 0px;
-    width:fit-content;
-}
+
 
 /*Unsorted Image*/
 #fraOrganizationBlock img[src*="unsortedlionsbanner"] {
@@ -550,36 +551,34 @@ input#postComment {
 #fraOrganizationBlock img[src*="prideoverviewbanner"] {
     content:url(https://static.lioden.com/images/dynamic/backgrounds/DesertOasis.png);
 }
-
-@media (max-width: 991px) {
-    
-    #fraOrganizationBlock {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-    }
-/*Nesting, Pregnant, Overview Caves*/
-    #fraOrganizationBlock > .col-md-4.col-xs-6.center {
-    width: auto;
-    float: none;
-    padding: 0;
-    margin: 0;
-    }
-/*Personal Caves*/
-    #fraOrganizationBlock > #fraCaveList {
-    grid-column: 1/-1;
+#fraOrganizationBlock {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     }
-    #fraOrganizationBlock > #fraCaveList > .col-md-4.col-xs-6.center {
+/*Nesting, Pregnant, Overview Caves*/
+#fraOrganizationBlock > .col-md-4.col-xs-6.center {
     width: auto;
     float: none;
     padding: 0;
     margin: 0;
-    }
+}
+/*Personal Caves*/
+#fraOrganizationBlock > #fraCaveList {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 115px);
+    gap: 5px;
+    justify-content:center;
+}
+#fraOrganizationBlock > #fraCaveList > .col-md-4.col-xs-6.center {
+    width: fit-content;
+    float: none;
+    padding: 0;
+    margin: 0;
+}
 /*Beetle Mounds*/
-    #fraOrganizationBlock > #fraMoundList {
+#fraOrganizationBlock > #fraMoundList {
     grid-column: 1/-1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -591,5 +590,12 @@ input#postComment {
     padding: 0;
     margin: 0;
     }
+.mound-grid {
+    padding: 0px;
+    width:fit-content;
 }
-/*Cave Icons*/
+/*ALL PERSONAL Cave Icons THE SAME*/
+#fraCaveList img {
+    content:url(https://static.lioden.com/images/items/Decoration/vesselofbast.png);
+    width:auto;
+}
