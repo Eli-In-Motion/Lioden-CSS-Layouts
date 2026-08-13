@@ -47,8 +47,12 @@ body {
 .container.topbar {
     background-color: transparent;
     margin-top: 1%;
-    position: relative;
+    position: relative;  
     z-index: 10;
+    pointer-events: none;
+}
+.container.topbar a {
+    pointer-events: auto;
 }
 
 .navbar.navbar-default {
@@ -146,12 +150,9 @@ body {
 /*Navbar Collapse Button*/
 .navbar-toggle {
     background:none;
-    background-color: transparent;
+    background-color: transparent !important;
 }
-.navbar-toggle.collapsed {
-    background: none;
-    background-color: transparent;
-}
+
 .navbar.navbar-default button {
     border-color: #d3d694;
 }
@@ -163,7 +164,7 @@ body {
 
 .navbar.navbar-default button:hover {
     background: none;
-    background-color: #f9eda84f;
+    background-color: #f9eda84f !important;
     border-color: #f9eda8;
 }
 
@@ -172,12 +173,15 @@ body {
     color: #d3d694;
     text-decoration:underline;
     object-fit:contain;
-    justify-content:center;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-top:0px;
 }
 
 #bs-example-navbar-collapse-1 a:hover {
     background:none;
     color:#f9eda8;
+    background-color: #f9eda84f;
 }
 
 /*Home/Bookmark Bar*/
@@ -190,6 +194,10 @@ body {
 .breadcrumb a {
     color: #d3d694;
     text-decoration:underline;
+}
+
+.breadcrumb a:hover {
+    color: #f9eda8;
 }
 
 .breadcrumb-item.active {
@@ -224,13 +232,18 @@ input[name=bookmark]:hover {
     margin-bottom: 0px;
 }
 
+.alert>b {
+    font-weight:normal;
+}
+
 .alert a {
     color: #140B01;
     text-decoration:underline;
 }
 
 .alert-danger, .alert-danger {
-    background: #D1B13F;
+    background-color: #f9eda8ab !important;
+    border-color: #f9eda8;
     color: #140B01;
 }
 
@@ -365,15 +378,15 @@ div#commentBox::-webkit-scrollbar-thumb {
 }
 
 #makeComment input {
-    background-color:#d3d694ab;
+    background-color:#f9eda8ab;
     color: #140B01;
-    border: 3px solid #d3d694;
+    border: 3px solid #f9eda8;
     border-radius:4px;
 }
 
 #makeComment input:hover {
-    background-color:#d3d694ab;
-    border: 2px solid #d3d694;
+    background-color:#f9eda8ab;
+    border: 3px solid #f9eda8;
 }
 
 #makeComment input[type="text"]::placeholder {
@@ -381,15 +394,15 @@ div#commentBox::-webkit-scrollbar-thumb {
 }
 
 input#postComment {
-    background: #d3d694;
-    border:1px solid #d3d694;
+    background: #f9eda8ab;
+    border:3px solid #f9eda8;
     text-shadow: none;
     color: #140B01;
 }
 
 /*King's Bio and Pride Overview*/
 #about.table {
-    border:3px solid #d3d694;
+    border:2px solid #d3d694;
     border-radius:10px;
 }
 
@@ -511,29 +524,29 @@ input#postComment {
     margin-top:10px;
 }
 
-/*Nesting, Pregnant, Overview Icons*/
-#fraOrganizationBlock .cave-grid {
+/*Cave Word Areas*/
+#fraOrganizationBlock .cave-grid, .mound-grid {
     background-color:#d3d694ab;
     color:#140B01;
     border: 1px solid #d3d694;
-    display:flex;
-    flex-direction:column;
-    align-items:center !important;
-    justify-content:center;
 }
 
-#fraOrganizationBlock .cave-grid br {
-    display:none;
+.mound-grid {
+    padding: 0px;
+    width:fit-content;
 }
 
+/*Unsorted Image*/
 #fraOrganizationBlock img[src*="unsortedlionsbanner"] {
     content:url(https://static.lioden.com/images/dynamic/backgrounds/DesertOasis.png);
 }
 
+/*Pregnant Image*/
 #fraOrganizationBlock img[src*="nestingbanner"] {
     content:url(https://static.lioden.com/images/dynamic/backgrounds/DesertOasis.png);
 }
 
+/*Overview Image*/
 #fraOrganizationBlock img[src*="prideoverviewbanner"] {
     content:url(https://static.lioden.com/images/dynamic/backgrounds/DesertOasis.png);
 }
@@ -545,12 +558,14 @@ input#postComment {
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
     }
+/*Nesting, Pregnant, Overview Caves*/
     #fraOrganizationBlock > .col-md-4.col-xs-6.center {
     width: auto;
     float: none;
     padding: 0;
     margin: 0;
     }
+/*Personal Caves*/
     #fraOrganizationBlock > #fraCaveList {
     grid-column: 1/-1;
     display: grid;
@@ -563,6 +578,7 @@ input#postComment {
     padding: 0;
     margin: 0;
     }
+/*Beetle Mounds*/
     #fraOrganizationBlock > #fraMoundList {
     grid-column: 1/-1;
     display: grid;
