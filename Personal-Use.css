@@ -737,6 +737,19 @@ b>span {
 }
 
 /*Edit Details*/
+.row table {
+    border: 3px solid #d3d694;
+}
+
+.row form th  {
+    background-color:#d3d694ab;
+}
+
+.row form th a {
+    color:#140B01 !important;
+    border:none !important;
+    text-decoration:underline;
+}
 
 /*Edit Details Inner Panel*/
 #editdetailspanel {
@@ -752,8 +765,11 @@ b>span {
     text-decoration:underline;
 }
 
-#editdetailspanel .left, #editdetailspanel .bottom, #editdetailspanel input, #editdetailspanel select {
-    background-color:#d3d694;
+#editdetailspanel .left, #editdetailspanel .bottom, #editdetailspanel input, #editdetailspanel select, #editdetailspanel textarea {
+    background:none;
+    background-color:#d3d694ab;
     width:20%;
-    border: 3px solid #d3d694;
+    color:#140B01;
+    text-shadow:none;
+    border:none;
 }
