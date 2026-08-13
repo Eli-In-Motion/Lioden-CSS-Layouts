@@ -33,6 +33,10 @@ body {
     font-size:xxx-large;
 }
 
+.col-md-9.col-xs-12>br {
+    display:none;
+}
+
 /*Behind Main but need .col-md-9 as well*/
 .container.main {
     background: none;
@@ -233,7 +237,7 @@ input[name=bookmark]:hover {
     color: #140B01;
     background:#d3d694ab;
     margin-top:0px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
 
 .alert>b {
@@ -622,56 +626,112 @@ input#postComment {
     color: #140B01;
 }
 
+a[name="fapa"]+b {
+    color:#140B01;
+    font-size:large;
+}
+
+b>span {
+    color:#140B01 !important;
+    
+}
+
 /*Allies*/
-#allies {
-    position:relative;
-    border-collapse: collapse; 
+#allies tr:not(:first-child) {
+    display:none;
+}
+
+#allies:hover tr:not(:first-child) {
+    display:table-row;
+}
+
+#allies { 
+    background-color:transparent;
+    border:none;
+    margin-top:20px;
+    color:#140B01;
+    border: 3px solid #d3d694;
+}
+
+#allies .top, #allies .bottom { 
+    background-color:#d3d694ab;
+    border:none;
+    margin-top:20px;
+    color:#140B01;
+    border: 3px solid #d3d694;
+}
+
+#allies a {
+   color:#140B01;
+    text-decoration:underline;
+}
+
+#allies .left {
+    display:none;
+}
+
+/*Clans*/
+#clans { 
     background-color:transparent;
     border:none;
     margin-top:20px;
     border: 3px solid #d3d694;
 }
 
-#allies td, #allies a {
-    background:none;
-    background-color:transparent;
-    margin-top:-1px;
-}
-
-#allies .top {
+#clans .top {
     background-color:#d3d694ab;
     color:#140B01;
     text-shadow:none;
     border: 3px solid #d3d694;
 }
 
-#allies .right  {
+#clans td.left {
     display:none;
-    color:#140B01;
 }
 
-#allies .right a {
+#clans .right a {
     color:#140B01;
     text-decoration:underline;
 }
 
-#allies:hover .right, #allies:focus-within .right, #allies:focus-within .right a {
-    display:table-cell;
+#clans tr:not(:first-child) {
+    display:none;
 }
 
-#allies .bottom {
-    background:none;
-    background-color: transparent;
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    z-index:5;
+#clans:hover tr:not(:first-child) {
+    display:table-row;
 }
 
-#allies .bottom a {
-    display:block;
+/*Dynasty*/
+.row.dynastycollection {
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+    gap:10px;
+}
+
+.row.dynastycollection::before, .row.dynastycollection::after, .row.dynastycollection br {
+    display:none;
+}
+
+.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist {
     width:100%;
+    padding: 0px;
+}
+
+.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist .left {
+    height:100%;
+    padding:1px;
+    background-color:#d3d694ab;
+    border: 3px solid #d3d694;
+}
+
+.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist .left h3 {
     color:#140B01;
-    text-align:right;
+}
+
+/*Breeding, User Log, Attacks*/
+.row .col.col-sm-4 .left {
+    background-color:#d3d694ab;
+    border: 3px solid #d3d694;
+    color:#140B01;
 }
