@@ -603,3 +603,75 @@ input#postComment {
     content:url(https://static.lioden.com/images/items/Decoration/vesselofbast.png);
     width:auto;
 }
+
+/*Sparring*/
+#sparring {
+    display:none;
+}
+
+/*FAPA*/
+.col-sm-6.col-xs-12 div, .col-sm-6.col-xs-12 input, .col-sm-6.col-xs-12 select {
+    background:none;
+    background-color:#d3d694ab;
+    color:#140B01;
+    text-shadow:none;
+    border: 3px solid #d3d694;
+}
+
+.col-sm-6.col-xs-12 h3 {
+    color: #140B01;
+}
+
+/*Allies*/
+#allies {
+    position:relative;
+    border-collapse: collapse; 
+    background-color:transparent;
+    border:none;
+    margin-top:20px;
+    border: 3px solid #d3d694;
+}
+
+#allies td, #allies a {
+    background:none;
+    background-color:transparent;
+    margin-top:-1px;
+}
+
+#allies .top {
+    background-color:#d3d694ab;
+    color:#140B01;
+    text-shadow:none;
+    border: 3px solid #d3d694;
+}
+
+#allies .right  {
+    display:none;
+    color:#140B01;
+}
+
+#allies .right a {
+    color:#140B01;
+    text-decoration:underline;
+}
+
+#allies:hover .right, #allies:focus-within .right, #allies:focus-within .right a {
+    display:table-cell;
+}
+
+#allies .bottom {
+    background:none;
+    background-color: transparent;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:5;
+}
+
+#allies .bottom a {
+    display:block;
+    width:100%;
+    color:#140B01;
+    text-align:right;
+}
