@@ -735,3 +735,25 @@ b>span {
     border: 3px solid #d3d694;
     color:#140B01;
 }
+
+/*Edit Details*/
+
+/*Edit Details Inner Panel*/
+#editdetailspanel {
+    background-color:#d3d694ab;
+    color:#140B01;
+}
+#editdetailspanel table {
+    border: 3px solid #d3d694
+}
+
+#editdetailspanel a {
+    color:#140B01;
+    text-decoration:underline;
+}
+
+#editdetailspanel .left, #editdetailspanel .bottom, #editdetailspanel input, #editdetailspanel select {
+    background-color:#d3d694;
+    width:20%;
+    border: 3px solid #d3d694;
+}
