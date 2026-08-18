@@ -218,17 +218,7 @@ body {
 
 /*Bookmark Button*/
 input[name=bookmark] {
-    background: #ffffffcc;
-    box-shadow:none;
-    border:none;
-    text-shadow:none;
-    color: #140B01;
-}
-
-input[name=bookmark]:hover {
-    background: #ffe6004a;
-    border:none;
-    color: #140B01;
+    display:none;
 }
 
 /*Alerts*/
@@ -398,7 +388,24 @@ div#commentBox::-webkit-scrollbar-thumb {
 }
 
 #makeComment input[type="text"]::placeholder {
-    color: #140B01
+    color: transparent;
+}
+
+#makeComment {
+    position: relative;
+}
+
+#makeComment::before {
+    content: "Leave a message, traveller...";
+    position: absolute;
+    left: 35px;
+    top: 45%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+#makeComment:focus-within::before {
+    display: none;
 }
 
 input#postComment {
@@ -408,13 +415,16 @@ input#postComment {
     color: #140B01;
 }
 
-/*King's Bio and Pride Overview*/
-#about.table {
-    border:2px solid #d3d694;
-    border-radius:10px;
+/*hide comment box unless hovering or typing comment*/
+center:has(#makeComment:focus-within) #commentBox {
+    display: block;
 }
 
-/*About Header with anme*/
+#commentBox {
+    display: none;
+}
+
+/*About Header with name*/
 .top.center {
     background:#d3d694ab;
     color:#140B01;
@@ -453,6 +463,14 @@ input#postComment {
     margin:-5px;
 }
 
+#about .inner-table.auto {
+    border:none;
+}
+
+#about .right.small:has(a[href*="retire.php"]) {
+    font-size:0px;
+}
+
 #about .inner-table.auto a {
     color:#140B01;
     text-decoration:underline;
@@ -470,6 +488,7 @@ input#postComment {
     background-color:#d3d694;
     padding:5px;
 }
+
 
 #about .bottom {
     background-color:#d3d694ab;
@@ -512,6 +531,7 @@ input#postComment {
 
 #player .inner-table.auto {
     margin-top:5px !important;
+    border:none;
 }
 
 #player .left {
@@ -696,7 +716,6 @@ b>span {
     background-color:transparent;
     border:none;
     margin-top:20px;
-    
 }
 
 #clans .top {
@@ -722,6 +741,7 @@ b>span {
 #clans:hover tr:not(:first-child) {
     display:block;
     width:200%;
+    margin-left:-60%
 }
 
 /*Dynasty*/
