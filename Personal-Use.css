@@ -759,14 +759,29 @@ b>span {
 }
 
 /*Edit Details*/
-.row table {
+.row form p {
+    display:none;
+}
+.row form {
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:10px;
+    vertical-align:top;
+    width:100%;
+}
+.row form table {
     border: 3px solid #d3d694;
+    border-radius: 4px;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    box-sizing: border-box;
 }
-
-.row form th  {
-    background-color:#d3d694ab;
+.row form th {
+    background: #d3d694ab;
+    border: none;
+    text-align:center;
 }
-
 .row form th a {
     color:#140B01 !important;
     border:none !important;
@@ -794,4 +809,15 @@ b>span {
     color:#140B01;
     text-shadow:none;
     border:none;
+}
+
+/*Account Settings*/
+.row form .left {
+    background-color:#d3d694ab;
+    border: 3px solid #d3d694;
+}
+
+.row form .left a {
+    color:#140B01;
+    text-decoration:underline;
 }
