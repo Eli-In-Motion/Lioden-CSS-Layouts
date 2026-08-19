@@ -3,13 +3,222 @@
 
 /*<link rel="stylesheet" type="text/css" href="" /> */
 
+/*Main Background*/
 body {
-    /* text-wrap: stable; */
-    background-color:#d3d694;
-    background-image: 
-        url("https://static.lioden.com/images/dynamic/backgrounds/palaceoasis.png"), url("https://static.lioden.com/images/dynamic/backgrounds/palaceoasis.png");
-    background-position: top center, bottom center;
-    background-repeat: no-repeat, no-repeat;
-    background-size: cover, cover;
-    background-attachment: fixed;
+    background-color:#007ba1;
+    background-image:url("https://i.imgur.com/s2Di3zB.jpeg");
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+/*Top Bar with Messages and Currency*/
+.topbar {
+    background:none;
+}
+
+.topbar a {
+    color: white !important;
+}
+
+/*Main container behind everything else*/
+.container.main {
+    background:none;
+}
+
+/*NAVBAR*/
+.navbar.navbar-default {
+    background: none;
+}
+
+.navbar.navbar-default a {
+    color: white !important;
+}
+
+.navbar.navbar-default a:hover {
+    background:#007ba1ab !important
+}
+
+.navbar-brand.visible-lg.visible-md:hover {
+    background:none !important;
+}
+
+/*Navbar Collapse Button when Small*/
+.navbar button {
+    background-color:#007ba1 !important;
+    border: 2px solid #ffffffab !important;
+}
+
+.navbar button:hover, .navbar button:focus {
+    background-color:#053b67 !important;
+}
+
+/*Navbar Links when Small and Expanded*/
+.navbar-collapse.collapse.in {
+    border:none;
+    box-shadow:none;
+}
+
+/*Smaller Container behind most main stuff*/
+#pageContainer {
+    background-color:transparent;
+}
+
+/*Breadcrumb with Home/Name*/
+.breadcrumb {
+    background-color: #007ba1ab;
+}
+
+.breadcrumb a, .breadcrumb-item.active {
+    color:white;
+}
+
+ /*____'s Den*/
+#pageContainer h1 {
+    color:white;
+    text-align:center;
+}
+
+/*All Alerts Text and Links*/
+.alert, .alert a {
+    color:white;
+}
+
+/*Red Alerts Background*/
+.alert-danger {
+    background-color:#053b67ab;
+    border: 2px solid #ffffffab
+}
+
+/*Green Alerts Background*/
+.alert {
+    background-color:#007ba1ab
+}
+
+/*Comment Box Existing Comments*/
+#commentBox {
+    background-color:#007ba1ab;
+    color:white;
+    border: 2px solid #ffffffab !important;
+}
+
+#commentBox a, .text-muted {
+    color:white;
+}
+
+/*Comment Box Scrollbar*/
+#commentBox::-webkit-scrollbar {
+    background-color:#007ba1ab;
+}
+
+#commentBox::-webkit-scrollbar-thumb {
+    background-color:#053b67ab;
+    border-radius:5px;
+}
+
+/*Comment x Button*/
+#commentBox .bad {
+    background:none;
+    background-color:#053b67ab;
+    color:white;
+    text-shadow:none;
+    border: 2px solid #ffffffab
+}
+
+/*Make Comment Input Box*/
+#makeComment #comment {
+    background-color:#053b67ab;
+    border: 2px solid #ffffffab;
+    border-radius:4px;
+    color:white;
+}
+
+#makeComment #comment::placeholder {
+    color:white !important;
+}
+
+/*Make Comment Post Button*/
+#postComment {
+    background:#053b67ab;
+    border: 2px solid #ffffffab;
+    color:white;
+    text-shadow:none;
+}
+
+/*Pride About Area Text*/
+#about, #about a {
+    color:white;
+}
+
+/*Pride About Main Back Area*/
+#about {
+    background:;
+    border: 2px solid #ffffffab;
+    border-radius:4px;
+}
+
+/*Pride About Inner Areas*/
+#about .top, #about .bottom {
+    background:#007ba1ab;
+}
+
+#about td .left {
+    background:#053b67ab;
+}
+
+#about td .right {
+    background-color:#007ba1ab;
+}
+
+/*Player Info Area Text and Links*/
+#player, #player a {
+color:white;
+}
+
+/*Player Info Area*/
+#player {
+    border: 2px solid #ffffffab;
+    border-radius:4px;
+}
+
+#player .top {
+    background:#007ba1ab;
+}
+
+#player td.left {
+    background:#
+}
+
+#player td .right {
+    background-color:#007ba1ab;
+}
+
+/*Sparring*/
+#sparring {
+    border: 2px solid #ffffffab;
+    border-radius:4px;
+    color:white;
+}
+
+#sparring th{
+    background-color:#007ba1ab;
+}
+
+ #sparring .right_odd {
+     background:transparent;
+ }
+
+/*Sparring Input Areas*/
+#sparring select, #sparring input {
+    color:white;
+    text-shadow:none;
+    background:none;
+    background-color:#007ba1ab;
+    box-shadow:none;
+    border: 2px solid #ffffffab;
+    border-radius:4px;
+}
+
+#
 }
