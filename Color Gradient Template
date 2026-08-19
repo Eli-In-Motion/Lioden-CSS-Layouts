@@ -1,0 +1,9 @@
+/*Color Pallet Dark>Light
+*/
+
+/*<link rel="stylesheet" type="text/css" href="" /> */
+
+body {
+  background:none;
+  background-color:white;
+}
