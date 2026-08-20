@@ -67,7 +67,7 @@ body {
 
 /*Breadcrumb with Home/Name*/
 .breadcrumb {
-    background-color: #007ba1ab;
+    background-color: transparent;
 }
 
 .breadcrumb a, .breadcrumb-item.active {
@@ -187,12 +187,24 @@ color:white;
 }
 
 #player td.left {
-    background:#
+    background:#053b67ab;
 }
 
 #player td .right {
     background-color:#007ba1ab;
 }
+
+/*Dens and Mounds*/
+.cave-grid {
+    background-color:#053b67ab;
+    color:white;
+}
+
+.mound-grid {
+    background-color:#053b67ab;
+    color:white;
+}
+
 
 /*Sparring*/
 #sparring {
@@ -219,3 +231,122 @@ color:white;
     border: 2px solid #ffffffab;
     border-radius:4px;
 }
+
+/*FAPA*/
+.row, .row span {
+    color:white !important;
+}
+
+.row .feature {
+    background-color:#007ba1ab;
+    border: 2px solid #ffffffab;
+}
+
+.row .feature h3, .row .feature input, .row .feature select {
+    color: white;
+    text-shadow:none;
+}
+
+.row .feature input, .row .feature select {
+    background:none;
+    background-color:#053b67ab;
+    border: 2px solid #ffffffab;
+}
+
+/*Allies Text and Links*/
+#allies, #allies a {
+    color:white;
+}
+
+/*Allies*/
+#allies {
+    border: 2px solid #ffffffab;
+}
+
+#allies .top, #allies .bottom {
+    background-color:#007ba1ab;
+}
+
+#allies .left {
+    display:none;
+}
+
+/*Clans Text and Links*/
+#clans, #clans a {
+    color:white;
+}
+
+/*Clans*/
+#clans {
+    border: 2px solid #ffffffab;
+}
+
+#clans .top {
+    background-color:#007ba1ab;
+}
+
+#clans .left {
+    display:none;
+}
+
+/*Dynasties*/
+.row.dynastycollection div .left {
+    background-color:#007ba1ab;
+    border: 2px solid #ffffffab;
+}
+.row.dynastycollection h3 {
+    color:white;
+}
+
+/*Logs*/
+.col.col-sm-4 .left {
+    background-color:#007ba1ab;
+    border: 2px solid #ffffffab;
+    color:white;
+}
+
+/*Edit Details*/
+#editdetailspanel {
+    border: 2px solid #ffffffab;
+}
+
+.table {
+    border:none;
+    margin:0px;
+}
+
+.table th {
+    background-color:#007ba1ab;
+}
+
+.table th a {
+    color:white !important;
+}
+
+/*Expanded Details Panel*/
+#editdetailspanel .left {
+    background:#053b67ab;
+}
+
+#editdetailspanel .right textarea, #editdetailspanel .right input, #editdetailspanel .right select {
+    background-color:#007ba1ab;
+    color:white;
+    border:none;
+}
+
+#editdetailspanel .right a {
+    color:white;
+}
+
+#editdetailspanel .bottom {
+    background-color:#007ba1ab;
+}
+
+#editdetailspanel .bottom input {
+    background:#053b67ab;
+    border: 2px solid #ffffffab;
+    text-shadow:none;
+    color:white;
+}
+
+/*Account Settings*/
