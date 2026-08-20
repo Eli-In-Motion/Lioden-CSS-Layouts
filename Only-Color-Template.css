@@ -378,17 +378,19 @@ form .left a {
     border:none !important;
 }
 
-.btn.btn-default.button {
+
+#btnToggleSidebarChat {
     background:none;
-    background-color:#007ba1ab;
+    background-color:#053b67ab;
     border: 2px solid #ffffffab;
     color:white;
     text-shadow:none;
 }
 
-#btnToggleSidebarChat {
+.btn.btn-default.button {
     background:none;
-    background-color:#007ba1ab;
+    background-color:#053b67ab;
     border: 2px solid #ffffffab;
     color:white;
+    text-shadow:none;
 }
