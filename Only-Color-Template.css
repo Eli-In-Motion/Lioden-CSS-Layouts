@@ -373,3 +373,7 @@ form .left a {
 .panel p {
     display:none;
 }
+
+.clear.visible-xs.visible-sm {
+    border:none !important;
+}
