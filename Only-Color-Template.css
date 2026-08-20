@@ -311,7 +311,7 @@ color:white;
 }
 
 .table {
-    border:none;
+    border: 2px solid #ffffffab;
     margin:0px;
 }
 
@@ -330,8 +330,8 @@ color:white;
 
 #editdetailspanel .right textarea, #editdetailspanel .right input, #editdetailspanel .right select {
     background-color:#007ba1ab;
+    border: none;
     color:white;
-    border:none;
 }
 
 #editdetailspanel .right a {
@@ -350,3 +350,26 @@ color:white;
 }
 
 /*Account Settings*/
+form .left {
+    background-color:#007ba1ab;
+    border: 2px solid #ffffffab;
+}
+
+form .left a {
+    color:white;
+}
+
+/* */
+#pageSidebar, #pageSidebar a, #pageSidebar h3 {
+    color:white;
+}
+
+.panel-body.small, .panel, .panel.panel-default {
+    background-color:#007ba1ab;
+    border: 2px solid #ffffffab;
+    color:white;
+}
+
+.panel p {
+    display:none;
+}
