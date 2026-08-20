@@ -352,7 +352,6 @@ color:white;
 /*Account Settings*/
 form .left {
     background-color:#007ba1ab;
-    border: 2px solid #ffffffab;
 }
 
 form .left a {
@@ -365,9 +364,13 @@ form .left a {
 }
 
 .panel-body.small, .panel, .panel.panel-default {
-    background-color:#007ba1ab;
-    border: 2px solid #ffffffab;
     color:white;
+    background-color:#053b67ab;
+    box-shadow:none !important;
+}
+
+.panel, .panel.panel-default {
+    border: 2px solid #ffffffab;
 }
 
 .panel p {
