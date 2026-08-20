@@ -377,3 +377,18 @@ form .left a {
 .clear.visible-xs.visible-sm {
     border:none !important;
 }
+
+.btn.btn-default.button {
+    background:none;
+    background-color:#007ba1ab;
+    border: 2px solid #ffffffab;
+    color:white;
+    text-shadow:none;
+}
+
+#btnToggleSidebarChat {
+    background:none;
+    background-color:#007ba1ab;
+    border: 2px solid #ffffffab;
+    color:white;
+}
