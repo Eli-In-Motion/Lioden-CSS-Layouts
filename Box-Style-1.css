@@ -1,0 +1,51 @@
+/*Bio Boxes Style 1*/
+/*HTML
+<div class="Bio">
+<div class="BioLeft">Left Tall Div</div> <div class="BioTopRight">Top Right Div</div><div class="BioBottomRight">Bottom Right Div</div>
+</div>*/
+
+.Bio {
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    grid-template-rows:100px 100px;
+    gap:10px 20px;
+}
+
+.Bio br {
+    display:none;
+}
+
+.BioLeft {
+    background:red;
+    grid-row-start:1;
+    grid-row:1/3;
+    border-radius:20px;
+    overflow-x:hidden;
+    overflow-y:scroll;
+}
+
+.BioLeft::-webkit-scrollbar {
+    display:none;
+}
+
+.BioTopRight {
+    background:blue;
+    border-radius:20px;
+    overflow-x:hidden;
+    overflow-y:scroll;
+}
+
+.BioTopRight::-webkit-scrollbar {
+    display:none;
+}
+
+.BioBottomRight {
+    background:green;
+    border-radius:20px;
+    overflow-x:hidden;
+    overflow-y:scroll;
+}
+
+.BioBottomRight::-webkit-scrollbar {
+    display:none;
+}
