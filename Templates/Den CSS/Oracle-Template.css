@@ -46,3 +46,8 @@ body {
 a, button {
     cursor: url("https://i.imgur.com/eqQyMCj.png"), pointer;
 }
+
+/*Add to Bio Box CSS to make them scrollable
+    overflow-x:hidden;
+    overflow-y:scroll;
+*/
