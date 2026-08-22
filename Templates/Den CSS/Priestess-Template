@@ -70,8 +70,48 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
     object-fit:contain;
 }
 
+/*ALL Unsorted, Pregnant, Overview*/
+#fraOrganizationBlock > div:nth-child(-n + 3) > a > div > img {
+    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
+    width:258.4px;
+    height:59.63px;
+    object-fit:contain;
+}
+
+/*Select Individual Top Caves (Change nth-child)*/
+#fraOrganizationBlock > div:nth-child(1) > a > div > img {
+    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
+    width:258.4px;
+    height:59.63px;
+    object-fit:contain;
+}
+
+/*All Personal Caves*/
+#fraCaveList img {
+    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
+    width:258px;
+    height:129px;
+    object-fit:contain;
+}
+
+/*Select Individual Personal Cave Images (Change nth-Child)*/
+#fraCaveList > div:nth-child(1) > a > div > img {
+    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
+    width:258.4px;
+    height:129.2px;
+    object-fit:contain;
+}
+
 /*ALL Beetle Mounds Together*/
 .mound-grid img {
+    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
+    width:130px;
+    height:80px;
+    object-fit:contain;
+}
+
+/*Select Individual Beetle Mounds (Change nth-child)*/
+#fraMoundList > div:nth-child(1) > a > div > img {
     content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
     width:130px;
     height:80px;
@@ -88,8 +128,24 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
     object-fit:contain;
 }
 
+/*Select Individual Dynasty, etc. images (Change nth-child)*/
+.row.dynastycollection > div:nth-child(1) img {
+    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
+    width:240px;
+    height:50px;
+    object-fit:contain;
+}
+
 /*ALL Day/Night & Weather Images*/
 .panel.panel-default img {
+    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
+    width:20px;
+    height:20px;
+    object-fit:contain;
+}
+
+/*Select Day/Night and Weather images (Change nth-child)*/
+.panel.panel-default .floatright.right img:nth-child(1) {
     content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
     width:20px;
     height:20px;
@@ -104,6 +160,14 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
     object-fit:contain;
 }
 
+/*Select Event Currency (Change a:nth-child)*/
+#pageSidebar > div.col-md-12.col-xs-6 > div:nth-child(2) > div > a:nth-child(1) > img {
+    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
+    width:20px;
+    height:20px;
+    object-fit:contain;
+}
+
 /*Bug Box Image*/
 .btn.btn-default.button img {
     content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
@@ -111,3 +175,5 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
     height:24px;
     object-fit:contain;
 }
+
+/*I won't change social media images without specific request*/
