@@ -421,6 +421,15 @@ form .left a {
     padding-left:5px !important;
 }
 
+#chatMessageList::-webkit-scrollbar {
+    background-color:#007ba1ab;
+}
+
+#chatMessageList::-webkit-scrollbar-thumb {
+    background-color:#053b67ab;
+    border-radius:5px;
+}
+
 /*BugBox Button*/
 .btn.btn-default.button {
     background:none;
