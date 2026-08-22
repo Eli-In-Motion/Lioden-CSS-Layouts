@@ -37,3 +37,12 @@
 .progress [role="progressbar"] {
     background:#007ba1ab;
 }
+
+body {
+    cursor:url('https://i.imgur.com/eqQyMCj.png'), auto;
+}
+
+/*Hover Cursor*/
+a, button {
+    cursor: url("https://i.imgur.com/eqQyMCj.png"), pointer;
+}
