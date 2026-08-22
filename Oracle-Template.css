@@ -1,0 +1,39 @@
+/* https://i.imgur.com/abduPNs.png */
+
+/*Pagedoll*/
+.pagedoll {
+    position: fixed;
+    right: -10px;
+    bottom: -10px;
+    width: 200px;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+/*Player Icon*/
+#player > tbody > tr.right > td:nth-child(2) {
+    content:url(https://i.imgur.com/abduPNs.png);
+}
+
+/*Replace ____'s Den*/
+#pageContainer h1 {
+    font-size:0px;
+}
+
+#pageContainer h1:before {
+    content:"Welcome Traveller";
+    font-size:50px;
+}
+
+/*Progress Bar Changes*/
+.panel-body.small  .progress {
+    background:#ffffffab;
+}
+
+.panel-body.small  .progress div {
+    color:white;
+}
+
+.progress [role="progressbar"] {
+    background:#007ba1ab;
+}
