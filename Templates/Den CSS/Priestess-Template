@@ -1,0 +1,113 @@
+/*SB Icon*/
+body > div.container.topbar > ul > li:nth-child(2) > a > img {
+    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/silver-badge.png?raw=true');
+    width:20px;
+    height:20px;
+    object-fit:contain
+}
+
+/*GB Icon*/
+body > div.container.topbar > ul > li:nth-child(3) > a > img {
+    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/game-coin.png?raw=true');
+    width:20px;
+    height:20px;
+    object-fit:contain;
+}
+
+/*Lioden Icon*/
+body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
+    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/home-button.png?raw=true');
+    width:192px;
+    height:120px;
+    object-fit:contain;
+}
+
+/*King Image*/
+.lion-image-block img {
+    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
+    width:200px;
+    height:200px;
+    object-fit:contain;
+}
+
+/*VIP Money Star*/
+#player .center.h3 img {
+    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/game-coin.png?raw=true');
+    width:16px;
+    height:16px;
+    object-fit:contain;
+}
+
+/*Player Icon*/
+#player > tbody > tr.right > td:nth-child(2) > img {
+    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
+    width:150px;
+    height:150px;
+    object-fit:contain;
+}
+
+/*Refer a Fried Plus Sign*/
+#player .center.xlarge a:nth-child(1) img {
+    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/game-coin.png?raw=true');
+    width:24px;
+    height:24px;
+    object-fit:contain;
+}
+
+/*Wishlist Image*/
+#player .center.xlarge a:nth-child(3) img {
+    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/game-coin.png?raw=true');
+    width:24px;
+    height:24px;
+    object-fit:contain;
+}
+
+/*ALL Caves Together*/
+.cave-grid img {
+    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
+    width:258px;
+    height:129px;
+    object-fit:contain;
+}
+
+/*ALL Beetle Mounds Together*/
+.mound-grid img {
+    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
+    width:130px;
+    height:80px;
+    object-fit:contain;
+}
+
+/*I DO NOT AND WILL NOT CHANGE CLAN IMAGES*/
+
+/*ALL Dynasty, Achievments, Showcase, Beetle Book Images*/
+.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist img {
+    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
+    width:240px;
+    height:50px;
+    object-fit:contain;
+}
+
+/*ALL Day/Night & Weather Images*/
+.panel.panel-default img {
+    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
+    width:20px;
+    height:20px;
+    object-fit:contain;
+}
+
+/*ALL Event Currency Images*/
+.panel-body.small.center img {
+    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
+    width:20px;
+    height:20px;
+    object-fit:contain;
+}
+
+/*Bug Box Image*/
+.btn.btn-default.button img {
+    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
+    width:24px;
+    height:24px;
+    object-fit:contain;
+}
