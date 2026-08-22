@@ -3,6 +3,8 @@
 
 /*<link rel="stylesheet" type="text/css" href="" /> */
 
+
+/*PLEASE DO NOT REMOVE CREDIT*/
 /*Main Background*/
 body {
     background-color:#007ba1;
@@ -70,6 +72,20 @@ body {
     background-color: transparent;
 }
 
+.breadcrumb {
+    display: flex;
+}
+
+.breadcrumb-item.active {
+    display: flex;
+    flex: 1;
+}
+
+.breadcrumb-item.active::after {
+    content: "CSS by Eli #319237";
+    margin-left: auto;
+}
+
 .breadcrumb a, .breadcrumb-item.active {
     color:white;
 }
@@ -87,7 +103,7 @@ body {
 
 /*Red Alerts Background*/
 .alert-danger {
-    background-color:#053b67ab;
+    background-color:#053b67ab !important;
     border: 2px solid #ffffffab
 }
 
@@ -438,3 +454,5 @@ form .left a {
     color:white;
     text-shadow:none;
 }
+
+/*PLEASE DO NOT REMOVE CREDIT*/
