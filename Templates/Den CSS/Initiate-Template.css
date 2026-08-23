@@ -32,6 +32,11 @@
     --border-main: #D4A84F;
     --accent-gold: #E6C97A;
 
+    /* ===== BORDER ===== */
+    --radius-main: 5px;
+    --radius-small: 3px;
+    --radius-none: 0px;
+
     /* ===== SPECIAL ===== */
     --mod-bg: #000000AB;
 }
@@ -110,12 +115,14 @@ body {
 .navbar button {
     background-color: var(--input-bg) !important;
     border: 2px solid var(--border-main) !important;
+    border-radius:var(--radius-small);
 }
 
 .navbar button:hover,
 .navbar button:focus {
     background-color: var(--header-bg) !important;
     border-color: var(--accent-gold) !important;
+    border-radius:var(--radius-small);
 }
 
 
@@ -167,6 +174,7 @@ body {
 .alert-danger {
     background-color: var(--panel-bg-alt);
     border: 2px solid var(--border-main);
+    border-radius:var(--radius-small);
 }
 
 
@@ -174,6 +182,7 @@ body {
 .alert {
     background-color: var(--panel-bg);
     border-color: var(--border-main);
+    border-radius:var(--radius-small);
 }
 
 .alert a:hover {
@@ -190,6 +199,7 @@ body {
     background: var(--panel-bg-alt);
     color: var(--text-main);
     border: 2px solid var(--border-main) !important;
+    border-radius:var(--radius-small);
 }
 
 .comment:nth-child(odd) {
@@ -212,12 +222,12 @@ body {
 /* Comment Box Scrollbar */
 #commentBox::-webkit-scrollbar {
     background-color: var(--panel-bg-alt);
-    border-radius:10px;
+    border-radius:var(--radius-small);
 }
 
 #commentBox::-webkit-scrollbar-thumb {
     background-color: var(--panel-bg);
-    border-radius: 5px;
+    border-radius:var(--radius-small);
 }
 
 
@@ -228,6 +238,12 @@ body {
     color: var(--text-main);
     text-shadow: none;
     border: 1px solid var(--border-main);
+    border-radius:var(--radius-none);
+}
+
+#commentBox .bad:hover {
+    background-color: var(--header-bg);
+    color: var(--accent-gold);
 }
 
 
@@ -235,7 +251,7 @@ body {
 #makeComment #comment {
     background-color: var(--input-bg);
     border: 2px solid var(--border-main);
-    border-radius: 4px;
+    border-radius:var(--radius-small);
     color: var(--text-main);
 }
 
@@ -248,6 +264,7 @@ body {
 #postComment {
     background: var(--input-bg);
     border: 2px solid var(--border-main);
+    border-radius:var(--radius-none);
     color: var(--text-main);
     text-shadow: none;
 }
@@ -272,7 +289,10 @@ body {
 /* Pride About Main Area */
 #about {
     border: 2px solid var(--border-main);
-    border-radius: 4px;
+    border-radius:var(--radius-main);
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
 }
 
 
@@ -309,7 +329,10 @@ body {
 /* Player Info Area */
 #player {
     border: 2px solid var(--border-main);
-    border-radius: 4px;
+    border-radius:var(--radius-main);
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
 }
 
 #player .top {
@@ -338,6 +361,7 @@ body {
     background-color: var(--panel-bg-alt);
     color: var(--text-main);
     border-color: var(--border-main);
+    border-radius:var(--radius-main);
 }
 
 .cave-grid a,
@@ -356,10 +380,13 @@ body {
    ========================================================= */
 
 #sparring {
-    border: 2px solid var(--border-main);
-    border-radius: 4px;
     color: var(--text-main);
     background-color: var(--panel-bg-alt);
+    border: 2px solid var(--border-main);
+    border-radius:var(--radius-main);
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
 }
 
 #sparring th {
@@ -380,7 +407,7 @@ body {
     background-color: var(--input-bg);
     box-shadow: none;
     border: 2px solid var(--border-main);
-    border-radius: 4px;
+    border-radius:var(--radius-none);
 }
 
 #sparring input:hover,
@@ -401,6 +428,10 @@ body {
 .row .feature {
     background-color: var(--panel-bg);
     border: 2px solid var(--border-main);
+    border-radius:var(--radius-main);
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
 }
 
 .row .feature h3,
@@ -415,6 +446,7 @@ body {
     background: none;
     background-color: var(--input-bg);
     border: 2px solid var(--border-main);
+    border-radius:var(--radius-none);
 }
 
 
@@ -428,8 +460,12 @@ body {
 }
 
 #allies {
-    border: 2px solid var(--border-main);
     background-color: var(--transparent);
+    border: 2px solid var(--border-main);
+    border-radius:var(--radius-main);
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
 }
 
 #allies .top,
@@ -456,8 +492,12 @@ body {
 }
 
 #clans {
-    border: 2px solid var(--border-main);
     background-color: var(--transparent);
+    border: 2px solid var(--border-main);
+    border-radius:var(--radius-main);
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
 }
 
 #clans .top {
@@ -480,6 +520,7 @@ body {
 .row.dynastycollection div .left {
     background-color: var(--panel-bg-alt);
     border: 2px solid var(--border-main);
+    border-radius:var(--radius-main);
 }
 
 .row.dynastycollection h3 {
@@ -494,6 +535,7 @@ body {
 .col.col-sm-4 .left {
     background-color: var(--panel-bg-alt);
     border: 2px solid var(--border-main);
+    border-radius:var(--radius-main);
     color: var(--text-main);
 }
 
@@ -508,6 +550,10 @@ body {
 
 .table {
     border: 2px solid var(--border-main);
+    border-radius:var(--radius-main);
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
     margin: 0;
 }
 
@@ -538,6 +584,7 @@ body {
 #editdetailspanel .right select {
     background-color: var(--input-bg);
     border: 1px solid var(--border-main);
+    border-radius:var(--radius-none);
     color: var(--text-main);
 }
 
@@ -556,6 +603,7 @@ body {
 #editdetailspanel .bottom input {
     background: var(--input-bg);
     border: 2px solid var(--border-main);
+    border-radius:var(--radius-none);
     text-shadow: none;
     color: var(--text-main);
 }
@@ -605,6 +653,7 @@ form .left a:hover {
 
 .col-md-3 .panel {
     border: 2px solid var(--border-main);
+    border-radius:var(--radius-main);
 }
 
 
@@ -618,12 +667,14 @@ form .left a:hover {
     background: none;
     background-color: var(--input-bg);
     border: 2px solid var(--border-main);
+    border-radius:var(--radius-none);
     color: var(--text-main);
     text-shadow: none;
 }
 
 #chatMessageContainer {
     border: 2px solid var(--border-main);
+    border-radius:var(--radius-main);
 }}
 
 #btnToggleSidebarChat:hover {
@@ -643,6 +694,9 @@ form .left a:hover {
     color: var(--accent-gold);
 }
 
+#label_currentChannel {
+    border-radius:var(--radius-none) !important;
+}
 
 /* Chat Inputs / Buttons */
 #fra_chatContainer #label_currentChannel,
@@ -651,14 +705,19 @@ form .left a:hover {
     background: none;
     background-color: var(--input-bg);
     border: 2px solid var(--border-main);
+    border-radius:var(--radius-main);
     color: var(--text-main);
     text-shadow: none;
 }
 
 #txtChatInput {
     border: 2px solid var(--border-main) !important;
+    border-radius:var(--radius-none) !important;
 }
 
+#btnChatSend {
+    border-radius:var(--radius-none) !important;
+}
 
 /* Alternating Chat Messages */
 .s-chat-message:nth-child(even),
@@ -691,7 +750,7 @@ form .left a:hover {
 
 #chatMessageList::-webkit-scrollbar-thumb {
     background-color: var(--header-bg);
-    border-radius: 5px;
+    border-radius:var(--radius-main);
 }
 
 
@@ -703,6 +762,7 @@ form .left a:hover {
     background: none;
     background-color: var(--input-bg);
     border: 2px solid var(--border-main);
+    border-radius:var(--radius-none);
     color: var(--text-main);
     text-shadow: none;
 }
@@ -711,5 +771,6 @@ form .left a:hover {
 .btn.btn-default.button:focus {
     background-color: var(--header-bg);
     border-color: var(--accent-gold);
+    border-radius:var(--radius-none);
     color: var(--accent-gold);
 }
