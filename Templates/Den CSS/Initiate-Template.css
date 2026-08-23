@@ -19,10 +19,10 @@
     --transparent: transparent;
     
     /* ===== MAIN BLUES ===== */
-    --panel-bg: #0A6F96;
-    --panel-bg-alt: #084F73;
-    --header-bg: #09597F;
-    --input-bg: #073F5C;
+    --panel-bg: #0A6F96ab;
+    --panel-bg-alt: #084F73ab;
+    --header-bg: #09597Fab;
+    --input-bg: #073F5Cab;
 
     /* ===== TEXT ===== */
     --text-main: #FFFFFF;
