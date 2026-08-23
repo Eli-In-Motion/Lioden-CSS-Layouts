@@ -844,16 +844,37 @@ form .left a:hover {
     grid-row:1/3;
     border: 2px solid var(--border-main);
     border-radius:5px;
+    overflow:hidden;
+}
+
+.BioLeft img {
+    width:100%;
+    height:auto;
+    display:block;
 }
 
 .BioTopRight {
     background:var(--input-bg);
     border: 2px solid var(--border-main);
     border-radius:5px;
+    overflow:hidden;
+}
+
+.BioTopRight img {
+    width:100%;
+    height:auto;
+    display:block;
 }
 
 .BioBottomRight {
     background:var(--panel-bg);
     border: 2px solid var(--border-main);
     border-radius:5px;
+    overflow:hidden
+}
+
+.BioBottomRight img {
+    width:100%;
+    height:auto;
+    display:block;
 }
