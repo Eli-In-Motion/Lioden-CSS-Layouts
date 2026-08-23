@@ -173,7 +173,7 @@ body {
 
 /* Red Alerts Background */
 .alert-danger {
-    background-color: var(--panel-bg-alt);
+    background-color: var(--panel-bg-alt) !important;
     border: 2px solid var(--border-main);
     border-radius:var(--radius-small);
 }
