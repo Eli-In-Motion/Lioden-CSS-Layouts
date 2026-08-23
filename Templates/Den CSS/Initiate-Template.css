@@ -102,7 +102,7 @@ body {
 }
 
 .navbar.navbar-default a:hover {
-    background: var(--header-bg) !important;
+    background: var(--panel-bg) !important;
     color: var(--accent-gold) !important;
 }
 
@@ -115,14 +115,15 @@ body {
 .navbar button {
     background-color: var(--input-bg) !important;
     border: 2px solid var(--border-main) !important;
-    border-radius:var(--radius-small);
+    border-radius:var(--radius-none);
 }
 
 .navbar button:hover,
 .navbar button:focus {
     background-color: var(--header-bg) !important;
     border-color: var(--accent-gold) !important;
-    border-radius:var(--radius-small);
+    border-radius:var(--radius-none) !important;
+    color: var(--accent-gold) !important;
 }
 
 
@@ -222,12 +223,12 @@ body {
 /* Comment Box Scrollbar */
 #commentBox::-webkit-scrollbar {
     background-color: var(--panel-bg-alt);
-    border-radius:var(--radius-small);
+    border-radius:var(--radius-main);
 }
 
 #commentBox::-webkit-scrollbar-thumb {
     background-color: var(--panel-bg);
-    border-radius:var(--radius-small);
+    border-radius:var(--radius-main);
 }
 
 
@@ -242,8 +243,10 @@ body {
 }
 
 #commentBox .bad:hover {
-    background-color: var(--header-bg);
-    color: var(--accent-gold);
+    background-color: var(--header-bg) !important;
+    border-color: var(--accent-gold) !important;
+    border-radius:var(--radius-none) !important;
+    color: var(--accent-gold) !important;
 }
 
 
@@ -270,8 +273,10 @@ body {
 }
 
 #postComment:hover {
-    background: var(--header-bg);
-    color: var(--accent-gold);
+    background-color: var(--header-bg) !important;
+    border-color: var(--accent-gold) !important;
+    border-radius:var(--radius-none) !important;
+    color: var(--accent-gold) !important;
 }
 
 
@@ -412,7 +417,10 @@ body {
 
 #sparring input:hover,
 #sparring select:hover {
-    border-color: var(--accent-gold);
+    background-color: var(--header-bg) !important;
+    border-color: var(--accent-gold) !important;
+    border-radius:var(--radius-none) !important;
+    color: var(--accent-gold) !important;
 }
 
 
@@ -449,6 +457,12 @@ body {
     border-radius:var(--radius-none);
 }
 
+.row .feature input:hover, .row .feature select:hover {
+    background-color: var(--header-bg) !important;
+    border-color: var(--accent-gold) !important;
+    border-radius:var(--radius-none) !important;
+    color: var(--accent-gold) !important;
+}
 
 /* =========================================================
    ALLIES
@@ -617,6 +631,13 @@ body {
     color: var(--text-main);
 }
 
+#editdetailspanel .bottom input:hover {
+    background-color: var(--header-bg) !important;
+    border-color: var(--accent-gold) !important;
+    border-radius:var(--radius-none) !important;
+    color: var(--accent-gold) !important;
+}
+
 
 /* =========================================================
    ACCOUNT SETTINGS
@@ -686,10 +707,12 @@ form .left a:hover {
 #chatMessageContainer {
     border: 2px solid var(--border-main);
     border-radius:var(--radius-main);
-}}
+}
 
 #btnToggleSidebarChat:hover {
     background-color: var(--header-bg);
+    border-color: var(--accent-gold) !important;
+    border-radius:var(--radius-none);
     color: var(--accent-gold);
 }
 
@@ -721,6 +744,13 @@ form .left a:hover {
     text-shadow: none;
 }
 
+#fra_chatContainer input:hover {
+    background-color: var(--header-bg);
+    border-color: var(--accent-gold) !important;
+    border-radius:var(--radius-none);
+    color: var(--accent-gold);
+}
+
 #txtChatInput {
     border: 2px solid var(--border-main) !important;
     border-radius:var(--radius-none) !important;
@@ -728,6 +758,13 @@ form .left a:hover {
 
 #btnChatSend {
     border-radius:var(--radius-none) !important;
+}
+
+#btnChatSend:hover {
+    background-color: var(--header-bg) !important;
+    border-color: var(--accent-gold) !important;
+    border-radius:var(--radius-none) !important;
+    color: var(--accent-gold) !important;
 }
 
 /* Alternating Chat Messages */
