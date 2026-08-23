@@ -1,0 +1,813 @@
+:root {
+
+    /* ===== BACKGROUND ===== */
+    --page-background-color: #007BA1;
+    --page-background-image: url("https://i.imgur.com/s2Di3zB.jpeg");
+
+    /* ===== TRANSPARENT ===== */
+    --transparent: transparent;
+    
+    /* ===== MAIN BLUES ===== */
+    --panel-bg: #0A6F96ab;
+    --panel-bg-alt: #084F73ab;
+    --header-bg: #09597Fab;
+    --input-bg: #073F5Cab;
+
+    /* ===== TEXT ===== */
+    --text-main: #FFFFFF;
+    --text-muted: #D9EDF5;
+
+    /* ===== GOLD ===== */
+    --border-main: #D4A84F;
+    --accent-gold: #E6C97A;
+
+    /* ===== BORDER ===== */
+    --radius-main: 5px;
+    --radius-small: 3px;
+    --radius-none: 0px;
+
+    /* ===== SPECIAL ===== */
+    --mod-bg: #000000AB;
+}
+
+
+/* =========================================================
+   MAIN BACKGROUND
+   ========================================================= */
+
+body {
+    background-color: var(--page-background-color);
+    background-image: var(--page-background-image);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* =========================================================
+   TOP BAR
+   ========================================================= */
+
+/* Top Bar with Messages and Currency */
+.topbar {
+    background: none;
+}
+
+.topbar a {
+    color: var(--text-main) !important;
+}
+
+.topbar a:hover {
+    color: var(--accent-gold) !important;
+}
+
+
+/* =========================================================
+   MAIN CONTAINERS
+   ========================================================= */
+
+/* Main container behind everything else */
+.container.main {
+    background: none;
+}
+
+/* Smaller Container behind most main stuff */
+#pageContainer {
+    background-color: transparent;
+}
+
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
+.navbar.navbar-default {
+    background: none;
+}
+
+.navbar.navbar-default a {
+    color: var(--text-main) !important;
+}
+
+.navbar.navbar-default a:hover {
+    background: var(--panel-bg) !important;
+    color: var(--accent-gold) !important;
+}
+
+.navbar-brand.visible-lg.visible-md:hover {
+    background: none !important;
+}
+
+
+/* Navbar Collapse Button when Small */
+.navbar button {
+    background-color: var(--input-bg) !important;
+    border: 2px solid var(--border-main) !important;
+    border-radius:var(--radius-none);
+}
+
+.navbar button:hover,
+.navbar button:focus {
+    background-color: var(--header-bg) !important;
+    border-color: var(--accent-gold) !important;
+    border-radius:var(--radius-none) !important;
+    color: var(--accent-gold) !important;
+}
+
+
+/* Navbar Links when Small and Expanded */
+.navbar-collapse.collapse.in {
+    border: none;
+    box-shadow: none;
+}
+
+
+/* =========================================================
+   BREADCRUMB / DEN TITLE
+   ========================================================= */
+
+/* Breadcrumb with Home/Name */
+.breadcrumb {
+    background-color: transparent;
+}
+
+.breadcrumb a,
+.breadcrumb-item.active {
+    color: var(--text-main);
+}
+
+.breadcrumb a:hover {
+    color: var(--accent-gold);
+}
+
+
+/* ____'s Den */
+#pageContainer h1 {
+    color: var(--accent-gold);
+    text-align: center;
+}
+
+
+/* =========================================================
+   ALERTS
+   ========================================================= */
+
+/* All Alerts Text and Links */
+.alert,
+.alert a {
+    color: var(--text-main);
+}
+
+
+/* Red Alerts Background */
+.alert-danger {
+    background-color: var(--panel-bg-alt) !important;
+    border: 2px solid var(--border-main);
+    border-radius:var(--radius-small);
+}
+
+
+/* General / Green Alerts Background */
+.alert {
+    background-color: var(--panel-bg);
+    border-color: var(--border-main);
+    border-radius:var(--radius-small);
+}
+
+.alert a:hover {
+    color: var(--accent-gold);
+}
+
+
+/* =========================================================
+   COMMENT BOX
+   ========================================================= */
+
+/* Comment Box Existing Comments */
+#commentBox {
+    background: var(--panel-bg-alt);
+    color: var(--text-main);
+    border: 2px solid var(--border-main) !important;
+    border-radius:var(--radius-small);
+}
+
+.comment:nth-child(odd) {
+    background-color: var(--panel-bg-alt);
+}
+
+.comment:nth-child(even) {
+    background-color: var(--panel-bg) !important;
+}
+
+#commentBox a {
+    color: var(--accent-gold);
+}
+
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+
+/* Comment Box Scrollbar */
+#commentBox::-webkit-scrollbar {
+    background-color: var(--panel-bg-alt);
+    border-radius:var(--radius-main);
+}
+
+#commentBox::-webkit-scrollbar-thumb {
+    background-color: var(--panel-bg);
+    border-radius:var(--radius-main);
+}
+
+
+/* Comment X Button */
+#commentBox .bad {
+    background: none;
+    background-color: var(--input-bg);
+    color: var(--text-main);
+    text-shadow: none;
+    border: 1px solid var(--border-main);
+    border-radius:var(--radius-none);
+}
+
+#commentBox .bad:hover {
+    background-color: var(--header-bg) !important;
+    border-color: var(--accent-gold) !important;
+    border-radius:var(--radius-none) !important;
+    color: var(--accent-gold) !important;
+}
+
+
+/* Make Comment Input Box */
+#makeComment #comment {
+    background-color: var(--input-bg);
+    border: 2px solid var(--border-main);
+    border-radius:var(--radius-small);
+    color: var(--text-main);
+}
+
+#makeComment #comment::placeholder {
+    color: var(--text-muted) !important;
+}
+
+
+/* Make Comment Post Button */
+#postComment {
+    background: var(--input-bg);
+    border: 2px solid var(--border-main);
+    border-radius:var(--radius-none);
+    color: var(--text-main);
+    text-shadow: none;
+}
+
+#postComment:hover {
+    background-color: var(--header-bg) !important;
+    border-color: var(--accent-gold) !important;
+    border-radius:var(--radius-none) !important;
+    color: var(--accent-gold) !important;
+}
+
+
+/* =========================================================
+   PRIDE ABOUT
+   ========================================================= */
+
+/* Pride About Area Text */
+#about,
+#about a {
+    color: var(--text-main);
+}
+
+
+/* Pride About Main Area */
+#about {
+    border: 2px solid var(--border-main);
+    border-radius:var(--radius-main);
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+
+/* Pride About Inner Areas */
+#about .top,
+#about .bottom {
+    background: var(--header-bg);
+}
+
+#about td .left {
+    background: var(--panel-bg-alt);
+}
+
+#about td .right {
+    background-color: var(--panel-bg);
+}
+
+#about a:hover {
+    color: var(--accent-gold);
+}
+
+
+/* =========================================================
+   PLAYER INFO
+   ========================================================= */
+
+/* Player Info Area Text and Links */
+#player,
+#player a {
+    color: var(--text-main);
+}
+
+
+/* Player Info Area */
+#player {
+    border: 2px solid var(--border-main);
+    border-radius:var(--radius-main);
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+#player .top {
+    background: var(--header-bg);
+}
+
+#player td.left {
+    background: var(--panel-bg-alt);
+}
+
+#player td .right {
+    background-color: var(--panel-bg);
+}
+
+#player a:hover {
+    color: var(--accent-gold);
+}
+
+
+/* =========================================================
+   DENS AND MOUNDS
+   ========================================================= */
+
+.cave-grid,
+.mound-grid {
+    background-color: var(--panel-bg-alt);
+    color: var(--text-main);
+    border-color: var(--border-main);
+    border-radius:var(--radius-main);
+}
+
+.cave-grid a,
+.mound-grid a {
+    color: var(--text-main);
+}
+
+.cave-grid a:hover,
+.mound-grid a:hover {
+    color: var(--accent-gold);
+}
+
+
+/* =========================================================
+   SPARRING
+   ========================================================= */
+
+#sparring {
+    color: var(--text-main);
+    background-color: var(--panel-bg-alt);
+    border: 2px solid var(--border-main);
+    border-radius:var(--radius-main);
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+#sparring th {
+    background-color: var(--header-bg);
+}
+
+#sparring .right_odd {
+    background: transparent;
+}
+
+
+/* Sparring Input Areas */
+#sparring select,
+#sparring input {
+    color: var(--text-main);
+    text-shadow: none;
+    background: none;
+    background-color: var(--input-bg);
+    box-shadow: none;
+    border: 2px solid var(--border-main);
+    border-radius:var(--radius-none);
+}
+
+#sparring input:hover,
+#sparring select:hover {
+    background-color: var(--header-bg) !important;
+    border-color: var(--accent-gold) !important;
+    border-radius:var(--radius-none) !important;
+    color: var(--accent-gold) !important;
+}
+
+
+/* =========================================================
+   FAPA
+   ========================================================= */
+
+.row,
+.row span {
+    color: var(--text-main) !important;
+}
+
+.row .feature {
+    background-color: var(--panel-bg);
+    border: 2px solid var(--border-main);
+    border-radius:var(--radius-main);
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.row .feature h3,
+.row .feature input,
+.row .feature select {
+    color: var(--text-main);
+    text-shadow: none;
+}
+
+.row .feature input,
+.row .feature select {
+    background: none;
+    background-color: var(--input-bg);
+    border: 2px solid var(--border-main);
+    border-radius:var(--radius-none);
+}
+
+.row .feature input:hover, .row .feature select:hover {
+    background-color: var(--header-bg) !important;
+    border-color: var(--accent-gold) !important;
+    border-radius:var(--radius-none) !important;
+    color: var(--accent-gold) !important;
+}
+
+/* =========================================================
+   ALLIES
+   ========================================================= */
+
+#allies,
+#allies a {
+    color: var(--text-main);
+}
+
+#allies {
+    background-color: var(--transparent);
+    border: 2px solid var(--border-main);
+    border-radius:var(--radius-main);
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+#allies .top,
+#allies .bottom {
+    background-color: var(--header-bg);
+}
+
+#allies .left {
+    display: none;
+}
+
+#allies a:hover {
+    color: var(--accent-gold);
+}
+
+
+/* =========================================================
+   CLANS
+   ========================================================= */
+
+#clans,
+#clans a {
+    color: var(--text-main);
+}
+
+#clans {
+    background-color: var(--transparent);
+    border: 2px solid var(--border-main);
+    border-radius:var(--radius-main);
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+#clans .top {
+    background-color: var(--header-bg);
+}
+
+#clans .left {
+    display: none;
+}
+
+#clans a:hover {
+    color: var(--accent-gold);
+}
+
+
+/* =========================================================
+   DYNASTIES
+   ========================================================= */
+
+.row.dynastycollection div .left {
+    background-color: var(--panel-bg-alt);
+    border: 2px solid var(--border-main);
+    border-radius:var(--radius-main);
+}
+
+.row.dynastycollection h3 {
+    color: var(--text-main);
+}
+
+
+/* =========================================================
+   LOGS
+   ========================================================= */
+
+.col.col-sm-4 .left {
+    background-color: var(--panel-bg-alt);
+    border: 2px solid var(--border-main);
+    border-radius:var(--radius-main);
+    color: var(--text-main);
+}
+
+
+/* =========================================================
+   EDIT DETAILS
+   ========================================================= */
+
+#editdetailspanel {
+    border: 2px solid var(--border-main);
+    border-radius:var(--radius-main);
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 0;
+}
+
+.table {
+    margin:0px;
+}
+
+.table:nth-child(3) {
+    border: 2px solid var(--border-main);
+    border-radius:var(--radius-main);
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 0;
+}
+
+.table th {
+    background-color: var(--header-bg);
+}
+
+.table th a {
+    color: var(--text-main) !important;
+}
+
+.table th a:hover {
+    color: var(--accent-gold) !important;
+}
+
+
+/* Expanded Details Panel */
+#editdetailspanel .left {
+    background: var(--panel-bg-alt);
+}
+
+#editdetailspanel .right {
+    background-color: var(--panel-bg);
+}
+
+#editdetailspanel .right textarea,
+#editdetailspanel .right input,
+#editdetailspanel .right select {
+    background-color: var(--input-bg);
+    border: 1px solid var(--border-main);
+    border-radius:var(--radius-none);
+    color: var(--text-main);
+}
+
+#editdetailspanel .right a {
+    color: var(--text-main);
+}
+
+#editdetailspanel .right a:hover {
+    color: var(--accent-gold);
+}
+
+#editdetailspanel .bottom {
+    background-color: var(--header-bg);
+}
+
+#editdetailspanel .bottom input {
+    background: var(--input-bg);
+    border: 2px solid var(--border-main);
+    border-radius:var(--radius-none);
+    text-shadow: none;
+    color: var(--text-main);
+}
+
+#editdetailspanel .bottom input:hover {
+    background-color: var(--header-bg) !important;
+    border-color: var(--accent-gold) !important;
+    border-radius:var(--radius-none) !important;
+    color: var(--accent-gold) !important;
+}
+
+
+/* =========================================================
+   ACCOUNT SETTINGS
+   ========================================================= */
+
+form .left:has(a[href*='/account-settings.php']) {
+    background-color: var(--header-bg);
+    border: 2px solid var(--border-main);
+}
+
+form .left a {
+    color: var(--text-main);
+}
+
+form .left a:hover {
+    color: var(--accent-gold);
+}
+
+
+/* =========================================================
+   SIDEBAR / PANELS
+   ========================================================= */
+
+#pageSidebar,
+#pageSidebar a,
+#pageSidebar h3 {
+    color: var(--text-main);
+}
+
+#pageSidebar a:hover {
+    color: var(--accent-gold);
+}
+
+
+/* Sidebar Inner Panels */
+.panel-body.small,
+.panel,
+.panel.panel-default {
+    color: var(--text-main);
+    background-color: var(--panel-bg-alt);
+    box-shadow: none !important;
+}
+
+.col-md-3 .panel {
+    border: 2px solid var(--border-main);
+    border-radius:var(--radius-main);
+}
+
+.clear.visible-xs.visible-sm {
+    border:none !important;
+}
+
+/* =========================================================
+   CHATBOX
+   ========================================================= */
+
+/* Chat Toggle Button */
+#btnToggleSidebarChat {
+    background: none;
+    background-color: var(--input-bg);
+    border: 2px solid var(--border-main);
+    border-radius:var(--radius-none);
+    color: var(--text-main);
+    text-shadow: none;
+}
+
+#chatMessageContainer {
+    border: 2px solid var(--border-main);
+    border-radius:var(--radius-main);
+}
+
+#btnToggleSidebarChat:hover {
+    background-color: var(--header-bg);
+    border-color: var(--accent-gold) !important;
+    border-radius:var(--radius-none);
+    color: var(--accent-gold);
+}
+
+
+/* Chat Text */
+#fra_chatContainer,
+#fra_chatContainer a,
+#fra_chatContainer span {
+    color: var(--text-main);
+}
+
+#fra_chatContainer a:hover {
+    color: var(--accent-gold);
+}
+
+#label_currentChannel {
+    border-radius:var(--radius-none) !important;
+}
+
+/* Chat Inputs / Buttons */
+#fra_chatContainer #label_currentChannel,
+#fra_chatContainer input,
+#fra_chatContainer #btnChatSend {
+    background: none;
+    background-color: var(--input-bg);
+    border: 2px solid var(--border-main);
+    border-radius:var(--radius-main);
+    color: var(--text-main);
+    text-shadow: none;
+}
+
+#fra_chatContainer input:hover {
+    background-color: var(--header-bg);
+    border-color: var(--accent-gold) !important;
+    border-radius:var(--radius-none);
+    color: var(--accent-gold);
+}
+
+#txtChatInput {
+    border: 2px solid var(--border-main) !important;
+    border-radius:var(--radius-none) !important;
+}
+
+#btnChatSend {
+    border-radius:var(--radius-none) !important;
+}
+
+#btnChatSend:hover {
+    background-color: var(--header-bg) !important;
+    border-color: var(--accent-gold) !important;
+    border-radius:var(--radius-none) !important;
+    color: var(--accent-gold) !important;
+}
+
+/* Alternating Chat Messages */
+.s-chat-message:nth-child(even),
+#chatMessagePinned {
+    background-color: var(--panel-bg-alt) !important;
+}
+
+.s-chat-message:nth-child(odd) {
+    background-color: var(--panel-bg);
+}
+
+
+/* Mod Message */
+.s-chat-message.s-chat-message__mod {
+    background: var(--mod-bg) !important;
+    color: var(--text-main);
+    border: none;
+    padding-left: 5px;
+}
+
+.s-chat-message.s-chat-message__mod span {
+    padding-left: 5px !important;
+}
+
+
+/* Chat Scrollbar */
+#chatMessageList::-webkit-scrollbar {
+    background-color: var(--panel-bg-alt);
+}
+
+#chatMessageList::-webkit-scrollbar-thumb {
+    background-color: var(--header-bg);
+    border-radius:var(--radius-main);
+}
+
+
+/* =========================================================
+   BUGBOX BUTTON
+   ========================================================= */
+
+.btn.btn-default.button {
+    background: none;
+    background-color: var(--input-bg);
+    border: 2px solid var(--border-main);
+    border-radius:var(--radius-none);
+    color: var(--text-main);
+    text-shadow: none;
+}
+
+.btn.btn-default.button:hover,
+.btn.btn-default.button:focus {
+    background-color: var(--header-bg);
+    border-color: var(--accent-gold);
+    border-radius:var(--radius-none);
+    color: var(--accent-gold);
+}
