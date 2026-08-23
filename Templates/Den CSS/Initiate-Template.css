@@ -1,35 +1,39 @@
 /* =========================================================
-   INITIATE TEMPLATE — QUICK CUSTOMIZATION
-   Change values in this section only.
+   INITIATE TEMPLATE
+   Blue + White + Gold
+   ========================================================= */
+
+
+/* =========================================================
+   QUICK CUSTOMIZATION
+   Change these values to recolor the template.
    ========================================================= */
 
 :root {
 
-    /* ---------- COLOR PALETTE: DARK > LIGHT ---------- */
-
-    /* Darkest blue — inputs, alternating boxes, buttons, etc. */
-    --color-dark: #053b67ab;
-
-    /* Main blue — headers, boxes, alternating sections, etc. */
-    --color-main: #007ba1ab;
-
-    /* Solid version of main blue — navbar hover/mobile button */
-    --color-main-solid: #007ba1;
-
-    /* Text */
-    --color-text: #ffffff;
-
-    /* Borders */
-    --color-border: #ffffffab;
-
-    /* Moderator chat messages */
-    --color-mod: #000000ab;
-
-
-    /* ---------- BACKGROUND ---------- */
-
-    --page-background-color: #007ba1;
+    /* ===== BACKGROUND ===== */
+    --page-background-color: #007BA1;
     --page-background-image: url("https://i.imgur.com/s2Di3zB.jpeg");
+
+    /* ===== TRANSPARENT ===== */
+    --transparent: transparent;
+    
+    /* ===== MAIN BLUES ===== */
+    --panel-bg: #0A6F96;
+    --panel-bg-alt: #084F73;
+    --header-bg: #09597F;
+    --input-bg: #073F5C;
+
+    /* ===== TEXT ===== */
+    --text-main: #FFFFFF;
+    --text-muted: #D9EDF5;
+
+    /* ===== GOLD ===== */
+    --border-main: #D4A84F;
+    --accent-gold: #E6C97A;
+
+    /* ===== SPECIAL ===== */
+    --mod-bg: #000000AB;
 }
 
 
@@ -57,7 +61,11 @@ body {
 }
 
 .topbar a {
-    color: var(--color-text) !important;
+    color: var(--text-main) !important;
+}
+
+.topbar a:hover {
+    color: var(--accent-gold) !important;
 }
 
 
@@ -85,27 +93,31 @@ body {
 }
 
 .navbar.navbar-default a {
-    color: var(--color-text) !important;
+    color: var(--text-main) !important;
 }
 
 .navbar.navbar-default a:hover {
-    background: var(--color-main) !important;
+    background: var(--header-bg) !important;
+    color: var(--accent-gold) !important;
 }
 
 .navbar-brand.visible-lg.visible-md:hover {
     background: none !important;
 }
 
+
 /* Navbar Collapse Button when Small */
 .navbar button {
-    background-color: var(--color-main-solid) !important;
-    border: 2px solid var(--color-border) !important;
+    background-color: var(--input-bg) !important;
+    border: 2px solid var(--border-main) !important;
 }
 
 .navbar button:hover,
 .navbar button:focus {
-    background-color: var(--color-dark) !important;
+    background-color: var(--header-bg) !important;
+    border-color: var(--accent-gold) !important;
 }
+
 
 /* Navbar Links when Small and Expanded */
 .navbar-collapse.collapse.in {
@@ -125,12 +137,17 @@ body {
 
 .breadcrumb a,
 .breadcrumb-item.active {
-    color: var(--color-text);
+    color: var(--text-main);
 }
+
+.breadcrumb a:hover {
+    color: var(--accent-gold);
+}
+
 
 /* ____'s Den */
 #pageContainer h1 {
-    color: var(--color-text);
+    color: var(--accent-gold);
     text-align: center;
 }
 
@@ -142,18 +159,25 @@ body {
 /* All Alerts Text and Links */
 .alert,
 .alert a {
-    color: var(--color-text);
+    color: var(--text-main);
 }
+
 
 /* Red Alerts Background */
 .alert-danger {
-    background-color: var(--color-dark);
-    border: 2px solid var(--color-border);
+    background-color: var(--panel-bg-alt);
+    border: 2px solid var(--border-main);
 }
 
-/* Green Alerts Background */
+
+/* General / Green Alerts Background */
 .alert {
-    background-color: var(--color-main);
+    background-color: var(--panel-bg);
+    border-color: var(--border-main);
+}
+
+.alert a:hover {
+    color: var(--accent-gold);
 }
 
 
@@ -163,61 +187,74 @@ body {
 
 /* Comment Box Existing Comments */
 #commentBox {
-    background: none;
-    color: var(--color-text);
-    border: 2px solid var(--color-border) !important;
+    background: var(--panel-bg-alt);
+    color: var(--text-main);
+    border: 2px solid var(--border-main) !important;
 }
 
 .comment:nth-child(odd) {
-    background-color: var(--color-dark);
+    background-color: var(--panel-bg-alt);
 }
 
 .comment:nth-child(even) {
-    background-color: var(--color-main) !important;
+    background-color: var(--panel-bg) !important;
 }
 
-#commentBox a,
-.text-muted {
-    color: var(--color-text);
+#commentBox a {
+    color: var(--accent-gold);
 }
+
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
 
 /* Comment Box Scrollbar */
 #commentBox::-webkit-scrollbar {
-    background-color: var(--color-main);
+    background-color: var(--panel-bg-alt);
+    border-radius:10px;
 }
 
 #commentBox::-webkit-scrollbar-thumb {
-    background-color: var(--color-dark);
+    background-color: var(--panel-bg);
     border-radius: 5px;
 }
+
 
 /* Comment X Button */
 #commentBox .bad {
     background: none;
-    background-color: var(--color-dark);
-    color: var(--color-text);
+    background-color: var(--input-bg);
+    color: var(--text-main);
     text-shadow: none;
-    border: 2px solid var(--color-border);
+    border: 1px solid var(--border-main);
 }
+
 
 /* Make Comment Input Box */
 #makeComment #comment {
-    background-color: var(--color-dark);
-    border: 2px solid var(--color-border);
+    background-color: var(--input-bg);
+    border: 2px solid var(--border-main);
     border-radius: 4px;
-    color: var(--color-text);
+    color: var(--text-main);
 }
 
 #makeComment #comment::placeholder {
-    color: var(--color-text) !important;
+    color: var(--text-muted) !important;
 }
+
 
 /* Make Comment Post Button */
 #postComment {
-    background: var(--color-dark);
-    border: 2px solid var(--color-border);
-    color: var(--color-text);
+    background: var(--input-bg);
+    border: 2px solid var(--border-main);
+    color: var(--text-main);
     text-shadow: none;
+}
+
+#postComment:hover {
+    background: var(--header-bg);
+    color: var(--accent-gold);
 }
 
 
@@ -228,27 +265,33 @@ body {
 /* Pride About Area Text */
 #about,
 #about a {
-    color: var(--color-text);
+    color: var(--text-main);
 }
 
-/* Pride About Main Back Area */
+
+/* Pride About Main Area */
 #about {
-    border: 2px solid var(--color-border);
+    border: 2px solid var(--border-main);
     border-radius: 4px;
 }
+
 
 /* Pride About Inner Areas */
 #about .top,
 #about .bottom {
-    background: var(--color-main);
+    background: var(--header-bg);
 }
 
 #about td .left {
-    background: var(--color-dark);
+    background: var(--panel-bg-alt);
 }
 
 #about td .right {
-    background-color: var(--color-main);
+    background-color: var(--panel-bg);
+}
+
+#about a:hover {
+    color: var(--accent-gold);
 }
 
 
@@ -259,25 +302,30 @@ body {
 /* Player Info Area Text and Links */
 #player,
 #player a {
-    color: var(--color-text);
+    color: var(--text-main);
 }
+
 
 /* Player Info Area */
 #player {
-    border: 2px solid var(--color-border);
+    border: 2px solid var(--border-main);
     border-radius: 4px;
 }
 
 #player .top {
-    background: var(--color-main);
+    background: var(--header-bg);
 }
 
 #player td.left {
-    background: var(--color-dark);
+    background: var(--panel-bg-alt);
 }
 
 #player td .right {
-    background-color: var(--color-main);
+    background-color: var(--panel-bg);
+}
+
+#player a:hover {
+    color: var(--accent-gold);
 }
 
 
@@ -287,8 +335,19 @@ body {
 
 .cave-grid,
 .mound-grid {
-    background-color: var(--color-dark);
-    color: var(--color-text);
+    background-color: var(--panel-bg-alt);
+    color: var(--text-main);
+    border-color: var(--border-main);
+}
+
+.cave-grid a,
+.mound-grid a {
+    color: var(--text-main);
+}
+
+.cave-grid a:hover,
+.mound-grid a:hover {
+    color: var(--accent-gold);
 }
 
 
@@ -297,29 +356,36 @@ body {
    ========================================================= */
 
 #sparring {
-    border: 2px solid var(--color-border);
+    border: 2px solid var(--border-main);
     border-radius: 4px;
-    color: var(--color-text);
+    color: var(--text-main);
+    background-color: var(--panel-bg-alt);
 }
 
 #sparring th {
-    background-color: var(--color-main);
+    background-color: var(--header-bg);
 }
 
 #sparring .right_odd {
     background: transparent;
 }
 
+
 /* Sparring Input Areas */
 #sparring select,
 #sparring input {
-    color: var(--color-text);
+    color: var(--text-main);
     text-shadow: none;
     background: none;
-    background-color: var(--color-main);
+    background-color: var(--input-bg);
     box-shadow: none;
-    border: 2px solid var(--color-border);
+    border: 2px solid var(--border-main);
     border-radius: 4px;
+}
+
+#sparring input:hover,
+#sparring select:hover {
+    border-color: var(--accent-gold);
 }
 
 
@@ -329,26 +395,26 @@ body {
 
 .row,
 .row span {
-    color: var(--color-text) !important;
+    color: var(--text-main) !important;
 }
 
 .row .feature {
-    background-color: var(--color-main);
-    border: 2px solid var(--color-border);
+    background-color: var(--panel-bg);
+    border: 2px solid var(--border-main);
 }
 
 .row .feature h3,
 .row .feature input,
 .row .feature select {
-    color: var(--color-text);
+    color: var(--text-main);
     text-shadow: none;
 }
 
 .row .feature input,
 .row .feature select {
     background: none;
-    background-color: var(--color-dark);
-    border: 2px solid var(--color-border);
+    background-color: var(--input-bg);
+    border: 2px solid var(--border-main);
 }
 
 
@@ -358,20 +424,25 @@ body {
 
 #allies,
 #allies a {
-    color: var(--color-text);
+    color: var(--text-main);
 }
 
 #allies {
-    border: 2px solid var(--color-border);
+    border: 2px solid var(--border-main);
+    background-color: var(--transparent);
 }
 
 #allies .top,
 #allies .bottom {
-    background-color: var(--color-main);
+    background-color: var(--header-bg);
 }
 
 #allies .left {
     display: none;
+}
+
+#allies a:hover {
+    color: var(--accent-gold);
 }
 
 
@@ -381,19 +452,24 @@ body {
 
 #clans,
 #clans a {
-    color: var(--color-text);
+    color: var(--text-main);
 }
 
 #clans {
-    border: 2px solid var(--color-border);
+    border: 2px solid var(--border-main);
+    background-color: var(--transparent);
 }
 
 #clans .top {
-    background-color: var(--color-main);
+    background-color: var(--header-bg);
 }
 
 #clans .left {
     display: none;
+}
+
+#clans a:hover {
+    color: var(--accent-gold);
 }
 
 
@@ -402,12 +478,12 @@ body {
    ========================================================= */
 
 .row.dynastycollection div .left {
-    background-color: var(--color-main);
-    border: 2px solid var(--color-border);
+    background-color: var(--panel-bg-alt);
+    border: 2px solid var(--border-main);
 }
 
 .row.dynastycollection h3 {
-    color: var(--color-text);
+    color: var(--text-main);
 }
 
 
@@ -416,9 +492,9 @@ body {
    ========================================================= */
 
 .col.col-sm-4 .left {
-    background-color: var(--color-main);
-    border: 2px solid var(--color-border);
-    color: var(--color-text);
+    background-color: var(--panel-bg-alt);
+    border: 2px solid var(--border-main);
+    color: var(--text-main);
 }
 
 
@@ -427,48 +503,61 @@ body {
    ========================================================= */
 
 #editdetailspanel {
-    border: 2px solid var(--color-border);
+    border: 2px solid var(--border-main);
 }
 
 .table {
-    border: 2px solid var(--color-border);
+    border: 2px solid var(--border-main);
     margin: 0;
 }
 
 .table th {
-    background-color: var(--color-main);
+    background-color: var(--header-bg);
 }
 
 .table th a {
-    color: var(--color-text) !important;
+    color: var(--text-main) !important;
 }
+
+.table th a:hover {
+    color: var(--accent-gold) !important;
+}
+
 
 /* Expanded Details Panel */
 #editdetailspanel .left {
-    background: var(--color-dark);
+    background: var(--panel-bg-alt);
+}
+
+#editdetailspanel .right {
+    background-color: var(--panel-bg);
 }
 
 #editdetailspanel .right textarea,
 #editdetailspanel .right input,
 #editdetailspanel .right select {
-    background-color: var(--color-main);
-    border: none;
-    color: var(--color-text);
+    background-color: var(--input-bg);
+    border: 1px solid var(--border-main);
+    color: var(--text-main);
 }
 
 #editdetailspanel .right a {
-    color: var(--color-text);
+    color: var(--text-main);
+}
+
+#editdetailspanel .right a:hover {
+    color: var(--accent-gold);
 }
 
 #editdetailspanel .bottom {
-    background-color: var(--color-main);
+    background-color: var(--header-bg);
 }
 
 #editdetailspanel .bottom input {
-    background: var(--color-dark);
-    border: 2px solid var(--color-border);
+    background: var(--input-bg);
+    border: 2px solid var(--border-main);
     text-shadow: none;
-    color: var(--color-text);
+    color: var(--text-main);
 }
 
 
@@ -476,12 +565,17 @@ body {
    ACCOUNT SETTINGS
    ========================================================= */
 
-form .left {
-    background-color: var(--color-main);
+form .left:has(a[href*='/account-settings.php']) {
+    background-color: var(--header-bg);
+    border: 2px solid var(--border-main);
 }
 
 form .left a {
-    color: var(--color-text);
+    color: var(--text-main);
+}
+
+form .left a:hover {
+    color: var(--accent-gold);
 }
 
 
@@ -492,71 +586,95 @@ form .left a {
 #pageSidebar,
 #pageSidebar a,
 #pageSidebar h3 {
-    color: var(--color-text);
+    color: var(--text-main);
 }
 
+#pageSidebar a:hover {
+    color: var(--accent-gold);
+}
+
+
+/* Sidebar Inner Panels */
 .panel-body.small,
 .panel,
 .panel.panel-default {
-    color: var(--color-text);
-    background-color: var(--color-dark);
+    color: var(--text-main);
+    background-color: var(--panel-bg-alt);
     box-shadow: none !important;
 }
 
-.panel,
-.panel.panel-default {
-    border: 2px solid var(--color-border);
+.col-md-3 .panel {
+    border: 2px solid var(--border-main);
 }
 
-.panel p {
-    display: none;
-}
-
-.clear.visible-xs.visible-sm {
-    border: none !important;
-}
 
 
 /* =========================================================
    CHATBOX
    ========================================================= */
 
+/* Chat Toggle Button */
 #btnToggleSidebarChat {
     background: none;
-    background-color: var(--color-dark);
-    border: 2px solid var(--color-border);
-    color: var(--color-text);
+    background-color: var(--input-bg);
+    border: 2px solid var(--border-main);
+    color: var(--text-main);
     text-shadow: none;
 }
 
+#chatMessageContainer {
+    border: 2px solid var(--border-main);
+}}
+
+#btnToggleSidebarChat:hover {
+    background-color: var(--header-bg);
+    color: var(--accent-gold);
+}
+
+
+/* Chat Text */
 #fra_chatContainer,
 #fra_chatContainer a,
 #fra_chatContainer span {
-    color: var(--color-text);
+    color: var(--text-main);
 }
 
+#fra_chatContainer a:hover {
+    color: var(--accent-gold);
+}
+
+
+/* Chat Inputs / Buttons */
 #fra_chatContainer #label_currentChannel,
 #fra_chatContainer input,
 #fra_chatContainer #btnChatSend {
     background: none;
-    background-color: var(--color-dark);
-    border: 2px solid var(--color-border);
-    color: var(--color-text);
+    background-color: var(--input-bg);
+    border: 2px solid var(--border-main);
+    color: var(--text-main);
     text-shadow: none;
 }
 
+#txtChatInput {
+    border: 2px solid var(--border-main) !important;
+}
+
+
+/* Alternating Chat Messages */
 .s-chat-message:nth-child(even),
 #chatMessagePinned {
-    background-color: var(--color-dark) !important;
+    background-color: var(--panel-bg-alt) !important;
 }
 
 .s-chat-message:nth-child(odd) {
-    background-color: var(--color-main);
+    background-color: var(--panel-bg);
 }
 
+
+/* Mod Message */
 .s-chat-message.s-chat-message__mod {
-    background: var(--color-mod) !important;
-    color: var(--color-text);
+    background: var(--mod-bg) !important;
+    color: var(--text-main);
     border: none;
     padding-left: 5px;
 }
@@ -565,12 +683,14 @@ form .left a {
     padding-left: 5px !important;
 }
 
+
+/* Chat Scrollbar */
 #chatMessageList::-webkit-scrollbar {
-    background-color: var(--color-main);
+    background-color: var(--panel-bg-alt);
 }
 
 #chatMessageList::-webkit-scrollbar-thumb {
-    background-color: var(--color-dark);
+    background-color: var(--header-bg);
     border-radius: 5px;
 }
 
@@ -581,8 +701,15 @@ form .left a {
 
 .btn.btn-default.button {
     background: none;
-    background-color: var(--color-dark);
-    border: 2px solid var(--color-border);
-    color: var(--color-text);
+    background-color: var(--input-bg);
+    border: 2px solid var(--border-main);
+    color: var(--text-main);
     text-shadow: none;
+}
+
+.btn.btn-default.button:hover,
+.btn.btn-default.button:focus {
+    background-color: var(--header-bg);
+    border-color: var(--accent-gold);
+    color: var(--accent-gold);
 }
