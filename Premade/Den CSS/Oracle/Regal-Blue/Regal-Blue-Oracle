@@ -936,10 +936,10 @@ form .left a:hover {
 
     /*Cursor*/
 body {
-    cursor:url('https://i.imgur.com/eqQyMCj.png'), auto;
+    cursor:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Oracle/Regal-Blue/mouse.png?raw=true'), auto;
 }
 
 /*Hover Cursor*/
 a, button, input, select, textarea {
-    cursor: url("https://i.imgur.com/eqQyMCj.png"), pointer !important;
+    cursor: url("https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Oracle/Regal-Blue/mouse.png?raw=true"), pointer !important;
 }
