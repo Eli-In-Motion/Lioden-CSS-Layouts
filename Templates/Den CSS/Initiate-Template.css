@@ -546,9 +546,18 @@ body {
 
 #editdetailspanel {
     border: 2px solid var(--border-main);
+    border-radius:var(--radius-main);
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 0;
 }
 
 .table {
+    margin:0px;
+}
+
+.table:nth-child(3) {
     border: 2px solid var(--border-main);
     border-radius:var(--radius-main);
     overflow: hidden;
@@ -656,7 +665,9 @@ form .left a:hover {
     border-radius:var(--radius-main);
 }
 
-
+.clear.visible-xs.visible-sm {
+    border:none !important;
+}
 
 /* =========================================================
    CHATBOX
