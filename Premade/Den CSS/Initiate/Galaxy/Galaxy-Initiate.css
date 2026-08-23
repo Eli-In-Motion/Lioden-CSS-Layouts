@@ -12,7 +12,7 @@
 :root {
 
     /* ===== BACKGROUND ===== */
-    --page-background-color: #007BA1;
+    --page-background-color: #000000;
     --page-background-image: url("https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Initiate/Galaxy/pexels-pixabay-2150.jpg?raw=true");
 
     /* ===== TRANSPARENT ===== */
@@ -25,6 +25,8 @@
     --input-bg: #636f8787;
 
     /* ===== TEXT ===== */
+    --text-light: #F7F8FC;
+    --text-dark: #2B3550;
     --text-main: #FFFFFF;
     --text-muted: #d1bdca;
 
@@ -171,7 +173,7 @@ body {
 /* All Alerts Text and Links */
 .alert,
 .alert a {
-    color: var(--text-main);
+    color: var(--text-dark);
 }
 
 
@@ -201,10 +203,11 @@ body {
 
 /* Comment Box Existing Comments */
 #commentBox {
-    background: var(--panel-bg-alt);
-    color: var(--text-main);
+    /* background: var(--panel-bg-alt); */
+    color: var(--text-dark);
     border: var(--border-size-big) solid var(--border-main) !important;
     border-radius:var(--radius-small);
+    background-color:var(--transparent)
 }
 
 .comment:nth-child(odd) {
@@ -259,7 +262,7 @@ body {
     background-color: var(--input-bg);
     border: var(--border-size-small) solid var(--border-main);
     border-radius:var(--radius-small);
-    color: var(--text-main);
+    color: var(--text-light);
 }
 
 #makeComment #comment::placeholder {
@@ -272,7 +275,7 @@ body {
     background: var(--input-bg);
     border: var(--border-size-small) solid var(--border-main);
     border-radius:var(--radius-none);
-    color: var(--text-main);
+    color: var(--text-light);
     text-shadow: none;
 }
 
@@ -291,7 +294,11 @@ body {
 /* Pride About Area Text */
 #about,
 #about a {
-    color: var(--text-main);
+    color: var(--text-dark);
+}
+
+#about .top a, #about .bottom a {
+    color:var(--text-light);
 }
 
 
@@ -331,7 +338,7 @@ body {
 /* Player Info Area Text and Links */
 #player,
 #player a {
-    color: var(--text-main);
+    color: var(--text-light);
 }
 
 
@@ -346,14 +353,17 @@ body {
 
 #player .top {
     background: var(--header-bg);
+    color:var(--text-light);
 }
 
 #player td.left {
     background: var(--panel-bg-alt);
+    color:var(--text-dark);
 }
 
 #player td .right {
     background-color: var(--panel-bg);
+    color:var(--text-dark)
 }
 
 #player a:hover {
@@ -368,7 +378,7 @@ body {
 .cave-grid,
 .mound-grid {
     background-color: var(--panel-bg-alt);
-    color: var(--text-main);
+    color: var(--text-dark);
     border:var(--border-size-small) solid var(--border-main);
     border-radius:var(--radius-main);
 }
@@ -389,7 +399,7 @@ body {
    ========================================================= */
 
 #sparring {
-    color: var(--text-main);
+    color:var(--text-dark);
     background-color: var(--panel-bg-alt);
     border: var(--border-size-big) solid var(--border-main);
     border-radius:var(--radius-main);
@@ -400,17 +410,22 @@ body {
 
 #sparring th {
     background-color: var(--header-bg);
+    color:var(--text-light);
 }
 
 #sparring .right_odd {
     background: transparent;
 }
 
+#sparring .right_odd span {
+    color:var(--text-dark) !important;
+}
+
 
 /* Sparring Input Areas */
 #sparring select,
 #sparring input {
-    color: var(--text-main);
+    color: var(--text-light);
     text-shadow: none;
     background: none;
     background-color: var(--input-bg);
@@ -434,7 +449,7 @@ body {
 
 .row,
 .row span {
-    color: var(--text-main) !important;
+    color: var(--text-light) !important;
 }
 
 .row .feature {
@@ -449,7 +464,7 @@ body {
 .row .feature h3,
 .row .feature input,
 .row .feature select {
-    color: var(--text-main);
+    color: var(--text-light);
     text-shadow: none;
 }
 
@@ -542,7 +557,7 @@ body {
 }
 
 .row.dynastycollection h3 {
-    color: var(--text-main);
+    color: var(--text-dark);
 }
 
 
@@ -554,7 +569,7 @@ body {
     background-color: var(--panel-bg-alt);
     border: var(--border-size-small) solid var(--border-main);
     border-radius:var(--radius-main);
-    color: var(--text-main);
+    color: var(--text-dark);
 }
 
 
@@ -589,7 +604,7 @@ body {
 }
 
 .table th a {
-    color: var(--text-main) !important;
+    color: var(--text-light) !important;
 }
 
 .table th a:hover {
@@ -612,11 +627,11 @@ body {
     background-color: var(--input-bg);
     border: 1px solid var(--border-main);
     border-radius:var(--radius-none);
-    color: var(--text-main);
+    color: var(--text-light);
 }
 
 #editdetailspanel .right a {
-    color: var(--text-main);
+    color: var(--text-dark);
 }
 
 #editdetailspanel .right a:hover {
@@ -726,6 +741,7 @@ form .left a:hover {
 #fra_chatContainer a,
 #fra_chatContainer span {
     color: var(--text-main);
+    overflow:hidden;
 }
 
 #fra_chatContainer a:hover {
@@ -743,7 +759,7 @@ form .left a:hover {
     background: none;
     background-color: var(--input-bg);
     border: 1px solid var(--border-main);
-    border-radius:var(--radius-main);
+    /* border-radius:var(--radius-main); */
     color: var(--text-main);
     text-shadow: none;
 }
@@ -755,9 +771,24 @@ form .left a:hover {
     color: var(--accent-gold);
 }
 
+#txtChatContainer {
+    margin-right:1px
+}
+
 #txtChatInput {
     border: 1px solid var(--border-main) !important;
     border-radius:var(--radius-none) !important;
+}
+
+#txtChatInput:hover {
+    background-color: var(--header-bg);
+    border-color: var(--accent-gold) !important;
+    border-radius:var(--radius-none);
+    color: var(--accent-gold);
+}
+
+.emoteInput {
+    margin-right:1px;
 }
 
 #btnChatSend {
