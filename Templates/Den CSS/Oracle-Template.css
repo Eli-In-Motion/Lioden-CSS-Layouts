@@ -49,5 +49,8 @@ a, button {
 
 /*Add to Bio Box CSS to make them scrollable
     overflow-x:hidden;
-    overflow-y:scroll;
-*/
+    overflow-y:scroll;*/
+/*Add to Bio Boxes to hide scrollbar
+    .BioBottomRight::-webkit-scrollbar {
+    display:none;
+    }*/
