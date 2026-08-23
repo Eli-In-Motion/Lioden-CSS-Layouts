@@ -978,3 +978,99 @@ body {
 a, button {
     cursor: url("https://cdn.cursors-4u.net/css-previews/shiny-gold-star-0cad57e3-css.webp"), pointer;
 }
+
+/*SB Icon*/
+body > div.container.topbar > ul > li:nth-child(2) > a > img {
+    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Priestess/Galaxy/crescent-moon.png?raw=true');
+    width:20px;
+    height:20px;
+    object-fit:contain
+}
+
+/*GB Icon*/
+body > div.container.topbar > ul > li:nth-child(3) > a > img {
+    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Priestess/Galaxy/sun.png?raw=true');
+    width:20px;
+    height:20px;
+    object-fit:contain;
+}
+
+/*Lioden Icon*/
+body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
+    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Priestess/Galaxy/Lioden-logo-full-2%20(3).png?raw=true');
+    width:192px;
+    height:120px;
+    object-fit:contain;
+}
+
+/*King Image*/
+.lion-image-block img {
+    content:url('https://static.lioden.com/images/npc/interstellar/intro4.png');
+    width:200px;
+    height:150px;
+}
+
+/*VIP Money Star*/
+#player .center.h3 img {
+    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Priestess/Galaxy/shooting-star.png?raw=true');
+    width:30px;
+    height:30px;
+    object-fit:contain;
+}
+
+/*Refer a Fried Plus Sign*/
+#player .center.xlarge a:nth-child(1) img, #player .center.xlarge a:nth-child(3) img {
+    visibility:hidden;
+    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/game-coin.png?raw=true');
+    width:24px;
+    height:24px;
+    object-fit:contain;
+}
+
+#fraOrganizationBlock > div:nth-child(-n + 3) > a > div > img {
+    visibility:hidden;
+}
+
+#fraOrganizationBlock > div:nth-child(-n + 3) > a > div {
+    background-image:url('https://static.lioden.com/images/explorenew/celestial/eridaniplanet.png');
+    background-size:cover;
+}
+
+/*All Personal Caves*/
+#fraCaveList img {
+    visibility:hidden;
+}
+
+#fraCaveList div div {
+    background-image:url('https://static.lioden.com/images/explorenew/celestial/dyingblackdwarf.png');
+    background-size:cover;
+}
+
+/*ALL Beetle Mounds Together*/
+.mound-grid img {
+    visibility:hidden;
+}
+
+.mound-grid {
+    background-image:url('https://static.lioden.com/images/explorenew/celestial/avemaria.png');
+    background-size:cover;
+}
+
+/*I DO NOT AND WILL NOT CHANGE CLAN IMAGES*/
+
+/*ALL Dynasty, Achievments, Showcase, Beetle Book Images*/
+.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist img {
+    visibility:hidden;
+}
+
+.row.dynastycollection > div:nth-child(-n+2) .left {
+    background-image:url('https://static.lioden.com/images/dynamic/backgrounds/birthgalaxy.png');
+    background-size:355px 150px;
+    background-position-y:center;
+}
+
+.row.dynastycollection > div:nth-child(n+3) .left {
+    background-image:url('https://static.lioden.com/images/dynamic/backgrounds/caballuswings.png');
+    background-size:100%;
+    background-position-y:center;
+}
