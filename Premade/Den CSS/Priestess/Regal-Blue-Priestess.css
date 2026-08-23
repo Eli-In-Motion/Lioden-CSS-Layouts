@@ -1009,10 +1009,8 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
 }
 
 #fraOrganizationBlock > div:nth-child(-n + 3) > a > div {
-    background-image:url('https://static.lioden.com/images/dynamic/backgrounds/galaxy.png');
-    background-size:260px 150px;
-    width:260px;
-    height:91.23px;
+    background-image:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Priestess/pexels-turgay-koca-405356598-15314538.jpg?raw=true');
+    background-size:cover;
 }
 
 /*All Personal Caves*/
@@ -1021,8 +1019,8 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
 }
 
 #fraCaveList div div {
-    background-image:url('https://static.lioden.com/images/dynamic/backgrounds/FullMoonBG.png');
-    background-size:260px 160.8px;
+    background-image:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Priestess/pexels-turgay-koca-405356598-15314646.jpg?raw=true');
+    background-size:cover;
 }
 
 /*ALL Beetle Mounds Together*/
@@ -1031,8 +1029,8 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
 }
 
 .mound-grid {
-    background-image:url('https://static.lioden.com/images/dynamic/backgrounds/eclipse.png');
-    background-size:186.66px 121.6px;
+    background-image:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Priestess/pexels-turgay-koca-405356598-15307641.jpg?raw=true');
+    background-size:cover;
 }
 
 /*I DO NOT AND WILL NOT CHANGE CLAN IMAGES*/
@@ -1043,11 +1041,11 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
 }
 
 .row.dynastycollection > div:nth-child(-n+2) .left {
-    background-image:url('https://static.lioden.com/images/dynamic/backgrounds/PerseidStormBG.png');
-    background-size:320px 150px
+    background-image:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Priestess/pexels-turgay-koca-405356598-15309534.jpg?raw=true');
+    background-size:cover;
 }
 
 .row.dynastycollection > div:nth-child(n+3) .left {
-    background-image:url('https://static.lioden.com/images/dynamic/backgrounds/PerseidStormBG.png');
+    background-image:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Priestess/pexels-turgay-koca-405356598-15314646.jpg?raw=true');
     background-size:320px 95.2px
 }
