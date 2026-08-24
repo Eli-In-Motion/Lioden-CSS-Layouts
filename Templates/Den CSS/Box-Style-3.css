@@ -4,7 +4,6 @@
 <div class="BioTopLeft">Top Left Large Div</div> <div class="BioTopRight">Top Right Skinny Div</div><div class="BioBottom">Bottom Long Div</div>
 </div>*/
 
-
 .Bio {
     display:grid;
     grid-template-columns: 3fr 1fr;
@@ -20,8 +19,7 @@
     background:blue;
     grid-column:1/2;
     border-radius:10px;
-    overflow-x:hidden;
-    overflow-y:scroll;
+    overflow:hidden;
 }
 
 .BioTopLeft::-webkit-scrollbar {
@@ -31,8 +29,7 @@
 .BioTopRight {
     background:pink;
     border-radius:10px;
-    overflow-x:hidden;
-    overflow-y:scroll;
+    overflow:hidden;
 }
 
 .BioTopRight::-webkit-scrollbar {
