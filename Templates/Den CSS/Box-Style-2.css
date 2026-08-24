@@ -25,8 +25,7 @@
 .BioLeft {
     background:blue;
     border-radius:10px;
-    overflow-x:hidden;
-    overflow-y:scroll;
+    overflow:hidden;
 }
 
 .BioLeft::-webkit-scrollbar {
@@ -36,8 +35,7 @@
 .BioRight {
     background:pink;
     border-radius:10px;
-    overflow-x:hidden;
-    overflow-y:scroll;
+    overflow:hidden;
 }
 
 .BioRight::-webkit-scrollbar {
