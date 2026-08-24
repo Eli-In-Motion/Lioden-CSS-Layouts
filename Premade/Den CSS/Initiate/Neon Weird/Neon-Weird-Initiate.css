@@ -13,39 +13,39 @@
     --bg-page-image:url("https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Initiate/Neon%20Weird/pexels-dan-parlante-3850444-5719236.jpg?raw=true");
     
     /* ===== BACKGROUND COLORS ===== */
-    --bg-panel-light:#55b9c9c9;
-    --bg-panel-mid:#3ca9bfc9;
-    --bg-panel-dark:#2aa1b3c9;
-    --bg-header-light:#64589dc9;
-    --bg-header-mid:#504179c9;
-    --bg-header-dark:#423066c9;
-    --bg-input-light:#64589d;
-    --bg-input-mid:#504179;
-    --bg-input-dark:#423066;
+    --bg-panel-light:#000642c9;
+    --bg-panel-mid:#03052ec9;
+    --bg-panel-dark:#000000c9;
+    --bg-header-light:#0e5777c9;
+    --bg-header-mid:#3380a1c9;
+    --bg-header-dark:#1e5f7ac9;
+    --bg-input-light:#00586ec9;
+    --bg-input-mid:#5c96a6c9;
+    --bg-input-dark:#3f7483c9;
 
     /* ===== TEXT ===== */
     --text-light:#f5f3f4;
     --text-mid:#503059;
-    --text-dark: #504179;
-    --text-muted-light:#fbf4cd;
-    --text-muted-mid:#f3e494;
-    --text-muted-dark:#ead565;
+    --text-dark: #000642;
+    --text-muted-light:#b2d9df;
+    --text-muted-mid:#82b5bd;
+    --text-muted-dark:#578d96;
 
     /* ===== BORDERS ===== */ 
-    --border-color-main:#f2f2f5;
-    --border-color-alt:#55b9c9;
-    --border-size-big:4px;
-    --border-size-small:3px;
+    --border-color-main:#55b9c9;
+    --border-color-alt:#f2f2f5;
+    --border-size-big:3px;
+    --border-size-small:1px;
     --radius-big:26px;
     --radius-small:13px;
     --radius-none:0px;
 
     /* ===== SPECIAL ===== */
-    --bg-mod:#4230668a;
-    --text-mod:#504179;
-    --accent-color-light:#fbf4cd;
-    --accent-color-mid:#f3e494;
-    --accent-color-dark:#ead565;
+    --bg-mod:#55b9c9c9;
+    --text-mod:#000642;
+    --accent-color-light:#c9e4fb;
+    --accent-color-mid:#91ccff;
+    --accent-color-dark:#64d7ea;
 }
 
 /* =========================================================
@@ -179,7 +179,7 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 
 /* Red Alerts Background */
 .alert-danger {
-    background-color: var(--bg-panel-dark) !important;
+    background-color: var(--bg-panel-mid) !important;
     border: var(--border-size-small) solid var(--border-color-main);
     border-radius:var(--radius-small);
 }
