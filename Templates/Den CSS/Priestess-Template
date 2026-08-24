@@ -1,3 +1,7 @@
+/* =========================================================
+   PRIESTESS
+   ========================================================= */
+
 /*SB Icon*/
 body > div.container.topbar > ul > li:nth-child(2) > a > img {
     content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/silver-badge.png?raw=true');
@@ -175,5 +179,9 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
     height:24px;
     object-fit:contain;
 }
+
+/* =========================================================
+   ED PRIESTESS
+   ========================================================= */
 
 /*I won't change social media images without specific request*/
