@@ -872,3 +872,8 @@ form .left a:hover {
     border-radius:var(--radius-none);
     color: var(--accent-color-light);
 }
+
+/*Lioden Licensing and Links*/
+.col-xs-10, .col-xs-10 a {
+    color:var(--text-dark) !important;
+}
