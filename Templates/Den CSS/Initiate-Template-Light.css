@@ -12,35 +12,41 @@
 :root {
 
     /* ===== MAIN BACKGROUND ===== */
-    --bg-page-color: #000000;
+    --bg-page-color: #e4cbdb;
     --bg-page-image: url("https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Initiate/Galaxy/pexels-pixabay-2150.jpg?raw=true");
 
     /* ===== TRANSPARENT ===== */
     --transparent: transparent;
     
     /* ===== BACKGROUND COLORS ===== */
-    --bg-panel-main: #dbd3f787;
-    --bg-panel-alt: #af9fc287;
-    --bg-header: #636f8787;
-    --bg-input: #636f8787;
+    --bg-panel-light: #dbd3f787;
+    --bg-panel-mid:#b0a5d787;
+    --bg-panel-dark: #806b9987;
+    --bg-header-light: #636f8787;
+    --bg-header-dark: #0b275f87;
+    --bg-input-light: #bfceec87;
+    --bg-input-dark: #636f8787;
 
     /* ===== TEXT ===== */
     --text-light: #F7F8FC;
     --text-dark: #2B3550;
-    --text-muted: #d1bdca;
+    --text-muted-light: #cfb6c6;
+    --text-muted-dark: #9d8595;
 
     /* ===== BORDERS ===== */ 
     --border-color-main: #f3d1b4;
     --border-color-alt: #f3d1b4;
     --border-size-big:3px;
     --border-size-small:2px;
-    --radius-big: 5px;
-    --radius-small: 3px;
-    --radius-none: 0px;
+    --radius-big:5px;
+    --radius-small:3px;
+    --radius-none:0px;
 
     /* ===== SPECIAL ===== */
-    --mod-bg: #000000AB;
-    --accent-color: #f4eec8;
+    --bg-mod: #000000AB;
+    --text-mod: #F7F8FC;
+    --accent-color-light: #f4eec8;
+    --accent-color-dark: #ecd693;
 }
 
 
@@ -49,12 +55,14 @@
    ========================================================= */
 
 body {
-    background-color: var(--page-background-color);
-    background-image: var(--page-background-image);
+    background-color: var(--bg-page-color);
+    background-image:none;
+    /*
+    background-image: var(--bg-page-image);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 }
 
 
@@ -68,11 +76,12 @@ body {
 }
 
 .topbar a {
-    color: var(--text-main) !important;
+    color: var(--text-dark) !important;
 }
 
 .topbar a:hover {
-    color: var(--accent-gold) !important;
+    color: var(--accent-color-dark) !important;
+    text-shadow:0 0 10 var(--bg-panel-light) !important;
 }
 
 
@@ -89,7 +98,7 @@ body {
 
 /* Smaller Container behind most main stuff */
 #pageContainer {
-    background-color: transparent;
+    background-color:var(--transparent);
 }
 
 
@@ -102,12 +111,12 @@ body {
 }
 
 .navbar.navbar-default a {
-    color: var(--text-main) !important;
+    color: var(--text-dark) !important;
 }
 
 .navbar.navbar-default a:hover {
-    background: var(--panel-bg) !important;
-    color: var(--accent-gold) !important;
+    background: var(--bg-panel-dark) !important;
+    color: var(--accent-color-dark) !important;
 }
 
 .navbar-brand.visible-lg.visible-md:hover {
@@ -117,17 +126,17 @@ body {
 
 /* Navbar Collapse Button when Small */
 .navbar button {
-    background-color: var(--input-bg) !important;
-    border: var(--border-size-small) solid var(--border-main) !important;
+    background-color: var(--bg-input-dark) !important;
+    border: var(--border-size-small) solid var(--border-color-main) !important;
     border-radius:var(--radius-none);
 }
 
 .navbar button:hover,
 .navbar button:focus {
-    background-color: var(--header-bg) !important;
-    border-color: var(--accent-gold) !important;
+    background-color: var(--bg-input-light) !important;
+    border-color: var(--accent-color-dark) !important;
     border-radius:var(--radius-none) !important;
-    color: var(--accent-gold) !important;
+    color: var(--accent-color-dark) !important;
 }
 
 
@@ -149,17 +158,17 @@ body {
 
 .breadcrumb a,
 .breadcrumb-item.active {
-    color: var(--text-main);
+    color: var(--text-dark);
 }
 
 .breadcrumb a:hover {
-    color: var(--accent-gold);
+    color: var(--accent-color-dark);
 }
 
 
 /* ____'s Den */
 #pageContainer h1 {
-    color: var(--accent-gold);
+    color: var(--accent-color-dark);
     text-align: center;
 }
 
@@ -172,27 +181,26 @@ body {
 .alert,
 .alert a {
     color: var(--text-dark);
-    text-shadow:0 0 15px white;
 }
 
 
 /* Red Alerts Background */
 .alert-danger {
-    background-color: var(--panel-bg-alt) !important;
-    border: var(--border-size-small) solid var(--border-main);
+    background-color: var(--bg-panel-dark) !important;
+    border: var(--border-size-small) solid var(--border-color-main);
     border-radius:var(--radius-small);
 }
 
 
 /* General / Green Alerts Background */
 .alert {
-    border:var(--border-size-small) solid var(--border-main);
-    background-color: var(--panel-bg);
+    border:var(--border-size-small) solid var(--border-color-main);
+    background-color: var(--bg-panel-mid);
     border-radius:var(--radius-small);
 }
 
 .alert a:hover {
-    color: var(--accent-gold);
+    color: var(--accent-color-dark);
 }
 
 
@@ -202,38 +210,37 @@ body {
 
 /* Comment Box Existing Comments */
 #commentBox {
-    /* background: var(--panel-bg-alt); */
     color: var(--text-dark);
-    border: var(--border-size-big) solid var(--border-main) !important;
+    border: var(--border-size-big) solid var(--border-color-main) !important;
     border-radius:var(--radius-small);
     background-color:var(--transparent)
 }
 
 .comment:nth-child(odd) {
-    background-color: var(--panel-bg-alt);
+    background-color: var(--bg-panel-dark);
 }
 
 .comment:nth-child(even) {
-    background-color: var(--panel-bg) !important;
+    background-color: var(--bg-panel-mid) !important;
 }
 
 #commentBox a {
-    color: var(--accent-gold);
+    color: var(--accent-color-dark);
 }
 
 .text-muted {
-    color: var(--text-muted) !important;
+    color: var(--text-muted-dark) !important;
 }
 
 
 /* Comment Box Scrollbar */
 #commentBox::-webkit-scrollbar {
-    background-color: var(--panel-bg-alt);
+    background-color: var(--bg-panel-dark);
     border-radius:var(--radius-main);
 }
 
 #commentBox::-webkit-scrollbar-thumb {
-    background-color: var(--panel-bg);
+    background-color: var(--bg-panel-dark);
     border-radius:var(--radius-main);
 }
 
@@ -241,48 +248,48 @@ body {
 /* Comment X Button */
 #commentBox .bad {
     background: none;
-    background-color: var(--input-bg);
-    color: var(--text-main);
+    background-color: var(--bg-input-dark);
+    color: var(--text-dark);
     text-shadow: none;
-    border: 1px solid var(--border-main);
+    border: 1px solid var(--border-color-main);
     border-radius:var(--radius-none);
 }
 
 #commentBox .bad:hover {
-    background-color: var(--header-bg) !important;
-    border-color: var(--accent-gold) !important;
+    background-color: var(--bg-header-dark) !important;
+    border-color: var(--accent-color-dark) !important;
     border-radius:var(--radius-none) !important;
-    color: var(--accent-gold) !important;
+    color: var(--accent-color-dark) !important;
 }
 
 
 /* Make Comment Input Box */
 #makeComment #comment {
-    background-color: var(--input-bg);
-    border: var(--border-size-small) solid var(--border-main);
+    background-color: var(--bg-input-dark);
+    border: var(--border-size-small) solid var(--border-color-main);
     border-radius:var(--radius-small);
     color: var(--text-light);
 }
 
 #makeComment #comment::placeholder {
-    color: var(--text-muted) !important;
+    color: var(--text-muted-light) !important;
 }
 
 
 /* Make Comment Post Button */
 #postComment {
-    background: var(--input-bg);
-    border: var(--border-size-small) solid var(--border-main);
+    background: var(--bg-input-dark);
+    border: var(--border-size-small) solid var(--border-color-main);
     border-radius:var(--radius-none);
     color: var(--text-light);
     text-shadow: none;
 }
 
 #postComment:hover {
-    background-color: var(--header-bg) !important;
-    border-color: var(--accent-gold) !important;
+    background-color: var(--bg-input-light) !important;
+    border-color: var(--accent-color-dark) !important;
     border-radius:var(--radius-none) !important;
-    color: var(--accent-gold) !important;
+    color: var(--accent-color-dark) !important;
 }
 
 
@@ -295,19 +302,16 @@ body {
 #about a {
     color: var(--text-dark);
 }
-#about {
-    text-shadow:0 0 15px white;
-}
 
 #about .top a, #about .bottom a {
-    color:var(--text-light);
+    color:var(--text-dark);
 }
 
 
 /* Pride About Main Area */
 #about {
-    border: var(--border-size-big) solid var(--border-main);
-    border-radius:var(--radius-main);
+    border: var(--border-size-big) solid var(--border-color-main);
+    border-radius:var(--radius-big);
     overflow: hidden;
     border-collapse: separate;
     border-spacing: 0;
@@ -317,19 +321,20 @@ body {
 /* Pride About Inner Areas */
 #about .top,
 #about .bottom {
-    background: var(--header-bg);
+    background: var(--bg-header-dark);
 }
 
 #about td .left {
-    background: var(--panel-bg-alt);
+    background: var(--bg-input-dark);
 }
 
 #about td .right {
-    background-color: var(--panel-bg);
+    background-color: var(--bg-panel-mid);
 }
 
 #about a:hover {
-    color: var(--accent-gold);
+    color: var(--accent-color-dark);
+    border-bottom:1px solid var(--accent-color-dark);
 }
 
 
@@ -340,37 +345,36 @@ body {
 /* Player Info Area Text and Links */
 #player,
 #player a {
-    color: var(--text-light);
+    color: var(--text-dark);
 }
 
 
 /* Player Info Area */
 #player {
-    border: var(--border-size-big) solid var(--border-main);
-    border-radius:var(--radius-main);
+    border: var(--border-size-big) solid var(--border-color-main);
+    border-radius:var(--radius-big);
     overflow: hidden;
     border-collapse: separate;
     border-spacing: 0;
 }
 
 #player .top {
-    background: var(--header-bg);
-    color:var(--text-light);
+    background: var(--bg-header-dark);
+    color:var(--text-dark);
 }
 
 #player td.left {
-    background: var(--panel-bg-alt);
+    background: var(--bg-panel-dark);
     color:var(--text-dark);
-    text-shadow:0 0 15px white;
 }
 
 #player td .right {
-    background-color: var(--panel-bg);
+    background-color: var(--bg-panel-mid);
     color:var(--text-dark)
 }
 
 #player a:hover {
-    color: var(--accent-gold);
+    color: var(--accent-color-dark);
 }
 
 
@@ -380,21 +384,15 @@ body {
 
 .cave-grid,
 .mound-grid {
-    background-color: var(--panel-bg-alt);
+    background-color: var(--bg-panel-dark);
     color: var(--text-dark);
-    text-shadow:0 0 15px white;
-    border:var(--border-size-small) solid var(--border-main);
-    border-radius:var(--radius-main);
+    border:var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-big);
 }
 
 .cave-grid a,
 .mound-grid a {
-    color: var(--text-main);
-}
-
-.cave-grid a:hover,
-.mound-grid a:hover {
-    color: var(--accent-gold);
+    color: var(--text-dark);
 }
 
 
@@ -404,17 +402,17 @@ body {
 
 #sparring {
     color:var(--text-dark);
-    background-color: var(--panel-bg-alt);
-    border: var(--border-size-big) solid var(--border-main);
-    border-radius:var(--radius-main);
+    background-color: var(--bg-panel-mid);
+    border: var(--border-size-big) solid var(--border-color-main);
+    border-radius:var(--radius-big);
     overflow: hidden;
     border-collapse: separate;
     border-spacing: 0;
 }
 
 #sparring th {
-    background-color: var(--header-bg);
-    color:var(--text-light);
+    background-color: var(--bg-header-dark);
+    color:var(--text-dark);
 }
 
 #sparring .right_odd {
@@ -429,21 +427,21 @@ body {
 /* Sparring Input Areas */
 #sparring select,
 #sparring input {
-    color: var(--text-light);
+    color: var(--text-dark);
     text-shadow: none;
     background: none;
-    background-color: var(--input-bg);
+    background-color: var(--bg-input-dark);
     box-shadow: none;
-    border: 1px solid var(--border-main);
+    border: 1px solid var(--border-color-main);
     border-radius:var(--radius-none);
 }
 
 #sparring input:hover,
 #sparring select:hover {
-    background-color: var(--header-bg) !important;
-    border-color: var(--accent-gold) !important;
+    background-color: var(--bg-input-light) !important;
+    border-color: var(--accent-color-light) !important;
     border-radius:var(--radius-none) !important;
-    color: var(--accent-gold) !important;
+    color: var(--accent-color-light) !important;
 }
 
 
@@ -453,13 +451,13 @@ body {
 
 .row,
 .row span {
-    color: var(--text-light) !important;
+    color: var(--text-dark) !important;
 }
 
 .row .feature {
-    background-color: var(--panel-bg);
-    border: var(--border-size-big) solid var(--border-main);
-    border-radius:var(--radius-main);
+    background-color: var(--bg-panel-mid);
+    border: var(--border-size-big) solid var(--border-color-main);
+    border-radius:var(--radius-big);
     overflow: hidden;
     border-collapse: separate;
     border-spacing: 0;
@@ -468,23 +466,23 @@ body {
 .row .feature h3,
 .row .feature input,
 .row .feature select {
-    color: var(--text-light);
+    color: var(--text-dark);
     text-shadow: none;
 }
 
 .row .feature input,
 .row .feature select {
     background: none;
-    background-color: var(--input-bg);
-    border: 1px solid var(--border-main);
+    background-color: var(--bg-input-dark);
+    border: 1px solid var(--border-color-main);
     border-radius:var(--radius-none);
 }
 
 .row .feature input:hover, .row .feature select:hover {
-    background-color: var(--header-bg) !important;
-    border-color: var(--accent-gold) !important;
+    background-color: var(--bg-input-light) !important;
+    border-color: var(--accent-color-dark) !important;
     border-radius:var(--radius-none) !important;
-    color: var(--accent-gold) !important;
+    color: var(--accent-color-dark) !important;
 }
 
 /* =========================================================
@@ -492,14 +490,15 @@ body {
    ========================================================= */
 
 #allies,
-#allies a {
-    color: var(--text-main);
+#allies a,
+#allies .top{
+    color: var(--text-dark);
 }
 
 #allies {
     background-color: var(--transparent);
-    border: var(--border-size-big) solid var(--border-main);
-    border-radius:var(--radius-main);
+    border: var(--border-size-big) solid var(--border-color-main);
+    border-radius:var(--radius-big);
     overflow: hidden;
     border-collapse: separate;
     border-spacing: 0;
@@ -507,7 +506,7 @@ body {
 
 #allies .top,
 #allies .bottom {
-    background-color: var(--header-bg);
+    background-color: var(--bg-header-dark);
 }
 
 #allies .left {
@@ -515,7 +514,7 @@ body {
 }
 
 #allies a:hover {
-    color: var(--accent-gold);
+    color: var(--accent-color-dark);
 }
 
 
@@ -524,21 +523,22 @@ body {
    ========================================================= */
 
 #clans,
-#clans a {
-    color: var(--text-main);
+#clans a,
+#clans .top {
+    color: var(--text-dark);
 }
 
 #clans {
     background-color: var(--transparent);
-    border: var(--border-size-big) solid var(--border-main);
-    border-radius:var(--radius-main);
+    border: var(--border-size-big) solid var(--border-color-main);
+    border-radius:var(--radius-big);
     overflow: hidden;
     border-collapse: separate;
     border-spacing: 0;
 }
 
 #clans .top {
-    background-color: var(--header-bg);
+    background-color: var(--bg-header-dark);
 }
 
 #clans .left {
@@ -546,7 +546,7 @@ body {
 }
 
 #clans a:hover {
-    color: var(--accent-gold);
+    color: var(--accent-color-dark);
 }
 
 
@@ -555,14 +555,13 @@ body {
    ========================================================= */
 
 .row.dynastycollection div .left {
-    background-color: var(--panel-bg-alt);
-    border: var(--border-size-small) solid var(--border-main);
-    border-radius:var(--radius-main);
+    background-color: var(--bg-panel-dark);
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-small);
 }
 
 .row.dynastycollection h3 {
     color: var(--text-dark);
-    text-shadow:0 0 15px white;
 }
 
 
@@ -571,11 +570,10 @@ body {
    ========================================================= */
 
 .col.col-sm-4 .left {
-    background-color: var(--panel-bg-alt);
-    border: var(--border-size-small) solid var(--border-main);
-    border-radius:var(--radius-main);
+    background-color: var(--bg-panel-dark);
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-small);
     color: var(--text-dark);
-    text-shadow:0 0 15px white;
 }
 
 
@@ -584,8 +582,8 @@ body {
    ========================================================= */
 
 #editdetailspanel {
-    border: var(--border-size-small) solid var(--border-main);
-    border-radius:var(--radius-main);
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-none);
     overflow: hidden;
     border-collapse: separate;
     border-spacing: 0;
@@ -597,8 +595,8 @@ body {
 }
 
 .table:nth-child(3) {
-    border: var(--border-size-small) solid var(--border-main);
-    border-radius:var(--radius-main);
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-big);
     overflow: hidden;
     border-collapse: separate;
     border-spacing: 0;
@@ -606,64 +604,64 @@ body {
 }
 
 .table th {
-    background-color: var(--header-bg);
+    background-color: var(--bg-header-dark);
 }
 
 .table th a {
-    color: var(--text-light) !important;
+    color: var(--text-dark) !important;
+    border-color:var(--border-color-main) !important;
 }
 
 .table th a:hover {
-    color: var(--accent-gold) !important;
+    color: var(--accent-color-dark) !important;
+    border-color:var(--accent-color-dark) !important;
 }
 
 
 /* Expanded Details Panel */
 #editdetailspanel .left {
-    background: var(--panel-bg-alt);
+    background: var(--bg-panel-dark);
     color:var(--text-dark);
-    text-shadow:0 0 15px white;
 }
 
 #editdetailspanel .right {
-    background-color: var(--panel-bg);
+    background-color: var(--bg-panel-mid);
 }
 
 #editdetailspanel .right textarea,
 #editdetailspanel .right input,
 #editdetailspanel .right select {
-    background-color: var(--input-bg);
-    border: 1px solid var(--border-main);
+    background-color: var(--bg-input-dark);
+    border: 1px solid var(--border-color-main);
     border-radius:var(--radius-none);
-    color: var(--text-light);
+    color: var(--text-dark);
 }
 
 #editdetailspanel .right a {
     color: var(--text-dark);
-    text-shadow:0 0 15px white;
 }
 
 #editdetailspanel .right a:hover {
-    color: var(--accent-gold);
+    color: var(--accent-color-dark);
 }
 
 #editdetailspanel .bottom {
-    background-color: var(--header-bg);
+    background-color: var(--bg-header-dark);
 }
 
 #editdetailspanel .bottom input {
-    background: var(--input-bg);
-    border: 1px solid var(--border-main);
+    background: var(--bg-input-dark);
+    border: 1px solid var(--border-color-main);
     border-radius:var(--radius-none);
     text-shadow: none;
-    color: var(--text-light);
+    color: var(--accent-color-dark);
 }
 
 #editdetailspanel .bottom input:hover {
-    background-color: var(--header-bg) !important;
-    border-color: var(--accent-gold) !important;
+    background-color: var(--bg-input-light) !important;
+    border-color: var(--accent-color-light) !important;
     border-radius:var(--radius-none) !important;
-    color: var(--accent-gold) !important;
+    color: var(--accent-color-light) !important;
 }
 
 
@@ -672,16 +670,16 @@ body {
    ========================================================= */
 
 form .left:has(a[href*='/account-settings.php']) {
-    background-color: var(--header-bg);
-    border: var(--border-size-small) solid var(--border-main);
+    background-color: var(--bg-header-dark);
+    border: var(--border-size-small) solid var(--border-color-main);
 }
 
 form .left a {
-    color: var(--text-main);
+    color: var(--text-dark);
 }
 
 form .left a:hover {
-    color: var(--accent-gold);
+    color: var(--accent-color-dark);
 }
 
 
@@ -696,11 +694,11 @@ form .left a:hover {
 
 
 #pageSidebar h3 {
-    color:var(--text-light);
+    color:var(--text-dark);
 }
 
 #pageSidebar a:hover {
-    color: var(--accent-gold);
+    color: var(--accent-color-dark);
 }
 
 
@@ -708,14 +706,14 @@ form .left a:hover {
 .panel-body.small,
 .panel,
 .panel.panel-default {
-    color: var((--text-dark));
-    background-color: var(--panel-bg-alt);
+    color: var(--text-dark);
+    background-color: var(--bg-panel-mid);
     box-shadow: none !important;
 }
 
 .col-md-3 .panel {
-    border: var(--border-size-small) solid var(--border-main);
-    border-radius:var(--radius-main);
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-small);
 }
 
 .clear.visible-xs.visible-sm {
@@ -729,23 +727,23 @@ form .left a:hover {
 /* Chat Toggle Button */
 #btnToggleSidebarChat {
     background: none;
-    background-color: var(--input-bg);
-    border: 1px solid var(--border-main);
+    background-color: var(--bg-input-dark);
+    border: 1px solid var(--border-color-main);
     border-radius:var(--radius-none);
-    color: var(--text-light);
+    color: var(--accent-color-dark);
     text-shadow: none;
 }
 
 #chatMessageContainer {
-    border: var(--border-size-big) solid var(--border-main);
-    border-radius:var(--radius-main);
+    border: var(--border-size-big) solid var(--border-color-main);
+    border-radius:var(--radius-big);
 }
 
 #btnToggleSidebarChat:hover {
-    background-color: var(--header-bg);
-    border-color: var(--accent-gold) !important;
+    background-color: var(--bg-input-light);
+    border-color: var(--accent-color-light) !important;
     border-radius:var(--radius-none);
-    color: var(--accent-gold);
+    color: var(--accent-color-light);
 }
 
 
@@ -754,12 +752,11 @@ form .left a:hover {
 #fra_chatContainer a,
 #fra_chatContainer span {
     color:var(--text-dark);
-    text-shadow:0 0 15px white;
     overflow:hidden;
 }
 
 #fra_chatContainer a:hover {
-    color: var(--accent-gold);
+    color: var(--accent-color-dark);
 }
 
 #label_currentChannel {
@@ -771,18 +768,17 @@ form .left a:hover {
 #fra_chatContainer input,
 #fra_chatContainer #btnChatSend {
     background: none;
-    background-color: var(--input-bg);
-    border: 1px solid var(--border-main);
-    /* border-radius:var(--radius-main); */
-    color: var(--text-main);
+    background-color: var(--bg-input-dark);
+    border: 1px solid var(--border-color-main);
+    color: var(--text-dark);
     text-shadow: none;
 }
 
-#fra_chatContainer input:hover {
-    background-color: var(--header-bg);
-    border-color: var(--accent-gold) !important;
+#fra_chatContainer input:hover, {
+    background-color: var(--bg-input-light);
+    border-color: var(--accent-color-light) !important;
     border-radius:var(--radius-none);
-    color: var(--accent-gold);
+    color: var(--accent-color-light);
 }
 
 #txtChatContainer {
@@ -790,47 +786,37 @@ form .left a:hover {
 }
 
 #txtChatInput {
-    border: 1px solid var(--border-main) !important;
+    border: 1px solid var(--border-color-main) !important;
     border-radius:var(--radius-none) !important;
-}
-
-#txtChatInput:hover {
-    background-color: var(--header-bg);
-    border-color: var(--accent-gold) !important;
-    border-radius:var(--radius-none);
-    color: var(--accent-gold);
-}
-
-.emoteInput {
-    margin-right:1px;
 }
 
 #btnChatSend {
     border-radius:var(--radius-none) !important;
+    color:var(--accent-color-dark) !important;
 }
 
 #btnChatSend:hover {
-    background-color: var(--header-bg) !important;
-    border-color: var(--accent-gold) !important;
+    background-color: var(--bg-input-light) !important;
+    border-color: var(--accent-color-light) !important;
     border-radius:var(--radius-none) !important;
-    color: var(--accent-gold) !important;
+    color: var(--accent-color-light) !important;
 }
 
 /* Alternating Chat Messages */
 .s-chat-message:nth-child(even),
 #chatMessagePinned {
-    background-color: var(--panel-bg-alt) !important;
+    background-color: var(--bg-panel-mid) !important;
 }
 
 .s-chat-message:nth-child(odd) {
-    background-color: var(--panel-bg);
+    background-color: var(--bg-panel-dark);
 }
 
 
 /* Mod Message */
 .s-chat-message.s-chat-message__mod {
     background: var(--mod-bg) !important;
-    color: var(--text-light);
+    color: var(--text-mod);
     border: none;
     padding-left: 5px;
 }
@@ -842,11 +828,11 @@ form .left a:hover {
 
 /* Chat Scrollbar */
 #chatMessageList::-webkit-scrollbar {
-    background-color: var(--panel-bg-alt);
+    background-color: var(--bg-panel-dark);
 }
 
 #chatMessageList::-webkit-scrollbar-thumb {
-    background-color: var(--header-bg);
+    background-color: var(--bg-panel-dark);
     border-radius:var(--radius-main);
 }
 
@@ -857,20 +843,18 @@ form .left a:hover {
 
 .btn.btn-default.button {
     background: none;
-    background-color: var(--input-bg);
-    border: 1px solid var(--border-main);
+    background-color: var(--bg-input-dark);
+    border: 1px solid var(--border-color-main);
     border-radius:var(--radius-none);
     text-shadow: none;
+    color:var(--accent-color-dark) !important;
 }
 
-.btn.btn-default.button {
-    color:var(--text-light) !important;
-}
 
 .btn.btn-default.button:hover,
 .btn.btn-default.button:focus {
-    background-color: var(--header-bg);
-    border-color: var(--accent-gold);
+    background-color: var(--bg-input-light);
+    border-color: var(--accent-color-light);
     border-radius:var(--radius-none);
-    color: var(--accent-gold);
+    color: var(--accent-color-light);
 }
