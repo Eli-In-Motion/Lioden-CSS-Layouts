@@ -1,0 +1,874 @@
+/* =========================================================
+   INITIATE TEMPLATE
+   
+   ========================================================= */
+
+
+/* =========================================================
+   QUICK CUSTOMIZATION
+   Change these values to recolor the template.
+   ========================================================= */
+
+:root {
+
+    /* ===== MAIN BACKGROUND ===== */
+    --bg-page-color: #e4cbdb;
+    --bg-page-image: url("https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Initiate/Galaxy/pexels-pixabay-2150.jpg?raw=true");
+
+    /* ===== TRANSPARENT ===== */
+    --transparent: transparent;
+    
+    /* ===== BACKGROUND COLORS ===== */
+    --bg-panel-light: #dbd3f787;
+    --bg-panel-mid:#b0a5d787;
+    --bg-panel-dark: #806b9987;
+    --bg-header-light: #636f8787;
+    --bg-header-dark: #0b275f87;
+    --bg-input-light: #bfceec87;
+    --bg-input-dark: #636f8787;
+
+    /* ===== TEXT ===== */
+    --text-light: #F7F8FC;
+    --text-dark: #2B3550;
+    --text-muted-light: #cfb6c6;
+    --text-muted-dark: #9d8595;
+
+    /* ===== BORDERS ===== */ 
+    --border-color-main: #f3d1b4;
+    --border-color-alt: #f3d1b4;
+    --border-size-big:3px;
+    --border-size-small:2px;
+    --radius-big:5px;
+    --radius-small:3px;
+    --radius-none:0px;
+
+    /* ===== SPECIAL ===== */
+    --bg-mod: #000000AB;
+    --text-mod: #F7F8FC;
+    --accent-color-light: #f4eec8;
+    --accent-color-dark: #ecd693;
+}
+
+
+/* =========================================================
+   MAIN BACKGROUND
+   ========================================================= */
+
+body {
+    background-color: var(--bg-page-color);
+    background-image:none;
+    /*
+    background-image: var(--bg-page-image);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+
+
+/* =========================================================
+   TOP BAR
+   ========================================================= */
+
+/* Top Bar with Messages and Currency */
+.topbar {
+    background: none;
+     color: var(--text-dark);
+}
+
+.topbar a {
+    color: var(--text-dark) !important;
+}
+
+.topbar a:hover {
+    color: var(--accent-color-dark) !important;
+    text-shadow:0 0 10 var(--bg-panel-light) !important;
+}
+
+
+/* =========================================================
+   MAIN CONTAINERS
+   ========================================================= */
+
+/* Main container behind everything else */
+.container.main {
+    background: none;
+    border:none;
+    box-shadow:none;
+}
+
+/* Smaller Container behind most main stuff */
+#pageContainer {
+    background-color:var(--transparent);
+}
+
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
+.navbar.navbar-default {
+    background: none;
+}
+
+.navbar.navbar-default a {
+    color: var(--text-dark) !important;
+}
+
+.navbar.navbar-default a:hover {
+    background: var(--bg-panel-dark) !important;
+    color: var(--accent-color-dark) !important;
+}
+
+.navbar-brand.visible-lg.visible-md:hover {
+    background: none !important;
+}
+
+
+/* Navbar Collapse Button when Small */
+.navbar button {
+    background-color: var(--bg-input-dark) !important;
+    border: var(--border-size-small) solid var(--border-color-main) !important;
+    border-radius:var(--radius-none);
+}
+
+.navbar button:hover,
+.navbar button:focus {
+    background-color: var(--bg-input-light) !important;
+    border-color: var(--accent-color-dark) !important;
+    border-radius:var(--radius-none) !important;
+    color: var(--accent-color-dark) !important;
+}
+
+
+/* Navbar Links when Small and Expanded */
+.navbar-collapse.collapse.in {
+    border: none;
+    box-shadow: none;
+}
+
+
+/* =========================================================
+   BREADCRUMB / DEN TITLE
+   ========================================================= */
+
+/* Breadcrumb with Home/Name */
+.breadcrumb {
+    background-color: transparent;
+}
+
+.breadcrumb a,
+.breadcrumb-item.active {
+    color: var(--text-dark);
+}
+
+.breadcrumb a:hover {
+    color: var(--accent-color-dark);
+}
+
+
+/* ____'s Den */
+#pageContainer h1 {
+    color: var(--accent-color-dark);
+    text-align: center;
+}
+
+
+/* =========================================================
+   ALERTS
+   ========================================================= */
+
+/* All Alerts Text and Links */
+.alert,
+.alert a {
+    color: var(--text-dark);
+}
+
+
+/* Red Alerts Background */
+.alert-danger {
+    background-color: var(--bg-panel-dark) !important;
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-small);
+}
+
+
+/* General / Green Alerts Background */
+.alert {
+    border:var(--border-size-small) solid var(--border-color-main);
+    background-color: var(--bg-panel-mid);
+    border-radius:var(--radius-small);
+}
+
+.alert a:hover {
+    color: var(--accent-color-dark);
+}
+
+
+/* =========================================================
+   COMMENT BOX
+   ========================================================= */
+
+/* Comment Box Existing Comments */
+#commentBox {
+    color: var(--text-dark);
+    border: var(--border-size-big) solid var(--border-color-main) !important;
+    border-radius:var(--radius-small);
+    background-color:var(--transparent)
+}
+
+.comment:nth-child(odd) {
+    background-color: var(--bg-panel-dark);
+}
+
+.comment:nth-child(even) {
+    background-color: var(--bg-panel-mid) !important;
+}
+
+#commentBox a {
+    color: var(--accent-color-dark);
+}
+
+.text-muted {
+    color: var(--text-muted-dark) !important;
+}
+
+
+/* Comment Box Scrollbar */
+#commentBox::-webkit-scrollbar {
+    background-color: var(--bg-panel-dark);
+    border-radius:var(--radius-main);
+}
+
+#commentBox::-webkit-scrollbar-thumb {
+    background-color: var(--bg-panel-dark);
+    border-radius:var(--radius-main);
+}
+
+
+/* Comment X Button */
+#commentBox .bad {
+    background: none;
+    background-color: var(--bg-input-dark);
+    color: var(--text-dark);
+    text-shadow: none;
+    border: 1px solid var(--border-color-main);
+    border-radius:var(--radius-none);
+}
+
+#commentBox .bad:hover {
+    background-color: var(--bg-header-dark) !important;
+    border-color: var(--accent-color-dark) !important;
+    border-radius:var(--radius-none) !important;
+    color: var(--accent-color-dark) !important;
+}
+
+
+/* Make Comment Input Box */
+#makeComment #comment {
+    background-color: var(--bg-input-dark);
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-small);
+    color: var(--text-light);
+}
+
+#makeComment #comment::placeholder {
+    color: var(--text-muted-light) !important;
+}
+
+
+/* Make Comment Post Button */
+#postComment {
+    background: var(--bg-input-dark);
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-none);
+    color: var(--accent-color-dark);
+    text-shadow: none;
+}
+
+#postComment:hover {
+    background-color: var(--bg-input-light) !important;
+    border-color: var(--accent-color-dark) !important;
+    border-radius:var(--radius-none) !important;
+    color: var(--accent-color-dark) !important;
+}
+
+
+/* =========================================================
+   PRIDE ABOUT
+   ========================================================= */
+
+/* Pride About Area Text */
+#about,
+#about a {
+    color: var(--text-dark);
+}
+
+#about .top a, #about .bottom a {
+    color:var(--text-dark);
+}
+
+
+/* Pride About Main Area */
+#about {
+    border: var(--border-size-big) solid var(--border-color-main);
+    border-radius:var(--radius-big);
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+
+/* Pride About Inner Areas */
+#about .top,
+#about .bottom {
+    background: var(--bg-header-dark);
+}
+
+#about td .left {
+    background: var(--bg-input-dark);
+}
+
+#about td .right {
+    background-color: var(--bg-panel-mid);
+}
+
+#about a:hover {
+    color: var(--accent-color-dark);
+    border-bottom:1px solid var(--accent-color-dark);
+}
+
+
+/* =========================================================
+   PLAYER INFO
+   ========================================================= */
+
+/* Player Info Area Text and Links */
+#player,
+#player a {
+    color: var(--text-dark);
+}
+
+
+/* Player Info Area */
+#player {
+    border: var(--border-size-big) solid var(--border-color-main);
+    border-radius:var(--radius-big);
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+#player .top {
+    background: var(--bg-header-dark);
+    color:var(--text-dark);
+}
+
+#player td.left {
+    background: var(--bg-panel-dark);
+    color:var(--text-dark);
+}
+
+#player td .right {
+    background-color: var(--bg-panel-mid);
+    color:var(--text-dark)
+}
+
+#player a:hover {
+    color: var(--accent-color-dark);
+}
+
+
+/* =========================================================
+   DENS AND MOUNDS
+   ========================================================= */
+
+.cave-grid,
+.mound-grid {
+    background-color: var(--bg-panel-dark);
+    color: var(--text-dark);
+    border:var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-big);
+}
+
+.cave-grid a,
+.mound-grid a {
+    color: var(--text-dark);
+}
+
+
+/* =========================================================
+   SPARRING
+   ========================================================= */
+
+#sparring {
+    color:var(--text-dark);
+    background-color: var(--bg-panel-mid);
+    border: var(--border-size-big) solid var(--border-color-main);
+    border-radius:var(--radius-big);
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+#sparring th {
+    background-color: var(--bg-header-dark);
+    color:var(--text-dark);
+}
+
+#sparring .right_odd {
+    background: transparent;
+}
+
+#sparring .right_odd span {
+    color:var(--text-dark) !important;
+}
+
+
+/* Sparring Input Areas */
+#sparring select,
+#sparring input {
+    color: var(--text-dark);
+    text-shadow: none;
+    background: none;
+    background-color: var(--bg-input-dark);
+    box-shadow: none;
+    border: 1px solid var(--border-color-main);
+    border-radius:var(--radius-none);
+}
+
+#sparring input:hover,
+#sparring select:hover {
+    background-color: var(--bg-input-light) !important;
+    border-color: var(--accent-color-light) !important;
+    border-radius:var(--radius-none) !important;
+    color: var(--accent-color-light) !important;
+}
+
+
+/* =========================================================
+   FAPA
+   ========================================================= */
+
+.row,
+.row span {
+    color: var(--text-dark) !important;
+}
+
+.row .feature {
+    background-color: var(--bg-panel-mid);
+    border: var(--border-size-big) solid var(--border-color-main);
+    border-radius:var(--radius-big);
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.row .feature h3,
+.row .feature input,
+.row .feature select {
+    color: var(--text-dark);
+    text-shadow: none;
+}
+
+.row .feature input,
+.row .feature select {
+    background: none;
+    background-color: var(--bg-input-dark);
+    border: 1px solid var(--border-color-main);
+    border-radius:var(--radius-none);
+}
+
+.row .feature input:hover, .row .feature select:hover {
+    background-color: var(--bg-input-light) !important;
+    border-color: var(--accent-color-dark) !important;
+    border-radius:var(--radius-none) !important;
+    color: var(--accent-color-dark) !important;
+}
+
+/* =========================================================
+   ALLIES
+   ========================================================= */
+
+#allies,
+#allies a,
+#allies .top{
+    color: var(--text-dark);
+}
+
+#allies {
+    background-color: var(--transparent);
+    border: var(--border-size-big) solid var(--border-color-main);
+    border-radius:var(--radius-big);
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+#allies .top,
+#allies .bottom {
+    background-color: var(--bg-header-dark);
+}
+
+#allies .left {
+    display: none;
+}
+
+#allies a:hover {
+    color: var(--accent-color-dark);
+}
+
+
+/* =========================================================
+   CLANS
+   ========================================================= */
+
+#clans,
+#clans a,
+#clans .top {
+    color: var(--text-dark);
+}
+
+#clans {
+    background-color: var(--transparent);
+    border: var(--border-size-big) solid var(--border-color-main);
+    border-radius:var(--radius-big);
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+#clans .top {
+    background-color: var(--bg-header-dark);
+}
+
+#clans .left {
+    display: none;
+}
+
+#clans a:hover {
+    color: var(--accent-color-dark);
+}
+
+
+/* =========================================================
+   DYNASTIES
+   ========================================================= */
+
+.row.dynastycollection div .left {
+    background-color: var(--bg-panel-dark);
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-small);
+}
+
+.row.dynastycollection h3 {
+    color: var(--text-dark);
+}
+
+
+/* =========================================================
+   LOGS
+   ========================================================= */
+
+.col.col-sm-4 .left {
+    background-color: var(--bg-panel-dark);
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-small);
+    color: var(--text-dark);
+}
+
+
+/* =========================================================
+   EDIT DETAILS
+   ========================================================= */
+
+#editdetailspanel {
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-none);
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 0;
+}
+
+.table {
+    margin:0px;
+}
+
+.table:nth-child(3) {
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-big);
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 0;
+}
+
+.table th {
+    background-color: var(--bg-header-dark);
+}
+
+.table th a {
+    color: var(--text-dark) !important;
+    border-color:var(--border-color-main) !important;
+}
+
+.table th a:hover {
+    color: var(--accent-color-dark) !important;
+    border-color:var(--accent-color-dark) !important;
+}
+
+
+/* Expanded Details Panel */
+#editdetailspanel .left {
+    background: var(--bg-panel-dark);
+    color:var(--text-dark);
+}
+
+#editdetailspanel .right {
+    background-color: var(--bg-panel-mid);
+}
+
+#editdetailspanel .right textarea,
+#editdetailspanel .right input,
+#editdetailspanel .right select {
+    background-color: var(--bg-input-dark);
+    border: 1px solid var(--border-color-main);
+    border-radius:var(--radius-none);
+    color: var(--text-dark);
+}
+
+#editdetailspanel .right a {
+    color: var(--text-dark);
+}
+
+#editdetailspanel .right a:hover {
+    color: var(--accent-color-dark);
+}
+
+#editdetailspanel .bottom {
+    background-color: var(--bg-header-dark);
+}
+
+#editdetailspanel .bottom input {
+    background: var(--bg-input-dark);
+    border: 1px solid var(--border-color-main);
+    border-radius:var(--radius-none);
+    text-shadow: none;
+    color: var(--accent-color-dark);
+}
+
+#editdetailspanel .bottom input:hover {
+    background-color: var(--bg-input-light) !important;
+    border-color: var(--accent-color-light) !important;
+    border-radius:var(--radius-none) !important;
+    color: var(--accent-color-light) !important;
+}
+
+
+/* =========================================================
+   ACCOUNT SETTINGS
+   ========================================================= */
+
+form .left:has(a[href*='/account-settings.php']) {
+    background-color: var(--bg-header-dark);
+    border: var(--border-size-small) solid var(--border-color-main);
+}
+
+form .left a {
+    color: var(--text-dark);
+}
+
+form .left a:hover {
+    color: var(--accent-color-dark);
+}
+
+
+/* =========================================================
+   SIDEBAR / PANELS
+   ========================================================= */
+
+#pageSidebar,
+#pageSidebar a {
+    color: var(--text-dark);
+}
+
+
+#pageSidebar h3 {
+    color:var(--text-dark);
+}
+
+#pageSidebar a:hover {
+    color: var(--accent-color-dark);
+}
+
+
+/* Sidebar Inner Panels */
+.panel-body.small,
+.panel,
+.panel.panel-default {
+    color: var(--text-dark);
+    background-color: var(--bg-panel-mid);
+    box-shadow: none !important;
+}
+
+.col-md-3 .panel {
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-small);
+}
+
+.clear.visible-xs.visible-sm {
+    border:none !important;
+}
+
+/* =========================================================
+   CHATBOX
+   ========================================================= */
+
+/* Chat Toggle Button */
+#btnToggleSidebarChat {
+    background: none;
+    background-color: var(--bg-input-dark);
+    border: 1px solid var(--border-color-main);
+    border-radius:var(--radius-none);
+    color: var(--accent-color-dark);
+    text-shadow: none;
+}
+
+#chatMessageContainer {
+    border: var(--border-size-big) solid var(--border-color-main);
+    border-radius:var(--radius-big);
+}
+
+#btnToggleSidebarChat:hover {
+    background-color: var(--bg-input-light);
+    border-color: var(--accent-color-light) !important;
+    border-radius:var(--radius-none);
+    color: var(--accent-color-light);
+}
+
+
+/* Chat Text */
+#fra_chatContainer,
+#fra_chatContainer a,
+#fra_chatContainer span {
+    color:var(--text-dark);
+    overflow:hidden;
+}
+
+#fra_chatContainer a:hover {
+    color: var(--accent-color-dark);
+}
+
+#label_currentChannel {
+    border-radius:var(--radius-none) !important;
+}
+
+/* Chat Inputs / Buttons */
+#fra_chatContainer #txtChatInput,
+#fra_chatContainer #btnChatSend {
+    background: none;
+    background-color: var(--bg-input-dark);
+    border: 1px solid var(--border-color-main);
+    color: var(--text-dark);
+    text-shadow: none;
+}
+
+#label_currentChannel {
+    background-color: var(--bg-input-dark) !important;
+    border: 1px solid var(--border-color-main);
+    color: var(--accent-color-dark) !important;
+    text-shadow: none;
+}
+
+#label_currentChannel:hover {
+    background-color: var(--bg-input-light);
+    border: 1px solid var(--accent-color-light);
+    color: var(--accent-color-light) !important;
+    text-shadow: none;
+}
+
+#fra_chatContainer input:hover, {
+    background-color: var(--bg-input-light);
+    border-color: var(--accent-color-light) !important;
+    border-radius:var(--radius-none);
+    color: var(--accent-color-light);
+}
+
+#txtChatContainer {
+    margin-right:1px
+}
+
+#txtChatInput {
+    border: 1px solid var(--border-color-main) !important;
+    border-radius:var(--radius-none) !important;
+}
+
+#btnChatSend {
+    border-radius:var(--radius-none) !important;
+    color:var(--accent-color-dark) !important;
+}
+
+#btnChatSend:hover {
+    background-color: var(--bg-input-light) !important;
+    border-color: var(--accent-color-light) !important;
+    border-radius:var(--radius-none) !important;
+    color: var(--accent-color-light) !important;
+}
+
+/* Alternating Chat Messages */
+.s-chat-message:nth-child(even),
+#chatMessagePinned {
+    background-color: var(--bg-panel-mid) !important;
+}
+
+.s-chat-message:nth-child(odd) {
+    background-color: var(--bg-panel-dark);
+}
+
+
+/* Mod Message */
+.s-chat-message.s-chat-message__mod {
+    background: var(--mod-bg) !important;
+    color: var(--text-mod);
+    border: none;
+    padding-left: 5px;
+}
+
+.s-chat-message.s-chat-message__mod span {
+    padding-left: 5px !important;
+}
+
+
+/* Chat Scrollbar */
+#chatMessageList::-webkit-scrollbar {
+    background-color: var(--bg-panel-dark);
+}
+
+#chatMessageList::-webkit-scrollbar-thumb {
+    background-color: var(--bg-panel-dark);
+    border-radius:var(--radius-main);
+}
+
+
+/* =========================================================
+   BUGBOX BUTTON
+   ========================================================= */
+
+.btn.btn-default.button {
+    background: none;
+    background-color: var(--bg-input-dark);
+    border: 1px solid var(--border-color-main);
+    border-radius:var(--radius-none);
+    text-shadow: none;
+    color:var(--accent-color-dark) !important;
+}
+
+
+.btn.btn-default.button:hover,
+.btn.btn-default.button:focus {
+    background-color: var(--bg-input-light);
+    border-color: var(--accent-color-light);
+    border-radius:var(--radius-none);
+    color: var(--accent-color-light);
+}
