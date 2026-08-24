@@ -20,8 +20,7 @@
     grid-row-start:1;
     grid-row:1/3;
     border-radius:20px;
-    overflow-x:hidden;
-    overflow-y:scroll;
+    overflow:hidden;
 }
 
 .BioLeft::-webkit-scrollbar {
@@ -31,8 +30,7 @@
 .BioTopRight {
     background:blue;
     border-radius:20px;
-    overflow-x:hidden;
-    overflow-y:scroll;
+    overflow:hidden;
 }
 
 .BioTopRight::-webkit-scrollbar {
@@ -42,8 +40,7 @@
 .BioBottomRight {
     background:green;
     border-radius:20px;
-    overflow-x:hidden;
-    overflow-y:scroll;
+    overflow:hidden;
 }
 
 .BioBottomRight::-webkit-scrollbar {
