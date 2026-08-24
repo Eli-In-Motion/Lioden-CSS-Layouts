@@ -73,6 +73,7 @@ body {
 /* Top Bar with Messages and Currency */
 .topbar {
     background: none;
+     color: var(--text-dark);
 }
 
 .topbar a {
@@ -281,7 +282,7 @@ body {
     background: var(--bg-input-dark);
     border: var(--border-size-small) solid var(--border-color-main);
     border-radius:var(--radius-none);
-    color: var(--text-light);
+    color: var(--accent-color-dark);
     text-shadow: none;
 }
 
@@ -764,13 +765,26 @@ form .left a:hover {
 }
 
 /* Chat Inputs / Buttons */
-#fra_chatContainer #label_currentChannel,
-#fra_chatContainer input,
+#fra_chatContainer #txtChatInput,
 #fra_chatContainer #btnChatSend {
     background: none;
     background-color: var(--bg-input-dark);
     border: 1px solid var(--border-color-main);
     color: var(--text-dark);
+    text-shadow: none;
+}
+
+#label_currentChannel {
+    background-color: var(--bg-input-dark) !important;
+    border: 1px solid var(--border-color-main);
+    color: var(--accent-color-dark) !important;
+    text-shadow: none;
+}
+
+#label_currentChannel:hover {
+    background-color: var(--bg-input-light);
+    border: 1px solid var(--accent-color-light);
+    color: var(--accent-color-light) !important;
     text-shadow: none;
 }
 
