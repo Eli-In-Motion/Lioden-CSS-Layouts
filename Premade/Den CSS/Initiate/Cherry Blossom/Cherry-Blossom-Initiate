@@ -12,41 +12,41 @@
 :root {
 
     /* ===== MAIN BACKGROUND ===== */
-    --bg-page-color: #e4cbdb;
-    --bg-page-image: url("https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Initiate/Galaxy/pexels-pixabay-2150.jpg?raw=true");
+    --bg-page-color: #edf1f4;
+    --bg-page-image: url("https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Initiate/Cherry%20Blossom/tsuyoshi-kozu-BcjTORSr88Q-unsplash.jpg?raw=true");
 
     /* ===== TRANSPARENT ===== */
     --transparent: transparent;
     
     /* ===== BACKGROUND COLORS ===== */
-    --bg-panel-light: #dbd3f787;
-    --bg-panel-mid:#b0a5d787;
-    --bg-panel-dark: #806b9987;
-    --bg-header-light: #636f8787;
-    --bg-header-dark: #0b275f87;
-    --bg-input-light: #bfceec87;
-    --bg-input-dark: #636f8787;
+    --bg-panel-light: #f1dee1d1;
+    --bg-panel-mid:#e7d2d5d1;
+    --bg-panel-dark: #d1aeb3d1;
+    --bg-header-light: #636f8787d1;
+    --bg-header-dark: #bd828ed1;
+    --bg-input-light: #f1dee1d1;
+    --bg-input-dark: #bd828ed1;
 
     /* ===== TEXT ===== */
-    --text-light: #F7F8FC;
-    --text-dark: #2B3550;
-    --text-muted-light: #cfb6c6;
-    --text-muted-dark: #9d8595;
+    --text-light: #f7aab8;
+    --text-dark: #45101a;
+    --text-muted-light: #f9d3da;
+    --text-muted-dark: #7f3240;
 
     /* ===== BORDERS ===== */ 
-    --border-color-main: #f3d1b4;
-    --border-color-alt: #f3d1b4;
+    --border-color-main: #45101ad1;
+    --border-color-alt: #f7aab8;
     --border-size-big:3px;
     --border-size-small:2px;
-    --radius-big:5px;
-    --radius-small:3px;
+    --radius-big:16px;
+    --radius-small:8px;
     --radius-none:0px;
 
     /* ===== SPECIAL ===== */
     --bg-mod: #000000AB;
     --text-mod: #F7F8FC;
-    --accent-color-light: #f4eec8;
-    --accent-color-dark: #ecd693;
+    --accent-color-light: #aa5a20;
+    --accent-color-dark: #5a1402;
 }
 
 
@@ -56,13 +56,11 @@
 
 body {
     background-color: var(--bg-page-color);
-    background-image:none;
-    /*
     background-image: var(--bg-page-image);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;*/
+    background-size: cover;
 }
 
 
@@ -326,7 +324,7 @@ body {
 }
 
 #about td .left {
-    background: var(--bg-input-dark);
+    background: var(--bg-panel-dark);
 }
 
 #about td .right {
@@ -583,7 +581,7 @@ body {
    ========================================================= */
 
 #editdetailspanel {
-    border: var(--border-size-small) solid var(--border-color-main);
+    border: 1px solid var(--border-color-main);
     border-radius:var(--radius-none);
     overflow: hidden;
     border-collapse: separate;
@@ -597,7 +595,7 @@ body {
 
 .table:nth-child(3) {
     border: var(--border-size-small) solid var(--border-color-main);
-    border-radius:var(--radius-big);
+    border-radius:var(--radius-small);
     overflow: hidden;
     border-collapse: separate;
     border-spacing: 0;
@@ -871,4 +869,8 @@ form .left a:hover {
     border-color: var(--accent-color-light);
     border-radius:var(--radius-none);
     color: var(--accent-color-light);
+}
+
+.col-xs-10, .col-xs-10 a {
+    color:var(--text-dark) !important;
 }
