@@ -1,4 +1,6 @@
-/*Bio Box style 3*/
+/* =========================================================
+   BIO BOX STYLE 3
+   ========================================================= */
 /*HTML
 <div class="Bio">
 <div class="BioTopLeft">Top Left Large Div</div> <div class="BioTopRight">Top Right Skinny Div</div><div class="BioBottom">Bottom Long Div</div>
@@ -53,3 +55,7 @@
     border:2px solid black;
     color:black;
 }
+
+/* =========================================================
+   END BIO BOX STYLE 3
+   ========================================================= */
