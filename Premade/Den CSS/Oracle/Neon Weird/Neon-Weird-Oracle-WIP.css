@@ -880,7 +880,6 @@ form .left a:hover {
 /* =========================================================
    END INITIATE
    ========================================================= */
-
 /* =========================================================
    BIO BOX STYLE 2
    ========================================================= */
@@ -904,13 +903,19 @@ form .left a:hover {
     background:var(--bg-header-light);
     grid-column:1/3;
     border-radius:10px;
-    overflow:hidden;
+    overflow-x:hidden;
+    overflow-y:scroll;
+}
+
+.BioTop::-webkit-scrollbar {
+   display:none;
 }
 
 .BioLeft {
     background:var(--bg-panel-mid);
     border-radius:10px;
-    overflow:hidden;
+    overflow-x:hidden;
+    overflow-y:scroll;
 }
 
 .BioLeft::-webkit-scrollbar {
@@ -920,7 +925,8 @@ form .left a:hover {
 .BioRight {
     background:var(--bg-panel-light);
     border-radius:10px;
-    overflow:hidden;
+    overflow-x:hidden;
+    overflow-y:scroll;
 }
 
 .BioRight::-webkit-scrollbar {
@@ -960,21 +966,22 @@ form .left a:hover {
 }
 
 #pageContainer h1:before {
-    content:"Welcome Traveller";
+    content:"You're Weird, I Like You";
     font-size:50px;
 }
 
 /*Progress Bar Changes*/
 .panel-body.small  .progress {
-    background:#ffffffab;
+    background:var(--bg-header-light);
 }
 
 .panel-body.small  .progress div {
-    color:white;
+    color:var(--text-dark);
+    text-shadow: 0 0 8px white !important;
 }
 
 .progress [role="progressbar"] {
-    background:#007ba1ab;
+    background:linear-gradient(0deg,rgba(0, 123, 161, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(0, 123, 161, 1) 100%); !important;
 }
 
 /* =========================================================
