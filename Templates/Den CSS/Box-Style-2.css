@@ -1,4 +1,6 @@
-/*Box Style 2*/
+/* =========================================================
+   BIO BOX STYLE 2
+   ========================================================= */
 /*HTML
 <div class="Bio">
 <div class="BioTop">Top Small Div</div> <div class="BioLeft">Left Div</div><div class="BioRight">Right Div</div>
@@ -41,3 +43,7 @@
 .BioRight::-webkit-scrollbar {
     display:none;
 }
+
+/* =========================================================
+   END BIO BOX STYLE 2
+   ========================================================= */
