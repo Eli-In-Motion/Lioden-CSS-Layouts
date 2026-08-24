@@ -4,6 +4,7 @@
 
 /* =========================================================
    QUICK CUSTOMIZATION
+   Change these values to recolor the template.
    ========================================================= */
 
 :root {
@@ -94,7 +95,7 @@ body {
 
 /* Smaller Container behind most main stuff */
 #pageContainer {
-    background-color:var(--transparent);
+    background-color:transparent;
 }
 
 
@@ -113,12 +114,8 @@ body {
 .navbar.navbar-default a:hover {
     background: var(--bg-panel-dark) !important;
     color: var(--accent-color-dark) !important;
+    border-radius:var(--radius-big)
 }
-
-.navbar-brand.visible-lg.visible-md:hover {
-    background: none !important;
-}
-
 
 /* Navbar Collapse Button when Small */
 .navbar button {
@@ -133,6 +130,10 @@ body {
     border-color: var(--accent-color-dark) !important;
     border-radius:var(--radius-none) !important;
     color: var(--accent-color-dark) !important;
+}
+
+.navbar-header > button span{
+    background-color:var(--text-dark) !important;
 }
 
 
@@ -228,16 +229,15 @@ body {
     color: var(--text-muted-dark) !important;
 }
 
-
 /* Comment Box Scrollbar */
 #commentBox::-webkit-scrollbar {
-    background-color: var(--bg-panel-dark);
-    border-radius:var(--radius-main);
+    background-color: var(--bg-panel-mid);
+    border-radius:var(--radius-big);
 }
 
 #commentBox::-webkit-scrollbar-thumb {
     background-color: var(--bg-panel-dark);
-    border-radius:var(--radius-main);
+    border-radius:var(--radius-small);
 }
 
 
@@ -252,10 +252,10 @@ body {
 }
 
 #commentBox .bad:hover {
-    background-color: var(--bg-header-dark) !important;
-    border-color: var(--accent-color-dark) !important;
+    background-color: var(--bg-input-light) !important;
+    border-color: var(--accent-color-light) !important;
     border-radius:var(--radius-none) !important;
-    color: var(--accent-color-dark) !important;
+    color: var(--accent-color-light) !important;
 }
 
 
@@ -268,7 +268,7 @@ body {
 }
 
 #makeComment #comment::placeholder {
-    color: var(--text-muted-light) !important;
+    color: var(--text-muted-dark) !important;
 }
 
 
@@ -283,9 +283,9 @@ body {
 
 #postComment:hover {
     background-color: var(--bg-input-light) !important;
-    border-color: var(--accent-color-dark) !important;
+    border-color: var(--accent-color-light) !important;
     border-radius:var(--radius-none) !important;
-    color: var(--accent-color-dark) !important;
+    color: var(--accent-color-light) !important;
 }
 
 
@@ -295,14 +295,12 @@ body {
 
 /* Pride About Area Text */
 #about,
-#about a {
+#about a,
+#about .top a, 
+#about .bottom a {
     color: var(--text-dark);
+    text-decoration:none
 }
-
-#about .top a, #about .bottom a {
-    color:var(--text-dark);
-}
-
 
 /* Pride About Main Area */
 #about {
@@ -312,7 +310,6 @@ body {
     border-collapse: separate;
     border-spacing: 0;
 }
-
 
 /* Pride About Inner Areas */
 #about .top,
@@ -330,9 +327,8 @@ body {
 
 #about a:hover {
     color: var(--accent-color-dark);
-    border-bottom:1px solid var(--accent-color-dark);
+    border:none;
 }
-
 
 /* =========================================================
    PLAYER INFO
@@ -343,7 +339,6 @@ body {
 #player a {
     color: var(--text-dark);
 }
-
 
 /* Player Info Area */
 #player {
@@ -370,9 +365,8 @@ body {
 }
 
 #player a:hover {
-    color: var(--accent-color-dark);
+    color: var(--accent-color-dark) !important;
 }
-
 
 /* =========================================================
    DENS AND MOUNDS
@@ -386,12 +380,6 @@ body {
     border-radius:var(--radius-big);
 }
 
-.cave-grid a,
-.mound-grid a {
-    color: var(--text-dark);
-}
-
-
 /* =========================================================
    SPARRING
    ========================================================= */
@@ -404,6 +392,7 @@ body {
     overflow: hidden;
     border-collapse: separate;
     border-spacing: 0;
+    margin-bottom:10px;
 }
 
 #sparring th {
@@ -476,9 +465,9 @@ body {
 
 .row .feature input:hover, .row .feature select:hover {
     background-color: var(--bg-input-light) !important;
-    border-color: var(--accent-color-dark) !important;
+    border-color: var(--accent-color-light) !important;
     border-radius:var(--radius-none) !important;
-    color: var(--accent-color-dark) !important;
+    color: var(--accent-color-light) !important;
 }
 
 /* =========================================================
@@ -489,6 +478,10 @@ body {
 #allies a,
 #allies .top{
     color: var(--text-dark);
+}
+
+#allies a {
+    text-decoration:none;
 }
 
 #allies {
@@ -513,7 +506,6 @@ body {
     color: var(--accent-color-dark);
 }
 
-
 /* =========================================================
    CLANS
    ========================================================= */
@@ -525,7 +517,7 @@ body {
 }
 
 #clans {
-    background-color: var(--transparent);
+    background-color:transparent;
     border: var(--border-size-big) solid var(--border-color-main);
     border-radius:var(--radius-big);
     overflow: hidden;
@@ -551,7 +543,7 @@ body {
    ========================================================= */
 
 .row.dynastycollection div .left {
-    background-color: var(--bg-panel-dark);
+    background-color: var(--bg-panel-mid);
     border: var(--border-size-small) solid var(--border-color-main);
     border-radius:var(--radius-small);
 }
@@ -560,13 +552,12 @@ body {
     color: var(--text-dark);
 }
 
-
 /* =========================================================
    LOGS
    ========================================================= */
 
 .col.col-sm-4 .left {
-    background-color: var(--bg-panel-dark);
+    background-color: var(--bg-panel-mid);
     border: var(--border-size-small) solid var(--border-color-main);
     border-radius:var(--radius-small);
     color: var(--text-dark);
@@ -578,7 +569,6 @@ body {
    ========================================================= */
 
 #editdetailspanel {
-    border: 1px solid var(--border-color-main);
     border-radius:var(--radius-none);
     overflow: hidden;
     border-collapse: separate;
@@ -605,12 +595,11 @@ body {
 
 .table th a {
     color: var(--text-dark) !important;
-    border-color:var(--border-color-main) !important;
+    border:none !important;
 }
 
 .table th a:hover {
     color: var(--accent-color-dark) !important;
-    border-color:var(--accent-color-dark) !important;
 }
 
 
@@ -660,7 +649,6 @@ body {
     color: var(--accent-color-light) !important;
 }
 
-
 /* =========================================================
    ACCOUNT SETTINGS
    ========================================================= */
@@ -684,19 +672,14 @@ form .left a:hover {
    ========================================================= */
 
 #pageSidebar,
-#pageSidebar a {
-    color: var(--text-dark);
-}
-
-
+#pageSidebar a,
 #pageSidebar h3 {
-    color:var(--text-dark);
+    color: var(--text-dark);
 }
 
 #pageSidebar a:hover {
     color: var(--accent-color-dark);
 }
-
 
 /* Sidebar Inner Panels */
 .panel-body.small,
@@ -742,7 +725,6 @@ form .left a:hover {
     color: var(--accent-color-light);
 }
 
-
 /* Chat Text */
 #fra_chatContainer,
 #fra_chatContainer a,
@@ -761,7 +743,8 @@ form .left a:hover {
 
 /* Chat Inputs / Buttons */
 #fra_chatContainer #txtChatInput,
-#fra_chatContainer #btnChatSend {
+#fra_chatContainer #btnChatSend,
+#fra_chatContainer #label_currentChannel {
     background: none;
     background-color: var(--bg-input-dark);
     border: 1px solid var(--border-color-main);
@@ -769,18 +752,15 @@ form .left a:hover {
     text-shadow: none;
 }
 
-#label_currentChannel {
-    background-color: var(--bg-input-dark) !important;
-    border: 1px solid var(--border-color-main);
-    color: var(--accent-color-dark) !important;
-    text-shadow: none;
+#label_currentChannel:hover {
+    background-color: var(--bg-input-light) !important;
+    border: 1px solid var(--accent-color-light) !important;
+    color: var(--accent-color-light) !important;
 }
 
-#label_currentChannel:hover {
-    background-color: var(--bg-input-light);
-    border: 1px solid var(--accent-color-light);
-    color: var(--accent-color-light) !important;
-    text-shadow: none;
+/*Chat Room Select Dropdown*/
+#fraChatChannelMenu {
+    background:var(--bg-panel-dark) !important;
 }
 
 #fra_chatContainer input:hover, {
@@ -821,7 +801,6 @@ form .left a:hover {
     background-color: var(--bg-panel-dark);
 }
 
-
 /* Mod Message */
 .s-chat-message.s-chat-message__mod {
     background: var(--mod-bg) !important;
@@ -834,7 +813,6 @@ form .left a:hover {
     padding-left: 5px !important;
 }
 
-
 /* Chat Scrollbar */
 #chatMessageList::-webkit-scrollbar {
     background-color: var(--bg-panel-dark);
@@ -845,6 +823,14 @@ form .left a:hover {
     border-radius:var(--radius-main);
 }
 
+.channelSwitcher {
+    color:var(--text-dark) !important;
+}
+
+.channelSwitcher:hover, .channelSwitcher.active {
+    color:var(--accent-color-dark) !important;
+    background:var(--bg-panel-mid) !important;
+}
 
 /* =========================================================
    BUGBOX BUTTON
@@ -870,6 +856,7 @@ form .left a:hover {
 
 .col-xs-10, .col-xs-10 a {
     color:var(--text-dark) !important;
+    text-shadow:none;
 }
 
 /* =========================================================
