@@ -13,27 +13,27 @@
     --bg-page-image:url("https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Initiate/Neon%20Weird/pexels-dan-parlante-3850444-5719236.jpg?raw=true");
     
     /* ===== BACKGROUND COLORS ===== */
-    --bg-panel-light:#c1d5e18a;
-    --bg-panel-mid:#56b2c78a;
-    --bg-panel-dark:#2aa1b38a;
-    --bg-header-light:#8363a28a;
-    --bg-header-mid:#744d8c8a;
-    --bg-header-dark:#4230668a;
-    --bg-input-light:#a9cad88a;
-    --bg-input-mid:#6cabc28a;
-    --bg-input-dark:#34a9b78a;
+    --bg-panel-light:#55b9c9c9;
+    --bg-panel-mid:#3ca9bfc9;
+    --bg-panel-dark:#2aa1b3c9;
+    --bg-header-light:#64589dc9;
+    --bg-header-mid:#504179c9;
+    --bg-header-dark:#423066c9;
+    --bg-input-light:#64589d;
+    --bg-input-mid:#504179;
+    --bg-input-dark:#423066;
 
     /* ===== TEXT ===== */
     --text-light:#f5f3f4;
     --text-mid:#503059;
     --text-dark: #504179;
-    --text-muted-light:#cbd8e7;
-    --text-muted-mid:#94789a;
-    --text-muted-dark:#655e78;
+    --text-muted-light:#fbf4cd;
+    --text-muted-mid:#f3e494;
+    --text-muted-dark:#ead565;
 
     /* ===== BORDERS ===== */ 
     --border-color-main:#f2f2f5;
-    --border-color-alt:#2aa1b3;
+    --border-color-alt:#55b9c9;
     --border-size-big:4px;
     --border-size-small:3px;
     --radius-big:26px;
@@ -43,9 +43,9 @@
     /* ===== SPECIAL ===== */
     --bg-mod:#4230668a;
     --text-mod:#504179;
-    --accent-color-light:##fedf34;
-    --accent-color-mid:#f0ce13;
-    --accent-color-dark:#dab907;
+    --accent-color-light:#fbf4cd;
+    --accent-color-mid:#f3e494;
+    --accent-color-dark:#ead565;
 }
 
 /* =========================================================
@@ -179,7 +179,7 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 
 /* Red Alerts Background */
 .alert-danger {
-    background-color: var(--bg-panel-light) !important;
+    background-color: var(--bg-panel-dark) !important;
     border: var(--border-size-small) solid var(--border-color-main);
     border-radius:var(--radius-small);
 }
@@ -187,12 +187,12 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 /* General / Green Alerts Background */
 .alert {
     border:var(--border-size-small) solid var(--border-color-main);
-    background-color: var(--bg-panel-mid);
+    background-color: var(--bg-panel-light);
     border-radius:var(--radius-small);
 }
 
 .alert a:hover {
-    color: var(--accent-color-light);
+    color: var(--accent-color-dark);
 }
 
 /* =========================================================
@@ -216,7 +216,11 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 }
 
 #commentBox a {
-    color: var(--accent-color-light);
+    color: var(--accent-color-mid);
+}
+
+#commentBox a:hover {
+    color: var(--accent-color-dark);
 }
 
 .text-muted {
@@ -226,7 +230,7 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 /* Comment Box Scrollbar */
 #commentBox::-webkit-scrollbar {
     background-color: var(--bg-panel-mid);
-    border-radius:var(--radius-big);
+    border-radius:var(--radius-small);
 }
 
 #commentBox::-webkit-scrollbar-thumb {
@@ -246,9 +250,9 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 
 #commentBox .bad:hover {
     background-color: var(--bg-input-dark) !important;
-    border-color: var(--accent-color-light) !important;
+    border-color: var(--accent-color-mid) !important;
     border-radius:var(--radius-none) !important;
-    color: var(--accent-color-light) !important;
+    color: var(--accent-color-mid) !important;
 }
 
 /* Make Comment Input Box */
@@ -401,21 +405,21 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 /* Sparring Input Areas */
 #sparring select,
 #sparring input {
-    color: var(--text-light);
+    color: var(--accent-color-dark);
     text-shadow: none;
     background: none;
     background-color: var(--bg-input-light);
     box-shadow: none;
-    border: 1px solid var(--border-color-main);
+    border: 1px solid var(--accent-color-dark);
     border-radius:var(--radius-none);
 }
 
 #sparring input:hover,
 #sparring select:hover {
     background-color: var(--bg-input-dark) !important;
-    border-color: var(--accent-color-dark) !important;
+    border-color: var(--accent-color-light) !important;
     border-radius:var(--radius-none) !important;
-    color: var(--accent-color-dark) !important;
+    color: var(--accent-color-light) !important;
 }
 
 
@@ -437,26 +441,26 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
     border-spacing: 0;
 }
 
-.row .feature h3,
-.row .feature input,
-.row .feature select {
+.row .feature h3 {
     color: var(--text-light);
     text-shadow: none;
 }
 
 .row .feature input,
 .row .feature select {
+    color: var(--accent-color-dark);
+    text-shadow:none !important;
     background: none;
     background-color: var(--bg-input-light);
-    border: 1px solid var(--border-color-main);
+    border: 1px solid var(--accent-color-dark);
     border-radius:var(--radius-none);
 }
 
 .row .feature input:hover, .row .feature select:hover {
     background-color: var(--bg-input-dark) !important;
-    border-color: var(--accent-color-dark) !important;
+    border-color: var(--accent-color-light) !important;
     border-radius:var(--radius-none) !important;
-    color: var(--accent-color-dark) !important;
+    color: var(--accent-color-light) !important;
 }
 
 /* =========================================================
@@ -645,6 +649,7 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 form .left:has(a[href*='/account-settings.php']) {
     background-color: var(--bg-header-light);
     border: var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-small);
 }
 
 form .left a {
@@ -671,17 +676,24 @@ form .left a:hover {
 }
 
 /* Sidebar Inner Panels */
-.panel-body.small,
-.panel,
-.panel.panel-default {
-    color: var(--text-light);
-    background-color: var(--bg-panel-light);
-    box-shadow: none !important;
+
+#pageSidebar .panel.panel-default {
+    background-color:transparent !important;
+}
+
+.panel-body.small {
+    background-color:var(--bg-panel-light) !important;
 }
 
 .col-md-3 .panel {
     border: var(--border-size-small) solid var(--border-color-main);
     border-radius:var(--radius-small);
+    overflow:hidden !important;
+    background-color:transparent;
+}
+
+.col-md-12.col-xs-5 .panel p {
+    display:none;
 }
 
 .clear.visible-xs.visible-sm {
@@ -733,23 +745,34 @@ form .left a:hover {
 /* Chat Inputs / Buttons */
 #fra_chatContainer #txtChatInput,
 #fra_chatContainer #btnChatSend,
-#fra_chatContainer #label_currentChannel {
+#fra_chatContainer #label_currentChannel{
     background: none;
-    background-color: var(--bg-input-dark);
+    background-color: var(--bg-input-light);
     border: 1px solid var(--border-color-main);
-    color: var(--text-light);
+    color: var(--accent-color-dark);
     text-shadow: none;
+}
+
+#fra_chatContainer #label_currentChannel {
+    margin-top:4px;
+}
+
+#btnLoadNewMessages {
+    margin-top:9px;
 }
 
 #label_currentChannel:hover {
     background-color: var(--bg-input-dark) !important;
-    border: 1px solid var(--accent-color-dark) !important;
-    color: var(--accent-color-dark) !important;
+    border: 1px solid var(--accent-color-light) !important;
+    color: var(--accent-color-light) !important;
 }
 
 /*Chat Room Select Dropdown*/
 #fraChatChannelMenu {
-    background:var(--bg-panel-light) !important;
+    background:var(--bg-input-light) !important;
+    border-color: var(--accent-color-light) !important;
+    border-radius:var(--radius-none);
+    color: var(--accent-color-light);
 }
 
 #fra_chatContainer input:hover, {
@@ -803,6 +826,9 @@ form .left a:hover {
 }
 
 /* Chat Scrollbar */
+.nolayout {
+    overflow:hidden;
+}
 #chatMessageList::-webkit-scrollbar {
     background-color: var(--bg-panel-mid);
 }
@@ -813,12 +839,13 @@ form .left a:hover {
 }
 
 .channelSwitcher {
-    color:var(--text-light) !important;
+    color:var(--accent-color-light) !important;
 }
 
 .channelSwitcher:hover, .channelSwitcher.active {
-    color:var(--accent-color-light) !important;
-    background:var(--bg-panel-light) !important;
+    background-color: var(--bg-input-dark) !important;
+    border: 1px solid var(--accent-color-dark) !important;
+    color: var(--accent-color-dark) !important;
 }
 
 /* =========================================================
@@ -839,7 +866,7 @@ form .left a:hover {
     background-color: var(--bg-input-dark);
     border-color: var(--accent-color-light);
     border-radius:var(--radius-none);
-    color: var(--accent-color-light);
+    color: var(--accent-color-light) !important;
 }
 
 /* =========================================================
