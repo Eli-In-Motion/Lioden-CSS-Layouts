@@ -18,14 +18,14 @@
 }
 
 .BioTop {
-    background:green;
+    background:var(--bg-header-light);
     grid-column:1/3;
     border-radius:10px;
     overflow:hidden;
 }
 
 .BioLeft {
-    background:blue;
+    background:var(--bg-panel-mid);
     border-radius:10px;
     overflow:hidden;
 }
@@ -35,7 +35,7 @@
 }
 
 .BioRight {
-    background:pink;
+    background:var(--bg-panel-light);
     border-radius:10px;
     overflow:hidden;
 }
