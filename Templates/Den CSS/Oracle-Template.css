@@ -1,4 +1,6 @@
-/* https://i.imgur.com/abduPNs.png */
+/* =========================================================
+   ORACLE
+   ========================================================= */
 
 /*Pagedoll*/
 .pagedoll {
@@ -10,10 +12,18 @@
     pointer-events: none;
 }
 
+/*Add to Bio Box CSS to make them scrollable
+    overflow-x:hidden;
+    overflow-y:scroll;*/
+
 /*Player Icon*/
 #player > tbody > tr.right > td:nth-child(2) {
     content:url(https://i.imgur.com/abduPNs.png);
 }
+
+/* =========================================================
+   PICK /ONE/ OF THE THREE
+   ========================================================= */
 
 /*Replace ____'s Den*/
 #pageContainer h1 {
@@ -47,10 +57,6 @@ a, button {
     cursor: url("https://i.imgur.com/eqQyMCj.png"), pointer;
 }
 
-/*Add to Bio Box CSS to make them scrollable
-    overflow-x:hidden;
-    overflow-y:scroll;*/
-/*Add to Bio Boxes to hide scrollbar
-    .BioBottomRight::-webkit-scrollbar {
-    display:none;
-    }*/
+/* =========================================================
+   END ORACLE
+   ========================================================= */
