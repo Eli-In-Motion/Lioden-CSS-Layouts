@@ -68,58 +68,72 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
 
 /*ALL Caves Together*/
 .cave-grid img {
-    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
-    width:258px;
-    height:129px;
-    object-fit:contain;
+    visibility:hidden;
+}
+
+.col-md-4.col-xs-6.center .cave-grid {
+    background-image:url('https://static.lioden.com/images/dynamic/backgrounds/purplelovegrass.png');
+    background-size:cover;
 }
 
 /*ALL Unsorted, Pregnant, Overview*/
 #fraOrganizationBlock > div:nth-child(-n + 3) > a > div > img {
-    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
-    width:258.4px;
-    height:59.63px;
-    object-fit:contain;
+    visibility:hidden;
+}
+
+#fraOrganizationBlock > div:nth-child(-n + 3) > a > div {
+    background-image:url('https://static.lioden.com/images/dynamic/backgrounds/purplelovegrass.png');
+    background-size:cover;
 }
 
 /*Select Individual Top Caves (Change nth-child)*/
 #fraOrganizationBlock > div:nth-child(1) > a > div > img {
-    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
-    width:258.4px;
-    height:59.63px;
-    object-fit:contain;
+    visibility:hidden;
+}
+
+#fraOrganizationBlock > div:nth-child(1) > a > div {
+    background-image:url('https://static.lioden.com/images/dynamic/backgrounds/purplelovegrass.png');
+    background-size:cover;
 }
 
 /*All Personal Caves*/
 #fraCaveList img {
-    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
-    width:258px;
-    height:129px;
-    object-fit:contain;
+    visibility:hidden;
+}
+
+#fraCaveList div div {
+    background-image:url('https://static.lioden.com/images/dynamic/backgrounds/purplelovegrass.png');
+    background-size:cover;
 }
 
 /*Select Individual Personal Cave Images (Change nth-Child)*/
 #fraCaveList > div:nth-child(1) > a > div > img {
-    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
-    width:258.4px;
-    height:129.2px;
-    object-fit:contain;
+    visibility:hidden;
+}
+
+#fraCaveList > div:nth-child(1) > a > div {
+    background-image:url('https://static.lioden.com/images/dynamic/backgrounds/purplelovegrass.png');
+    background-size:cover;
 }
 
 /*ALL Beetle Mounds Together*/
 .mound-grid img {
-    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
-    width:130px;
-    height:80px;
-    object-fit:contain;
+    visibility:hidden;
+}
+
+.mound-grid {
+    background-image:url('https://static.lioden.com/images/dynamic/backgrounds/purplelovegrass.png');
+    background-size:cover;
 }
 
 /*Select Individual Beetle Mounds (Change nth-child)*/
 #fraMoundList > div:nth-child(1) > a > div > img {
-    content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
-    width:130px;
-    height:80px;
-    object-fit:contain;
+    visibility:hidden;
+}
+
+#fraMoundList > div:nth-child(1) > a > div {
+    background-image:url('https://static.lioden.com/images/dynamic/backgrounds/purplelovegrass.png');
+    background-size:cover;
 }
 
 /*I DO NOT AND WILL NOT CHANGE CLAN IMAGES*/
