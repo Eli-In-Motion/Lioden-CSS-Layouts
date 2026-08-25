@@ -9,43 +9,43 @@
 :root {
 
     /* ===== MAIN BACKGROUND ===== */
-    --bg-page-color:#030303;
-    --bg-page-image:url("https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Initiate/Neon%20Weird/pexels-dan-parlante-3850444-5719236.jpg?raw=true");
+    --bg-page-color:#01092d;
+    --bg-page-image:url("https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Initiate/Jellyfish/karo-k-HoH869KdIm4-unsplash.jpg?raw=true");
     
     /* ===== BACKGROUND COLORS ===== */
-    --bg-panel-light:#55b9c9c9;
-    --bg-panel-mid:#3ca9bfc9;
-    --bg-panel-dark:#2aa1b3c9;
-    --bg-header-light:#64589dc9;
-    --bg-header-mid:#504179c9;
-    --bg-header-dark:#423066c9;
-    --bg-input-light:#64589d;
-    --bg-input-mid:#504179;
-    --bg-input-dark:#423066;
+    --bg-panel-light:#8aa6ff69;
+    --bg-panel-mid:#5279f869;
+    --bg-panel-dark:#0f2f9669;
+    --bg-header-light:#96d4e069;
+    --bg-header-mid:#76b5c169;
+    --bg-header-dark:#528d9869;
+    --bg-input-light:#b1c7f969;
+    --bg-input-mid:#5979c269;
+    --bg-input-dark:#1e459d69;
 
-    /* ===== TEXT ===== */
-    --text-light:#f5f3f4;
-    --text-mid:#503059;
-    --text-dark: #504179;
-    --text-muted-light:#fbf4cd;
-    --text-muted-mid:#f3e494;
-    --text-muted-dark:#ead565;
+    /* ===== TEXT ===== c2cce7*/
+    --text-light:#e2fffd;
+    --text-mid:#aadad7;
+    --text-dark: #7abbb7;
+    --text-muted-light:#d2e0ff;
+    --text-muted-mid:#b1c7f9;
+    --text-muted-dark:#a5b7e0;
 
     /* ===== BORDERS ===== */ 
-    --border-color-main:#f2f2f5;
-    --border-color-alt:#55b9c9;
+    --border-color-main:#e2fffd;
+    --border-color-alt:#9ddfff;
     --border-size-big:4px;
-    --border-size-small:3px;
-    --radius-big:26px;
-    --radius-small:13px;
+    --border-size-small:2px;
+    --radius-big:22px;
+    --radius-small:11px;
     --radius-none:0px;
 
     /* ===== SPECIAL ===== */
     --bg-mod:#4230668a;
     --text-mod:#504179;
-    --accent-color-light:#fbf4cd;
-    --accent-color-mid:#f3e494;
-    --accent-color-dark:#ead565;
+    --accent-color-light:#c1e4f7;
+    --accent-color-mid:#90bdd6;
+    --accent-color-dark:#507f9a;
 }
 
 /* =========================================================
@@ -56,9 +56,8 @@ body {
     background-color: var(--bg-page-color);
     background-image: var(--bg-page-image);
     background-attachment: fixed;
-    background-position:right bottom;
+    background-size:cover;
     background-repeat: no-repeat;
-    background-size: 700px 500px
 }
 
 /* =========================================================
@@ -76,7 +75,7 @@ body {
 }
 
 .topbar a:hover {
-    color: var(--accent-color-light) !important;
+    color: var(--accent-color-mid) !important;
 }
 
 /* =========================================================
@@ -114,13 +113,14 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 
 .navbar.navbar-default a:hover {
     background: var(--bg-panel-light) !important;
+    border-radius:var(--radius-small);
     color: var(--accent-color-light) !important;
 }
 
 /* Navbar Collapse Button when Small */
 .navbar button {
     background-color: var(--bg-input-light) !important;
-    border: var(--border-size-small) solid var(--border-color-main) !important;
+    border: 1px solid var(--border-color-main) !important;
     border-radius:var(--radius-none);
 }
 
@@ -159,7 +159,6 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 .breadcrumb a:hover {
     color: var(--accent-color-light);
 }
-
 
 /* ____'s Den */
 #pageContainer h1 {
@@ -204,7 +203,7 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
     color: var(--text-light);
     border: var(--border-size-big) solid var(--border-color-main) !important;
     border-radius:var(--radius-big);
-    background-color:var(--transparent)
+    background-color:var(--transparent);
 }
 
 .comment:nth-child(odd) {
@@ -216,11 +215,11 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 }
 
 #commentBox a {
-    color: var(--accent-color-mid);
+    color: var(--accent-color-light);
 }
 
 #commentBox a:hover {
-    color: var(--accent-color-dark);
+    color: var(--accent-color-mid);
 }
 
 .text-muted {
@@ -230,7 +229,6 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 /* Comment Box Scrollbar */
 #commentBox::-webkit-scrollbar {
     background-color: var(--bg-panel-mid);
-    border-radius:var(--radius-small);
 }
 
 #commentBox::-webkit-scrollbar-thumb {
@@ -249,10 +247,10 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 }
 
 #commentBox .bad:hover {
-    background-color: var(--bg-input-dark) !important;
-    border-color: var(--accent-color-mid) !important;
+    background-color: var(--bg-input-mid) !important;
+    border-color: var(--accent-color-light) !important;
     border-radius:var(--radius-none) !important;
-    color: var(--accent-color-mid) !important;
+    color: var(--accent-color-light) !important;
 }
 
 /* Make Comment Input Box */
@@ -272,7 +270,7 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
     background: var(--bg-input-light);
     border: var(--border-size-small) solid var(--border-color-main);
     border-radius:var(--radius-none);
-    color: var(--accent-color-dark);
+    color: var(--accent-color-light);
     text-shadow: none;
 }
 
@@ -282,7 +280,7 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
     border-radius:var(--radius-none) !important;
     color: var(--accent-color-light) !important;
 }
-
+/*~~~~~~~~~~WIP~~~~~~~~~~~~~*/
 /* =========================================================
    PRIDE ABOUT
    ========================================================= */
