@@ -614,6 +614,11 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a:hover
     color: var(--text-dark);
 }
 
+#editdetailspanel .right textarea {
+    scrollbar-color:var(--bg-input-dark) var(--bg-input-light);
+    scrollbar-width:thin;
+}
+
 #editdetailspanel .right a {
     color: var(--text-dark);
 }
