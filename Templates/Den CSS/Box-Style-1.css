@@ -11,6 +11,7 @@
     grid-template-columns:2fr 1fr;
     grid-template-rows:100px 100px;
     gap:10px 20px;
+    color:var(--text-dark);
 }
 
 .Bio br {
@@ -18,10 +19,11 @@
 }
 
 .BioLeft {
-    background:red;
+    background:var(--bg-header-light);
     grid-row-start:1;
     grid-row:1/3;
-    border-radius:20px;
+    border: var(--border-size-big) solid var(--border-color-main);
+    border-radius:var(--radius-big);
     overflow:hidden;
 }
 
@@ -30,8 +32,9 @@
 }
 
 .BioTopRight {
-    background:blue;
-    border-radius:20px;
+    background:var(--bg-panel-mid);
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-big);
     overflow:hidden;
 }
 
@@ -40,8 +43,9 @@
 }
 
 .BioBottomRight {
-    background:green;
-    border-radius:20px;
+    background:var(--bg-panel-light);
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-big);
     overflow:hidden;
 }
 
