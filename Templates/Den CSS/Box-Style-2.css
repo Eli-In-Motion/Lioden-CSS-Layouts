@@ -1,16 +1,18 @@
-/* =========================================================
-   BIO BOX STYLE 2
-   ========================================================= */
 /*HTML
 <div class="Bio">
 <div class="BioTop">Top Small Div</div> <div class="BioLeft">Left Div</div><div class="BioRight">Right Div</div>
 </div> */
+
+/* =========================================================
+   BIO BOX STYLE 2
+   ========================================================= */
 
 .Bio {
     display:grid;
     grid-template-columns:1fr 1fr;
     grid-template-rows:50px 200px;
     gap:20px 10px;
+    color:var(--text-dark);
 }
 
 .Bio br {
@@ -20,12 +22,14 @@
 .BioTop {
     background:var(--bg-header-light);
     grid-column:1/3;
+    border:var(--border-size-small) solid var(--border-color-main);
     border-radius:10px;
     overflow:hidden;
 }
 
 .BioLeft {
     background:var(--bg-panel-mid);
+    border:var(--border-size-big) solid var(--border-color-main);
     border-radius:10px;
     overflow:hidden;
 }
@@ -36,6 +40,7 @@
 
 .BioRight {
     background:var(--bg-panel-light);
+    border:var(--border-size-big) solid var(--border-color-main);
     border-radius:10px;
     overflow:hidden;
 }
