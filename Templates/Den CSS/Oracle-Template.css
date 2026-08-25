@@ -12,14 +12,14 @@
     pointer-events: none;
 }
 
-/*Add to Bio Box CSS to make them scrollable
-    overflow-x:hidden;
-    overflow-y:scroll;*/
-
 /*Player Icon*/
 #player > tbody > tr.right > td:nth-child(2) {
     content:url(https://i.imgur.com/abduPNs.png);
 }
+
+/*Add to Bio Box CSS to make them scrollable
+    overflow-x:hidden;
+    overflow-y:scroll; */
 
 /* =========================================================
    PICK /ONE/ OF THE THREE
@@ -37,24 +37,19 @@
 
 /*Progress Bar Changes*/
 .panel-body.small  .progress {
-    background:#ffffffab;
+    background:var(--bg-header-dark);
 }
 
 .panel-body.small  .progress div {
-    color:white;
+    color:var(--text-light);
 }
 
 .progress [role="progressbar"] {
-    background:#007ba1ab;
+    background:linear-gradient(0deg, #FFFFFF, var(--accent-color-dark), #FFFFFF)
 }
 
-body {
+body, a, button, select {
     cursor:url('https://i.imgur.com/eqQyMCj.png'), auto;
-}
-
-/*Hover Cursor*/
-a, button {
-    cursor: url("https://i.imgur.com/eqQyMCj.png"), pointer;
 }
 
 /* =========================================================
