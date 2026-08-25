@@ -114,6 +114,11 @@ body {
     border-radius:var(--radius-big)
 }
 
+/*Exclude Lioden Logo Link*/
+body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a:hover {
+    background:none !important;
+}
+
 /* Navbar Collapse Button when Small */
 .navbar button {
     background-color: var(--bg-input-dark) !important;
