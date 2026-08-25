@@ -43,9 +43,9 @@
     /* ===== SPECIAL ===== */
     --bg-mod:#000000AB;
     --text-mod:#F7F8FC;
-    --accent-color-light:#aa5a20;
-    --accent-color-mid:#aa5a20
-    --accent-color-dark:#5a1402;
+    --accent-color-light:#f1a167;
+    --accent-color-mid:#aa5a20;
+    --accent-color-dark:#612d08;
 }
 
 /* =========================================================
@@ -75,10 +75,10 @@ body {
     color: var(--text-dark) !important;
 }
 
-.topbar a:hover {
-    color: var(--accent-color-dark) !important;
-    text-shadow:0 0 10 var(--bg-panel-light) !important;
+.topbar a:hover{
+    color:var(--accent-color-dark) !important;
 }
+
 
 /* =========================================================
    MAIN CONTAINERS
@@ -93,7 +93,9 @@ body {
 
 /* Smaller Container behind most main stuff */
 #pageContainer {
-    background-color:transparent;
+    background-color:#edf1f4bf;
+    border:var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-big);
 }
 
 /* =========================================================
@@ -111,7 +113,7 @@ body {
 .navbar.navbar-default a:hover {
     background: var(--bg-panel-dark) !important;
     color: var(--accent-color-dark) !important;
-    border-radius:var(--radius-big)
+    border-radius:var(--radius-big);
 }
 
 /*Exclude Lioden Logo Link*/
@@ -122,7 +124,7 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a:hover
 /* Navbar Collapse Button when Small */
 .navbar button {
     background-color: var(--bg-input-dark) !important;
-    border: var(--border-size-small) solid var(--border-color-main) !important;
+    border: 1px solid var(--border-color-main) !important;
     border-radius:var(--radius-none);
 }
 
@@ -134,8 +136,8 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a:hover
     color: var(--accent-color-dark) !important;
 }
 
-.navbar-header > button span{
-    background-color:var(--text-dark) !important;
+.navbar-header > button span {
+    background-color:var(--border-color-main) !important;
 }
 
 /* Navbar Links when Small and Expanded */
@@ -161,7 +163,6 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a:hover
 .breadcrumb a:hover {
     color: var(--accent-color-dark);
 }
-
 
 /* ____'s Den */
 #pageContainer h1 {
@@ -218,7 +219,7 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a:hover
 }
 
 #commentBox a {
-    color: var(--accent-color-dark);
+    color: var(--text-muted-dark);
 }
 
 .text-muted {
@@ -364,9 +365,15 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a:hover
    DENS AND MOUNDS
    ========================================================= */
 
-.cave-grid,
-.mound-grid {
+.cave-grid {
     background-color: var(--bg-panel-dark);
+    color: var(--text-dark);
+    border:var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-big);
+}
+
+.mound-grid {
+    background-color: var(--bg-panel-mid);
     color: var(--text-dark);
     border:var(--border-size-small) solid var(--border-color-main);
     border-radius:var(--radius-big);
@@ -383,7 +390,6 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a:hover
     border-radius:var(--radius-big);
     overflow: hidden;
     border-collapse: separate;
-    border-spacing: 0;
     margin-bottom:10px;
 }
 
@@ -403,7 +409,8 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a:hover
 
 /* Sparring Input Areas */
 #sparring select,
-#sparring input {
+#sparring input,
+#sparring optgroup {
     color: var(--text-dark);
     text-shadow: none;
     background: none;
@@ -413,8 +420,7 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a:hover
     border-radius:var(--radius-none);
 }
 
-#sparring input:hover,
-#sparring select:hover {
+#sparring input:hover {
     background-color: var(--bg-input-light) !important;
     border-color: var(--accent-color-light) !important;
     border-radius:var(--radius-none) !important;
@@ -455,7 +461,7 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a:hover
     border-radius:var(--radius-none);
 }
 
-.row .feature input:hover, .row .feature select:hover {
+.row .feature input:hover {
     background-color: var(--bg-input-light) !important;
     border-color: var(--accent-color-light) !important;
     border-radius:var(--radius-none) !important;
@@ -482,7 +488,6 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a:hover
     border-radius:var(--radius-big);
     overflow: hidden;
     border-collapse: separate;
-    border-spacing: 0;
 }
 
 #allies .top,
@@ -514,7 +519,6 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a:hover
     border-radius:var(--radius-big);
     overflow: hidden;
     border-collapse: separate;
-    border-spacing: 0;
 }
 
 #clans .top {
@@ -561,11 +565,9 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a:hover
    ========================================================= */
 
 #editdetailspanel {
-    border-radius:var(--radius-none);
+    border-radius:var(--radius-small);
     overflow: hidden;
     border-collapse: separate;
-    border-spacing: 0;
-    margin: 0;
 }
 
 .table {
@@ -577,8 +579,6 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a:hover
     border-radius:var(--radius-small);
     overflow: hidden;
     border-collapse: separate;
-    border-spacing: 0;
-    margin: 0;
 }
 
 .table th {
@@ -674,9 +674,11 @@ form .left a:hover {
 }
 
 /* Sidebar Inner Panels */
-.panel-body.small,
-.panel,
-.panel.panel-default {
+#pageSidebar .panel.panel-default {
+    background-color:transparent;
+}
+
+.panel-body.small {
     color: var(--text-dark);
     background-color: var(--bg-panel-mid);
     box-shadow: none !important;
@@ -685,6 +687,22 @@ form .left a:hover {
 .col-md-3 .panel {
     border: var(--border-size-small) solid var(--border-color-main);
     border-radius:var(--radius-small);
+    overflow:hidden !important;
+    background-color:transparent;
+}
+
+.col-md-12.col-xs-5 .panel p {
+    display:none;
+}
+
+.clear.visible-xs.visible-sm {
+    border:none !important;
+}
+
+.col-md-3 .panel {
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-small);
+    box-shadow:none;
 }
 
 .clear.visible-xs.visible-sm {
@@ -845,6 +863,7 @@ form .left a:hover {
     color: var(--accent-color-light);
 }
 
+/*Lioden License and Links*/
 .col-xs-10, .col-xs-10 a {
     color:var(--text-dark) !important;
     text-shadow:none;
