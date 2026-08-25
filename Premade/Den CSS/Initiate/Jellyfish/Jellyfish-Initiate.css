@@ -280,7 +280,7 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
     border-radius:var(--radius-none) !important;
     color: var(--accent-color-light) !important;
 }
-/*~~~~~~~~~~WIP~~~~~~~~~~~~~*/
+
 /* =========================================================
    PRIDE ABOUT
    ========================================================= */
@@ -318,7 +318,7 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 }
 
 #about a:hover {
-    color: var(--accent-color-dark);
+    color: var(--accent-color-mid);
     border:none;
 }
 
@@ -338,7 +338,6 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
     border-radius:var(--radius-big);
     overflow: hidden;
     border-collapse: separate;
-    border-spacing: 0;
 }
 
 #player .top {
@@ -357,20 +356,28 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 }
 
 #player a:hover {
-    color: var(--accent-color-dark) !important;
+    color: var(--accent-color-mid) !important;
 }
 
 /* =========================================================
    DENS AND MOUNDS
    ========================================================= */
 
-.cave-grid,
-.mound-grid {
-    background-color: var(--bg-panel-light);
+.cave-grid {
+    background-color: var(--bg-header-light);
     color: var(--text-light);
     border:var(--border-size-small) solid var(--border-color-main);
     border-radius:var(--radius-big);
 }
+
+.mound-grid {
+    background-color: var(--bg-header-mid);
+    color: var(--text-light);
+    border:var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-big);
+}
+
+/*~~~~~~~~~~~~~WIP~~~~~~~~~~~~~~~*/
 
 /* =========================================================
    SPARRING
