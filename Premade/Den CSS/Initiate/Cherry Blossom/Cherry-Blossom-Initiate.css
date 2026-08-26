@@ -9,15 +9,15 @@
   --bg-page-image:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Initiate/Cherry%20Blossom/tsuyoshi-kozu-BcjTORSr88Q-unsplash.jpg?raw=true');
 
 /*~~~~~~~~~Bakcground Colors~~~~~~~~~*/
-  --bg-panel-light:#f1dee1d1;
-  --bg-panel-mid: #e7d2d5d1;
-  --bg-panel-dark: #d1aeb3d1;
-  --bg-header-light: #e6cbced1;
-  --bg-header-mid: #ce9da2d1;
-  --bg-header-dark: #af7278d1;
-  --bg-input-light: #f7dbe1d1;
-  --bg-input-mid: #e6b4bed1;
-  --bg-input-dark:#bd828ed1;
+  --bg-panel-light:#f1dee17a;
+  --bg-panel-mid: #e7d2d57a;
+  --bg-panel-dark: #d1aeb37a;
+  --bg-header-light: #e6cbce7a;
+  --bg-header-mid: #ce9da27a;
+  --bg-header-dark: #af72787a;
+  --bg-input-light: #f7dbe17a;
+  --bg-input-mid: #e6b4be7a;
+  --bg-input-dark:#bd828e7a;
 
 /*~~~~~~~~~Text Colors~~~~~~~~~*/
   --text-light: #f7aab8;
@@ -28,17 +28,17 @@
   --text-small-dark: #bc848e;
 
 /*~~~~~~~~~Borders~~~~~~~~~*/
-  --border-color-main:#45101ad1;
-  --border-color-alt:#f7aab8;
+  --border-color-main:#45101a7a;
+  --border-color-alt:#f7aa;
   --border-size-big: 3px;
   --border-size-small:2px;
   --radius-big: 16px;
   --radius-small: 8px;
 
 /*~~~~~~~~~Chat~~~~~~~~~*/
-  --bg-mod: #45101ad1;
+  --bg-mod: #45101a7a;
   --text-mod: #fff7fc;
-  --bg-ping: #45101ad1;
+  --bg-ping: #45101a7a;
   --text-ping: #fff7fc;
   
 /*~~~~~~~~~Misc~~~~~~~~~*/
