@@ -10,18 +10,18 @@
 
 /*~~~~~~~~~Main Bakcground~~~~~~~~~*/
   --bg-page-color:white;
-  --bg-page-image:url('');
+  --bg-page-image:url('https://static.lioden.com/images/dynamic/backgrounds/nothing.png');
 
 /*~~~~~~~~~Bakcground Colors~~~~~~~~~*/
-  --bg-panel-light:white;
-  --bg-panel-mid: gray;
-  --bg-panel-mid: black;
-  --bg-header-light: white;
-  --bg-header-mid: gray;
-  --bg-header-dark: black;
-  --bg-input-light: white;
-  --bg-input-mid: gray;
-  --bg-input-dark:black;
+  --bg-panel-light:pink;
+  --bg-panel-mid: purple;
+  --bg-panel-mid: blue;
+  --bg-header-light: pink;
+  --bg-header-mid: purple;
+  --bg-header-dark: blue;
+  --bg-input-light: pink;
+  --bg-input-mid: purple;
+  --bg-input-dark:blue;
 
 /*~~~~~~~~~Text Colors~~~~~~~~~*/
   --text-light: white;
@@ -32,21 +32,21 @@
   --text-small-dark: black;
 
 /*~~~~~~~~~Borders~~~~~~~~~*/
-  --border-color-main:white;
+  --border-color-main:green;
   --border-color-alt:gray;
   --border-size-big: 4px;
   --border-size-small:2px;
-  --radius-main: 10px;
-  --radius-alt: 5px;
+  --radius-main: 20px;
+  --radius-alt: 10px;
 
 /*~~~~~~~~~Chat~~~~~~~~~*/
   --bg-mod: pink;
   --text-mod: purple;
   
 /*~~~~~~~~~Misc~~~~~~~~~*/
-  --accent-color:light;
-  --accent-color-mid: gray;
-  --accent-color-dark;
+  --accent-color: pink;
+  --accent-color-mid: purple;
+  --accent-color-dark: blue;
 }
 
 /*~~~~~~~~~~~~~~~~~
