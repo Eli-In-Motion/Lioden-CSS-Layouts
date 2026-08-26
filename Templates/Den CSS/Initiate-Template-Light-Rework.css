@@ -1,11 +1,7 @@
+ /*<link rel="stylesheet" type="text/css" href="https://eli-in-motion.github.io/Lioden-CSS-Layouts/Templates/Den%20CSS/Initiate-Template-Light-Rework.css" /> */
 /*~~~~~~~~~~~~~~~~~
     Initiate
   ~~~~~~~~~~~~~~~~~*/
- /*<link rel="stylesheet" type="text/css" href="https://eli-in-motion.github.io/Lioden-CSS-Layouts/Templates/Den%20CSS/Initiate-Template-Light-Rework.css" /> */
-/*~~~~~~~~~~~~~~~~~
-    Customization
-  ~~~~~~~~~~~~~~~~~*/
-
 :root {
 
 /*~~~~~~~~~Main Bakcground~~~~~~~~~*/
@@ -42,6 +38,8 @@
 /*~~~~~~~~~Chat~~~~~~~~~*/
   --bg-mod: pink;
   --text-mod: purple;
+  --bg-ping: red;
+  --text-ping: black;
   
 /*~~~~~~~~~Misc~~~~~~~~~*/
   --accent-color-light: #b26976;
@@ -153,12 +151,14 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a:hover
 }
 
 /*~~~~~~~~~Credit~~~~~~~~~*/
-
-        /*----------- WIP-----------*/
+.breadcrumb::after {
+  content:"✧CSS by Eli in Motion #319237✧";
+  float:right;
+}
 
 /*~~~~~~~~~________'s Den~~~~~~~~~*/
 #pageContainer h1 {
-  color: var(--accent-color-dark);
+  color: var(--accent-color-mid);
   text-align: center;
 }
 
@@ -672,7 +672,7 @@ form .left a:hover {
 #pageSidebar .panel {
   background: var(--bg-panel-mid);
   color: var(--text-dark);
-  border: var(--border-size-big) solid var(--border-color-main);
+  border: var(--border-size-small) solid var(--border-color-main);
   border-radius: var(--radius-big);
   overflow: hidden;
 }
@@ -684,7 +684,7 @@ form .left a:hover {
 .col-md-12.col-xs-5 .panel {
   background: var(--bg-panel-mid);
   color: var(--text-dark);
-  border: var(--border-size-big) solid var(--border-color-main);
+  border: var(--border-size-small) solid var(--border-color-main);
   border-radius: var(--radius-big);
   overflow: hidden;
 }
@@ -701,7 +701,7 @@ form .left a:hover {
 .col-md-12.col-xs-12.visible-md.visible-lg {
   background: var(--bg-panel-mid);
   color: var(--text-dark);
-  border: var(--border-size-big) solid var(--border-color-main);
+  border: var(--border-size-small) solid var(--border-color-main);
   border-radius: var(--radius-big);
 }
 
@@ -711,31 +711,45 @@ form .left a:hover {
 /*~~~~~~~~~Chatbox text~~~~~~~~~*/
 #fraSidebarChat,
 #fraSidebarChat a,
+#chatMessageList a,
 #fraSidebarChat span {
-  color: var(--text-dark);
+  color: var(--text-dark) !important;
 }
 
-#fraSidebarChat a:hover {
-    color: ver(--accent-color-mid);
+#fraSidebarChat a:hover,
+#chatMessageList a:hover {
+  color: ver(--accent-color-mid);
 }
+
 
 /*~~~~~~~~~Chatbox inputs~~~~~~~~~*/
 #btnToggleSidebarChat,
 #label_currentChannel,
 #txtChatInput,
-#btnChatSend {
-  background: var(--bg-input-mid);
+#btnChatSend,
+.chatMenu-container {
+  background: var(--bg-input-mid) !important;
   color: var(--text-dark) !important;
-  border: 1px solid var(--border-color-main);
-  border-radius: none;
-  text-shadow: none;
+  border: 1px solid var(--border-color-main) !important;
+  border-radius: none !important;
+  text-shadow: none !important;
+}
+
+.chatMenu-container button {
+  color: var(--text-dark) !important;
+}
+
+.chatMenu-container button:hover,
+.channelSwitcher.active {
+  background: var(--bg-input-light) !important;
+  color: var(--accent-color-light) !important;
 }
 
 #btnToggleSidebarChat:hover,
 #btnChatSend:hover {
-  background: var(--bg-input-light);
+  background: var(--bg-input-light) !important;
   color: var(--accent-color-light) !important;
-  border-color: var(--accent-color-light);
+  border-color: var(--accent-color-light) !important;
 }
 
 /*~~~~~~~~~Chatbox main container~~~~~~~~~*/
@@ -746,26 +760,31 @@ form .left a:hover {
 
 #chatMessageList {
   backgound: transparent;
+  color: var(--text-dark);
   border-radius: var(--radius-small);
   box-shadow:0 0 0 var(--border-size-small) var(--border-color-main);
   scrollbar-color: var(--bg-input-mid) var(--bg-input-light);
   scrollbar-width: thin;
 }
 
+.s-chat-message_timestamp {
+  color: var(--text-small-mid)
+}
+
 /*~~~~~~~~~Chatbox alternating messages~~~~~~~~~*/
 .s-chat-message:nth-child(odd) {
-    background: var(--bg-panel-mid);
+  background: var(--bg-panel-mid);
 }
 
 .s-chat-message:nth-child(even) {
-    background: var(--bg-panel-light);
+  background: var(--bg-panel-light);
 }
 
 /*~~~~~~~~~Mod messages~~~~~~~~~*/
 .s-chat-message.s-chat-message_mod {
-    background: var(--mod-bg);
-    color: var(--text-mod);
-    padding-left: 5px;
+  background: var(--mod-bg);
+  color: var(--text-mod);
+  padding-left: 5px;
 }
 
 /*~~~~~~~~~~~~~~~~~
@@ -780,9 +799,9 @@ form .left a:hover {
 }
 
 .btn.btn-default.button:hover {
-  background: var(--bg-input-light);
+  background: var(--bg-input-light) !important;
   color: var(--accent-color-light) !important;
-  border-color: var(--accent-color-light);
+  border-color: var(--accent-color-light) !important;
 }
     
 /*~~~~~~~~~~~~~~~~~
