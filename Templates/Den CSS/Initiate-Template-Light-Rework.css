@@ -6,55 +6,56 @@
 
 /*~~~~~~~~~Main Bakcground~~~~~~~~~*/
   --bg-page-color:white;
-  --bg-page-image:url('https://static.lioden.com/images/dynamic/backgrounds/nothing.png');
+  --bg-page-image:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Initiate/Cherry%20Blossom/tsuyoshi-kozu-BcjTORSr88Q-unsplash.jpg?raw=true');
 
 /*~~~~~~~~~Bakcground Colors~~~~~~~~~*/
-  --bg-panel-light:#ffe6eb;
-  --bg-panel-mid: #c772c7;
-  --bg-panel-dark: #8484bf;
-  --bg-header-light: #fbe4e8;
-  --bg-header-mid: purple;
-  --bg-header-dark: blue;
-  --bg-input-light: #ffe7eb;
-  --bg-input-mid: #aa31aa;
-  --bg-input-dark:#6a6aff;
+  --bg-panel-light:#ffedf07a;
+  --bg-panel-mid: #e7c6cb7a;
+  --bg-panel-dark: #d1aeb37a;
+  --bg-header-light: #ffe6e97a;
+  --bg-header-mid: #ce9ba07a;
+  --bg-header-dark: #af72787a;
+  --bg-input-light: #f7dbe17a;
+  --bg-input-mid: #e6b4be7a;
+  --bg-input-dark:#bd828e7a;
 
 /*~~~~~~~~~Text Colors~~~~~~~~~*/
-  --text-light: #cbddf1;
-  --text-mid: gray;
-  --text-dark: #810000;
-  --text-small-light: white;
-  --text-small-mid: gray;
-  --text-small-dark: black;
+  --text-light: #f7aab8;
+  --text-mid: #8a3142;
+  --text-dark: #450612;
+  --text-small-light: #eeafbb;
+  --text-small-mid: #dc9aa6;
+  --text-small-dark: #bc848e;
 
 /*~~~~~~~~~Borders~~~~~~~~~*/
-  --border-color-main:#4bb14b;
-  --border-color-alt:gray;
-  --border-size-big: 4px;
+  --border-color-main:#45101a7a;
+  --border-color-alt:#f7aa;
+  --border-size-big: 3px;
   --border-size-small:2px;
-  --radius-big: 20px;
-  --radius-small: 10px;
+  --radius-big: 16px;
+  --radius-small: 8px;
 
 /*~~~~~~~~~Chat~~~~~~~~~*/
-  --bg-mod: pink;
-  --text-mod: purple;
-  --bg-ping: red;
-  --text-ping: black;
+  --bg-mod: #45101a7a;
+  --text-mod: #fff7fc;
+  --bg-ping: #45101a7a;
+  --text-ping: #fff7fc;
   
 /*~~~~~~~~~Misc~~~~~~~~~*/
-  --accent-color-light: #b26976;
-  --accent-color-mid: #0a6c0a;
-  --accent-color-dark: red;
+  --accent-color-light: #aa5a20;
+  --accent-color-mid: #7a3514;
+  --accent-color-dark: #5a1402;
 }
 
 /*~~~~~~~~~~~~~~~~~
     Main Body
   ~~~~~~~~~~~~~~~~~*/
 body {
-    background-color: var(--bg-page-color);
-    background-image: var(--bg-page-image);
-    background-attachment: cover;
-    background-repeat: no-repeat;
+  background-color: var(--bg-page-color);
+  background-image: var(--bg-page-image);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /*~~~~~~~~~~~~~~~~~
@@ -72,15 +73,19 @@ body {
   color:var(--accent-color-mid) !important;
 }
 
-/*~~~~~~~~~Main container behind everything~~~~~~~~~*/
+/*~~~~~~~~~Main containers behind everything~~~~~~~~~*/
 .container.main {
   background: none;
   border: none;
   box-shadow: none;
 }
 
+.col-md-9.col-xs-12 {
+  background: none;
+}
+
 /*~~~~~~~~~~~~~~~~~
-    Navbar
+  Navbar
   ~~~~~~~~~~~~~~~~~*/
 /*~~~~~~~~~Navbar text~~~~~~~~~*/
 .navbar.navbar-default,
@@ -712,7 +717,9 @@ form .left a:hover {
 #fraSidebarChat,
 #fraSidebarChat a,
 #chatMessageList a,
-#fraSidebarChat span {
+#fraSidebarChat span,
+#chatMessagePinned,
+#chatMessagePinned a {
   color: var(--text-dark) !important;
 }
 
@@ -727,7 +734,7 @@ form .left a:hover {
 #label_currentChannel,
 #txtChatInput,
 #btnChatSend,
-.chatMenu-container {
+.chatMenu-container{
   background: var(--bg-input-mid) !important;
   color: var(--text-dark) !important;
   border: 1px solid var(--border-color-main) !important;
@@ -753,6 +760,10 @@ form .left a:hover {
 }
 
 /*~~~~~~~~~Chatbox main container~~~~~~~~~*/
+#chatMessagePinned {
+  background: var(--bg-header-mid) !important;
+}
+
 #fraSidebarChat {
   background: transparent;
   color: var(--text-dark);
