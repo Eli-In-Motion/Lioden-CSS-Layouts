@@ -415,16 +415,324 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a:hover
   color: var(--accent-color-light);
   border-color: var(--accent-color-light);
 }
-/*-------------------------WIP-----------------------*/
+
 /*~~~~~~~~~~~~~~~~~
     Allies
 ~~~~~~~~~~~~~~~~~*/
-  
-  
+/*~~~~~~~~~Allies text~~~~~~~~~*/
+#allies,
+#allies a {
+    color: var(--text-dark);
+    text-decoration: none;
+}
 
+#allies a:hover {
+    color: var(--accent-color-mid);
+}
 
+/*~~~~~~~~~Allies main area~~~~~~~~~*/
+#allies {
+    background: transparent;
+    border: var(--border-size-big) solid var(--border-color-main);
+    border-radius: var(--radius-big);
+    overflow:hidden;
+}
 
+/*~~~~~~~~~Allies inner areas~~~~~~~~~*/
+#allies .top,
+#allies .bottom {
+    background: var(--bg-header-mid);
+}
+
+#allies .left {
+    display: none;
+}
+
+/*~~~~~~~~~~~~~~~~~
+    Clans
+~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~Clans text~~~~~~~~~*/
+#clans,
+#clans a {
+    color: var(--text-dark);
+}
+
+#clans a:hover {
+    color: var(--accent-color-mid);
+}
+
+/*~~~~~~~~~Clans main area~~~~~~~~~*/
+#clans {
+    background: transparent;
+    border: var(--border-size-big) solid var(--border-color-main);
+    border-radius: var(radius-big);
+    overflow: hidden;
+}
+
+/*~~~~~~~~~Clans inner areas~~~~~~~~~*/
+
+#clans .top {
+    background: var(--bg-header-mid);
+}
+
+#clans .left {
+    display: none;
+}
+
+/*~~~~~~~~~~~~~~~~~
+    Dynasties
+~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~Dynasties text~~~~~~~~~*/
+.row.dynastycollection h3 {
+    color: var(--text-dark);
+}
+
+/*~~~~~~~~~Dynasties Icon Backgrounds~~~~~~~~~*/ 
+.row.dynastycollection div .left {
+    background: var(--bg-panel-mid);
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius: var(--radius-small);
+}
+
+/*~~~~~~~~~~~~~~~~~
+    Logs
+~~~~~~~~~~~~~~~~~*/
+.col.col-sm-4 .left {
+    color: var(--text-dark);
+    background: var(--bg-panel-mid);
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius: var(--radius-small);
+}
+
+/*~~~~~~~~~~~~~~~~~
+    Edit Details
+~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~Edit details text~~~~~~~~~*/
+.table th,
+.table th a {
+    color: var(--text-dark);
+}
+
+.table th a:hover {
+    color: var(--accent-color-mid);
+}
+
+/*~~~~~~~~~Edit details main area~~~~~~~~~*/
+#editdetailpanel {
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius: var(--radius-small);
+    overflow: hidden;
+}
+
+.table {
+    margin: 0px;
+}
+
+.table:nth-child(3) {
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius: var(--radius-small);
+    overflow: hidden;
+}
+
+.table th {
+    background: var(--bg-header-mid);
+}
+
+/*~~~~~~~~~Edit details expanded area~~~~~~~~~*/
+#editdetailpanel .left {
+    background: var(--bg-panel-mid);
+}
+
+#editdetailpanel .right {
+    background: var(--bg-panel-light);
+}
     
+/*~~~~~~~~~Edit details input areas~~~~~~~~~*/
+#editdetailpanel .right textarea,
+#editdetailpanel .right input,
+#editdetailpanel .right select,
+#editdetailpanel .bottom input {
+    background: var(--bg-input-dark);
+    border: 1px solid var(--border-color-main);
+    border-radius: none;
+    text-shadow: none;
+}
 
+#editdetailpanel .right textarea {
+    scrollbar-color: var(--bg-input-mid) var(--bg-input-light);
+    scrollbar-width: thin;
+}
 
+#editdetailpanel .bottom {
+    background: var(--bg-header-mid);
+}
 
+#editdetailpanel .bottom input:hover {
+    background: var(--bg-input-light);
+    color: var(--accent-color-light);
+    border-color: var(--accent-color-light);
+}
+
+/*~~~~~~~~~~~~~~~~~
+    Account Settings
+~~~~~~~~~~~~~~~~~*/
+form .left:has(a[href*='/account-settings.php']) {
+    background: var(--bg-header-mid);
+    color: var(--text-dark);
+    border: var(--border-size-small) solid var(--border-color-main);
+}
+
+form .left a:hover {
+    color: var(--accent-color-mid);
+}
+
+/*~~~~~~~~~~~~~~~~~
+    Sidebar
+~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~Sidebar text~~~~~~~~~*/
+#pageSidebar,
+#pageSidebar a,
+#pageSidebar h3 {
+    color: var(--text-dark);
+}
+
+#pageSidebar a:hover {
+    color: var(--accent-color-mid);
+}
+
+/*~~~~~~~~~Sidebar main area~~~~~~~~~*/
+#pageSidebar {
+    background: transparent;
+}
+
+/*~~~~~~~~~Sidebar inner areas~~~~~~~~~*/
+    /*~~~~Date, Event Currency, and Progress Bars~~~~*/
+#pageSidebar .panel.panel-default,
+#pageSidebar .panel {
+    background: var(--bg-panel-mid);
+    color: var(--text-dark);
+    border: var(--border-size-big) solid var(--border-color-main);
+    border-radius: var(--radius-big);
+    overflow: hidden;
+}
+
+#pageSidebar .panel-body.small {
+    background: transparent;
+}
+    /*~~~~Achievements, Bookmarks~~~~*/
+.col-md-12.col-xs-5 .panel {
+    background: var(--bg-panel-mid);
+    color: var(--text-dark);
+    border: var(--border-size-big) solid var(--border-color-main);
+    border-radius: var(--radius-big);
+    overflow: hidden;
+}
+
+.col-md-12.col-xs-5 .panel p {
+    display: none;
+}
+
+.clear visible-xs.visible-sm {
+    border: none;
+}
+
+    /*~~~~Stats, Media~~~~*/
+.col-md-12.col-xs-12 .visible-md.visible-lg {
+    background: var(--bg-panel-mid);
+    color: var(--text-dark);
+    border: var(--border-size-big) solid var(--border-color-main);
+    border-radius: var(--radius-big);
+    overflow: hidden;
+}
+
+/*~~~~~~~~~~~~~~~~~
+    Chatbox
+~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~Chatbox text~~~~~~~~~*/
+#fraSidebarChat,
+#fraSidebarChat a,
+#fraSidebarChat span {
+    color: var(--text-dark);
+}
+
+#fraSidebarChat a:hover {
+    color: ver(--accent-color-mid);
+}
+
+/*~~~~~~~~~Chatbox inputs~~~~~~~~~*/
+#btnToggleSidebarChat,
+#label_currentChannel,
+#txtChatInput,
+#btnChatSend {
+    background: var(--bg-input-dark);
+    border: 1px solid var(--border-color-main);
+    border-radius: none;
+    text-shadow: none;
+}
+
+#btnToggleSidebarChat:hover,
+#btnChatSend:hover {
+    background: var(--bg-input-light);
+    color: var(--accent-color-light);
+    border-color: var(--accent-color-light);
+}
+
+/*~~~~~~~~~Chatbox main container~~~~~~~~~*/
+#fraSidebarChat {
+    background: transparent;
+    color: var(--text-dark);
+    border: var(--border-size-big) solid var(--border-color-main);
+    border-radius: var(--radius-big);
+    overflow: hidden;
+}
+
+#chatMessageList {
+    backgound: transparent;
+    scrollbar-color: var(--bg-input-mid) var(--bg-input-light);
+    scrollbar-width: thin;
+}
+
+/*~~~~~~~~~Chatbox alternating messages~~~~~~~~~*/
+.s-chat-message:nth-child(odd) {
+    background: var(--bg-panel-mid);
+}
+
+.s-chat-message:nth-child(even) {
+    background: var(--bg-panel-light);
+}
+
+/*~~~~~~~~~Mod messages~~~~~~~~~*/
+.s-chat-message.s-chat-message_mod {
+    background: var(--mod-bg);
+    color: var(--text-mod);
+    padding-left: 5px;
+}
+
+/*~~~~~~~~~~~~~~~~~
+    BugBox Button
+~~~~~~~~~~~~~~~~~*/ 
+.btn.btn-default.button {
+    background: var(--bg-input-dark);
+    border: 1px solid var(--border-color-main);
+    border-radius: none;
+    text-shadow: none;
+}
+
+.btn.btn-default.button:hover {
+    background: var(--bg-input-light);
+    color: var(--accent-color-light);
+    border-color: var(--accent-color-light);
+}
+    
+/*~~~~~~~~~~~~~~~~~
+    Lioden License and Links
+~~~~~~~~~~~~~~~~~*/ 
+.col-xs-10, 
+.col-xs-10 a {
+    color: var(--text-dark);
+    text-shadow:none;
+}
+
+/*~~~~~~~~~~~~~~~~~
+    End Initiate
+  ~~~~~~~~~~~~~~~~~*/
