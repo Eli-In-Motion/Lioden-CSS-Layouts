@@ -50,6 +50,16 @@
 }
 
 /*~~~~~~~~~~~~~~~~~
+    Main Body
+  ~~~~~~~~~~~~~~~~~*/
+body {
+    background-color: var(--bg-page-color);
+    background-image: var(--bg-page-image);
+    background-attachment: cover;
+    background-repeat: no-repeat;
+}
+
+/*~~~~~~~~~~~~~~~~~
     Top Bar
   ~~~~~~~~~~~~~~~~~*/
 
