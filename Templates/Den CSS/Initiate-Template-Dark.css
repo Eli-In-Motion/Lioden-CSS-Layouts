@@ -796,6 +796,10 @@ form .left a:hover {
   color: var(--text-light);
 }
 
+#chatMessageContainer {
+  border: 1px solid var(--border-color-main);
+}
+
 #chatMessageList {
   backgound: transparent;
   color: var(--text-light);
