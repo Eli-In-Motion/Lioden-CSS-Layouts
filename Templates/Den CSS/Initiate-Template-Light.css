@@ -686,6 +686,7 @@ form .left a:hover {
   border: var(--border-size-small) solid var(--border-color-main);
   border-radius: var(--radius-big);
   overflow: hidden;
+  box-shadow:none;
 }
 
 #pageSidebar .panel-body.small {
