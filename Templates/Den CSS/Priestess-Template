@@ -1,8 +1,8 @@
-/* =========================================================
-   PRIESTESS
-   ========================================================= */
+/*~~~~~~~~~~~~~~~~~
+  Priestess
+  ~~~~~~~~~~~~~~~~~*/
 
-/*SB Icon*/
+/*~~~~~SB Icon~~~~~*/
 body > div.container.topbar > ul > li:nth-child(2) > a > img {
     content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/silver-badge.png?raw=true');
     width:20px;
@@ -10,7 +10,7 @@ body > div.container.topbar > ul > li:nth-child(2) > a > img {
     object-fit:contain
 }
 
-/*GB Icon*/
+/*~~~~~GB Icon~~~~~*/
 body > div.container.topbar > ul > li:nth-child(3) > a > img {
     content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/game-coin.png?raw=true');
     width:20px;
@@ -18,7 +18,7 @@ body > div.container.topbar > ul > li:nth-child(3) > a > img {
     object-fit:contain;
 }
 
-/*Lioden Icon*/
+/*~~~~~Lioden Icon~~~~~*/
 body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
     content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/home-button.png?raw=true');
     width:192px;
@@ -26,7 +26,7 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
     object-fit:contain;
 }
 
-/*King Image*/
+/*~~~~~King Image~~~~~*/
 .lion-image-block img {
     content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
     width:200px;
@@ -34,7 +34,7 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
     object-fit:contain;
 }
 
-/*VIP Money Star*/
+/*~~~~~VIP Money Star~~~~~*/
 #player .center.h3 img {
     content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/game-coin.png?raw=true');
     width:16px;
@@ -42,7 +42,7 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
     object-fit:contain;
 }
 
-/*Player Icon*/
+/*~~~~~Player Icon~~~~~*/
 #player > tbody > tr.right > td:nth-child(2) > img {
     content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
     width:150px;
@@ -50,7 +50,7 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
     object-fit:contain;
 }
 
-/*Refer a Fried Plus Sign*/
+/*~~~~~Refer a Fried Plus Sign~~~~~*/
 #player .center.xlarge a:nth-child(1) img {
     content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/game-coin.png?raw=true');
     width:24px;
@@ -58,7 +58,7 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
     object-fit:contain;
 }
 
-/*Wishlist Image*/
+/*~~~~~Wishlist Image~~~~~*/
 #player .center.xlarge a:nth-child(3) img {
     content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/game-coin.png?raw=true');
     width:24px;
@@ -66,7 +66,7 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
     object-fit:contain;
 }
 
-/*ALL Caves Together*/
+/*~~~~~ALL Caves Together~~~~~*/
 .cave-grid img {
     visibility:hidden;
 }
@@ -76,7 +76,7 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
     background-size:cover;
 }
 
-/*ALL Unsorted, Pregnant, Overview*/
+/*~~~~~ALL Unsorted, Pregnant, Overview~~~~~*/
 #fraOrganizationBlock > div:nth-child(-n + 3) > a > div > img {
     visibility:hidden;
 }
@@ -86,7 +86,7 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
     background-size:cover;
 }
 
-/*Select Individual Top Caves (Change nth-child)*/
+/*~~~~~Select Individual Top Caves (Change nth-child)~~~~~*/
 #fraOrganizationBlock > div:nth-child(1) > a > div > img {
     visibility:hidden;
 }
@@ -96,7 +96,7 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
     background-size:cover;
 }
 
-/*All Personal Caves*/
+/*~~~~~All Personal Caves~~~~~*/
 #fraCaveList img {
     visibility:hidden;
 }
@@ -106,7 +106,7 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
     background-size:cover;
 }
 
-/*Select Individual Personal Cave Images (Change nth-Child)*/
+/*~~~~~Select Individual Personal Cave Images (Change nth-Child)~~~~~*/
 #fraCaveList > div:nth-child(1) > a > div > img {
     visibility:hidden;
 }
@@ -116,7 +116,7 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
     background-size:cover;
 }
 
-/*ALL Beetle Mounds Together*/
+/*~~~~~ALL Beetle Mounds Together~~~~~*/
 .mound-grid img {
     visibility:hidden;
 }
@@ -126,7 +126,7 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
     background-size:cover;
 }
 
-/*Select Individual Beetle Mounds (Change nth-child)*/
+/*~~~~~Select Individual Beetle Mounds (Change nth-child)~~~~~*/
 #fraMoundList > div:nth-child(1) > a > div > img {
     visibility:hidden;
 }
@@ -136,9 +136,11 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
     background-size:cover;
 }
 
-/*I DO NOT AND WILL NOT CHANGE CLAN IMAGES*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  I DO NOT AND WILL NOT CHANGE CLAN IMAGES
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-/*ALL Dynasty, Achievments, Showcase, Beetle Book Images*/
+/*~~~~~ALL Dynasty, Achievments, Showcase, Beetle Book Images~~~~~*/
 .col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist img {
     visibility:hidden;
 }
@@ -147,7 +149,7 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
     background-size:cover;
 }
 
-/*Select Individual Dynasty, etc. images (Change nth-child)*/
+/*~~~~~Select Individual Dynasty, etc. images (Change nth-child)~~~~~*/
 .row.dynastycollection > div:nth-child(1) img {
     visibility:hidden;
 }
@@ -157,7 +159,7 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
     background-size:cover;
 }
 
-/*ALL Day/Night & Weather Images*/
+/*~~~~~ALL Day/Night & Weather Images~~~~~*/
 .panel.panel-default img {
     content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
     width:20px;
@@ -165,7 +167,7 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
     object-fit:contain;
 }
 
-/*Select Day/Night and Weather images (Change nth-child)*/
+/*~~~~~Select Day/Night and Weather images (Change nth-child)~~~~~*/
 .panel.panel-default .floatright.right img:nth-child(1) {
     content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
     width:20px;
@@ -173,7 +175,7 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
     object-fit:contain;
 }
 
-/*ALL Event Currency Images*/
+/*~~~~~ALL Event Currency Images~~~~~*/
 .panel-body.small.center img {
     content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
     width:20px;
@@ -181,7 +183,7 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
     object-fit:contain;
 }
 
-/*Select Event Currency (Change a:nth-child)*/
+/*~~~~~Select Event Currency (Change a:nth-child)~~~~~*/
 #pageSidebar > div.col-md-12.col-xs-6 > div:nth-child(2) > div > a:nth-child(1) > img {
     content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
     width:20px;
@@ -189,7 +191,7 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
     object-fit:contain;
 }
 
-/*Bug Box Image*/
+/*~~~~~Bug Box Image~~~~~*/
 .btn.btn-default.button img {
     content:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Templates/Images/lion.png?raw=true');
     width:24px;
@@ -197,8 +199,6 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
     object-fit:contain;
 }
 
-/* =========================================================
-   END PRIESTESS
-   ========================================================= */
-
-/*I won't change social media images without specific request*/
+/*~~~~~~~~~~~~~~~~~
+  End Priestess
+  ~~~~~~~~~~~~~~~~~*/
