@@ -789,6 +789,10 @@ form .left a:hover {
   background: var(--bg-header-mid) !important;
 }
 
+#chatMessageContainer {
+  border: 1px solid var(--border-color-main);
+}
+
 #fraSidebarChat {
   background: transparent;
   color: var(--text-dark);
