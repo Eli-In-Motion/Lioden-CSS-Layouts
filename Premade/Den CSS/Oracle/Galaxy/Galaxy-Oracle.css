@@ -891,10 +891,10 @@ form .left a:hover {
   Acolyte
 ~~~~~~~~~~~~~~~~~*/
 
-/*HTML
+/*~~~~~HTML
 <div class="Bio">
 <div class="BioTop">Top Small Div</div> <div class="BioLeft">Left Div</div><div class="BioRight">Right Div</div>
-</div> */
+</div> ~~~~~*/
 
 
 .Bio {
@@ -940,6 +940,7 @@ form .left a:hover {
   Oracle
 ~~~~~~~~~~~~~~~~~*/
 
+/*~~~~~Pagedoll~~~~~*/
 .pagedoll {
     position: fixed;
     right: -10px;
@@ -949,9 +950,34 @@ form .left a:hover {
     pointer-events: none;
 }
 
+/*~~~~~~~~~~~~~~~~~
+  Pagedoll Credit
+
+  https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Oracle/Galaxy/azuria.png?raw=true
+  Credit: Molly "Cougarmint" Willits
+  Created by hand using Photoshop Educational Edition 6.0.
+  Licences: CC-BY 3.0, CC-BY-SA 3.0.
+  Free Commercial Use: Yes
+  Free Personal Use: Yes
+~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~Player Icon~~~~~*/
 #player > tbody > tr.right > td:nth-child(2) {
-    content:url(https://static.lioden.com/images/items/Decoration/thedemiurge.png);
+    content:url(https://static.lioden.com//images/items/Decoration/thedemiurge.png);
 }
+
+/*~~~~~~~~~~~~~~~~~
+  Player Icon Credit
+Lioden Official Art (uhhhh I'll figure out credit in a sec)
+~~~~~~~~~~~~~~~~~*/
+
+/~~~~~*Add to Bio Box CSS to make them scrollable
+    overflow-x:hidden;
+    overflow-y:scroll;~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~
+  Pick One of Three
+  ~~~~~~~~~~~~~~~~~*/
 
 /*Replace ____'s Den*/
 #pageContainer h1 {
@@ -963,7 +989,7 @@ form .left a:hover {
     font-size:50px;
 }
 
-/*Progress Bar Changes*/
+/*~~~~~Progress Bar Changes~~~~~*/
 .panel-body.small  .progress {
     background:var(--header-bg);
 }
@@ -977,11 +1003,11 @@ form .left a:hover {
     background:var(--panel-bg);
 }
 
+/*~~~~~Cursor~~~~~*/
 body {
     cursor:url('https://cdn.cursors-4u.net/css-previews/shiny-gold-star-0cad57e3-css.webp'), auto;
 }
 
-/*Hover Cursor*/
 a, button {
     cursor: url("https://cdn.cursors-4u.net/css-previews/shiny-gold-star-0cad57e3-css.webp"), pointer;
 }
