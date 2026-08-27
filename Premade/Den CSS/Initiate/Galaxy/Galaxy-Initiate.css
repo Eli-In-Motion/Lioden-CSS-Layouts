@@ -6,7 +6,7 @@
 
     /*~~~~~~~~~Main Bakcground~~~~~~~~~*/
     --bg-page-color: #000000;
-    --bg-page-color: url("https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Initiate/Galaxy/NASA%20NGC%201672%201280x919.jpg?raw=true");
+    --bg-page-image: url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Initiate/Galaxy/NASA%20NGC%201672%201280x919.jpg?raw=true');
 
 /*~~~~~~~~~~~~~~~~~
   Background Credit
@@ -17,41 +17,41 @@ https://science.nasa.gov/asset/hubble/hubbles-view-of-barred-spiral-galaxy-ngc-1
     
     /*~~~~~~~~~Background Colors~~~~~~~~~*/
     --bg-panel-light: #dbd3f787;
-    --bg-panel-mid: #af9fc287;
-    --bg-panel-dark: #636f8787;
+    --bg-panel-mid: #74657b87;
+    --bg-panel-dark: #3c2e4287;
     --bg-header-light: #ffe6e97a;
-    --bg-header-mid: #ce9ba07a;
-    --bg-header-dark: #af72787a;
+    --bg-header-mid: #1127417a;
+    --bg-header-dark: #0214297a;
     --bg-input-light: #f7dbe17a;
-    --bg-input-mid: #e6b4be7a;
-    --bg-input-dark: #636f8787;
+    --bg-input-mid: #3c568c87;
+    --bg-input-dark: #16254487;
 
     /*~~~~~~~~~Text Colors~~~~~~~~~*/
-    --text-light: #F7F8FC;
-    --text-mid: #F7F8FC;
-    --text-dark: #2B3550;
-    --text-small-light: #eeafbb;
-    --text-small-mid: #dc9aa6;
-    --text-small-dark: #bc848e;
+    --text-light: #dee5ff;
+    --text-mid: #45579a;
+    --text-dark: #071b66;
+    --text-small-light: #afccf2;
+    --text-small-mid: #92a8c5;
+    --text-small-dark: #627a9b;
 
    /*~~~~~~~~~Borders~~~~~~~~~*/
-    --border-color-main: #f3d1b4;
-    --border-color-alt: #f3d1b4;
+    --border-color-main: #e8ded5;
+    --border-color-alt: #f0c59f;
     --border-size-big:3px;
     --border-size-small:2px;
     --radius-big: 5px;
     --radius-small: 3px;
 
    /*~~~~~~~~~Chat~~~~~~~~~*/
-    --bg-mod: #5b0f1e;
-    --text-mod: #fff7fc;
-    --bg-ping: #45101a7a;
-    --text-ping: #fff7fc;
+    --bg-mod: #071b667a;
+    --text-mod: #dee5ff;
+    --bg-ping: #071b667a;
+    --text-ping: #dee5ff;
     
    /*~~~~~~~~~Misc~~~~~~~~~*/
-    --accent-color-light: #c58a9c;
-    --accent-color-mid: #874e60;
-    --accent-color-dark: #5a1402;
+    --accent-color-light: #f0d4bb;
+    --accent-color-mid: #f0cbab;
+    --accent-color-dark: #e3b185;
 }
 
 
