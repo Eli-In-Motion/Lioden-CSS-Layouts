@@ -1,5 +1,5 @@
 /*~~~~~~~~~~~~~~~~~
-    Initiate
+  Initiate
   ~~~~~~~~~~~~~~~~~*/
 :root {
 
@@ -35,14 +35,14 @@
   --radius-small: 8px;
 
 /*~~~~~~~~~Chat~~~~~~~~~*/
-  --bg-mod: #45101a7a;
+  --bg-mod: #5b0f1e;
   --text-mod: #fff7fc;
   --bg-ping: #45101a7a;
   --text-ping: #fff7fc;
   
 /*~~~~~~~~~Misc~~~~~~~~~*/
-  --accent-color-light: #aa5a20;
-  --accent-color-mid: #7a3514;
+  --accent-color-light: #c58a9c;
+  --accent-color-mid: #874e60;
   --accent-color-dark: #5a1402;
 }
 
@@ -158,6 +158,11 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a:hover
 .breadcrumb::after {
   content:"✧CSS by Eli in Motion #319237✧";
   float:right;
+}
+
+/*~~~~~~~~~Bookmark Button~~~~~~~~~*/
+#pageContainer .floatright input {
+  display:none;
 }
 
 /*~~~~~~~~~________'s Den~~~~~~~~~*/
@@ -662,7 +667,7 @@ form .left a:hover {
 }
 
 #pageSidebar a:hover {
-  color: var(--accent-color-mid);
+  color: var(--accent-color-mid) !important;
 }
 
 /*~~~~~~~~~Sidebar main area~~~~~~~~~*/
@@ -671,7 +676,7 @@ form .left a:hover {
 }
 
 /*~~~~~~~~~Sidebar inner areas~~~~~~~~~*/
-  /*~~~~Date, Event Currency, and Progress Bars~~~~*/
+  /*~~~~Date, Event Currency, Energy Boost, and Progress Bars~~~~*/
 #pageSidebar .panel.panel-default,
 #pageSidebar .panel {
   background: var(--bg-panel-mid);
@@ -684,7 +689,23 @@ form .left a:hover {
 #pageSidebar .panel-body.small {
   background: transparent;
 }
-    /*~~~~Achievements, Bookmarks~~~~*/
+
+#pageSidebar .panel-body.small.center input {
+  background: var(--bg-input-mid);
+  color: var(--text-dark);
+  border: 1px solid var(--border-color-main);
+  border-radius: none;
+  text-shadow: none;
+}
+
+#pageSidebar .panel-body.small.center input:hover {
+  background: var(--bg-input-light) !important;
+  color: var(--accent-color-light) !important;
+  border-color: var(--accent-color-light) !important;
+}
+}
+
+  /*~~~~Achievements, Bookmarks~~~~*/
 .col-md-12.col-xs-5 .panel {
   background: var(--bg-panel-mid);
   color: var(--text-dark);
@@ -718,13 +739,15 @@ form .left a:hover {
 #chatMessageList a,
 #fraSidebarChat span,
 #chatMessagePinned,
-#chatMessagePinned a {
+#chatMessagePinned a,
+#txtChatContainer a {
   color: var(--text-dark) !important;
 }
 
 #fraSidebarChat a:hover,
-#chatMessageList a:hover {
-  color: ver(--accent-color-mid);
+#chatMessageList a:hover,
+#txtChatContainer a:hover {
+  color: ver(--accent-color-mid) !important;
 }
 
 
@@ -791,10 +814,24 @@ form .left a:hover {
 }
 
 /*~~~~~~~~~Mod messages~~~~~~~~~*/
-.s-chat-message.s-chat-message_mod {
-  background: var(--mod-bg);
+.s-chat-message.s-chat-message__mod {
+  background: var(--bg-mod) !important;
   color: var(--text-mod);
-  padding-left: 5px;
+  padding-left: 4px;
+  font-weight:normal;
+  border: none;
+}
+
+.s-chat-message.s-chat-message__mod a {
+  color: var(--text-dark) !important;
+}
+
+.s-chat-message.s-chat-message__mod a:hover{
+  color: ver(--accent-color-mid) !important;
+}
+
+.s-chat-message.s-chat-message__mod .s-chat-message_timestamp {
+  padding-left: 4px;
 }
 
 /*~~~~~~~~~~~~~~~~~
@@ -832,13 +869,9 @@ form .left a:hover {
   End Initiate
 ~~~~~~~~~~~~~~~~~*/
 
-/* =========================================================
-   END INITIATE
-   ========================================================= */
-
-/* =========================================================
-   ACOLYTE
-   ========================================================= */
+/*~~~~~~~~~~~~~~~~~
+  Acolyte
+~~~~~~~~~~~~~~~~~*/
 
 .Bio {
     display:grid;
@@ -887,13 +920,13 @@ form .left a:hover {
     display:none;
 }
 
-/* =========================================================
-   END ACOLYTE
-   ========================================================= */
+/*~~~~~~~~~~~~~~~~~
+  End Acolyte
+~~~~~~~~~~~~~~~~~*/
 
-/* =========================================================
-   ORACLE
-   ========================================================= */
+/*~~~~~~~~~~~~~~~~~
+  Oracle
+~~~~~~~~~~~~~~~~~*/
 
 .pagedoll {
     position: fixed;
@@ -933,6 +966,6 @@ a, button {
     cursor: url("data:application/octet-stream;base64,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"), pointer;
 }
 
-/* =========================================================
-   END ORACLE
-   ========================================================= */
+/*~~~~~~~~~~~~~~~~~
+  End Oracle
+~~~~~~~~~~~~~~~~~*/
