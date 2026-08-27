@@ -460,9 +460,9 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a:hover
 }
 
 .row .feature input:hover {
-  background: var(--bg-input-mid);
-  color: var(--accent-color-mid);
-  border-color: var(--accent-color-mid);
+  background: var(--bg-input-mid) !important;
+  color: var(--accent-color-mid) !important;
+  border-color: var(--accent-color-mid) !important;
 }
 
 /*~~~~~~~~~~~~~~~~~
