@@ -5,30 +5,30 @@
 :root {
 
 /*~~~~~~~~~Main Bakcground~~~~~~~~~*/
-  --bg-page-color:white;
+  --bg-page-color:#000000;
   --bg-page-image:url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Comissions/Den%20CSS/Breezzie%20541558/joanna-kosinska-r7U3EnWbqPE-unsplash.jpg?raw=true');
 
 /*~~~~~~~~~Bakcground Colors~~~~~~~~~*/
-  --bg-panel-light:#ffedf07a;
-  --bg-panel-mid: #e7c6cb7a;
-  --bg-panel-dark: #d1aeb37a;
-  --bg-header-light: #ffe6e97a;
-  --bg-header-mid: #ce9ba07a;
-  --bg-header-dark: #af72787a;
-  --bg-input-light: #f7dbe17a;
-  --bg-input-mid: #e6b4be7a;
-  --bg-input-dark:#bd828e7a;
+  --bg-panel-light:#bea38b9e;
+  --bg-panel-mid: #321e1a9e;
+  --bg-panel-dark: #1609069e;
+  --bg-header-light: #894d3f93;
+  --bg-header-mid: #5a2f2593;
+  --bg-header-dark: #50261c93;
+  --bg-input-light: #b9a99b9e;
+  --bg-input-mid: #774e449e;
+  --bg-input-dark:#281f1f93;
 
 /*~~~~~~~~~Text Colors~~~~~~~~~*/
-  --text-light: #f7aab8;
-  --text-mid: #8a3142;
-  --text-dark: #450612;
-  --text-small-light: #eeafbb;
-  --text-small-mid: #dc9aa6;
-  --text-small-dark: #bc848e;
+  --text-light: #ece2d0;
+  --text-mid: #e6dfc8;
+  --text-dark: #ece2d0;
+  --text-small-light: #f4efda;
+  --text-small-mid: #b6b4a6;
+  --text-small-dark: #8f8d83;
 
 /*~~~~~~~~~Borders~~~~~~~~~*/
-  --border-color-main:#45101a7a;
+  --border-color-main:#815540;
   --border-color-alt:#f7aa;
   --border-size-big: 3px;
   --border-size-small:2px;
@@ -42,9 +42,9 @@
   --text-ping: #fff7fc;
   
 /*~~~~~~~~~Misc~~~~~~~~~*/
-  --accent-color-light: #c58a9c;
-  --accent-color-mid: #874e60;
-  --accent-color-dark: #5a1402;
+  --accent-color-light: #dcad78;
+  --accent-color-mid: #dcad78;
+  --accent-color-dark: #dcad78;
 }
 
 /*~~~~~~~~~~~~~~~~~
@@ -468,9 +468,9 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a:hover
 }
 
 .row .feature input:hover {
-  background: var(--bg-input-mid);
-  color: var(--accent-color-mid);
-  border-color: var(--accent-color-mid);
+  background: var(--bg-input-mid) !important;
+  color: var(--accent-color-mid) !important;
+  border-color: var(--accent-color-mid) !important;
 }
 
 /*~~~~~~~~~~~~~~~~~
@@ -695,6 +695,7 @@ form .left a:hover {
   border: var(--border-size-small) solid var(--border-color-main);
   border-radius: var(--radius-big);
   overflow: hidden;
+  box-shadow:none;
 }
 
 #pageSidebar .panel-body.small {
@@ -796,6 +797,10 @@ form .left a:hover {
 /*~~~~~~~~~Chatbox main container~~~~~~~~~*/
 #chatMessagePinned {
   background: var(--bg-header-dark) !important;
+}
+
+#chatMessageContainer {
+  border: 1px solid var(--border-color-main);
 }
 
 #fraSidebarChat {
