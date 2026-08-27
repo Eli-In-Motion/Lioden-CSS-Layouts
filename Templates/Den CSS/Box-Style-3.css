@@ -3,9 +3,9 @@
 <div class="BioTopLeft">Top Left Large Div</div> <div class="BioTopRight">Top Right Skinny Div</div><div class="BioBottom">Bottom Long Div</div>
 </div>*/
 
-/* =========================================================
-   BIO BOX STYLE 3
-   ========================================================= */
+/*~~~~~~~~~~~~~~~~~
+  Bio Box Style 3
+  ~~~~~~~~~~~~~~~~~*/
 
 .Bio {
     display:grid;
@@ -67,6 +67,6 @@
     color:var(--accent-color-light);
 }
 
-/* =========================================================
-   END BIO BOX STYLE 3
-   ========================================================= */
+/*~~~~~~~~~~~~~~~~~
+  End of Bio Box Style 3
+  ~~~~~~~~~~~~~~~~~*/
