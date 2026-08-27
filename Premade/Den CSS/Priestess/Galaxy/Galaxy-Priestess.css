@@ -1,886 +1,900 @@
-/* =========================================================
-   INITIATE TEMPLATE
-   Blue + White + Gold
-   ========================================================= */
-
-
-/* =========================================================
-   QUICK CUSTOMIZATION
-   Change these values to recolor the template.
-   ========================================================= */
+/*~~~~~~~~~~~~~~~~~
+  Initiate
+  ~~~~~~~~~~~~~~~~~*/
 
 :root {
 
-    /* ===== BACKGROUND ===== */
-    --page-background-color: #000000;
-    --page-background-image: url("https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Initiate/Galaxy/pexels-pixabay-2150.jpg?raw=true");
+    /*~~~~~~~~~Main Bakcground~~~~~~~~~*/
+    --bg-page-color: #000000;
+    --bg-page-image: url('https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Initiate/Galaxy/NASA%20NGC%201672%201280x919.jpg?raw=true');
 
-    /* ===== TRANSPARENT ===== */
-    --transparent: transparent;
+/*~~~~~~~~~~~~~~~~~
+  Background Credit
+NASA, ESA, and The Hubble Heritage Team (STScI/AURA)-ESA/Hubble Collaboration
+April 3, 2007
+https://science.nasa.gov/asset/hubble/hubbles-view-of-barred-spiral-galaxy-ngc-1672/
+~~~~~~~~~~~~~~~~~*/
     
-    /* ===== MAIN BLUES ===== */
-    --panel-bg: #dbd3f787;
-    --panel-bg-alt: #af9fc287;
-    --header-bg: #636f8787;
-    --input-bg: #636f8787;
+    /*~~~~~~~~~Background Colors~~~~~~~~~*/
+    --bg-panel-light: #dbd3f787;
+    --bg-panel-mid: #74657b87;
+    --bg-panel-dark: #3c2e4287;
+    --bg-header-light: #ffe6e97a;
+    --bg-header-mid: #1127417a;
+    --bg-header-dark: #0214297a;
+    --bg-input-light: #f7dbe17a;
+    --bg-input-mid: #3c568c87;
+    --bg-input-dark: #16254487;
 
-    /* ===== TEXT ===== */
-    --text-light: #F7F8FC;
-    --text-dark: #2B3550;
-    --text-main: #FFFFFF;
-    --text-muted: #d1bdca;
+    /*~~~~~~~~~Text Colors~~~~~~~~~*/
+    --text-light: #dee5ff;
+    --text-mid: #45579a;
+    --text-dark: #071b66;
+    --text-small-light: #afccf2;
+    --text-small-mid: #92a8c5;
+    --text-small-dark: #627a9b;
 
-    /* ===== GOLD ===== */
-    --border-main: #f3d1b4;
-    --accent-gold: #f4eec8;
-
-    /* ===== BORDER ===== */
+   /*~~~~~~~~~Borders~~~~~~~~~*/
+    --border-color-main: #e8ded5;
+    --border-color-alt: #f0c59f;
     --border-size-big:3px;
     --border-size-small:2px;
-    --radius-main: 5px;
+    --radius-big: 5px;
     --radius-small: 3px;
-    --radius-none: 0px;
 
-    /* ===== SPECIAL ===== */
-    --mod-bg: #000000AB;
+   /*~~~~~~~~~Chat~~~~~~~~~*/
+    --bg-mod: #071b667a;
+    --text-mod: #dee5ff;
+    --bg-ping: #071b667a;
+    --text-ping: #dee5ff;
+    
+   /*~~~~~~~~~Misc~~~~~~~~~*/
+    --accent-color-light: #f0d4bb;
+    --accent-color-mid: #f0cbab;
+    --accent-color-dark: #e3b185;
 }
 
 
-/* =========================================================
-   MAIN BACKGROUND
-   ========================================================= */
+/*~~~~~~~~~~~~~~~~~
+    Main Body
+  ~~~~~~~~~~~~~~~~~*/
 
 body {
-    background-color: var(--page-background-color);
-    background-image: var(--page-background-image);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-color: var(--bg-page-color);
+  background-image: var(--bg-page-image);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
-/* =========================================================
-   TOP BAR
-   ========================================================= */
+/*~~~~~~~~~~~~~~~~~
+    Top Bar
+  ~~~~~~~~~~~~~~~~~*/
 
-/* Top Bar with Messages and Currency */
-.topbar {
-    background: none;
-}
-
+/*~~~~~~~~~Topbar w/messages and currency~~~~~~~~~*/
+.topbar,
 .topbar a {
-    color: var(--text-main) !important;
+  background:none;
+  color:var(--text-light) !important;
 }
 
 .topbar a:hover {
-    color: var(--accent-gold) !important;
+  color:var(--accent-color-mid) !important;
 }
 
-
-/* =========================================================
-   MAIN CONTAINERS
-   ========================================================= */
-
-/* Main container behind everything else */
+/*~~~~~~~~~~~~~~~~~
+    Main Containers
+  ~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~Main containers behind everything~~~~~~~~~*/
 .container.main {
     background: none;
     border:none;
     box-shadow:none;
 }
 
-/* Smaller Container behind most main stuff */
-#pageContainer {
-    background-color: transparent;
+/*~~~~~~~~~Smaller main container behind everything~~~~~~~~~*/
+.col-md-9.col-xs-12 {
+  background: none;
 }
 
 
-/* =========================================================
-   NAVBAR
-   ========================================================= */
-
-.navbar.navbar-default {
-    background: none;
-}
-
+/*~~~~~~~~~~~~~~~~~
+  Navbar
+  ~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~Navbar text~~~~~~~~~*/
+.navbar.navbar-default,
 .navbar.navbar-default a {
-    color: var(--text-main) !important;
+  background:none;
+  color: var(--text-light) !important;
 }
 
 .navbar.navbar-default a:hover {
-    background: var(--panel-bg) !important;
-    color: var(--accent-gold) !important;
+  background: var(--bg-panel-mid) !important;
+  color: var(--accent-color-mid) !important;
+  border-radius: var(--radius-small);
 }
 
-.navbar-brand.visible-lg.visible-md:hover {
-    background: none !important;
+body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a:hover {
+  background: none !important;
+  color: var(--text-light);
 }
 
+/*~~~~~~~~~Navbar main expanded~~~~~~~~~*/
+#bs-example-navbar-collapse-1 {
+  border:none;
+}
 
-/* Navbar Collapse Button when Small */
+/*~~~~~~~~~Navbar button when collapsed~~~~~~~~~*/
 .navbar button {
-    background-color: var(--input-bg) !important;
-    border: var(--border-size-small) solid var(--border-main) !important;
-    border-radius:var(--radius-none);
+  background: var(--bg-input-mid);
+  border: 1px solid var(--border-color-main);
+  border-radius: 0px;
+}
+
+.navbar-header button span {
+  background: var(--border-color-main) !important;
 }
 
 .navbar button:hover,
+.navbar button:active,
 .navbar button:focus {
-    background-color: var(--header-bg) !important;
-    border-color: var(--accent-gold) !important;
-    border-radius:var(--radius-none) !important;
-    color: var(--accent-gold) !important;
+  background: var(--bg-input-dark) !important;
+  border: 1px solid var(--accent-color-mid);
+  color: var(--accent-color-mid);
 }
 
-
-/* Navbar Links when Small and Expanded */
-.navbar-collapse.collapse.in {
-    border: none;
-    box-shadow: none;
+.navbar button:hover  span {
+  background: var(--accent-color-dark) !important
 }
 
+.nav navbar-nav.visible-xs visible-sm.visible-md.smaller-nav {
+  border:none;
+  box-shadow:none;
+}
 
-/* =========================================================
-   BREADCRUMB / DEN TITLE
-   ========================================================= */
+/*~~~~~~~~~~~~~~~~~
+    Breadcrumb, Den Title, and Credit
+  ~~~~~~~~~~~~~~~~~*/
 
-/* Breadcrumb with Home/Name */
+/*~~~~~~~~~Breadcrumb with home/name~~~~~~~~~*/
 .breadcrumb {
-    background-color: transparent;
+  background:transparent;
 }
 
 .breadcrumb a,
 .breadcrumb-item.active {
-    color: var(--text-main);
+  color: var(--text-light);
 }
 
 .breadcrumb a:hover {
-    color: var(--accent-gold);
+  color: var(--accent-color-mid)
 }
 
+/*~~~~~~~~~Credit~~~~~~~~~*/
+.breadcrumb::after {
+  content:"✧CSS by Eli in Motion #319237✧";
+  float:right;
+}
 
-/* ____'s Den */
+/*~~~~~~~~~Bookmark Button~~~~~~~~~*/
+#pageContainer .floatright input {
+  display:none;
+}
+
+/*~~~~~~~~~________'s Den~~~~~~~~~*/
 #pageContainer h1 {
-    color: var(--accent-gold);
-    text-align: center;
+  color: var(--accent-color-mid);
+  text-align: center;
 }
 
-
-/* =========================================================
-   ALERTS
-   ========================================================= */
-
-/* All Alerts Text and Links */
+/*~~~~~~~~~~~~~~~~~
+    Alerts
+  ~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~All alert text~~~~~~~~~*/
 .alert,
 .alert a {
-    color: var(--text-dark);
-    text-shadow:0 0 15px white;
-}
-
-
-/* Red Alerts Background */
-.alert-danger {
-    background-color: var(--panel-bg-alt) !important;
-    border: var(--border-size-small) solid var(--border-main);
-    border-radius:var(--radius-small);
-}
-
-
-/* General / Green Alerts Background */
-.alert {
-    border:var(--border-size-small) solid var(--border-main);
-    background-color: var(--panel-bg);
-    border-radius:var(--radius-small);
+  color: var(--text-light);
 }
 
 .alert a:hover {
-    color: var(--accent-gold);
+  color: var(--accent-color-mid);
 }
 
+/*~~~~~~~~~Green Alerts~~~~~~~~~*/
+.alert.alert-success {
+  background: var(--bg-panel-mid);
+  border: var(--border-size-small) solid var(--border-color-main);
+  border-radius: var(--radius-small);
+}
 
-/* =========================================================
-   COMMENT BOX
-   ========================================================= */
+/*~~~~~~~~~Red Alerts~~~~~~~~~*/
+.alert-danger {
+  background: var(--bg-panel-dark);
+  border: var(--border-size-small) solid var(--border-color-main);
+  border-radius: var(--radius-small);
+}
 
-/* Comment Box Existing Comments */
+/*~~~~~~~~~~~~~~~~~
+    Comment Box
+  ~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~Whole comment box~~~~~~~~~*/
 #commentBox {
-    /* background: var(--panel-bg-alt); */
-    color: var(--text-dark);
-    border: var(--border-size-big) solid var(--border-main) !important;
-    border-radius:var(--radius-small);
-    background-color:var(--transparent)
+  background: transparent;
+  border: var(--border-size-big) solid var(--border-color-main) !important;
+  border-radius: var(--radius-big);
 }
 
-.comment:nth-child(odd) {
-    background-color: var(--panel-bg-alt);
-}
-
-.comment:nth-child(even) {
-    background-color: var(--panel-bg) !important;
-}
-
-#commentBox a {
-    color: var(--accent-gold);
-}
-
-.text-muted {
-    color: var(--text-muted) !important;
-}
-
-
-/* Comment Box Scrollbar */
 #commentBox::-webkit-scrollbar {
-    background-color: var(--panel-bg-alt);
-    border-radius:var(--radius-main);
+  width: 10px;
+}
+
+#commentBox::-webkit-scrollbar-track {
+  background: var(--bg-input-mid);
+  margin-block: 2px !important;
+  margin-block: 0;
 }
 
 #commentBox::-webkit-scrollbar-thumb {
-    background-color: var(--panel-bg);
-    border-radius:var(--radius-main);
+  background: var(--bg-input-dark);
+  border-radius: 4px;
 }
 
+/*~~~~~~~~~Comment box text~~~~~~~~~*/
+#commentBox,
+#commentBox a {
+  color: var(--text-light) !important;
+}
 
-/* Comment X Button */
+#commentBox .text-muted {
+  color: var(--text-muted-light);
+}
+
+#commentBox a:hover {
+  color: var(--accent-color-mid) !important;
+}
+
+/*~~~~~~~~~Existing comments~~~~~~~~~*/
+#commentBox > .comment:nth-child(odd) {
+  background-color: var(--bg-panel-mid);
+}
+
+.comment:nth-child(even) {
+  background: var(--bg-panel-dark) !important;
+}
+
+/*~~~~~~~~~Comment box X button~~~~~~~~~*/
 #commentBox .bad {
-    background: none;
-    background-color: var(--input-bg);
-    color: var(--text-main);
-    text-shadow: none;
-    border: 1px solid var(--border-main);
-    border-radius:var(--radius-none);
+  background: var(--bg-input-dark);
+  color: var(--text-light);
+  text-shadow:none;
+  border: 1px solid var(--border-color-main);
+  border-radius: none;
 }
 
-#commentBox .bad:hover {
-    background-color: var(--header-bg) !important;
-    border-color: var(--accent-gold) !important;
-    border-radius:var(--radius-none) !important;
-    color: var(--accent-gold) !important;
+ #commentBox .bad:hover {
+  background: var(--bg-input-mid);
+  color: var(--accent-color-mid);
+  border-color: var(--accent-color-mid);
 }
 
-
-/* Make Comment Input Box */
-#makeComment #comment {
-    background-color: var(--input-bg);
-    border: var(--border-size-small) solid var(--border-main);
-    border-radius:var(--radius-small);
-    color: var(--text-light);
+/*~~~~~~~~~Make comment input box~~~~~~~~~*/
+#comment {
+  background: var(--bg-input-dark);
+  color: var(--text-light);
+  border: var(--border-size-small) solid var(--border-color-main);
+  border-radius: var(--radius-small);
 }
 
-#makeComment #comment::placeholder {
-    color: var(--text-muted) !important;
+#comment::placeholder {
+  color: var(--text-small-mid) !important;
 }
 
-
-/* Make Comment Post Button */
-#postComment {
-    background: var(--input-bg);
-    border: var(--border-size-small) solid var(--border-main);
-    border-radius:var(--radius-none);
+/*~~~~~~~~~Make comment post button~~~~~~~~~*/
+  #postComment {
+    background: var(--bg-input-dark);
     color: var(--text-light);
     text-shadow: none;
-}
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius: none;
+  }
 
-#postComment:hover {
-    background-color: var(--header-bg) !important;
-    border-color: var(--accent-gold) !important;
-    border-radius:var(--radius-none) !important;
-    color: var(--accent-gold) !important;
-}
-
-
-/* =========================================================
-   PRIDE ABOUT
-   ========================================================= */
-
-/* Pride About Area Text */
+  #postComment:hover {
+    background: var(--bg-input-mid);
+    color: var(--accent-color-mid);
+    border-color: var(--accent-color-mid);
+  }
+  
+/*~~~~~~~~~~~~~~~~~
+    About Pride
+  ~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~About pride text~~~~~~~~~*/
 #about,
 #about a {
-    color: var(--text-dark);
-}
-#about {
-    text-shadow:0 0 15px white;
-}
-
-#about .top a, #about .bottom a {
-    color:var(--text-light);
-}
-
-
-/* Pride About Main Area */
-#about {
-    border: var(--border-size-big) solid var(--border-main);
-    border-radius:var(--radius-main);
-    overflow: hidden;
-    border-collapse: separate;
-    border-spacing: 0;
-}
-
-
-/* Pride About Inner Areas */
-#about .top,
-#about .bottom {
-    background: var(--header-bg);
-}
-
-#about td .left {
-    background: var(--panel-bg-alt);
-}
-
-#about td .right {
-    background-color: var(--panel-bg);
+  color: var(--text-light);
+  text-decoration:none;
 }
 
 #about a:hover {
-    color: var(--accent-gold);
+  color: var(--accent-color-mid);
 }
 
+/*~~~~~~~~~About pride outer area~~~~~~~~~*/
+#about.table {
+  background: var(--bg-header-mid);
+  border: var(--border-size-big) solid var(--border-color-main);
+  border-radius: var(--radius-big);
+  overflow: hidden;
+  border-collapse: separate;
+}
 
-/* =========================================================
-   PLAYER INFO
-   ========================================================= */
+/*~~~~~~~~~About inner areas~~~~~~~~~*/
+#about .top,
+#about .bottom {
+  background: var(--bg-header-mid);
+}
 
-/* Player Info Area Text and Links */
+#about td .left {
+  background: var(--bg-panel-dark);
+}
+
+#about td .right {
+  background: var(--bg-panel-mid);
+}
+
+/*~~~~~~~~~~~~~~~~~
+  About Player
+~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~About player text~~~~~~~~~*/
 #player,
+#player .top,
 #player a {
-    color: var(--text-light);
-}
-
-
-/* Player Info Area */
-#player {
-    border: var(--border-size-big) solid var(--border-main);
-    border-radius:var(--radius-main);
-    overflow: hidden;
-    border-collapse: separate;
-    border-spacing: 0;
-}
-
-#player .top {
-    background: var(--header-bg);
-    color:var(--text-light);
-}
-
-#player td.left {
-    background: var(--panel-bg-alt);
-    color:var(--text-dark);
-    text-shadow:0 0 15px white;
-}
-
-#player td .right {
-    background-color: var(--panel-bg);
-    color:var(--text-dark)
+  color: var(--text-light);
 }
 
 #player a:hover {
-    color: var(--accent-gold);
+  color: var(--accent-color-mid);
 }
 
+/*~~~~~~~~~About player outer area~~~~~~~~~*/
+#player {
+  background: var(--bg-header-mid);
+  border: var(--border-size-big) solid var(--border-color-main);
+  border-radius: var(--radius-big);
+  overflow: hidden;
+  border-collapse: separate;
+}
 
-/* =========================================================
-   DENS AND MOUNDS
-   ========================================================= */
+/*~~~~~~~~~About player inner areas~~~~~~~~~*/
+#player .top {
+  background: var(--bg-header-mid);
+}
 
-.cave-grid,
+#player td.left {
+  background: var(--bg-panel-dark);
+}
+
+#player td .right {
+  background: var(--bg-panel-mid);
+}
+
+/*~~~~~~~~~~~~~~~~~
+  Caves and Mounds
+~~~~~~~~~~~~~~~~~*/
+
+.cave-grid {
+  background: var(--bg-header-dark);
+  color: var(--text-light);
+  border: var(--border-size-small) solid var(--border-color-main);
+  border-radius: var(--radius-small);
+}
+
 .mound-grid {
-    background-color: var(--panel-bg-alt);
-    color: var(--text-dark);
-    text-shadow:0 0 15px white;
-    border:var(--border-size-small) solid var(--border-main);
-    border-radius:var(--radius-main);
+  background: var(--bg-header-mid);
+  color: var(--text-light);
+  border: var(--border-size-small) solid var(--border-color-main);
+  border-radius: var(--radius-small);
 }
 
-.cave-grid a,
-.mound-grid a {
-    color: var(--text-main);
-}
-
-.cave-grid a:hover,
-.mound-grid a:hover {
-    color: var(--accent-gold);
-}
-
-
-/* =========================================================
-   SPARRING
-   ========================================================= */
-
+/*~~~~~~~~~~~~~~~~~
+    Sparring
+~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~Sparring main area~~~~~~~~~*/
 #sparring {
-    color:var(--text-dark);
-    background-color: var(--panel-bg-alt);
-    border: var(--border-size-big) solid var(--border-main);
-    border-radius:var(--radius-main);
-    overflow: hidden;
-    border-collapse: separate;
-    border-spacing: 0;
+  background: transparent;
+  color: var(--text-light);
+  border: var(--border-size-big) solid var(--border-color-main);
+  border-radius: var(--radius-big);
+  overflow: hidden;
+  border-collapse: separate;
+  margin-bottom: 10px;
 }
 
+/*~~~~~~~~~Sparring inner areas~~~~~~~~~*/
 #sparring th {
-    background-color: var(--header-bg);
-    color:var(--text-light);
+  background: var(--bg-header-mid);
+}
+  
+#sparring td {
+  background: var(--bg-panel-mid);
 }
 
-#sparring .right_odd {
-    background: transparent;
+#sparring td .right_odd {
+  background: transparent;
 }
 
-#sparring .right_odd span {
-    color:var(--text-dark) !important;
+#sparring td .right_odd span {
+  color: var(--text-light);
 }
 
-
-/* Sparring Input Areas */
+/*~~~~~~~~~Sparring input areas~~~~~~~~~*/
 #sparring select,
 #sparring input {
-    color: var(--text-light);
-    text-shadow: none;
-    background: none;
-    background-color: var(--input-bg);
-    box-shadow: none;
-    border: 1px solid var(--border-main);
-    border-radius:var(--radius-none);
+  background: var(--bg-input-dark);
+  color: var(--text-light);
+  text-shadow: none;
+  border: 1px solid var(--border-color-main);
+  border-radius: none;
+  box-shadow: none;
 }
 
-#sparring input:hover,
-#sparring select:hover {
-    background-color: var(--header-bg) !important;
-    border-color: var(--accent-gold) !important;
-    border-radius:var(--radius-none) !important;
-    color: var(--accent-gold) !important;
+#sparring input:hover {
+  background: var(--bg-input-mid);
+  color: var(--accent-color-mid);
+  border-color: var(--accent-color-mid);
 }
 
-
-/* =========================================================
-   FAPA
-   ========================================================= */
-
+/*~~~~~~~~~~~~~~~~~
+  FAPA
+~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~FAPA text~~~~~~~~~*/
 .row,
-.row span {
-    color: var(--text-light) !important;
-}
-
-.row .feature {
-    background-color: var(--panel-bg);
-    border: var(--border-size-big) solid var(--border-main);
-    border-radius:var(--radius-main);
-    overflow: hidden;
-    border-collapse: separate;
-    border-spacing: 0;
-}
-
+.row span,
 .row .feature h3,
 .row .feature input,
 .row .feature select {
-    color: var(--text-light);
-    text-shadow: none;
+  color: var(--text-light) !important;
+  text-shadow: none;
 }
 
+/*~~~~~~~~~FAPA main areas~~~~~~~~~*/
+.row .feature {
+  background: var(--bg-panel-mid);
+  border: var(--border-size-big) solid var(--border-color-main);
+  border-radius: var(--radius-big);
+  overflow: hidden;
+}
+
+/*~~~~~~~~~FAPA inputs~~~~~~~~~*/
 .row .feature input,
 .row .feature select {
-    background: none;
-    background-color: var(--input-bg);
-    border: 1px solid var(--border-main);
-    border-radius:var(--radius-none);
+  background: var(--bg-input-dark);
+  border: 1px solid var(--border-color-main);
+  border-radius: none;
 }
 
-.row .feature input:hover, .row .feature select:hover {
-    background-color: var(--header-bg) !important;
-    border-color: var(--accent-gold) !important;
-    border-radius:var(--radius-none) !important;
-    color: var(--accent-gold) !important;
+.row .feature input:hover {
+  background: var(--bg-input-mid);
+  color: var(--accent-color-mid);
+  border-color: var(--accent-color-mid);
 }
 
-/* =========================================================
-   ALLIES
-   ========================================================= */
-
+/*~~~~~~~~~~~~~~~~~
+  Allies
+~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~Allies text~~~~~~~~~*/
 #allies,
+#allies .top,
 #allies a {
-    color: var(--text-main);
+  color: var(--text-light) !important;
+  text-decoration: none;
 }
 
+#allies a:hover {
+  color: var(--accent-color-mid) !important;
+}
+
+/*~~~~~~~~~Allies main area~~~~~~~~~*/
 #allies {
-    background-color: var(--transparent);
-    border: var(--border-size-big) solid var(--border-main);
-    border-radius:var(--radius-main);
-    overflow: hidden;
-    border-collapse: separate;
-    border-spacing: 0;
+  background: var(--bg-panel-mid);
+  border: var(--border-size-big) solid var(--border-color-main);
+  border-radius: var(--radius-big);
+  overflow:hidden;
+  border-collapse: separate;
 }
 
+/*~~~~~~~~~Allies inner areas~~~~~~~~~*/
 #allies .top,
 #allies .bottom {
-    background-color: var(--header-bg);
+    background: var(--bg-header-dark);
 }
 
 #allies .left {
     display: none;
 }
 
-#allies a:hover {
-    color: var(--accent-gold);
-}
-
-
-/* =========================================================
-   CLANS
-   ========================================================= */
-
+/*~~~~~~~~~~~~~~~~~
+    Clans
+~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~Clans text~~~~~~~~~*/
 #clans,
+#clans .top,
 #clans a {
-    color: var(--text-main);
-}
-
-#clans {
-    background-color: var(--transparent);
-    border: var(--border-size-big) solid var(--border-main);
-    border-radius:var(--radius-main);
-    overflow: hidden;
-    border-collapse: separate;
-    border-spacing: 0;
-}
-
-#clans .top {
-    background-color: var(--header-bg);
-}
-
-#clans .left {
-    display: none;
+    color: var(--text-light);
 }
 
 #clans a:hover {
-    color: var(--accent-gold);
+    color: var(--accent-color-mid);
 }
 
-
-/* =========================================================
-   DYNASTIES
-   ========================================================= */
-
-.row.dynastycollection div .left {
-    background-color: var(--panel-bg-alt);
-    border: var(--border-size-small) solid var(--border-main);
-    border-radius:var(--radius-main);
+/*~~~~~~~~~Clans main area~~~~~~~~~*/
+#clans {
+  background: var(--bg-panel-mid);
+  border: var(--border-size-big) solid var(--border-color-main);
+  border-radius: var(--radius-big);
+  overflow: hidden;
+  border-collapse: separate;
 }
 
+/*~~~~~~~~~Clans inner areas~~~~~~~~~*/
+
+#clans .top {
+  background: var(--bg-header-dark);
+}
+
+#clans .left {
+  display: none;
+}
+
+/*~~~~~~~~~~~~~~~~~
+  Dynasties
+~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~Dynasties text~~~~~~~~~*/
 .row.dynastycollection h3 {
-    color: var(--text-dark);
-    text-shadow:0 0 15px white;
+  color: var(--text-light);
 }
 
+/*~~~~~~~~~Dynasties Icon Backgrounds~~~~~~~~~*/ 
+.row.dynastycollection div .left {
+  background: var(--bg-panel-mid);
+  border: var(--border-size-small) solid var(--border-color-main);
+  border-radius: var(--radius-small);
+  width: fit-content;
+}
 
-/* =========================================================
-   LOGS
-   ========================================================= */
-
+/*~~~~~~~~~~~~~~~~~
+  Logs
+~~~~~~~~~~~~~~~~~*/
 .col.col-sm-4 .left {
-    background-color: var(--panel-bg-alt);
-    border: var(--border-size-small) solid var(--border-main);
-    border-radius:var(--radius-main);
-    color: var(--text-dark);
-    text-shadow:0 0 15px white;
+  color: var(--text-light);
+  background: var(--bg-panel-mid);
+  border: var(--border-size-small) solid var(--border-color-main);
+  border-radius: var(--radius-small);
 }
 
+/*~~~~~~~~~~~~~~~~~
+  Edit Details
+~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~Edit details text~~~~~~~~~*/
+.table th,
+.table th a,
+#editdetailspanel .right select,
+#editdetailspanel a {
+  color: var(--text-light) !important;
+  border:none !important;
+}
 
-/* =========================================================
-   EDIT DETAILS
-   ========================================================= */
+.table th a:hover,
+#editdetailspanel a:hover {
+  color: var(--accent-color-mid) !important;
+}
 
+/*~~~~~~~~~Edit details main expanded area~~~~~~~~~*/
 #editdetailspanel {
-    border: var(--border-size-small) solid var(--border-main);
-    border-radius:var(--radius-main);
-    overflow: hidden;
-    border-collapse: separate;
-    border-spacing: 0;
-    margin: 0;
-}
-
-.table {
-    margin:0px;
+  border: var(--border-size-small) solid var(--border-color-main);
+  border-bottom-right-radius: var(--radius-small);
+  border-bottom-left-radius: var(--radius-small);
+  overflow: hidden;
+  border-collapse: separate;
 }
 
 .table:nth-child(3) {
-    border: var(--border-size-small) solid var(--border-main);
-    border-radius:var(--radius-main);
-    overflow: hidden;
-    border-collapse: separate;
-    border-spacing: 0;
-    margin: 0;
+  border: var(--border-size-small) solid var(--border-color-main);
+  border-top-right-radius: var(--radius-small);
+  border-top-left-radius: var(--radius-small);
+  border-bottom-right-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  overflow: hidden;
+  border-collapse: separate;
 }
 
 .table th {
-    background-color: var(--header-bg);
+  background: var(--bg-header-mid);
 }
 
-.table th a {
-    color: var(--text-light) !important;
+.table:nth-child(3) {
+  border: var(--border-size-small) solid var(--border-color-main);
+  border-radius: var(--radius-small);
+  overflow: hidden;
 }
 
-.table th a:hover {
-    color: var(--accent-gold) !important;
+/*~~~~~~~~~Edit details expanded inner areas~~~~~~~~~*/
+.table {
+  margin: 0px !important;
 }
 
-
-/* Expanded Details Panel */
 #editdetailspanel .left {
-    background: var(--panel-bg-alt);
-    color:var(--text-dark);
-    text-shadow:0 0 15px white;
+  background: var(--bg-panel-dark);
 }
 
 #editdetailspanel .right {
-    background-color: var(--panel-bg);
+  background: var(--bg-panel-mid);
 }
-
+    
+/*~~~~~~~~~Edit details input areas~~~~~~~~~*/
 #editdetailspanel .right textarea,
 #editdetailspanel .right input,
-#editdetailspanel .right select {
-    background-color: var(--input-bg);
-    border: 1px solid var(--border-main);
-    border-radius:var(--radius-none);
-    color: var(--text-light);
+#editdetailspanel .right select,
+#editdetailspanel .bottom input {
+  background: var(--bg-input-dark);
+  border: 1px solid var(--border-color-main);
+  border-radius: none;
+  text-shadow: none;
 }
 
-#editdetailspanel .right a {
-    color: var(--text-dark);
-    text-shadow:0 0 15px white;
-}
-
-#editdetailspanel .right a:hover {
-    color: var(--accent-gold);
+#editdetailspanel .right textarea {
+  scrollbar-color: var(--bg-input-dark) var(--bg-input-mid);
+  scrollbar-width: thin;
 }
 
 #editdetailspanel .bottom {
-    background-color: var(--header-bg);
-}
-
-#editdetailspanel .bottom input {
-    background: var(--input-bg);
-    border: 1px solid var(--border-main);
-    border-radius:var(--radius-none);
-    text-shadow: none;
-    color: var(--text-light);
+  background: var(--bg-header-mid);
 }
 
 #editdetailspanel .bottom input:hover {
-    background-color: var(--header-bg) !important;
-    border-color: var(--accent-gold) !important;
-    border-radius:var(--radius-none) !important;
-    color: var(--accent-gold) !important;
+  background: var(--bg-input-mid);
+  color: var(--accent-color-mid);
+  border-color: var(--accent-color-mid);
 }
 
-
-/* =========================================================
-   ACCOUNT SETTINGS
-   ========================================================= */
-
+/*~~~~~~~~~~~~~~~~~
+  Account Settings
+~~~~~~~~~~~~~~~~~*/
 form .left:has(a[href*='/account-settings.php']) {
-    background-color: var(--header-bg);
-    border: var(--border-size-small) solid var(--border-main);
+  background: var(--bg-header-mid);
+  border: var(--border-size-small) solid var(--border-color-main);
 }
 
 form .left a {
-    color: var(--text-main);
+  color: var(--text-light)
 }
 
 form .left a:hover {
-    color: var(--accent-gold);
+  color: var(--accent-color-mid);
 }
 
-
-/* =========================================================
-   SIDEBAR / PANELS
-   ========================================================= */
-
+/*~~~~~~~~~~~~~~~~~
+  Sidebar
+~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~Sidebar text~~~~~~~~~*/
 #pageSidebar,
-#pageSidebar a {
-    color: var(--text-dark);
-}
-
-
+#pageSidebar a,
 #pageSidebar h3 {
-    color:var(--text-light);
+  color: var(--text-light);
 }
 
 #pageSidebar a:hover {
-    color: var(--accent-gold);
+  color: var(--accent-color-mid) !important;
 }
 
-
-/* Sidebar Inner Panels */
-.panel-body.small,
-.panel,
-.panel.panel-default {
-    color: var((--text-dark));
-    background-color: var(--panel-bg-alt);
-    box-shadow: none !important;
+/*~~~~~~~~~Sidebar main area~~~~~~~~~*/
+#pageSidebar {
+  background: transparent;
 }
 
-.col-md-3 .panel {
-    border: var(--border-size-small) solid var(--border-main);
-    border-radius:var(--radius-main);
+/*~~~~~~~~~Sidebar inner areas~~~~~~~~~*/
+  /*~~~~Date, Event Currency, Energy Boost, and Progress Bars~~~~*/
+#pageSidebar .panel.panel-default,
+#pageSidebar .panel {
+  background: var(--bg-panel-dark);
+  color: var(--text-light);
+  border: var(--border-size-small) solid var(--border-color-main);
+  border-radius: var(--radius-big);
+  overflow: hidden;
+}
+
+#pageSidebar .panel-body.small {
+  background: transparent;
+}
+
+#pageSidebar .panel-body.small.center input {
+  background: var(--bg-input-dark);
+  color: var(--text-light);
+  border: 1px solid var(--border-color-main);
+  border-radius: none;
+  text-shadow: none;
+}
+
+#pageSidebar .panel-body.small.center input:hover {
+  background: var(--bg-input-mid) !important;
+  color: var(--accent-color-mid) !important;
+  border-color: var(--accent-color-mid) !important;
+}
+}
+
+  /*~~~~Achievements, Bookmarks~~~~*/
+.col-md-12.col-xs-5 .panel {
+  background: var(--bg-panel-dark);
+  color: var(--text-light);
+  border: var(--border-size-small) solid var(--border-color-main);
+  border-radius: var(--radius-big);
+  overflow: hidden;
+}
+
+.col-md-12.col-xs-5 .panel p {
+  display: none;
 }
 
 .clear.visible-xs.visible-sm {
-    border:none !important;
+  border: none !important;
 }
 
-/* =========================================================
-   CHATBOX
-   ========================================================= */
-
-/* Chat Toggle Button */
-#btnToggleSidebarChat {
-    background: none;
-    background-color: var(--input-bg);
-    border: 1px solid var(--border-main);
-    border-radius:var(--radius-none);
-    color: var(--text-light);
-    text-shadow: none;
+  /*~~~~Stats, Media~~~~*/
+.col-md-12.col-xs-12.visible-md.visible-lg {
+  background: var(--bg-panel-mid);
+  color: var(--text-light);
+  border: var(--border-size-small) solid var(--border-color-main);
+  border-radius: var(--radius-big);
 }
 
-#chatMessageContainer {
-    border: var(--border-size-big) solid var(--border-main);
-    border-radius:var(--radius-main);
+/*~~~~~~~~~~~~~~~~~
+  Chatbox
+~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~Chatbox text~~~~~~~~~*/
+#fraSidebarChat,
+#fraSidebarChat a,
+#chatMessageList a,
+#fraSidebarChat span,
+#chatMessagePinned,
+#chatMessagePinned a,
+#txtChatContainer a {
+  color: var(--text-light) !important;
 }
 
-#btnToggleSidebarChat:hover {
-    background-color: var(--header-bg);
-    border-color: var(--accent-gold) !important;
-    border-radius:var(--radius-none);
-    color: var(--accent-gold);
+#fraSidebarChat a:hover,
+#chatMessageList a:hover,
+#txtChatContainer a:hover {
+  color: ver(--accent-color-mid) !important;
 }
 
 
-/* Chat Text */
-#fra_chatContainer,
-#fra_chatContainer a,
-#fra_chatContainer span {
-    color:var(--text-dark);
-    text-shadow:0 0 15px white;
-    overflow:hidden;
+/*~~~~~~~~~Chatbox inputs~~~~~~~~~*/
+#btnToggleSidebarChat,
+#label_currentChannel,
+#txtChatInput,
+#btnChatSend,
+.chatMenu-container{
+  background: var(--bg-input-dark) !important;
+  color: var(--text-light) !important;
+  border: 1px solid var(--border-color-main) !important;
+  border-radius: none !important;
+  text-shadow: none !important;
 }
 
-#fra_chatContainer a:hover {
-    color: var(--accent-gold);
+.chatMenu-container button {
+  color: var(--text-light) !important;
 }
 
-#label_currentChannel {
-    border-radius:var(--radius-none) !important;
+.chatMenu-container button:hover,
+.channelSwitcher.active {
+  background: var(--bg-input-mid) !important;
+  color: var(--accent-color-mid) !important;
+  border-color: var(--accent-color-mid) !important;
 }
 
-/* Chat Inputs / Buttons */
-#fra_chatContainer #label_currentChannel,
-#fra_chatContainer input,
-#fra_chatContainer #btnChatSend {
-    background: none;
-    background-color: var(--input-bg);
-    border: 1px solid var(--border-main);
-    /* border-radius:var(--radius-main); */
-    color: var(--text-main);
-    text-shadow: none;
-}
-
-#fra_chatContainer input:hover {
-    background-color: var(--header-bg);
-    border-color: var(--accent-gold) !important;
-    border-radius:var(--radius-none);
-    color: var(--accent-gold);
-}
-
-#txtChatContainer {
-    margin-right:1px
-}
-
-#txtChatInput {
-    border: 1px solid var(--border-main) !important;
-    border-radius:var(--radius-none) !important;
-}
-
-#txtChatInput:hover {
-    background-color: var(--header-bg);
-    border-color: var(--accent-gold) !important;
-    border-radius:var(--radius-none);
-    color: var(--accent-gold);
-}
-
-.emoteInput {
-    margin-right:1px;
-}
-
-#btnChatSend {
-    border-radius:var(--radius-none) !important;
-}
-
+#btnToggleSidebarChat:hover,
 #btnChatSend:hover {
-    background-color: var(--header-bg) !important;
-    border-color: var(--accent-gold) !important;
-    border-radius:var(--radius-none) !important;
-    color: var(--accent-gold) !important;
+  background: var(--bg-input-mid) !important;
+  color: var(--accent-color-mid) !important;
+  border-color: var(--accent-color-mid) !important;
 }
 
-/* Alternating Chat Messages */
-.s-chat-message:nth-child(even),
+/*~~~~~~~~~Chatbox main container~~~~~~~~~*/
 #chatMessagePinned {
-    background-color: var(--panel-bg-alt) !important;
+  background: var(--bg-header-dark) !important;
 }
 
+#fraSidebarChat {
+  background: transparent;
+  color: var(--text-light);
+}
+
+#chatMessageList {
+  backgound: transparent;
+  color: var(--text-light);
+  border-radius: var(--radius-small);
+  box-shadow:0 0 0 var(--border-size-small) var(--border-color-main);
+  scrollbar-color: var(--bg-input-dark) var(--bg-input-mid);
+  scrollbar-width: thin;
+}
+
+.s-chat-message_timestamp {
+  color: var(--text-small-mid)
+}
+
+/*~~~~~~~~~Chatbox alternating messages~~~~~~~~~*/
 .s-chat-message:nth-child(odd) {
-    background-color: var(--panel-bg);
+  background: var(--bg-panel-mid);
 }
 
+.s-chat-message:nth-child(even) {
+  background: var(--bg-panel-dark);
+}
 
-/* Mod Message */
+/*~~~~~~~~~Mod messages~~~~~~~~~*/
 .s-chat-message.s-chat-message__mod {
-    background: var(--mod-bg) !important;
-    color: var(--text-light);
-    border: none;
-    padding-left: 5px;
+  background: var(--bg-mod) !important;
+  color: var(--text-mod);
+  padding-left: 4px;
+  font-weight:normal;
+  border: none;
 }
 
-.s-chat-message.s-chat-message__mod span {
-    padding-left: 5px !important;
+.s-chat-message.s-chat-message__mod a {
+  color: var(--text-light) !important;
 }
 
-
-/* Chat Scrollbar */
-#chatMessageList::-webkit-scrollbar {
-    background-color: var(--panel-bg-alt);
+.s-chat-message.s-chat-message__mod a:hover{
+  color: ver(--accent-color-mid) !important;
 }
 
-#chatMessageList::-webkit-scrollbar-thumb {
-    background-color: var(--header-bg);
-    border-radius:var(--radius-main);
+.s-chat-message.s-chat-message__mod .s-chat-message_timestamp {
+  padding-left: 4px;
 }
 
-
-/* =========================================================
-   BUGBOX BUTTON
-   ========================================================= */
-
+/*~~~~~~~~~~~~~~~~~
+  BugBox Button
+~~~~~~~~~~~~~~~~~*/ 
 .btn.btn-default.button {
-    background: none;
-    background-color: var(--input-bg);
-    border: 1px solid var(--border-main);
-    border-radius:var(--radius-none);
-    text-shadow: none;
+  background: var(--bg-input-dark);
+  color: var(--text-light) !important;
+  border: 1px solid var(--border-color-main);
+  border-radius: none;
+  text-shadow: none;
 }
 
-.btn.btn-default.button {
-    color:var(--text-light) !important;
+.btn.btn-default.button:hover {
+  background: var(--bg-input-mid) !important;
+  color: var(--accent-color-mid) !important;
+  border-color: var(--accent-color-mid) !important;
+}
+    
+/*~~~~~~~~~~~~~~~~~
+  Lioden License and Links
+~~~~~~~~~~~~~~~~~*/ 
+.col-xs-10, 
+.col-xs-10 a {
+  color: var(--text-light) !important;
+  text-shadow:none;
+  border:none !important;
 }
 
-.btn.btn-default.button:hover,
-.btn.btn-default.button:focus {
-    background-color: var(--header-bg);
-    border-color: var(--accent-gold);
-    border-radius:var(--radius-none);
-    color: var(--accent-gold);
+.col-xs-10 a:hover {
+  color: var(--accent-color-mid) !important;
 }
 
-/*HTML
+/*~~~~~~~~~~~~~~~~~
+  End Initiate
+~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~
+  Acolyte
+~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~HTML
 <div class="Bio">
 <div class="BioTop">Top Small Div</div> <div class="BioLeft">Left Div</div><div class="BioRight">Right Div</div>
-</div> */
+</div> ~~~~~*/
 
 
 .Bio {
@@ -895,56 +909,74 @@ form .left a:hover {
 }
 
 .BioTop {
-    background:var(--header-bg);
-    border:var(--border-size-small) solid var(--border-main);
+    background:var(--bg-header-mid);
+    border:var(--border-size-small) solid var(--border-color-main);
     grid-column:1/3;
     border-radius:10px;
-    overflow-x:scroll;
-    overflow-y:hidden;
-}
-
-.BioTop::-webkit-scrollbar {
-    display:none;
+    overflow:hidden;
 }
 
 .BioLeft {
-    background:var(--panel-bg-alt);
-    border:var(--border-size-big) solid var(--border-main);
+    background:var(--bg-panel-mid);
+    border:var(--border-size-big) solid var(--border-color-main);
     border-radius:10px;
-    color:var(--text-dark);
-    overflow-x:hidden;
-    overflow-y:scroll;
-}
-
-.BioLeft::-webkit-scrollbar {
-    display:none;
+    color:var(--text-light);
+    overflow:hidden;
 }
 
 .BioRight {
-    background:var(--panel-bg);
-    border:var(--border-size-big) solid var(--border-main);
+    background:var(--bg-panel-dark);
+    border:var(--border-size-big) solid var(--border-color-main);
     border-radius:10px;
-    color:var(--text-dark);
-    overflow-x:hidden;
-    overflow-y:scroll;
+    color:var(--text-light);
+    overflow:hidden;
 }
 
-.BioRight::-webkit-scrollbar {
-    display:none;
-}
+/*~~~~~~~~~~~~~~~~~
+  End Acolyte
+~~~~~~~~~~~~~~~~~*/
 
+/*~~~~~~~~~~~~~~~~~
+  Oracle
+~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~Pagedoll~~~~~*/
 .pagedoll {
     position: fixed;
     right: -10px;
     bottom: -10px;
-    width: 150px;
+    width: 250px;
     z-index: 9999;
     pointer-events: none;
 }
 
+/*~~~~~~~~~~~~~~~~~
+  Pagedoll Credit
+https://static.lioden.com/images/explorenew/celestial/eridaniplanet.png
+Lioden Official Art
+Lioden Ltd © 2012-2026
+~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~Player Icon~~~~~*/
 #player > tbody > tr.right > td:nth-child(2) {
-    content:url(https://static.lioden.com/images/items/Decoration/thedemiurge.png);
+    content:url(https://static.lioden.com//images/items/Decoration/thedemiurge.png);
 }
+
+/*~~~~~~~~~~~~~~~~~
+  Player Icon Credit
+https://static.lioden.com//images/items/Decoration/thedemiurge.png
+Lioden Official Art (uhhhh I'll figure out credit in a sec)
+Lioden Ltd © 2012-2026
+~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~Add to Bio Box CSS to make them scrollable
+    overflow-x:hidden;
+    overflow-y:scroll;~~~~~
+*/
+
+/*~~~~~~~~~~~~~~~~~
+  Pick One of Three
+  ~~~~~~~~~~~~~~~~~*/
 
 /*Replace ____'s Den*/
 #pageContainer h1 {
@@ -956,28 +988,44 @@ form .left a:hover {
     font-size:50px;
 }
 
-/*Progress Bar Changes*/
+/*~~~~~Progress Bar Changes~~~~~*/
 .panel-body.small  .progress {
-    background:var(--header-bg);
+    background:var(--bg-header-mid);
 }
 
 .panel-body.small  .progress div {
-    color:var(--text-dark);
+    color:var(--text-light);
     text-shadow:0 0 10px white;
 }
 
 .progress [role="progressbar"] {
-    background:var(--panel-bg);
+    background:var(--bg-panel-dark);
 }
 
+/*~~~~~Cursor~~~~~*/
 body {
-    cursor:url('https://cdn.cursors-4u.net/css-previews/shiny-gold-star-0cad57e3-css.webp'), auto;
+    cursor:url('data:application/octet-stream;base64,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9QxO/PUJTvz2CU789gdO/PYETvz2A0789gJO/PYCTvz2Ak789gEAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAEw2Nja2TE1NzkxNTc5LTU3OSkxMzkpMTM5JTEzONjo6tQYTE001q6cKTvz2B0789glO/PUJTvz2B0789gdO/PYHTvz2B0789gRO/PYFTvz2A0789gNO/PYCTvz2Ak789gJO/PYBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwAAAC4AAAA+AAAAPwIHB0ACCQlAAgkJPwQNDD8FExIvEDU0EUTe2QRO/PYETfz2BE789QRO/PYETvz2BE789gRO/PYETvz2A0789gJO/PYCTvz2Ak379QFO/PYBTvz2AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE789gFO/PYBTvz2AU789gJO/PYCTvz2Ak789gNO/PYDTvz2A0789gNO/PYDTvz2A0789gNO/PYBTvz2AU789gJO/PYBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAATvz2Ak789gJO/PYCTvz2Ak789gJO/PYCTvz2Ak789gJO/PYCTvz2Ak789gEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//////////////////////////////////P7///gAf//4AH//+AB///gAf//4AD//+AA///AAP//gAB//4AAP/+AAD//gAB//+AB///4B//xnA//8A4f/+APH//gD///4B///+AP///gD///8A////AP//////////////////8="), auto;
 }
 
-/*Hover Cursor*/
-a, button {
-    cursor: url("https://cdn.cursors-4u.net/css-previews/shiny-gold-star-0cad57e3-css.webp"), pointer;
+a, button, input {
+    cursor: url('data:application/octet-stream;base64,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9QxO/PUJTvz2CU789gdO/PYETvz2A0789gJO/PYCTvz2Ak789gEAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAEw2Nja2TE1NzkxNTc5LTU3OSkxMzkpMTM5JTEzONjo6tQYTE001q6cKTvz2B0789glO/PUJTvz2B0789gdO/PYHTvz2B0789gRO/PYFTvz2A0789gNO/PYCTvz2Ak789gJO/PYBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwAAAC4AAAA+AAAAPwIHB0ACCQlAAgkJPwQNDD8FExIvEDU0EUTe2QRO/PYETfz2BE789QRO/PYETvz2BE789gRO/PYETvz2A0789gJO/PYCTvz2Ak379QFO/PYBTvz2AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE789gFO/PYBTvz2AU789gJO/PYCTvz2Ak789gNO/PYDTvz2A0789gNO/PYDTvz2A0789gNO/PYBTvz2AU789gJO/PYBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAATvz2Ak789gJO/PYCTvz2Ak789gJO/PYCTvz2Ak789gJO/PYCTvz2Ak789gEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//////////////////////////////////P7///gAf//4AH//+AB///gAf//4AD//+AA///AAP//gAB//4AAP/+AAD//gAB//+AB///4B//xnA//8A4f/+APH//gD///4B///+AP///gD///8A////AP//////////////////8='), pointer !important;
 }
+
+/*~~~~~~~~~~~~~~~~~
+  Cursor Credit
+https://www.rw-designer.com/cursor-detail/57261
+aerri
+Release to Public Domain license
+August 18th 2013
+~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~
+  End Oracle
+~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~
+  Priestess
+~~~~~~~~~~~~~~~~~*/
 
 /*SB Icon*/
 body > div.container.topbar > ul > li:nth-child(2) > a > img {
@@ -1074,3 +1122,7 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
     background-size:100%;
     background-position-y:center;
 }
+
+/*~~~~~~~~~~~~~~~~~
+  End Priestess
+~~~~~~~~~~~~~~~~~*/
