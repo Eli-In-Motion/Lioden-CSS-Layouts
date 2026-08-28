@@ -61,6 +61,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position:center;
 }
 
 /*~~~~~~~~~~~~~~~~~
@@ -795,6 +796,10 @@ form .left a:hover {
 #fraSidebarChat {
   background: transparent;
   color: var(--text-dark);
+}
+
+#chatMessageContainer {
+  border: 1px solid var(--border-color-main);
 }
 
 #chatMessageList {
