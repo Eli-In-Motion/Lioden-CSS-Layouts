@@ -11,7 +11,7 @@
   Background Credit: @tsuyoshikozu
   Published on April 1, 2024
   Free to use under the Unsplash License
-  ~~~~~~~~~~~~~~~~~*/
+~~~~~~~~~~~~~~~~~*/
   
 /*~~~~~~~~~Bakcground Colors~~~~~~~~~*/
   --bg-panel-light:#ffedf07a;
@@ -61,6 +61,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position:center;
 }
 
 /*~~~~~~~~~~~~~~~~~
@@ -795,6 +796,10 @@ form .left a:hover {
 #fraSidebarChat {
   background: transparent;
   color: var(--text-dark);
+}
+
+#chatMessageContainer {
+  border: 1px solid var(--border-color-main);
 }
 
 #chatMessageList {
