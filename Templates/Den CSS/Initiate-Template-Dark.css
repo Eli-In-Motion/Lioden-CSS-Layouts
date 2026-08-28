@@ -719,7 +719,7 @@ form .left a:hover {
   background: var(--bg-panel-dark);
   color: var(--text-light);
   border: var(--border-size-small) solid var(--border-color-main);
-  border-radius: var(--radius-big);
+  border-radius: var(--radius-small);
   overflow: hidden;
 }
 
