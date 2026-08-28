@@ -1,18 +1,17 @@
-/* =========================================================
-   INITIATE
-   ========================================================= */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CSS by Eli in Motion ##319237 Please do not remove credit or claim as your own
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-/* =========================================================
-   QUICK CUSTOMIZATION
-   ========================================================= */
-
+/*~~~~~~~~~~~~~~~~~
+  Initiate
+  ~~~~~~~~~~~~~~~~~*/
 :root {
 
-    /* ===== MAIN BACKGROUND ===== */
+/*~~~~~~~~~Main Bakcground~~~~~~~~~*/
     --bg-page-color:#030303;
     --bg-page-image:url("https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Initiate/Neon%20Weird/pexels-dan-parlante-3850444-5719236.jpg?raw=true");
     
-    /* ===== BACKGROUND COLORS ===== */
+/*~~~~~~~~~Background Colors~~~~~~~~~*/
     --bg-panel-light:#000642c9;
     --bg-panel-mid:#03052ec9;
     --bg-panel-dark:#000000c9;
@@ -23,34 +22,37 @@
     --bg-input-mid:#5c96a6c9;
     --bg-input-dark:#3f7483c9;
 
-    /* ===== TEXT ===== */
+/*~~~~~~~~~Text Colors~~~~~~~~~*/
     --text-light:#f5f3f4;
     --text-mid:#503059;
     --text-dark: #000642;
-    --text-muted-light:#b2d9df;
-    --text-muted-mid:#82b5bd;
-    --text-muted-dark:#578d96;
+    --text-small-light:#b2d9df;
+    --text-small-mid:#82b5bd;
+    --text-small-dark:#578d96;
 
-    /* ===== BORDERS ===== */ 
+/*~~~~~~~~~Borders~~~~~~~~~*/ 
     --border-color-main:#55b9c9;
     --border-color-alt:#f2f2f5;
     --border-size-big:3px;
     --border-size-small:1px;
     --radius-big:26px;
     --radius-small:13px;
-    --radius-none:0px;
 
-    /* ===== SPECIAL ===== */
+/*~~~~~~~~~Chat~~~~~~~~~*/
     --bg-mod:#55b9c9c9;
     --text-mod:#000642;
+    --bg-ping: #45101a7a;
+    --text-ping: #fff7fc;
+  
+/*~~~~~~~~~Misc~~~~~~~~~*/
     --accent-color-light:#c9e4fb;
     --accent-color-mid:#91ccff;
     --accent-color-dark:#64d7ea;
 }
 
-/* =========================================================
-   MAIN BACKGROUND
-   ========================================================= */
+/*~~~~~~~~~~~~~~~~~
+    Main Body
+  ~~~~~~~~~~~~~~~~~*/
 
 body {
     background-color: var(--bg-page-color);
@@ -61,61 +63,58 @@ body {
     background-size: 700px 500px
 }
 
-/* =========================================================
-   TOP BAR
-   ========================================================= */
-
-/* Top Bar with Messages and Currency */
-.topbar {
-    background: none;
-     color: var(--text-light);
-}
-
+/*~~~~~~~~~~~~~~~~~
+    Top Bar
+  ~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~Topbar w/messages and currency~~~~~~~~~*/
+.topbar,
 .topbar a {
-    color: var(--text-light) !important;
+    background: none;
+     color: var(--text-light) !important;
 }
 
 .topbar a:hover {
     color: var(--accent-color-light) !important;
 }
 
-/* =========================================================
-   MAIN CONTAINERS
-   ========================================================= */
-
-/* Main container behind everything else */
+/*~~~~~~~~~~~~~~~~~
+    Main Containers
+  ~~~~~~~~~~~~~~~~~*/
 .container.main {
     background: none;
-    border:none;
-    box-shadow:none;
+    border: none;
+    box-shadow: none;
 }
 
-/* Smaller Container behind most main stuff */
-#pageContainer {
-    background-color:transparent;
-}
-
-/* =========================================================
-   NAVBAR
-   ========================================================= */
-
-.navbar.navbar-default {
+.col-md-9.col-xs-12 {
     background: none;
 }
 
+/*~~~~~~~~~~~~~~~~~
+  Navbar
+  ~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~Navbar text~~~~~~~~~*/
+.navbar.navbar-default,
 .navbar.navbar-default a {
-    color: var(--text-light) !important;
-}
-
-/*Exclude Lioden Logo Link from Background Color*/
-div:nth-child(1) > nav > div.navbar-header > a:hover {
-    background:none !important;
+  background:none;
+  color: var(--text-light) !important;
 }
 
 .navbar.navbar-default a:hover {
     background: var(--bg-panel-light) !important;
     color: var(--accent-color-light) !important;
+    border-radius: var(--radius-small);
 }
+
+body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a:hover {
+  background: none !important;
+}
+   ---------------------------------------paused-------------------------------
+.navbar.navbar-default {
+    background: none;
+}
+
+
 
 /* Navbar Collapse Button when Small */
 .navbar button {
@@ -223,8 +222,8 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
     color: var(--accent-color-dark);
 }
 
-.text-muted {
-    color: var(--text-muted-light) !important;
+.text-small {
+    color: var(--text-small-light) !important;
 }
 
 /* Comment Box Scrollbar */
@@ -264,7 +263,7 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 }
 
 #makeComment #comment::placeholder {
-    color: var(--text-muted-light) !important;
+    color: var(--text-small-light) !important;
 }
 
 /* Make Comment Post Button */
