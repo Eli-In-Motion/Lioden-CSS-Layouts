@@ -653,6 +653,7 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a:hover
 form .left:has(a[href*='/account-settings.php']) {
   background: var(--bg-header-mid);
   border: var(--border-size-small) solid var(--border-color-main);
+  border-radius:var(--radius-small);
 }
 
 form .left a {
