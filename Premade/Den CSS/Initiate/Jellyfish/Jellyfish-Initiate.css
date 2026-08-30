@@ -649,10 +649,16 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 #editdetailspanel .right input,
 #editdetailspanel .right select,
 #editdetailspanel .bottom input {
+    color:var(--text-light);
     background: var(--bg-input-light);
     border: 1px solid var(--border-color-main);
     border-radius: none;
     text-shadow: none;
+}
+
+#editdetailspanel td.right select option {
+    color: var(--text-light);
+    background: var(--bg-input-dark);
 }
 
 #editdetailspanel .right textarea {
@@ -662,8 +668,8 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 
 #editdetailspanel .bottom input:hover {
     background: var(--bg-input-mid) !important;
-    color: var(--accent-color-dark) !important;
-    border-color: var(--accent-color-dark) !important;
+    color: var(--accent-color-light) !important;
+    border-color: var(--accent-color-light) !important;
 }
 
 /*~~~~~~~~~~~~~~~~~
@@ -680,7 +686,7 @@ form .left a {
 }
 
 form .left a:hover {
-    color: var(--accent-color-dark);
+    color: var(--accent-color-mid);
 }
 
 /*~~~~~~~~~~~~~~~~~
@@ -694,7 +700,7 @@ form .left a:hover {
 }
 
 #pageSidebar a:hover {
-    color: var(--accent-color-dark);
+    color: var(--accent-color-mid);
 }
 
 /*~~~~~~~~~Sidebar main area~~~~~~~~~*/
@@ -702,16 +708,11 @@ form .left a:hover {
   background: transparent;
 }
 
-#chatMessageContainer {
-    border: var(--border-size-big) solid var(--border-color-main);
-    border-radius:var(--radius-small);
-}
-
 /*~~~~~~~~~Sidebar inner areas~~~~~~~~~*/
   /*~~~~Date, Event Currency, Energy Boost, and Progress Bars~~~~*/
 #pageSidebar .panel.panel-default,
 #pageSidebar .panel {
-   background: var(--bg-panel-dark);
+   background: var(--bg-panel-mid);
    border: var(--border-size-small) solid var(--border-color-main);
    border-radius: var(--radius-big);
    overflow: hidden;
@@ -732,13 +733,13 @@ form .left a:hover {
 
 #pageSidebar .panel-body.small.center input:hover {
   background: var(--bg-input-mid) !important;
-  color: var(--accent-color-mid) !important;
-  border-color: var(--accent-color-mid) !important;
+  color: var(--accent-color-light) !important;
+  border-color: var(--accent-color-light) !important;
 }
    
 /*~~~~Achievements, Bookmarks~~~~*/
 .col-md-12.col-xs-5 .panel {
-    background: var(--bg-panel-dark);
+    background: var(--bg-panel-mid);
     color: var(--text-light);
     border: var(--border-size-small) solid var(--border-color-main);
     border-radius:var(--radius-small);
@@ -755,7 +756,7 @@ form .left a:hover {
 
 /*~~~~Stats, Media~~~~*/
    .col-md-12.col-xs-12.visible-md.visible-lg {
-  background: var(--bg-panel-dark);
+  background: var(--bg-panel-mid);
   color: var(--text-light);
   border: var(--border-size-small) solid var(--border-color-main);
   border-radius: var(--radius-big);
@@ -782,7 +783,7 @@ form .left a:hover {
 }
 
 .s-chat-message_timestamp {
-  color: var(--text-small-mid)
+  color: var(--text-small-light)
 }
    
 /*~~~~~~~~~Chatbox inputs~~~~~~~~~*/
@@ -792,28 +793,33 @@ form .left a:hover {
 #btnChatSend,
 .chatMenu-container {
     background: var(--bg-input-light) !important;
-    color: var(--accent-color-light) !important;
+    color: var(--text-light) !important;
     border: 1px solid var(--border-color-main) !important;
-    border-radius:var(--radius-none) !important;
+    border-radius:0px !important;
     text-shadow: none !important;
 }
 
-.chatMenu-container button {
-  color: var(--text-light) !important;
+.channelSwitcher {
+    background: var(--bg-input-mid) !important;
+    color: var(--text-light) !important;
+}
+
+#txtChatContainer {
+    margin-right:2px !important
 }
 
 #btnToggleSidebarChat:hover,
 #btnChatSend:hover {
-    background: var(--bg-input-dark);
-    color: var(--accent-color-dark);
-    border-color: var(--accent-color-dark) !important;
+    background: var(--bg-input-mid) !important;
+    color: var(--accent-color-light) !important;
+    border-color: var(--accent-color-light) !important;
 }
 
-.channelSwitcher: hover, 
+.channelSwitcher:hover, 
 .channelSwitcher.active {
     background-color: var(--bg-input-dark) !important;
+    color: var(--text-light) !important;
     border: 1px solid var(--accent-color-dark) !important;
-    color: var(--accent-color-dark) !important;
 }
 
 /*~~~~~~~~~Chatbox main container~~~~~~~~~*/
@@ -824,21 +830,24 @@ form .left a:hover {
 
 #chatMessageContainer {
   border: 1px solid var(--border-color-main);
+    margin-right:2px;
 }
 
 #chatMessageList {
   backgound: transparent;
   color: var(--text-light);
-  border-radius: var(--radius-small);
-  box-shadow:0 0 0 var(--border-size-small) var(--border-color-main);
-  scrollbar-color: var(--bg-input-dark) var(--bg-input-mid);
+  border-top:1px solid var(--border-color-main);
+  scrollbar-color: var(--bg-input-dark) var(--bg-input-light);
   scrollbar-width: thin;
 }
    
 /*~~~~~~~~~Chatbox alternating messages~~~~~~~~~*/
-.s-chat-message:nth-child(even),
-#chatMessagePinned {
+.s-chat-message:nth-child(even) {
     background: var(--bg-panel-mid) !important;
+}
+
+#chatMessagePinned {
+    background:var(--bg-panel-dark) !important;
 }
 
 .s-chat-message:nth-child(odd) {
@@ -872,7 +881,7 @@ form .left a:hover {
 
 .btn.btn-default.button {
     background: var(--bg-input-light);
-    color: var(--accent-color-dark) !important;
+    color: var(--text-light) !important;
     border: 1px solid var(--border-color-main);
     border-radius: none;
     text-shadow: none;
