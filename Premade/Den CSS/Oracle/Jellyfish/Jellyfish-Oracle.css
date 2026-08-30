@@ -995,10 +995,20 @@ form .left a:hover {
     pointer-events: none;
 }
 
+/*~~~~~~~~~~~~~~~~~
+    Pagedoll Credit
+Lioden Ltd © 2012-2026
+  ~~~~~~~~~~~~~~~~~*/
+
 /*Player Icon*/
 #player > tbody > tr.right > td:nth-child(2) {
     content:url(https://static.lioden.com/images/items/Decoration/neutronjellyfish.png);
 }
+
+/*~~~~~~~~~~~~~~~~~
+    Player Icon Credit
+Lioden Ltd © 2012-2026
+  ~~~~~~~~~~~~~~~~~*/
 
 /*Add to Bio Box CSS to make them scrollable
     overflow-x:hidden;
