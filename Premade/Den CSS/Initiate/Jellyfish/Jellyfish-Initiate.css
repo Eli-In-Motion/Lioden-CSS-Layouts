@@ -89,8 +89,8 @@ Free to use under the Unsplash License
 
 /*~~~~~~~~~~~~~~~~~
     Main Containers
-  ~~~~~~~~~~~~~~~~~*
-.container.main {
+  ~~~~~~~~~~~~~~~~~*/
+.main {
     background: none;
     border:none;
     box-shadow:none;
@@ -112,8 +112,8 @@ Free to use under the Unsplash License
 
 .navbar.navbar-default a:hover {
     background: var(--bg-panel-light) !important;
-    border-radius:var(--radius-small) !important;
     color: var(--accent-color-light) !important;
+    border-radius:var(--radius-small) !important;
 }
 
 /*Exclude Lioden Logo Link from Background Color*/
@@ -136,17 +136,17 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
     border-radius: 0px;
 }
 
+.navbar-header > button span {
+    background:var(--border-color-main) !important;
+}
+
 .navbar button:hover,
 .navbar button:active,
 .navbar button:focus {
     background: var(--bg-input-mid) !important;
+    color: var(--accent-color-light) !important;
     border-color: var(--accent-color-light) !important;
     border-radius: 0px !important;
-    color: var(--accent-color-light) !important;
-}
-
-.navbar-header > button span {
-    background:var(--border-color-main) !important;
 }
 
 .navbar button:hover span {
@@ -157,11 +157,6 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 .navbar-collapse.collapse.in {
     border: none;
     box-shadow: none;
-}
-
-.nav navbar-nav.visible-xs visible-sm.visible-md.smaller-nav {
-  border:none;
-  box-shadow:none;
 }
 
 /*~~~~~~~~~~~~~~~~~
@@ -185,6 +180,7 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 .breadcrumb::after {
   content:"✧CSS by Eli in Motion #319237✧";
   float:right;
+  color: var(--text-light);
 }
 
 /*~~~~~~~~~Bookmark Button~~~~~~~~~*/
@@ -216,10 +212,11 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
    background: var(--bg-panel-light);
    border:var(--border-size-small) solid var(--border-color-main);
    border-radius:var(--radius-small);
+}
 
 /*~~~~~~~~~Red Alerts~~~~~~~~~*/
-.alert-danger {
-    background-color: var(--bg-panel-dark) !important;
+.alert.alert-danger {
+    background: var(--bg-panel-dark) !important;
     border: var(--border-size-small) solid var(--border-color-main);
     border-radius:var(--radius-small);
 }
@@ -232,7 +229,6 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
     color: var(--text-light);
     border: var(--border-size-big) solid var(--border-color-main) !important;
     border-radius:var(--radius-big);
-    background:transparent;
 }
 
 #commentBox::-webkit-scrollbar {
@@ -246,7 +242,7 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 }
 
 #commentBox::-webkit-scrollbar-thumb {
-  background: var(--bg-input-mid);
+  background: var(--bg-input-dark);
   border-radius: 4px;
 }
 
@@ -332,11 +328,14 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 
 /*~~~~~~~~~About pride outer area~~~~~~~~~*/
 #about.table {
-    background: var(--bg-header-mid);
     border: var(--border-size-big) solid var(--border-color-main);
     border-radius:var(--radius-big);
     overflow: hidden;
     border-collapse: separate;
+}
+
+#about tr.right {
+    background: var(--bg-panel-light);
 }
 
 /*~~~~~~~~~About inner areas~~~~~~~~~*/
@@ -346,11 +345,11 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 }
 
 #about td .left {
-    background: var(--bg-panel-mid);
+    background: var(--bg-panel-dark);
 }
 
 #about td .right {
-    background: var(--bg-panel-light);
+    background: var(--bg-panel-mid);
 }
 
 /*~~~~~~~~~~~~~~~~~
@@ -368,11 +367,14 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 
 /*~~~~~~~~~About player outer area~~~~~~~~~*/
 #player {
-    background: var(--bg-header-mid);
     border: var(--border-size-big) solid var(--border-color-main);
     border-radius:var(--radius-big);
     overflow: hidden;
     border-collapse: separate;
+}
+
+#player tr.right {
+    background: var(--bg-panel-light);
 }
 
 /*~~~~~~~~~About player inner areas~~~~~~~~~*/
@@ -381,11 +383,11 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 }
 
 #player td.left {
-    background: var(--bg-panel-mid);
+    background: var(--bg-panel-dark);
 }
 
 #player td .right {
-    background-color: var(--bg-panel-light);
+    background-color: var(--bg-panel-mid);
 }
 
 /*~~~~~~~~~~~~~~~~~
@@ -393,17 +395,18 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 ~~~~~~~~~~~~~~~~~*/
 
 .cave-grid {
-    background: var(--bg-header-light);
+    background: var(--bg-header-mid);
     color: var(--text-light);
     border:var(--border-size-small) solid var(--border-color-main);
     border-radius:var(--radius-big);
 }
 
 .mound-grid {
-    background: var(--bg-header-mid);
+    background: var(--bg-header-dark);
     color: var(--text-light);
     border:var(--border-size-small) solid var(--border-color-main);
-    border-radius:var(--radius-big);
+    border-radius:var(--radius-small);
+    width:fit-content;
 }
 
 /*~~~~~~~~~~~~~~~~~
@@ -411,22 +414,21 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 ~~~~~~~~~~~~~~~~~*/
 /*~~~~~~~~~Sparring main area~~~~~~~~~*/
 #sparring {
-    background: transparent;
     color:var(--text-light);
     border: var(--border-size-big) solid var(--border-color-main);
     border-radius:var(--radius-big);
     overflow: hidden;
     border-collapse: separate;
-    margin-bottom:10px;
+    margin-bottom:10px !important;
 }
 
 /*~~~~~~~~~Sparring inner areas~~~~~~~~~*/
 #sparring th {
-    background: var(--bg-header-light);
+    background: var(--bg-header-mid);
 }
 
 #sparring td {
-    background: var(--bg-panel-light);
+    background: var(--bg-panel-mid);
 }
 
 #sparring .right_odd span {
@@ -440,7 +442,7 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
     color: var(--text-light);
     text-shadow: none;
     border: 1px solid var(--border-color-main);
-    border-radius: none;
+    border-radius: 0px;
     box-shadow: none;
 }
 
@@ -465,7 +467,7 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 
 /*~~~~~~~~~FAPA main areas~~~~~~~~~*/
 .row .feature {
-    background: var(--bg-panel-light);
+    background: var(--bg-panel-mid);
     border: var(--border-size-big) solid var(--border-color-main);
     border-radius:var(--radius-big);
     overflow: hidden;
@@ -476,8 +478,8 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 .row .feature input,
 .row .feature select {
     background: var(--bg-input-light);
-    border: 1px solid var(--accent-color-dark);
-    border-radius: none;
+    border: 1px solid var(--border-color-main);
+    border-radius: 0px;
 }
 
 .row .feature input:hover {
@@ -498,12 +500,12 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 }
 
 #allies a:hover {
-   color: var(--accent-color-dark);
+   color: var(--accent-color-mid);
 }
 
 /*~~~~~~~~~Allies main area~~~~~~~~~*/
 #allies {
-    background: var(--bg-panel-mid);
+    background:transsparent;
     border: var(--border-size-big) solid var(--border-color-main);
     border-radius:var(--radius-big);
     overflow: hidden;
@@ -511,9 +513,12 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 }
 
 /*~~~~~~~~~Allies inner areas~~~~~~~~~*/
-#allies .top,
+#allies .top {
+    background-color: var(--bg-header-mid);
+}
+
 #allies .bottom {
-    background-color: var(--bg-header-light);
+    background: transparent;
 }
 
 #allies .left {
@@ -531,12 +536,12 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 }
    
 #clans a:hover {
-    color: var(--accent-color-dark);
+    color: var(--accent-color-mid);
 }
 
 /*~~~~~~~~~Clans main area~~~~~~~~~*/
 #clans {
-    background: var(--bg-panel-mid);
+    background:transparent;
     border: var(--border-size-big) solid var(--border-color-main);
     border-radius:var(--radius-big);
     overflow: hidden;
@@ -562,7 +567,7 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 
 /*~~~~~~~~~Dynasties Icon Backgrounds~~~~~~~~~*/ 
 .row.dynastycollection div .left {
-    background: var(--bg-panel-light);
+    background: var(--bg-header-mid);
     border: var(--border-size-small) solid var(--border-color-main);
     border-radius:var(--radius-small);
     width: fit-content;
@@ -572,10 +577,14 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
   Logs
 ~~~~~~~~~~~~~~~~~*/
 .col.col-sm-4 .left {
-    background: var(--bg-panel-light);
+    background: var(--bg-header-dark);
     color: var(--text-light);
     border: var(--border-size-small) solid var(--border-color-main);
     border-radius:var(--radius-small);
+}
+
+.col.col-sm-4 .left:hover {
+    color: var(--accent-color-mid)
 }
 
 /*~~~~~~~~~~~~~~~~~
@@ -615,13 +624,7 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 }
 
 .table th {
-    background: var(--bg-header-light);
-}
-
-.table:nth-child(3) {
-  border: var(--border-size-small) solid var(--border-color-main);
-  border-radius: var(--radius-small);
-  overflow: hidden;
+    background: var(--bg-header-mid);
 }
 
 /*~~~~~~~~~Edit details expanded inner areas~~~~~~~~~*/
@@ -630,15 +633,15 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 }
 
 #editdetailspanel .left {
-    background: var(--bg-panel-light);
-}
-
-#editdetailspanel .right {
     background: var(--bg-panel-mid);
 }
 
+#editdetailspanel .right {
+    background: var(--bg-panel-light);
+}
+
 #editdetailspanel .bottom {
-    background: var(--bg-header-light);
+    background: var(--bg-header-mid);
 }
 
 /*~~~~~~~~~Edit details input areas~~~~~~~~~*/
