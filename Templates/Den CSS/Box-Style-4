@@ -1,0 +1,57 @@
+/*HTML
+<div class="Bio">
+<div class="BioLeft">Left Div</div> <div class="BioMid">Mid DIv</div><div class="BioRight">Right Div</div>
+</div> */
+
+/*~~~~~~~~~~~~~~~~~
+  Bio Box Style 4
+  ~~~~~~~~~~~~~~~~~*/
+
+.Bio {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:50px 200px;
+    gap:10px;
+    color:var(--text-dark);
+}
+
+.Bio br {
+    display:none;
+}
+
+.BioLeft {
+  background:var(--bg-header-mid);
+  border:var(--border-size-small) solid var(--border-color-main);
+  border-radius:10px;
+  overflow:hidden;
+}
+
+.BioLeft::-webkit-scrollbar {
+    display:none;
+}
+
+.BioMid {
+  background:var(--bg-header-light);
+  border:var(--border-size-small) solid var(--border-color-main);
+  border-radius:10px;
+  overflow:hidden;
+}
+
+.BioMid::-webkit-scrollbar {
+    display:none;
+}
+
+.BioRight {
+  background:var(--bg-header-dark);
+  border:var(--border-size-small) solid var(--border-color-main);
+  border-radius:10px;
+  overflow:hidden;
+}
+
+.BioRight::-webkit-scrollbar {
+    display:none;
+}
+
+/*~~~~~~~~~~~~~~~~~
+  End of Bio Box Style 4
+  ~~~~~~~~~~~~~~~~~*/
