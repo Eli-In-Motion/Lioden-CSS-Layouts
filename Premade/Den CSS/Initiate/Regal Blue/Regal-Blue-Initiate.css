@@ -32,8 +32,10 @@
     --text-small-dark: #D9EDF5;
 
     /*~~~~~~~~~Borders~~~~~~~~~*/
-    --border-main: #D4A84F;
-    --border-alt: #D4A84F;
+    --border-color-main: #D4A84F;
+    --border-color-alt: #D4A84F;
+    --border-size-big: 3px;
+    --border-size-small: 2px;
     --radius-main: 5px;
     --radius-small: 3px;
 
