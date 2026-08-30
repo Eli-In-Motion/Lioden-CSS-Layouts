@@ -939,7 +939,7 @@ form .left a:hover {
 }
 
 .BioLeft {
-  background:var(--bg-header-mid);
+  background:var(--bg-header-light);
   border:var(--border-size-small) solid var(--border-color-main);
   border-radius:10px;
   height:200px;
@@ -951,7 +951,7 @@ form .left a:hover {
 }
 
 .BioMid {
-  background:var(--bg-header-light);
+  background:var(--bg-header-dark);
   border:var(--border-size-small) solid var(--border-color-main);
   border-radius:10px;
   height:300px;
@@ -963,7 +963,7 @@ form .left a:hover {
 }
 
 .BioRight {
-  background:var(--bg-header-dark);
+  background:var(--bg-header-mid);
   border:var(--border-size-small) solid var(--border-color-main);
   border-radius:10px;
   height:150px;
