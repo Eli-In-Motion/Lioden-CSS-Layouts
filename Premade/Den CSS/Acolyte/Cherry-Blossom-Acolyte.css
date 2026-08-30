@@ -884,6 +884,11 @@ form .left a:hover {
   Acolyte
 ~~~~~~~~~~~~~~~~~*/
 
+/*HTML
+<div class="Bio">
+<div class="BioLeft">Left Tall Div</div> <div class="BioTopRight">Top Right Div</div><div class="BioBottomRight">Bottom Right Div</div>
+</div> */
+
 .Bio {
     display:grid;
     grid-template-columns:2fr 1fr;
