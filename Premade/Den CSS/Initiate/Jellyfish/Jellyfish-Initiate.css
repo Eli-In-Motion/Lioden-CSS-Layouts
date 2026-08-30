@@ -9,32 +9,32 @@
 :root {
 
     /*~~~~~~~~~Main Bakcground~~~~~~~~~*/
-    --bg-page-color:#01092d;
+    --bg-page-color:#041f6c;
     --bg-page-image:url("https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Initiate/Jellyfish/karo-k-HoH869KdIm4-unsplash.jpg?raw=true");
     
     /*~~~~~~~~~Background Colors~~~~~~~~~*/
     --bg-panel-light:#8aa6ff69;
     --bg-panel-mid:#5279f869;
     --bg-panel-dark:#0f2f9669;
-    --bg-header-light:#96d4e069;
-    --bg-header-mid:#76b5c169;
-    --bg-header-dark:#528d9869;
+    --bg-header-light:#8ac6ff69;
+    --bg-header-mid:#5fb1ff69;
+    --bg-header-dark:#2071bf69;
     --bg-input-light:#b1c7f969;
     --bg-input-mid:#5979c269;
     --bg-input-dark:#1e459d69;
 
     /*~~~~~~~~~Text Colors~~~~~~~~~*/
-    --text-light:#e2fffd;
-    --text-mid:#aadad7;
-    --text-dark: #7abbb7;
-    --text-small-light:#d2e0ff;
-    --text-small-mid:#b1c7f9;
-    --text-small-dark:#a5b7e0;
+    --text-light:#e5f4ff;
+    --text-mid:#b7d0e2;
+    --text-dark: #80b7df;
+    --text-small-light:#d1eefc;
+    --text-small-mid:#b2d4e4;
+    --text-small-dark:#87b4c9;
 
     /*~~~~~~~~~Borders~~~~~~~~~*/
     --border-color-main:#e2fffd;
-    --border-color-alt:#9ddfff;
-    --border-size-big:4px;
+    --border-color-alt:#bee9f3;
+    --border-size-big:3px;
     --border-size-small:2px;
     --radius-big:22px;
     --radius-small:11px;
@@ -47,8 +47,8 @@
    
     /*~~~~~~~~~Misc~~~~~~~~~*/
     --accent-color-light:#c1e4f7;
-    --accent-color-mid:#90bdd6;
-    --accent-color-dark:#507f9a;
+    --accent-color-mid:#89b4ca;
+    --accent-color-dark:#629ab7;
 }
 
 /*~~~~~~~~~~~~~~~~~
@@ -341,7 +341,7 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 /*~~~~~~~~~About inner areas~~~~~~~~~*/
 #about .top,
 #about .bottom {
-    background: var(--bg-header-light);
+    background: var(--bg-header-mid);
 }
 
 #about td .left {
@@ -374,12 +374,12 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 }
 
 #player tr.right {
-    background: var(--bg-panel-light);
+    background: var(--bg-panel-mid);
 }
 
 /*~~~~~~~~~About player inner areas~~~~~~~~~*/
 #player .top {
-    background: var(--bg-header-light);
+    background: var(--bg-header-mid);
 }
 
 #player td.left {
