@@ -948,9 +948,25 @@ form .left a:hover {
     pointer-events: none;
 }
 
+/*~~~~~~~~~~~~~~~~~
+  Pagedoll Credit
+https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Oracle/Cherry%20Blossom/vecteezy_cat-sleeping-on-a-sakuramochi-with-flowers_68475028.PNG?raw=true
+https://www.vecteezy.com/png/68475028-cat-sleeping-on-a-sakuramochi-with-flowers
+Supanimit Thasanatharakorn on Vecteezy
+Covered under Vecteezy's Free License
+~~~~~~~~~~~~~~~~~*/
+
 #player > tbody > tr.right > td:nth-child(2) {
-    content:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Oracle/Cherry%20Blossom/vecteezy_cherry-blossom-flower-isolated-on-transparent-background_48930676.png?raw=true);
+    content:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Oracle/Cherry%20Blossom/vecteezy_a-3d-sakura-flower-on-a-transparent-background_38159726.png?raw=true);
 }
+
+/*~~~~~~~~~~~~~~~~~
+  Player Icon Credit
+https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Oracle/Cherry%20Blossom/vecteezy_a-3d-sakura-flower-on-a-transparent-background_38159726.png?raw=true
+https://www.vecteezy.com/png/38159726-a-3d-sakura-flower-on-a-transparent-background
+Shiva SJ on Vecteezy
+Covered under Vecteezy's Free License
+~~~~~~~~~~~~~~~~~*/
 
 #pageContainer h1 {
     display:none;
