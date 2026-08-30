@@ -990,7 +990,7 @@ form .left a:hover {
     position: fixed;
     right: -10px;
     bottom: -10px;
-    width: 200px;
+    width: 250px;
     z-index: 9999;
     pointer-events: none;
 }
