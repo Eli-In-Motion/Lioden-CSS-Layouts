@@ -1015,7 +1015,7 @@ form .left a:hover {
 
 /*Progress Bar Changes*/
 .panel-body.small  .progress {
-    background:var(--bg-header-dark);
+    background:var(--bg-panel-dark);
 }
 
 .panel-body.small  .progress div {
@@ -1023,7 +1023,7 @@ form .left a:hover {
 }
 
 .progress [role="progressbar"] {
-    background:linear-gradient(0deg, #FFFFFF, var(--accent-color-dark), #FFFFFF)
+    background: linear-gradient(0deg, #8CBEFF 0% 0%, var(--bg-panel-dark) 35%, var(--bg-panel-dark) 65%, #8CBEFF 100%);
 }
 
 /*~~~~~~~~~~~~~~~~~
