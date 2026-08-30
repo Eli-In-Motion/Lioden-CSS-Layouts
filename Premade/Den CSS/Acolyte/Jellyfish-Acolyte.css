@@ -927,10 +927,11 @@ form .left a:hover {
 
 .Bio {
     display:grid;
-    grid-template-columns:1fr 1fr;
-    grid-template-rows:50px 200px;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:300px;
     gap:10px;
     color:var(--text-dark);
+    align-items:self-end;
 }
 
 .Bio br {
@@ -941,7 +942,7 @@ form .left a:hover {
   background:var(--bg-header-mid);
   border:var(--border-size-small) solid var(--border-color-main);
   border-radius:10px;
-  height:100px;
+  height:200px;
   overflow:hidden;
 }
 
@@ -953,7 +954,7 @@ form .left a:hover {
   background:var(--bg-header-light);
   border:var(--border-size-small) solid var(--border-color-main);
   border-radius:10px;
-  height:150px;
+  height:300px;
   overflow:hidden;
 }
 
@@ -965,7 +966,7 @@ form .left a:hover {
   background:var(--bg-header-dark);
   border:var(--border-size-small) solid var(--border-color-main);
   border-radius:10px;
-  height:50px;
+  height:150px;
   overflow:hidden;
 }
 
