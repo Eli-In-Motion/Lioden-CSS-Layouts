@@ -13,30 +13,30 @@
     --bg-page-image: url("https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Initiate/Regal%20Blue/pexels-steve-30829216.jpg?raw=true");
     
     /*~~~~~~~~~Background Colors~~~~~~~~~*/
-    --bg-panel-light: #0A6F96ab;
-    --bg-panel-mid: #084F73ab;
-    --bg-panel-dark: #084F73ab;
-    --bg-header-light: #09597Fab;
-    --bg-header-mid: #09597Fab;
-    --bg-header-dark: #09597Fab;
-    --bg-input-light: #073F5Cab;
+    --bg-panel-light: #2374adab;
+    --bg-panel-mid: #034d81ab;
+    --bg-panel-dark: #0b3358ab;
+    --bg-header-light: #0f769dab;
+    --bg-header-mid: #005778ab;
+    --bg-header-dark: #004058ab;
+    --bg-input-light: #12577aab;
     --bg-input-mid: #073F5Cab;
-    --bg-input-dark: #073F5Cab;
+    --bg-input-dark: #013754ab;
 
     /*~~~~~~~~~Text Colors~~~~~~~~~*/
-    --text-light: #FFFFFF;
-    --text-mid: #FFFFFF;
-    --text-dark: #FFFFFF;
-    --text-small-light: #D9EDF5;
-    --text-small-mid: #D9EDF5;
-    --text-small-dark: #D9EDF5;
+    --text-light: #f4f7ff;
+    --text-mid: #d4d8e6;
+    --text-dark: #b2b8ce;
+    --text-small-light: #c1cfd2;
+    --text-small-mid: #c6dadf;
+    --text-small-dark: #9fbbc2;
 
     /*~~~~~~~~~Borders~~~~~~~~~*/
-    --border-color-main: #D4A84F;
-    --border-color-alt: #D4A84F;
+    --border-color-main: #eab243;
+    --border-color-alt: #f3bc4f;
     --border-size-big: 3px;
     --border-size-small: 2px;
-    --radius-main: 5px;
+    --radius-big: 5px;
     --radius-small: 3px;
 
     /*~~~~~~~~~Chat~~~~~~~~~*/
@@ -47,9 +47,9 @@
     
 
     /*~~~~~~~~~Misc~~~~~~~~~*/
-    --accent-color-light: #E6C97A;
-    --accent-color-mid:#89b4ca;
-    --accent-color-dark:#629ab7;
+    --accent-color-light: #ffd176;
+    --accent-color-mid:#eec169;
+    --accent-color-dark:#eab243;
 }
 
 /*~~~~~~~~~~~~~~~~~
@@ -62,7 +62,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-  background-position: center;
+    background-position: center;
 }
 
 /*~~~~~~~~~~~~~~~~~
@@ -226,7 +226,6 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
   ~~~~~~~~~~~~~~~~~*/
 /*~~~~~~~~~Whole comment box~~~~~~~~~*/
 #commentBox {
-    color: var(--text-light);
     border: var(--border-size-big) solid var(--border-color-main) !important;
     border-radius:var(--radius-big);
 }
@@ -249,7 +248,7 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 /*~~~~~~~~~Comment box text~~~~~~~~~*/
 #commentBox,
 #commentBox a {
-    color: var(--accent-color-light);
+    color: var(--text-light);
 }
 
 #commentBox a:hover {
@@ -289,7 +288,7 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
     background: var(--bg-input-light);
     color: var(--text-light);
     border: var(--border-size-small) solid var(--border-color-main);
-    border-radius:var(--radius-small);
+    border-radius:0px);
 }
 
 #comment::placeholder {
@@ -298,15 +297,15 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 
 /*~~~~~~~~~Make comment post button~~~~~~~~~*/
 #postComment {
-    background: var(--bg-input-light);
+    background: var(--bg-input-light) !important;
     color: var(--accent-color-light);
     text-shadow: none;
     border: var(--border-size-small) solid var(--border-color-main);
-    border-radius:none;
+    border-radius:0px;
 }
 
 #postComment:hover {
-    background: var(--bg-input-dark);
+    background: var(--bg-input-dark) !important;
     color: var(--accent-color-light);
     border-color: var(--accent-color-light);
 }
@@ -367,19 +366,28 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 
 /*~~~~~~~~~About player outer area~~~~~~~~~*/
 #player {
-    border: var(--border-size-big) solid var(--border-color-main);
-    border-radius:var(--radius-big);
+    border: none;
     overflow: hidden;
     border-collapse: separate;
 }
 
+#player hr {
+    display:none;
+}
+
+.center.xlarge {
+    margin-top:20px !important;
+}
+
 #player tr.right {
-    background: var(--bg-panel-mid);
+    background: transparent;
 }
 
 /*~~~~~~~~~About player inner areas~~~~~~~~~*/
 #player .top {
     background: var(--bg-header-mid);
+    border: var(--border-size-big) solid var(--border-color-main);
+    border-radius:var(--radius-big);
 }
 
 #player td.left {
@@ -405,7 +413,7 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
     background: var(--bg-header-dark);
     color: var(--text-light);
     border:var(--border-size-small) solid var(--border-color-main);
-    border-radius:var(--radius-small);
+    border-radius:var(--radius-big);
     width:fit-content;
 }
 
@@ -428,7 +436,7 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 }
 
 #sparring td {
-    background: var(--bg-panel-mid);
+    background: var(--bg-panel-light);
 }
 
 #sparring .right_odd span {
@@ -494,7 +502,7 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 /*~~~~~~~~~Allies text~~~~~~~~~*/
 #allies,
 #allies a,
-#allies .top{
+#allies .top {
    color: var(--text-light);
    text-decoration:none
 }
@@ -505,9 +513,8 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 
 /*~~~~~~~~~Allies main area~~~~~~~~~*/
 #allies {
-    background:transsparent;
-    border: var(--border-size-big) solid var(--border-color-main);
-    border-radius:var(--radius-big);
+    background:transparent;
+    border:none;
     overflow: hidden;
     border-collapse: separate;
 }
@@ -515,6 +522,8 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 /*~~~~~~~~~Allies inner areas~~~~~~~~~*/
 #allies .top {
     background-color: var(--bg-header-mid);
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-big);
 }
 
 #allies .bottom {
@@ -542,8 +551,7 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 /*~~~~~~~~~Clans main area~~~~~~~~~*/
 #clans {
     background:transparent;
-    border: var(--border-size-big) solid var(--border-color-main);
-    border-radius:var(--radius-big);
+    border: none;
     overflow: hidden;
     border-collapse: separate;
 }
@@ -551,6 +559,8 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 /*~~~~~~~~~Clans inner areas~~~~~~~~~*/
 #clans .top {
     background-color: var(--bg-header-light);
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-big);
 }
 
 #clans .left {
@@ -563,6 +573,10 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 /*~~~~~~~~~Dynasties text~~~~~~~~~*/
 .row.dynastycollection h3 {
     color: var(--text-light);
+}
+
+.row.dynastycollection h3:hover {
+    color: var(--accent-color-mid)
 }
 
 /*~~~~~~~~~Dynasties Icon Backgrounds~~~~~~~~~*/ 
@@ -595,13 +609,13 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
 .table th a,
 #editdetailspanel .right select,
 #editdetailspanel a {
-   color: var(--text-light) !important;
-  border:none !important;
+    color: var(--text-light) !important;
+    border:none !important;
 }
 
 .table th a:hover,
 #editdetailspanel a:hover {
-  color: var(--accent-color-dark) !important;
+  color: var(--accent-color-mid) !important;
 }
 
 /*~~~~~~~~~Edit details main expanded area~~~~~~~~~*/
@@ -676,7 +690,7 @@ div:nth-child(1) > nav > div.navbar-header > a:hover {
   Account Settings
 ~~~~~~~~~~~~~~~~~*/
 form .left:has(a[href*='/account-settings.php']) {
-    background: var(--bg-header-light);
+    background: var(--bg-header-mid);
     border: var(--border-size-small) solid var(--border-color-main);
     border-radius:var(--radius-small);
 }
@@ -755,7 +769,7 @@ form .left a:hover {
 }
 
 /*~~~~Stats, Media~~~~*/
-   .col-md-12.col-xs-12.visible-md.visible-lg {
+.col-md-12.col-xs-12.visible-md.visible-lg {
   background: var(--bg-panel-mid);
   color: var(--text-light);
   border: var(--border-size-small) solid var(--border-color-main);
@@ -800,7 +814,7 @@ form .left a:hover {
 }
 
 .channelSwitcher {
-    background: var(--bg-input-mid) !important;
+    background: var(--bg-input-light) !important;
     color: var(--text-light) !important;
 }
 
@@ -810,7 +824,7 @@ form .left a:hover {
 
 #btnToggleSidebarChat:hover,
 #btnChatSend:hover {
-    background: var(--bg-input-mid) !important;
+    background: var(--bg-input-dark) !important;
     color: var(--accent-color-light) !important;
     border-color: var(--accent-color-light) !important;
 }
@@ -819,7 +833,6 @@ form .left a:hover {
 .channelSwitcher.active {
     background-color: var(--bg-input-dark) !important;
     color: var(--text-light) !important;
-    border: 1px solid var(--accent-color-dark) !important;
 }
 
 /*~~~~~~~~~Chatbox main container~~~~~~~~~*/
