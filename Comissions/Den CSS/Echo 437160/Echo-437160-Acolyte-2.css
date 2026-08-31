@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Cormorant+Garamond:wght@400;500;600&display=swap');
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   CSS by Eli in Motion ##319237 Please do not remove credit or claim as your own
@@ -78,6 +78,10 @@ Free to use under the Unsplash License
 h1, h2, h3, .navbar.navbar-default a, #about .bottom, #about .top,
 .center.h3, .topbar {
     font-family: 'Dancing Script', cursive;
+}
+
+body, p, td, .table {
+    font-family: 'Cormorant Garamond', serif;
 }
 
 /*~~~~~~~~~~~~~~~~~
