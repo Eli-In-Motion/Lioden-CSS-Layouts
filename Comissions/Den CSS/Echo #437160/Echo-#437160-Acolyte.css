@@ -1,0 +1,1035 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CSS by Eli in Motion ##319237 Please do not remove credit or claim as your own
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Initiate
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+:root {
+
+    /*~~~~~~~~~Main Background~~~~~~~~~*/
+    --bg-page-color: rgb(12 4 2);
+    --bg-page-image: url("https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Comissions/Den%20CSS/%F0%9D%94%BC%F0%9D%95%94%F0%9D%95%99%F0%9D%95%A0%20%23437160/pexels-nikhil-manan-1536524-28920340.png?raw=true");
+    
+    /*~~~~~~~~~Background Colors~~~~~~~~~*/
+    --bg-panel-light: rgb(227 172 184 / 60%);
+    --bg-panel-mid: rgb(210 141 156 / 60%);
+    --bg-panel-dark: rgb(164 84 102 / 60%);
+    --bg-header-light: rgb(244 163 182 / 60%);
+    --bg-header-mid: rgb(213 124 145 / 60%);
+    --bg-header-dark: rgb(171 85 105 / 60%);
+    --bg-input-light: rgb(230 131 154 / 60%);
+    --bg-input-mid: rgb(210 77 107 / 60%);
+    --bg-input-dark: rgb(143 7 38 / 80%);
+
+    /*~~~~~~~~~Text Colors~~~~~~~~~*/
+    --text-light: #fff3f4;
+    --text-mid: #f2dbdd;
+    --text-dark: #e0c7c9;
+    --text-small-light: #dbc7c8;
+    --text-small-mid: #d3bebf;
+    --text-small-dark: #b29c9d;
+
+    /*~~~~~~~~~Borders~~~~~~~~~*/
+    --border-color-main: rgb(231 219 180);
+    --border-color-alt: #f3bc4f;
+    --border-size-big: 3px;
+    --border-size-small: 2px;
+    --radius-big: 5px;
+    --radius-small: 3px;
+
+    /*~~~~~~~~~Chat~~~~~~~~~*/
+    --bg-mod:#4230668a;
+    --text-mod:#504179;
+    --bg-ping: #45101a7a;
+    --text-ping: #fff7fc;
+    
+
+    /*~~~~~~~~~Misc~~~~~~~~~*/
+    --accent-color-light: rgb(255 208 212);
+    --accent-color-mid:rgb(255 204 115);
+    --accent-color-dark:#eab243;
+}
+
+/*~~~~~~~~~~~~~~~~~
+    Main Body
+  ~~~~~~~~~~~~~~~~~*/
+
+body {
+    background-color: var(--bg-page-color);
+    background-image: var(--bg-page-image);
+    background-attachment: fixed;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+/*~~~~~~~~~~~~~~~~~
+    Background Credit
+Steve A Johnson on Pexels
+Uploaded on February 21st, 2025 at 8:57 AM
+Free to use under the Pexels License
+  ~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~
+    Top Bar
+  ~~~~~~~~~~~~~~~~~*
+
+/* Top Bar with Messages and Currency */
+.topbar,
+.topbar a {
+    background: none;
+     color: var(--text-light) !important;
+}
+
+.topbar a:hover {
+    color: var(--accent-color-mid) !important;
+}
+
+/*~~~~~~~~~~~~~~~~~
+    Main Containers
+  ~~~~~~~~~~~~~~~~~*/
+.main {
+    background: none;
+    border:none;
+    box-shadow:none;
+}
+
+/* Smaller Container behind most main stuff */
+#pageContainer {
+    background: none;
+}
+
+/*~~~~~~~~~~~~~~~~~
+  Navbar
+  ~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~Navbar text~~~~~~~~~*/
+.navbar.navbar-default,
+.navbar.navbar-default a {
+   color: var(--text-light) !important;
+}
+
+.navbar.navbar-default a:hover {
+    background: var(--bg-panel-light) !important;
+    color: var(--accent-color-light) !important;
+    border-radius:var(--radius-small) !important;
+}
+
+/*Exclude Lioden Logo Link from Background Color*/
+div:nth-child(1) > nav > div.navbar-header > a:hover {
+    background:none !important;
+}
+
+/*~~~~~~~~~Navbar main expanded~~~~~~~~~*/
+#bs-example-navbar-collapse-1 {
+  border:none;
+}
+.navbar.navbar-default {
+    background: none;
+}
+
+/*~~~~~~~~~Navbar button when collapsed~~~~~~~~~*/
+.navbar button {
+    background-color: var(--bg-input-light) !important;
+    border: 1px solid var(--border-color-main) !important;
+    border-radius: 0px;
+}
+
+.navbar-header > button span {
+    background:var(--border-color-main) !important;
+}
+
+.navbar button:hover,
+.navbar button:active,
+.navbar button:focus {
+    background: var(--bg-input-mid) !important;
+    color: var(--accent-color-light) !important;
+    border-color: var(--accent-color-light) !important;
+    border-radius: 0px !important;
+}
+
+.navbar button:hover span {
+  background: var(--accent-color-light) !important
+}
+
+/* Navbar Links when Small and Expanded */
+.navbar-collapse.collapse.in {
+    border: none;
+    box-shadow: none;
+}
+
+/*~~~~~~~~~~~~~~~~~
+    Breadcrumb, Den Title, and Credit
+  ~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~Breadcrumb with home/name~~~~~~~~~*/
+.breadcrumb {
+    background: transparent;
+}
+
+.breadcrumb a,
+.breadcrumb-item.active {
+    color: var(--text-light);
+}
+
+.breadcrumb a:hover {
+    color: var(--accent-color-light);
+}
+
+/*~~~~~~~~~Credit~~~~~~~~~*/
+.breadcrumb::after {
+  content:"✧CSS by Eli in Motion #319237✧";
+  float:right;
+  color: var(--text-light);
+}
+
+/*~~~~~~~~~Bookmark Button~~~~~~~~~*/
+#pageContainer .floatright input {
+  display:none;
+}
+
+/*~~~~~~~~~________'s Den~~~~~~~~~*/
+#pageContainer h1 {
+    color: var(--accent-color-light);
+    text-align: center;
+}
+
+/*~~~~~~~~~~~~~~~~~
+    Alerts
+  ~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~All alert text~~~~~~~~~*/
+.alert,
+.alert a {
+    color: var(--text-light);
+}
+
+.alert a:hover {
+    color: var(--accent-color-dark);
+}
+
+/*~~~~~~~~~Green Alerts~~~~~~~~~*/
+.alert.alert-success {
+   background: var(--bg-panel-light);
+   border:var(--border-size-small) solid var(--border-color-main);
+   border-radius:var(--radius-small);
+}
+
+/*~~~~~~~~~Red Alerts~~~~~~~~~*/
+.alert.alert-danger {
+    background: var(--bg-panel-dark) !important;
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-small);
+}
+
+/*~~~~~~~~~~~~~~~~~
+    Comment Box
+  ~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~Whole comment box~~~~~~~~~*/
+#commentBox {
+    border: var(--border-size-big) solid var(--border-color-main) !important;
+    border-radius:var(--radius-big);
+}
+
+#commentBox::-webkit-scrollbar {
+  width: 10px;
+}
+
+#commentBox::-webkit-scrollbar-track {
+  background: var(--bg-input-light);
+  margin-block: 2px !important;
+  margin-block: 0;
+}
+
+#commentBox::-webkit-scrollbar-thumb {
+  background: var(--bg-input-dark);
+  border-radius: 4px;
+}
+
+/*~~~~~~~~~Comment box text~~~~~~~~~*/
+#commentBox,
+#commentBox a {
+    color: var(--text-light);
+}
+
+#commentBox a:hover {
+    color: var(--accent-color-mid);
+}
+
+.text-muted {
+    color: var(--text-small-light) !important;
+}
+
+/*~~~~~~~~~Existing comments~~~~~~~~~*/
+.comment:nth-child(odd) {
+    background-color: var(--bg-panel-light);
+}
+
+.comment:nth-child(even) {
+    background-color: var(--bg-panel-mid) !important;
+}
+
+/*~~~~~~~~~Comment box X button~~~~~~~~~*/
+#commentBox .bad {
+    background: var(--bg-input-light);
+    color: var(--text-light);
+    text-shadow: none;
+    border: 1px solid var(--border-color-main);
+    border-radius:none;
+}
+
+#commentBox .bad:hover {
+    background: var(--bg-input-mid);
+    border-color: var(--accent-color-light);
+    color: var(--accent-color-light);
+}
+
+/*~~~~~~~~~Make comment input box~~~~~~~~~*/
+#comment {
+    background: var(--bg-input-light);
+    color: var(--text-light);
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius:0px);
+}
+
+#comment::placeholder {
+    color: var(--text-small-light) !important;
+}
+
+/*~~~~~~~~~Make comment post button~~~~~~~~~*/
+#postComment {
+    background: var(--bg-input-light) !important;
+    color: var(--accent-color-light);
+    text-shadow: none;
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius:0px;
+}
+
+#postComment:hover {
+    background: var(--bg-input-dark) !important;
+    color: var(--accent-color-light);
+    border-color: var(--accent-color-light);
+}
+
+/*~~~~~~~~~~~~~~~~~
+    About Pride
+  ~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~About pride text~~~~~~~~~*/
+#about,
+#about a {
+   color: var(--text-light);
+   text-decoration:none
+}
+
+#about a:hover {
+   color: var(--accent-color-mid);
+   border:none;
+}
+
+/*~~~~~~~~~About pride outer area~~~~~~~~~*/
+#about.table {
+    border: var(--border-size-big) solid var(--border-color-main);
+    border-radius:var(--radius-big);
+    overflow: hidden;
+    border-collapse: separate;
+}
+
+#about tr.right {
+    background: var(--bg-panel-light);
+}
+
+/*~~~~~~~~~About inner areas~~~~~~~~~*/
+#about .top,
+#about .bottom {
+    background: var(--bg-header-mid);
+}
+
+#about td .left {
+    background: var(--bg-panel-dark);
+}
+
+#about td .right {
+    background: var(--bg-panel-mid);
+}
+
+/*~~~~~~~~~~~~~~~~~
+  About Player
+~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~About player text~~~~~~~~~*/
+#player,
+#player a {
+    color: var(--text-light);
+}
+
+#player a:hover {
+    color: var(--accent-color-mid) !important;
+}
+
+/*~~~~~~~~~About player outer area~~~~~~~~~*/
+#player {
+    border: none;
+    overflow: hidden;
+    border-collapse: separate;
+}
+
+#player hr {
+    display:none;
+}
+
+.center.xlarge {
+    margin-top:20px !important;
+}
+
+#player tr.right {
+    background: transparent;
+}
+
+/*~~~~~~~~~About player inner areas~~~~~~~~~*/
+#player .top {
+    background: var(--bg-header-mid);
+    border: var(--border-size-big) solid var(--border-color-main);
+    border-radius:var(--radius-big);
+}
+
+#player td.left {
+    background: var(--bg-panel-dark);
+}
+
+#player td .right {
+    background-color: var(--bg-panel-mid);
+}
+
+/*~~~~~~~~~~~~~~~~~
+  Caves and Mounds
+~~~~~~~~~~~~~~~~~*/
+
+.cave-grid {
+    background: var(--bg-header-mid);
+    color: var(--text-light);
+    border:var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-big);
+}
+
+.mound-grid {
+    background: var(--bg-header-dark);
+    color: var(--text-light);
+    border:var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-big);
+    width:fit-content;
+}
+
+/*~~~~~~~~~~~~~~~~~
+    Sparring
+~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~Sparring main area~~~~~~~~~*/
+#sparring {
+    color:var(--text-light);
+    border: var(--border-size-big) solid var(--border-color-main);
+    border-radius:var(--radius-big);
+    overflow: hidden;
+    border-collapse: separate;
+    margin-bottom:10px !important;
+}
+
+/*~~~~~~~~~Sparring inner areas~~~~~~~~~*/
+#sparring th {
+    background: var(--bg-header-mid);
+}
+
+#sparring td {
+    background: var(--bg-panel-light);
+}
+
+#sparring .right_odd span {
+    color:var(--text-light);
+}
+
+/*~~~~~~~~~Sparring input areas~~~~~~~~~*/
+#sparring select,
+#sparring input {
+    background: var(--bg-input-light);
+    color: var(--text-light);
+    text-shadow: none;
+    border: 1px solid var(--border-color-main);
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+#sparring input:hover {
+    background: var(--bg-input-dark) !important;
+    color: var(--accent-color-light) !important;
+    border-color: var(--accent-color-light) !important;
+}
+
+/*~~~~~~~~~~~~~~~~~
+  FAPA
+~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~FAPA text~~~~~~~~~*/
+.row,
+.row span,
+.row .feature h3,
+.row .feature input,
+.row .feature select {
+  color: var(--text-light) !important;
+  text-shadow: none;
+}
+
+/*~~~~~~~~~FAPA main areas~~~~~~~~~*/
+.row .feature {
+    background: var(--bg-panel-mid);
+    border: var(--border-size-big) solid var(--border-color-main);
+    border-radius:var(--radius-big);
+    overflow: hidden;
+    border-collapse: separate;
+}
+
+/*~~~~~~~~~FAPA inputs~~~~~~~~~*/
+.row .feature input,
+.row .feature select {
+    background: var(--bg-input-light);
+    border: 1px solid var(--border-color-main);
+    border-radius: 0px;
+}
+
+.row .feature input:hover {
+    background: var(--bg-input-dark) !important;
+    color: var(--accent-color-light) !important;
+    border-color: var(--accent-color-light) !important;
+}
+
+/*~~~~~~~~~~~~~~~~~
+  Allies
+~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~Allies text~~~~~~~~~*/
+#allies,
+#allies a,
+#allies .top {
+   color: var(--text-light);
+   text-decoration:none
+}
+
+#allies a:hover {
+   color: var(--accent-color-mid);
+}
+
+/*~~~~~~~~~Allies main area~~~~~~~~~*/
+#allies {
+    background:transparent;
+    border:none;
+    overflow: hidden;
+    border-collapse: separate;
+}
+
+/*~~~~~~~~~Allies inner areas~~~~~~~~~*/
+#allies .top {
+    background-color: var(--bg-header-mid);
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-big);
+}
+
+#allies .bottom {
+    background: transparent;
+}
+
+#allies .left {
+    display: none;
+}
+
+/*~~~~~~~~~~~~~~~~~
+    Clans
+~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~Clans text~~~~~~~~~*/
+#clans,
+#clans a,
+#clans .top {
+    color: var(--text-light);
+}
+   
+#clans a:hover {
+    color: var(--accent-color-mid);
+}
+
+/*~~~~~~~~~Clans main area~~~~~~~~~*/
+#clans {
+    background:transparent;
+    border: none;
+    overflow: hidden;
+    border-collapse: separate;
+}
+
+/*~~~~~~~~~Clans inner areas~~~~~~~~~*/
+#clans .top {
+    background-color: var(--bg-header-light);
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-big);
+}
+
+#clans .left {
+    display: none;
+}
+
+/*~~~~~~~~~~~~~~~~~
+  Dynasties
+~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~Dynasties text~~~~~~~~~*/
+.row.dynastycollection h3 {
+    color: var(--text-light);
+}
+
+.row.dynastycollection h3:hover {
+    color: var(--accent-color-mid)
+}
+
+/*~~~~~~~~~Dynasties Icon Backgrounds~~~~~~~~~*/ 
+.row.dynastycollection div .left {
+    background: var(--bg-header-mid);
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-small);
+    width: fit-content;
+}
+
+/*~~~~~~~~~~~~~~~~~
+  Logs
+~~~~~~~~~~~~~~~~~*/
+.col.col-sm-4 .left {
+    background: var(--bg-header-dark);
+    color: var(--text-light);
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-small);
+}
+
+.col.col-sm-4 .left:hover {
+    color: var(--accent-color-mid)
+}
+
+/*~~~~~~~~~~~~~~~~~
+  Edit Details
+~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~Edit details text~~~~~~~~~*/
+.table th,
+.table th a,
+#editdetailspanel .right select,
+#editdetailspanel a {
+    color: var(--text-light) !important;
+    border:none !important;
+}
+
+.table th a:hover,
+#editdetailspanel a:hover {
+  color: var(--accent-color-mid) !important;
+}
+
+/*~~~~~~~~~Edit details main expanded area~~~~~~~~~*/
+#editdetailspanel {
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-bottom-right-radius: var(--radius-small);
+    border-bottom-left-radius: var(--radius-small);
+    overflow: hidden;
+    border-collapse: separate;
+}
+
+.table:nth-child(3) {
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-top-right-radius: var(--radius-small);
+    border-top-left-radius: var(--radius-small);
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    overflow: hidden;
+    border-collapse: separate;
+}
+
+.table th {
+    background: var(--bg-header-mid);
+}
+
+/*~~~~~~~~~Edit details expanded inner areas~~~~~~~~~*/
+.table {
+    margin:0px !important;
+}
+
+#editdetailspanel .left {
+    background: var(--bg-panel-mid);
+}
+
+#editdetailspanel .right {
+    background: var(--bg-panel-light);
+}
+
+#editdetailspanel .bottom {
+    background: var(--bg-header-mid);
+}
+
+/*~~~~~~~~~Edit details input areas~~~~~~~~~*/
+#editdetailspanel .right textarea,
+#editdetailspanel .right input,
+#editdetailspanel .right select,
+#editdetailspanel .bottom input {
+    color:var(--text-light);
+    background: var(--bg-input-light);
+    border: 1px solid var(--border-color-main);
+    border-radius: none;
+    text-shadow: none;
+}
+
+#editdetailspanel td.right select option {
+    color: var(--text-light);
+    background: var(--bg-input-dark);
+}
+
+#editdetailspanel .right textarea {
+  scrollbar-color: var(--bg-input-mid) var(--bg-input-dark);
+  scrollbar-width: thin;
+}
+
+#editdetailspanel .bottom input:hover {
+    background: var(--bg-input-mid) !important;
+    color: var(--accent-color-light) !important;
+    border-color: var(--accent-color-light) !important;
+}
+
+/*~~~~~~~~~~~~~~~~~
+  Account Settings
+~~~~~~~~~~~~~~~~~*/
+form .left:has(a[href*='/account-settings.php']) {
+    background: var(--bg-header-mid);
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-small);
+}
+
+form .left a {
+    color: var(--text-light);
+}
+
+form .left a:hover {
+    color: var(--accent-color-mid);
+}
+
+/*~~~~~~~~~~~~~~~~~
+  Sidebar
+~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~Sidebar text~~~~~~~~~*/
+#pageSidebar,
+#pageSidebar a,
+#pageSidebar h3 {
+    color: var(--text-light);
+}
+
+#pageSidebar a:hover {
+    color: var(--accent-color-mid);
+}
+
+/*~~~~~~~~~Sidebar main area~~~~~~~~~*/
+#pageSidebar {
+  background: transparent;
+}
+
+/*~~~~~~~~~Sidebar inner areas~~~~~~~~~*/
+  /*~~~~Date, Event Currency, Energy Boost, and Progress Bars~~~~*/
+#pageSidebar .panel.panel-default,
+#pageSidebar .panel {
+   background: var(--bg-panel-mid);
+   border: var(--border-size-small) solid var(--border-color-main);
+   border-radius: var(--radius-big);
+   overflow: hidden;
+   box-shadow: none;
+}
+   
+#pageSidebar .panel-body.small {
+    background-color: transparent;
+}
+
+#pageSidebar .panel-body.small.center input {
+  background: var(--bg-input-dark);
+  color: var(--text-light);
+  border: 1px solid var(--border-color-main);
+  border-radius: none;
+  text-shadow: none;
+}
+
+#pageSidebar .panel-body.small.center input:hover {
+  background: var(--bg-input-mid) !important;
+  color: var(--accent-color-light) !important;
+  border-color: var(--accent-color-light) !important;
+}
+   
+/*~~~~Achievements, Bookmarks~~~~*/
+.col-md-12.col-xs-5 .panel {
+    background: var(--bg-panel-mid);
+    color: var(--text-light);
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-small);
+    overflow: hidden;
+}
+
+.col-md-12.col-xs-5 .panel p {
+    display:none;
+}
+
+.clear.visible-xs.visible-sm {
+    border: none !important;
+}
+
+/*~~~~Stats, Media~~~~*/
+.col-md-12.col-xs-12.visible-md.visible-lg {
+  background: var(--bg-panel-mid);
+  color: var(--text-light);
+  border: var(--border-size-small) solid var(--border-color-main);
+  border-radius: var(--radius-big);
+}
+
+/*~~~~~~~~~~~~~~~~~
+  Chatbox
+~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~Chatbox text~~~~~~~~~*/
+#fraSidebarChat,
+#fraSidebarChat a,
+#chatMessageList a,
+#fraSidebarChat span,
+#chatMessagePinned,
+#chatMessagePinned a,
+#txtChatContainer a {
+  color: var(--text-light) !important;
+}
+
+#fraSidebarChat a:hover,
+#chatMessageList a:hover,
+#txtChatContainer a:hover {
+  color: ver(--accent-color-mid) !important;
+}
+
+.s-chat-message_timestamp {
+  color: var(--text-small-light)
+}
+   
+/*~~~~~~~~~Chatbox inputs~~~~~~~~~*/
+#btnToggleSidebarChat,
+#label_currentChannel,
+#txtChatInput,
+#btnChatSend,
+.chatMenu-container {
+    background: var(--bg-input-light) !important;
+    color: var(--text-light) !important;
+    border: 1px solid var(--border-color-main) !important;
+    border-radius:0px !important;
+    text-shadow: none !important;
+}
+
+.channelSwitcher {
+    background: var(--bg-input-light) !important;
+    color: var(--text-light) !important;
+}
+
+#txtChatContainer {
+    margin-right:2px !important
+}
+
+#btnToggleSidebarChat:hover,
+#btnChatSend:hover {
+    background: var(--bg-input-dark) !important;
+    color: var(--accent-color-light) !important;
+    border-color: var(--accent-color-light) !important;
+}
+
+.channelSwitcher:hover, 
+.channelSwitcher.active {
+    background-color: var(--bg-input-dark) !important;
+    color: var(--text-light) !important;
+}
+
+/*~~~~~~~~~Chatbox main container~~~~~~~~~*/
+#fraSidebarChat {
+  background: transparent;
+  color: var(--text-light);
+}
+
+#chatMessageContainer {
+  border: 1px solid var(--border-color-main);
+    margin-right:2px;
+}
+
+#chatMessageList {
+  backgound: transparent;
+  color: var(--text-light);
+  border-top:1px solid var(--border-color-main);
+  scrollbar-color: var(--bg-input-dark) var(--bg-input-light);
+  scrollbar-width: thin;
+}
+   
+/*~~~~~~~~~Chatbox alternating messages~~~~~~~~~*/
+.s-chat-message:nth-child(even) {
+    background: var(--bg-panel-mid) !important;
+}
+
+#chatMessagePinned {
+    background:var(--bg-panel-dark) !important;
+}
+
+.s-chat-message:nth-child(odd) {
+    background: var(--bg-panel-light);
+}
+
+/*~~~~~~~~~Mod messages~~~~~~~~~*/
+.s-chat-message.s-chat-message__mod {
+    background: var(--bg-mod) !important;
+    color: var(--text-mod);
+    padding-left: 4px;
+    font-weight:normal;
+    border: none;
+}
+
+.s-chat-message.s-chat-message__mod a {
+  color: var(--text-light) !important;
+}
+
+.s-chat-message.s-chat-message__mod a:hover{
+  color: ver(--accent-color-mid) !important;
+}
+
+.s-chat-message.s-chat-message__mod .s-chat-message_timestamp {
+  padding-left: 4px;
+}
+
+/*~~~~~~~~~~~~~~~~~
+  BugBox Button
+~~~~~~~~~~~~~~~~~*/ 
+
+.btn.btn-default.button {
+    background: var(--bg-input-light);
+    color: var(--text-light) !important;
+    border: 1px solid var(--border-color-main);
+    border-radius: none;
+    text-shadow: none;
+}
+
+.btn.btn-default.button:hover,
+.btn.btn-default.button:focus {
+    background: var(--bg-input-dark) !important;
+    color: var(--accent-color-light) !important;
+    border-color: var(--accent-color-light) !important;
+}
+
+/*~~~~~~~~~~~~~~~~~
+  Lioden License and Links
+~~~~~~~~~~~~~~~~~*/ 
+.col-xs-10, 
+.col-xs-10 a {
+    color:var(--text-light) !important;
+    text-shadow:none;
+    border:none !important;
+}
+
+.col-xs-10 a:hover {
+  color: var(--accent-color-mid) !important;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  End Initiate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Acolyte
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*HTML
+<div class="Bio">
+<div class="BioLeft">Left Tall Div</div> <div class="BioTopRight">Top Right Div</div><div class="BioBottomRight">Bottom Right Div</div>
+</div> */
+
+/*~~~~~~~~~~~~~~~~~
+  Bio Box Style 1
+  ~~~~~~~~~~~~~~~~~*/
+
+.Bio {
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    grid-template-rows:100px 100px;
+    gap:10px 20px;
+}
+
+.Bio br {
+    display:none;
+}
+
+.BioLeft {
+    background:var(--bg-panel-mid);
+    grid-row-start:1;
+    grid-row:1/3;
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-small);
+    overflow:hidden;
+}
+
+.BioLeft img {
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+.BioTopRight {
+    background:var(--bg-panel-mid);
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-small);
+    overflow:hidden;
+}
+
+.BioTopRight img {
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+.BioBottomRight {
+    background:var(--bg-panel-dark);
+    border: var(--border-size-small) solid var(--border-color-main);
+    border-radius:var(--radius-small);
+    overflow:hidden
+}
+
+.BioBottomRight img {
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+/*~~~~~~~~~~~~~~~~~
+  End Acolyte
+  ~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~
+  Oracle
+  ~~~~~~~~~~~~~~~~~*/
+
+.pagedoll {
+    position: fixed;
+    right: -10px;
+    bottom: -10px;
+    width: 200px;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+/*Replace ____'s Den*/
+#pageContainer h1 {
+    font-size:0px;
+}
+
+#pageContainer h1:before {
+    content:"Broken Hearted";
+    font-size:50px;
+}
+
+/*Progress Bar Changes*/
+.panel-body.small  .progress {
+    background:var(--bg-input-dark);
+}
+
+.panel-body.small  .progress div {
+    color: var(--text-light);
+}
+
+.progress [role="progressbar"] {
+    background: linear-gradient(0deg,var(--bg-input-mid) 0%, var(--bg-input-light) 25%, var(--bg-input-light) 75%, var(--bg-input-mid) 100%);;
+}
+
+/*~~~~~~~~~~~~~~~~~
+  End Oracle
+  ~~~~~~~~~~~~~~~~~*/
