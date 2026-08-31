@@ -1,4 +1,4 @@
-@import url('https://googleapis.com');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   CSS by Eli in Motion ##319237 Please do not remove credit or claim as your own
@@ -75,6 +75,10 @@ Saifee Art on Unsplash
 Published on February 1, 2026
 Free to use under the Unsplash License
   ~~~~~~~~~~~~~~~~~*/
+
+h1, h2, h3 {
+    font-family: 'Dancing Script', cursive;
+}
 
 /*~~~~~~~~~~~~~~~~~
     Top Bar
