@@ -978,7 +978,7 @@ form .left a:hover {
 }
 
 .BioBottomRight {
-    background:var(--panel-bg);
+    background:var(--bg-panel-dark);
     border: var(--border-size-small) solid var(--border-color-main);
     border-radius:var(--radius-small);
     overflow:hidden
