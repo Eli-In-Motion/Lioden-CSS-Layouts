@@ -1,0 +1,31 @@
+/*Starting Over. Zero refence to previous templates.... Idk what to do if this gets flagged... Like. Do I sound like a robot or something?*/
+
+:root {
+    --background-main-image:;
+    --background-main-color:pink;
+
+   --background-header:purple;
+   --background-panel-back:;
+   --background-panel-left:;
+   --background-panel-right:;
+
+   --font-color:blue;
+}
+
+/*Main Background*/
+body {
+  background-color: var(--background-main-color);
+  background-image: var(--background-main-image);
+  background-size: cover;
+  background-position: center;
+}
+
+/*Topbar*/
+.container.topbar {
+  background: var(--background-header);
+  color: var(--font-color);
+}
+
+.container.topbar a {
+  color: var(--font-color);
+}
