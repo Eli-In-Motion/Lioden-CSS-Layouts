@@ -1,15 +1,26 @@
 /*Starting Over. Zero refence to previous templates.... Idk what to do if this gets flagged... Like. Do I sound like a robot or something?*/
 
+/*Credit Area
+  Misc Debugging:
+Thanks to my brother helping me with random issues I came across
+  Background:
+https://unsplash.com/photos/a-bunch-of-purple-leaves-on-a-black-background-v4YPIeuJYB8
+Wyxina Tresse on Unsplash
+Published on September 12, 2023
+Free to use under the Unsplash License
+*/
+
 :root {
-    --background-main-image:;
-    --background-main-color:pink;
+  --background-main-image:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Try%20Again%20I%20Guess/wyxina-tresse-v4YPIeuJYB8-unsplash.jpg?raw=true);
+  --background-main-color:#010f11;
 
-   --background-header:purple;
-   --background-panel-back:;
-   --background-panel-left:;
-   --background-panel-right:;
+  --background-header:#334f53;
+  --background-panel-back:#8ab2a0;
+  --background-panel-left:#2f6d4f;
+  --background-panel-right:#6c9f96;
+  --transparency:;
 
-   --font-color:blue;
+   --font-color:#cf8c9a;
 }
 
 /*Main Background*/
@@ -28,4 +39,33 @@ body {
 
 .container.topbar a {
   color: var(--font-color);
+}
+
+/*Navbar*/
+.navbar.navbar-default {
+  background: var(--background-header);
+  color: var(--font-color);
+}
+
+.navbar.navbar-default a {
+  color: var(--font-color) !important;
+}
+
+.navbar.navbar-default a:hover {
+  background: var(--background-panel-right) !important;
+}
+
+.navbar.navbar-default a:nth-child(1):hover {
+  background:
+}
+
+/*Main Container*/
+.container.main {
+  background:transparent;
+  box-shadow:none;
+}
+
+/*Inner Main Container*/
+#pageContainer {
+  background: transparent;
 }
