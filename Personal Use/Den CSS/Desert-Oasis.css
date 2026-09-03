@@ -60,3 +60,17 @@ textarea:hover {
   color:var(--accent-color-light) !important;
   border-color:var(--accent-color-light) !important;
 }
+
+/*Topbar with messages & links*/
+.container.topbar {
+  background:transparent;
+}
+
+/*Navbar*/
+.navbar.navbar-default {
+  background:transparent;
+}
+
+.navbar.navbar-default a:hover {
+  background:var(--accent-color-dark);
+}
