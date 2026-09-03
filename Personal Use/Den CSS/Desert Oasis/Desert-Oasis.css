@@ -1,9 +1,19 @@
 /*CSS by Eli in Motion #319237 please do not claim as your own or resell*/
 /*<link rel="stylesheet" type="text/css" href="" /> */
 
+/*Credit Section
+  Misc Debugging
+Shout out to my brother for helping me fight through the confusion as I learn CSS
+  Background Image
+https://www.pexels.com/photo/menara-gardens-in-morocco-17648182/
+Mr.Zembo on Pexels
+Uploaded on July 18th, 2023 at 8:47 AM
+Free to use under Pexels Licensing
+*/
+
 :root {
-  --bg-main-image:;
-  --bg-main-color:;
+  --bg-main-image:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Den%20CSS/Desert%20Oasis/pexels-mr-zembo-651918778-17648182.jpg?raw=true);
+  --bg-main-color:#6f503b;
 
   --bg-header-big:;
   --bg-header-small:;
