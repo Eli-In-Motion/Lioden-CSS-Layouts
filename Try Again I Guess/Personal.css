@@ -18,12 +18,16 @@ Free to use under the Pexels License
 
   --background-header-dark:#c3a281;
   --background-header-light:#dfc7a8;
+  --background-alert-green:#60665c;
+  --background-alert-red:#c9d1d4;
   --background-panel-dark:#d6bba0;
   --background-panel-mid:#e0cdc1;
   --background-panel-light:#f3e5dc;
+  --background-chat-light:#e0cdc1;
+  --background-chat-dark:#d6bba0;
   --transparency:/*I'll learn soon*/;
 
-  --border-color:#c9d1d4;
+  --border-color:#9ac1ed;
   --border-size:3px;
   --border-radius:10px;
 
