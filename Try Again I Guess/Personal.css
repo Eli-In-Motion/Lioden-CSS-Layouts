@@ -16,18 +16,18 @@ Free to use under the Pexels License
   --background-main-image:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Try%20Again%20I%20Guess/pexels-mr-zembo-651918778-17648182.jpg?raw=true);
   --background-main-color:#62442c;
 
-  --background-header-dark:#334f53;
-  --background-header-light:#527450;
-  --background-panel-dark:#8ab2a0;
-  --background-panel-mid:#2f6d4f;
-  --background-panel-light:#6c9f96;
+  --background-header-dark:#c3a281;
+  --background-header-light:#dfc7a8;
+  --background-panel-dark:#d6bba0;
+  --background-panel-mid:#e0cdc1;
+  --background-panel-light:#f3e5dc;
   --transparency:/*I'll learn soon*/;
 
-  --border-color:#d6bba0;
+  --border-color:#c9d1d4;
   --border-size:3px;
   --border-radius:10px;
 
-  --font-color:#f4dfce;
+  --font-color:#ede7e2;
   --font-color-highlight:#f2edb4;
 }
 
@@ -46,7 +46,8 @@ h1,
 h2,
 h3,
 th,
-.top {
+.top,
+.col-xs-10{
   color:var(--font-color) !important;
 }
 
@@ -54,35 +55,24 @@ a:hover {
   color:var(--font-color-highlight) !important;
 }
 
-/*Topbar*/
-.container.topbar {
-  background: var(--background-header);
-  color: var(--font-color);
+input,
+select,
+textarea {
+  background:var(--background-header-light) !important;
+  color:var(--font-color) !important;
+  text-shadow:none !important;
+  border:1px solid var(--border-color) !important;
+  border-radius:0px !important;
 }
 
-.container.topbar a {
-  color: var(--font-color);
+input:hover,
+select:hover,
+textarea:hover {
+  background:var(--background-header-dark) !important;
+  color:var(--font-color-highlight) !important;
+  border-color:var(--font-color-highlight) !important;
 }
 
-/*Navbar*/
-.navbar.navbar-default {
-  background: var(--background-header);
-  color: var(--font-color);
-}
-
-.navbar.navbar-default a {
-  color: var(--font-color) !important;
-}
-
-.navbar.navbar-default a:hover {
-  background: var(--background-panel-right) !important;
-}
-
-.navbar.navbar-default a:nth-child(1):hover {
-  background:
-}
-
-/*Main Container*/
 .container.main {
   background:transparent;
   box-shadow:none;
@@ -91,4 +81,104 @@ a:hover {
 /*Inner Main Container*/
 #pageContainer {
   background: transparent;
+}
+
+/*Topbar*/
+.container.topbar {
+  background: transparent;
+  color: var(--font-color);
+}
+
+/*Navbar*/
+.navbar.navbar-default {
+  background: var(--background-header);
+}
+
+.navbar.navbar-default a:hover {
+  background: var(--background-panel-dark) !important;
+  color:var(--font-color-highlight) !important;
+}
+
+.navbar-brand.visible-lg.visible-md:hover {
+  background: none !important;
+}
+
+/*Navbar Dropdown*/
+#bs-example-navbar-collapse-1 {
+  border:none;
+  box-shadow:none;
+}
+
+/*Navbar Button*/
+.navbar-toggle.collapsed,
+.navbar-toggle {
+  background:var(--background-header-light) !important;
+  border:1px solid var(--border-color) !important;
+  border-radius:0px !important;
+}
+
+.navbar-toggle.collapsed span,
+.navbar-toggle span {
+  background:var(--background-header-light) !important;
+}
+
+.navbar-toggle.collapsed:hover,
+.navbar-toggle:hover{
+  background:var(--background-header-dark) !important;
+  color:var(--font-color-highlight) !important;
+  border-color:var(--font-color-highlight) !important;
+}
+
+.navbar-toggle.collapsed:hover span,
+.navbar-toggle:hover span {
+  background:var(--font-color-highlight) !important;
+}
+
+/*Breadcrumb, Credit, Bookmark*/
+.breadcrumb {
+  background:transparent;
+}
+
+.breadcrumb-item.active {
+  color:var(--font-color);
+}
+
+.breadcrumb::after {
+  content:"CSS by Eli in Motion #319237";
+  position:absolute;
+  right:0;
+  padding-right:15px;
+}
+
+.floatright input {
+  display:none;
+}
+
+/*Alerts*/
+.alert.alert-success {
+  background:var(--background-header-light);
+  color:var(--font-color);
+  border:var(--border-size) solid var(--border-color);
+  border-radius:var(--border-radius);
+}
+
+.alert.alert-danger {
+  background:var(--background-header-dark);
+  color:var(--font-color);
+  border:var(--border-size) solid var(--border-color);
+  border-radius:var(--border-radius)
+}
+
+/*Event Alerts*/
+/*September*/
+#pageContainer > center > table:nth-child(3) th {
+  background:var(--background-panel-dark);
+}
+
+#pageContainer > center > table:nth-child(3) .left.b.center {
+  background:var(--background-panel-mid);
+}
+
+#pageContainer > center > table:nth-child(3) {
+  background:var(--background-panel-light);
 }
