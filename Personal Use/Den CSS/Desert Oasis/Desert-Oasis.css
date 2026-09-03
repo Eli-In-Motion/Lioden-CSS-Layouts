@@ -271,7 +271,7 @@ textarea:hover {
 
 /*FAPA*/
 .col-sm-6.col-xs-12 div {
-background:var(--bg-panel-right);
+  background:var(--bg-panel-back);
   border:var(--border-size-small) solid var(--border-color);
 }
 
@@ -310,3 +310,11 @@ background:var(--bg-panel-right);
 #clans .left {
   display:none;
 }
+
+/*Dynasty Stuff*/
+.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div {
+  background:var(--bg-header-dark);
+  border: var(--border-size-small) solid var(--border-color);
+  width:fit-content;
+}
+
