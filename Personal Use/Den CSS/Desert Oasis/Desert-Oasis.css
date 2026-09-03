@@ -15,8 +15,8 @@ Free to use under Pexels Licensing
   --bg-main-image:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Den%20CSS/Desert%20Oasis/pexels-mr-zembo-651918778-17648182.jpg?raw=true);
   --bg-main-color:#6f503b;
 
-  --bg-header-big:#a79186;
-  --bg-header-small:#bf9e7d;
+  --bg-header-dark:#a79186;
+  --bg-header-light:#bf9e7d;
   --bg-panel-back:#b0b7b0;
   --bg-panel-left:#707e70;
   --bg-panel-right:#d0e0d0;
@@ -46,16 +46,19 @@ body {
 
 .container.main {
   background:transparent;
+  box-shadow:none;
 }
 
 #pageContainer {
   background:transparent;
 }
 
+body,
 a,
 h1,
 h2,
 h3,
+.top,
 .breadcrumb-item.active,
 .breadcrumb-item.active::before {
   color:var(--font-color-main) !important;
@@ -68,7 +71,7 @@ a:hover {
 input,
 select,
 textarea {
-  background:var(--bg-header-small) !important;
+  background:var(--bg-header-light) !important;
   color:var(--font-color-main) !important;
   border: 1px solid var(--border-color) !important;
   border-radius:0px !important;
@@ -78,7 +81,7 @@ textarea {
 input:hover,
 select:hover,
 textarea:hover {
-  background:var(--bg-header-big) !important;
+  background:var(--bg-header-dark) !important;
   color:var(--accent-color-light) !important;
   border-color:var(--accent-color-light) !important;
 }
@@ -133,3 +136,101 @@ textarea:hover {
 }
 
 /*____'s Den*/
+#pageContainer h1 {
+  text-align:center;
+}
+
+/*Comment Box*/
+#commentBox {
+  border: 1px solid var(--border-color) !important;
+}
+
+#commentBox::-webkit-scrollbar {
+  width:10px;
+}
+
+#commentBox::-webkit-scrollbar-track {
+  background:var(--bg-chat-dark);
+  border-top-right-radius:var(--border-radius);
+  border-bottom-right-radius:var(--border-radius);
+}
+
+#commentBox::-webkit-scrollbar-thumb {
+  background:var(--bg-chat-light);
+  border-top-right-radius:var(--border-radius);
+  border-bottom-right-radius:var(--border-radius);
+}
+
+.comment {
+  background:var(--bg-chat-light)
+}
+
+.comment:nth-child(even) {
+  background:var(--bg-chat-dark) !important;
+}
+
+.comment:nth-child(odd) {
+  background:var(--bg-chat-light);
+}
+
+#comment::placeholder,
+.text-muted {
+  color:var(--font-color-small);
+}
+
+/*Pride About*/
+#about {
+  border:var(--border-size-big) solid var(--border-color) !important;
+  border-radius:var(--border-radius);
+  overflow: hidden;
+  border-collapse: separate
+}
+
+#about .top,
+#about .bottom {
+  background:var(--bg-header-light)
+}
+
+#about tr.right {
+  background:var(--bg-panel-back);
+}
+
+#about .left {
+  background:var(--bg-panel-left);
+}
+
+#about td .right {
+  background:var(--bg-panel-right);
+}
+
+/*Player About*/
+#player {
+  border:var(--border-size-big) solid var(--border-color);
+  border-radius:var(--border-radius);
+  overflow: hidden;
+  border-collapse: separate;
+}
+
+#player .top {
+  background:var(--bg-header-light);
+}
+
+#player tr.right {
+  background:var(--bg-panel-back);
+}
+
+#player .left {
+  background:var(--bg-panel-left);
+}
+
+#player td .right {
+  background:var(--bg-panel-right);
+}
+
+#player .right hr {
+  display:none !important;
+}
+
+.center.xlarge {
+  margin-top:10px;
+}
