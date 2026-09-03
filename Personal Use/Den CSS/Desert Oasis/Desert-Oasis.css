@@ -234,3 +234,79 @@ textarea:hover {
 .center.xlarge {
   margin-top:10px;
 }
+
+/*Caves and Mounds*/
+.cave-grid {
+  background:var(--bg-header-dark);
+}
+
+.mound-grid {
+  background:var(--bg-header-dark);
+}
+
+.mound-grid img {
+  width:100%;
+  height:100px;
+}
+
+/*Sparring*/
+#sparring {
+  border:var(--border-size-big) solid var(--border-color);
+  border-radius:var(--border-radius);
+  overflow: hidden;
+  border-collapse: separate;
+}
+
+#sparring th {
+  background:var(--bg-header-dark);
+}
+
+#sparring tr {
+  background:var(--bg-panel-left);
+}
+
+#sparring .right_odd {
+  background:var(--bg-panel-back);
+}
+
+/*FAPA*/
+.col-sm-6.col-xs-12 div {
+background:var(--bg-panel-right);
+  border:var(--border-size-small) solid var(--border-color);
+}
+
+#allies {
+  border:var(--border-size-big) solid var(--border-color);
+  border-radius:var(--border-radius);
+  overflow: hidden;
+  border-collapse: separate;
+}
+
+#allies .right,
+#allies .bottom {
+  background:transparent;
+}
+
+#allies .top {
+  background:var(--bg-header-light);
+}
+
+#allies .left {
+  display:none;
+}
+
+/*Clans*/
+#clans {
+  border:var(--border-size-big) solid var(--border-color);
+  border-radius:var(--border-radius);
+  overflow: hidden;
+  border-collapse: separate;
+}
+
+#clans .top {
+  background:var(--bg-header-light)
+}
+
+#clans .left {
+  display:none;
+}
