@@ -15,23 +15,23 @@ Free to use under Pexels Licensing
   --bg-main-image:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Den%20CSS/Desert%20Oasis/pexels-mr-zembo-651918778-17648182.jpg?raw=true);
   --bg-main-color:#6f503b;
 
-  --bg-header-big:;
-  --bg-header-small:;
-  --bg-panel-back:;
-  --bg-panel-left:;
-  --bg-panel-right:;
-  --bg-chat-light:;
-  --bg-chat-dark:;
+  --bg-header-big:#a79186;
+  --bg-header-small:#bf9e7d;
+  --bg-panel-back:#b0b7b0;
+  --bg-panel-left:#707e70;
+  --bg-panel-right:#d0e0d0;
+  --bg-chat-light:#f3e8df;
+  --bg-chat-dark:#d5bba6;
 
-  --font-color-main:;
-  --font-color-small:;
+  --font-color-main:#f3e5dc;
+  --font-color-small:#c8bdb6;
 
-  --border-size:;
-  --border-color:;
-  --border-radius:;
+  --border-size:3px;
+  --border-color:#e6bf7e;
+  --border-radius:10px;
 
-  --accent-color-light:;
-  --accent-color-dark:;
+  --accent-color-light:#c2d3ed;
+  --accent-color-dark:#9ec3ef;
 }
 
 /*Pagewide*/
@@ -43,10 +43,20 @@ body {
   background-attachment:fixed;
 }
 
+.container.main {
+  background:transparent;
+}
+
+#pageContainer {
+  background:transparent;
+}
+
 a,
 h1,
 h2,
-h3 {
+h3,
+.breadcrumb-item.active,
+.breadcrumb-item.active::before {
   color:var(--font-color-main) !important;
 }
 
@@ -61,6 +71,7 @@ textarea {
   color:var(--font-color-main) !important;
   border: 1px solid var(--border-color) !important;
   border-radius:0px !important;
+  text-shadow:none !important;
 }
 
 input:hover,
@@ -83,4 +94,9 @@ textarea:hover {
 
 .navbar.navbar-default a:hover {
   background:var(--accent-color-dark);
+}
+
+#bs-example-navbar-collapse-1 {
+  border:none;
+  box-shadow:none;
 }
