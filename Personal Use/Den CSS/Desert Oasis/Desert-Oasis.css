@@ -100,3 +100,20 @@ textarea:hover {
   border:none;
   box-shadow:none;
 }
+
+/*Breadcrumb, Bookmark, and Credit*/
+.breadcrumb {
+  background:transparent;
+}
+
+.floatright input {
+  display:none;
+}
+
+.breadcrumb::after {
+  content:"CSS by Eli in Motion #319237";
+  float:right;
+  color:var(--font-color-main);
+}
+
+/*Alerts*/
