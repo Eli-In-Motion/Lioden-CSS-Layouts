@@ -1,0 +1,92 @@
+/*Starting Over. Zero refence to previous templates.... Idk what to do if this gets flagged... Like. Do I sound like a robot or something?*/
+
+/*Credit Area
+  Misc Debugging:
+Thanks to my brother helping me with random issues I came across
+  Background:
+https://www.pexels.com/photo/menara-gardens-in-morocco-17648182/
+Mr.Zembo on Pexels
+Uploaded on July 18th, 2023 at 8:47 AM
+Free to use under the Pexels License
+*/
+
+:root {
+  --background-main-image:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Try%20Again%20I%20Guess/pexels-mr-zembo-651918778-17648182.jpg?raw=true);
+  --background-main-color:#62442c;
+
+  --background-header-dark:#334f53;
+  --background-header-light:#527450;
+  --background-panel-dark:#8ab2a0;
+  --background-panel-mid:#2f6d4f;
+  --background-panel-light:#6c9f96;
+  --transparency:/*I'll learn soon*/;
+
+  --border-color:#d6bba0;
+  --border-size:3px;
+  --border-radius:10px;
+
+  --font-color:#f4dfce;
+  --font-color-highlight:#f2edb4;
+}
+
+/*Main Stuff*/
+body {
+  color:var(--font-color);
+  background-color: var(--background-main-color);
+  background-image: var(--background-main-image);
+  background-size: cover;
+  background-position: center;
+  background-attachment:fixed;
+}
+
+a,
+h1,
+h2,
+h3,
+th,
+.top {
+  color:var(--font-color) !important;
+}
+
+a:hover {
+  color:var(--font-color-highlight) !important;
+}
+
+/*Topbar*/
+.container.topbar {
+  background: var(--background-header);
+  color: var(--font-color);
+}
+
+.container.topbar a {
+  color: var(--font-color);
+}
+
+/*Navbar*/
+.navbar.navbar-default {
+  background: var(--background-header);
+  color: var(--font-color);
+}
+
+.navbar.navbar-default a {
+  color: var(--font-color) !important;
+}
+
+.navbar.navbar-default a:hover {
+  background: var(--background-panel-right) !important;
+}
+
+.navbar.navbar-default a:nth-child(1):hover {
+  background:
+}
+
+/*Main Container*/
+.container.main {
+  background:transparent;
+  box-shadow:none;
+}
+
+/*Inner Main Container*/
+#pageContainer {
+  background: transparent;
+}
