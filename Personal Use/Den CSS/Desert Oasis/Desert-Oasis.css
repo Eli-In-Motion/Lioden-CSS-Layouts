@@ -26,7 +26,8 @@ Free to use under Pexels Licensing
   --font-color-main:#f3e5dc;
   --font-color-small:#c8bdb6;
 
-  --border-size:3px;
+  --border-size-big:3px;
+  --border-size-small:1px;
   --border-color:#e6bf7e;
   --border-radius:10px;
 
@@ -117,3 +118,18 @@ textarea:hover {
 }
 
 /*Alerts*/
+.alert.alert-success {
+  background:var(--bg-panel-right);
+  color:var(--font-color-main);
+  border: var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius);
+}
+
+.alert.alert-danger {
+  background:var(--bg-panel-left);
+  color:var(--font-color-main);
+  border: var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius);
+}
+
+/*____'s Den*/
