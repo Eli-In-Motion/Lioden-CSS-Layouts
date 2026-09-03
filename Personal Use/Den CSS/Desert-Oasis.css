@@ -23,3 +23,40 @@
   --accent-color-light:;
   --accent-color-dark:;
 }
+
+/*Pagewide*/
+body {
+  background-color:var(--bg-main-color);
+  background-image:var(--bg-main-image);
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+}
+
+a,
+h1,
+h2,
+h3 {
+  color:var(--font-color-main) !important;
+}
+
+a:hover {
+  color:var(--accent-color-light) !important;
+}
+
+input,
+select,
+textarea {
+  background:var(--bg-header-small) !important;
+  color:var(--font-color-main) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius:0px !important;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+  background:var(--bg-header-big) !important;
+  color:var(--accent-color-light) !important;
+  border-color:var(--accent-color-light) !important;
+}
