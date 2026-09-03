@@ -1,3 +1,25 @@
 /*CSS by Eli in Motion #319237 please do not claim as your own or resell*/
 /*<link rel="stylesheet" type="text/css" href="" /> */
 
+:root {
+  --bg-main-image:;
+  --bg-main-color:;
+
+  --bg-header-big:;
+  --bg-header-small:;
+  --bg-panel-back:;
+  --bg-panel-left:;
+  --bg-panel-right:;
+  --bg-chat-light:;
+  --bg-chat-dark:;
+
+  --font-color-main:;
+  --font-color-small:;
+
+  --border-size:;
+  --border-color:;
+  --border-radius:;
+
+  --accent-color-light:;
+  --accent-color-dark:;
+}
