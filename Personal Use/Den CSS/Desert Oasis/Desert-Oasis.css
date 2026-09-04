@@ -35,6 +35,11 @@ Free to use under Pexels Licensing
   --accent-color-dark:136, 177, 219;
   --transparency-light:.90;
   --transparency-heavy:.80;
+
+  --mod-bg-color:94, 107, 82;
+  --mod-font-color:244, 236, 228;
+  --ping-bg-color:;
+  --ping-font-color:;
 }
 
 /*Pagewide*/
@@ -479,6 +484,13 @@ textarea:hover,
 .s-chat-message.hasContext {
   background:rgba(var(--accent-color-light), var(--transparency-light)) !important;
   border-left-color:rgba(var(--accent-color-dark), var(--transparency-light)) !important;
+}
+
+.s-chat-message.s-chat-message__mod {
+  background:rgba(var(--mod-bg-color), var(--transparency-light)) !important;
+  color:var(--mod-font-color) !important;
+  border-color:var(--border-color) !important;
+  border-width:1px;
 }
 
 .channelSwitcher {
