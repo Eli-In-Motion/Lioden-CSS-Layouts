@@ -3,7 +3,6 @@
 
 /*Credit Section
   Misc Debugging
-
 Shout out to my brother for helping me fight through the confusion as I learn CSS
   
   Background Image
@@ -356,10 +355,9 @@ textarea:hover,
 }
 
 #allies {
-  border:var(--border-size-big) solid rgb(var(--border-color));
-  border-radius:var(--border-radius);
-  overflow: hidden;
-  border-collapse: separate;
+  border:none;
+  overflow:hidden !important;
+  border-collapse:separate !important;
 }
 
 #allies .right,
@@ -369,6 +367,8 @@ textarea:hover,
 
 #allies .top {
   background:rgba(var(--bg-header-light), var(--transparency-heavy));
+  border:var(--border-size-big) solid rgb(var(--border-color)) !important;
+  border-radius:var(--border-radius);
 }
 
 #allies .left {
@@ -377,14 +377,15 @@ textarea:hover,
 
 /*Clans*/
 #clans {
-  border:var(--border-size-big) solid rgb(var(--border-color));
-  border-radius:var(--border-radius);
   overflow: hidden;
   border-collapse: separate;
+  border:none;
 }
 
 #clans .top {
   background:rgba(var(--bg-header-light), var(--transparency-heavy));
+  border:var(--border-size-big) solid rgb(var(--border-color)) !important;
+  border-radius:var(--border-radius);
 }
 
 #clans .left {
