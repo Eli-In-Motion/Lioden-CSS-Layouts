@@ -60,8 +60,11 @@ h2,
 h3,
 .top,
 .breadcrumb-item.active,
-.breadcrumb-item.active::before {
+.breadcrumb-item.active::before,
+.col-xs-10 {
   color:var(--font-color-main) !important;
+  text-decoration:none !important;
+  border:none !important;
 }
 
 a:hover {
@@ -70,7 +73,8 @@ a:hover {
 
 input,
 select,
-textarea {
+textarea,
+.btn.btn-default.button {
   background:var(--bg-header-light) !important;
   color:var(--font-color-main) !important;
   border: 1px solid var(--border-color) !important;
@@ -80,7 +84,8 @@ textarea {
 
 input:hover,
 select:hover,
-textarea:hover {
+textarea:hover,
+.btn.btn-default.button:hover {
   background:var(--bg-header-dark) !important;
   color:var(--accent-color-light) !important;
   border-color:var(--accent-color-light) !important;
@@ -318,3 +323,62 @@ textarea:hover {
   width:fit-content;
 }
 
+/*Logs*/
+.col.col-sm-4 div {
+  background:var(--bg-header-dark);
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius);
+}
+
+/*Edit Details*/
+#pageContainer > center > form:nth-child(40) > table {
+  border-top:var(--border-size-big) solid var(--border-color);
+  border-left:var(--border-size-big) solid var(--border-color);
+  border-right:var(--border-size-big) solid var(--border-color);
+  border-bottom:none;
+  border-top-left-radius:var(--border-radius);
+  border-top-right-radius:var(--border-radius);
+}
+
+#pageContainer .table th,
+#pageContainer .table .bottom {
+  background:var(--bg-header-light) !important
+}
+
+#editdetailspanel .table {
+  border-left:var(--border-size-big) solid var(--border-color);
+  border-right:var(--border-size-big) solid var(--border-color);
+  border-bottom:var(--border-size-big) solid var(--border-color);
+  border-top: none;
+}
+
+#editdetailspanel .table .left.b {
+  background:var(--bg-panel-back);
+}
+
+#editdetailspanel .table .right {
+  background:var(--bg-panel-right);
+}
+
+/*Account Setting*/
+#pageContainer div.left {
+  background:var(--bg-header-light);
+  border:var(--border-size-small) solid var(--border-color);
+}
+
+/*Side Panel*/
+.panel-body.small,
+.panel-body.small.clear {
+  background:var(--bg-header-dark);
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius);
+  box-shadow:none !important
+}
+
+.panel {
+  background:transparent;
+  box-shadow:none !important;
+  border:none !important;
+}
+
+/*ChatBox*/
