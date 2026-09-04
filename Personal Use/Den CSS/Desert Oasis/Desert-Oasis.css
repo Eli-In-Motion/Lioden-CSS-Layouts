@@ -595,10 +595,16 @@ textarea:hover,
   background-position:center top;
 }
 
+#fraMoundList{
+  display: flex;
+  justify-content: center;
+}
+
 .mound-grid {
   background-image:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Den%20CSS/Desert%20Oasis/pexels-stephen-leonardi-587681991-35970236.jpg?raw=true);
   background-size:cover;
   background-position:center top;
+  height:80%
 }
 
 .mound-grid img {
@@ -606,4 +612,10 @@ textarea:hover,
 }
 .navbar-brand.visible-lg.visible-md img {
   content:url("https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Den%20CSS/Desert%20Oasis/Lioden-logo-full-3.PNG?raw=true");
+}
+
+@media (max-width: 991px) {
+    #fraOrganizationBlock > .col-xs-6 {
+        width: 33%;
+    }
 }
