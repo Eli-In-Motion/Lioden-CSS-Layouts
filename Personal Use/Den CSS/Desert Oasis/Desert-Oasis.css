@@ -381,4 +381,20 @@ textarea:hover,
   border:none !important;
 }
 
+.clear.visible-xs.visible-sm {
+  border:none !important;
+}
+
 /*ChatBox*/
+#chatMessageContainer {
+  border:1px solid var(--border-color) !important;
+  border-radius:var(--border-radius) !important;
+}
+
+#chatMessagePinned {
+  background:var(--bg-header-light) !important;
+}
+
+#chatMessageList::-webkit-scrollbar {
+  width:10px !important;
+}
