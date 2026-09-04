@@ -74,7 +74,11 @@ a:hover {
 input,
 select,
 textarea,
-.btn.btn-default.button {
+.btn.btn-default.button,
+.channelMenu,
+#context-chatMenu,
+#fraChatChannelMenu,
+#label_currentChannel {
   background:var(--bg-header-light) !important;
   color:var(--font-color-main) !important;
   border: 1px solid var(--border-color) !important;
@@ -85,7 +89,11 @@ textarea,
 input:hover,
 select:hover,
 textarea:hover,
-.btn.btn-default.button:hover {
+.btn.btn-default.button:hover,
+#context-chatMenu button:hover,
+.channelSwitcher.active,
+.channelSwitcher:hover,
+#label_currentChannel:hover {
   background:var(--bg-header-dark) !important;
   color:var(--accent-color-light) !important;
   border-color:var(--accent-color-light) !important;
@@ -274,6 +282,26 @@ textarea:hover,
   background:var(--bg-panel-back);
 }
 
+/*Reclaim Lions*/
+#reclaim {
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius);
+  overflow: hidden;
+  border-collapse: separate;
+}
+
+#reclaim th {
+  background:var(--bg-header-light);
+}
+
+#reclaim .left.b.center {
+  background:var(--bg-panel-left);
+}
+
+#reclaim .right.center {
+  background:var(--bg-panel-back);
+}
+
 /*FAPA*/
 .col-sm-6.col-xs-12 div {
   background:var(--bg-panel-back);
@@ -331,18 +359,16 @@ textarea:hover,
 }
 
 /*Edit Details*/
-#pageContainer > center > form:nth-child(40) > table {
-  border-top:var(--border-size-big) solid var(--border-color);
-  border-left:var(--border-size-big) solid var(--border-color);
-  border-right:var(--border-size-big) solid var(--border-color);
-  border-bottom:none;
-  border-top-left-radius:var(--border-radius);
-  border-top-right-radius:var(--border-radius);
+#pageContainer > center > form:nth-child(41) > table {
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius) !important;
+  overflow: hidden;
+  border-collapse: separate;
 }
 
 #pageContainer .table th,
 #pageContainer .table .bottom {
-  background:var(--bg-header-light) !important
+  background:var(--bg-header-light) !important;
 }
 
 #editdetailspanel .table {
@@ -350,6 +376,9 @@ textarea:hover,
   border-right:var(--border-size-big) solid var(--border-color);
   border-bottom:var(--border-size-big) solid var(--border-color);
   border-top: none;
+  border-radius:var(--border-radius);
+  overflow: hidden;
+  border-collapse: separate;
 }
 
 #editdetailspanel .table .left.b {
@@ -364,6 +393,7 @@ textarea:hover,
 #pageContainer div.left {
   background:var(--bg-header-light);
   border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius);
 }
 
 /*Side Panel*/
@@ -393,8 +423,46 @@ textarea:hover,
 
 #chatMessagePinned {
   background:var(--bg-header-light) !important;
+  color:var(--font-color-main) !important;
 }
 
 #chatMessageList::-webkit-scrollbar {
-  width:10px !important;
+  width:15px !important;
+}
+
+#chatMessageList::-webkit-scrollbar-track {
+  background:var(--bg-header-light);
+}
+
+#chatMessageList::-webkit-scrollbar-thumb {
+  background:var(--bg-header-dark)
+}
+
+.s-chat-message_timestamp {
+  color:var(--font-color-small);
+}
+
+.s-chat-message:nth-child(even) {
+  background:var(--bg-chat-dark);
+}
+
+.s-chat-message:nth-child(odd) {
+  background:var(--bg-chat-light);
+}
+
+.chatMenu-option {
+  background:none !important;
+}
+
+.s-chat-message.hasContext {
+  background:var(--accent-color-light) !important;
+  border-left-color:var(--accent-color-dark) !important;
+}
+
+.channelSwitcher {
+  background:none !important;
+}
+
+.channelSwitcher {
+  color:var(--font-color-main) !important;
 }
