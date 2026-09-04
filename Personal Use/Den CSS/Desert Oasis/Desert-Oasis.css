@@ -514,6 +514,13 @@ textarea:hover,
   border-width:1px;
 }
 
+.s-chat-message.s-chat-message_mention {
+  background:rgba(var(--mod-bg-color), var(--transparency-light)) !important;
+  color:var(--mod-font-color) !important;
+  border-color:var(--border-color) !important;
+  border-width:1px;
+}
+
 .channelSwitcher {
   background:none !important;
 }
