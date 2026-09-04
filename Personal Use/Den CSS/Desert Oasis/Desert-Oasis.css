@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Tapestry&display=swap');
 
 /*CSS by Eli in Motion #319237 please do not claim as your own or resell*/
 /*<link rel="stylesheet" type="text/css" href="https://eli-in-motion.github.io/Lioden-CSS-Layouts/Personal Use/Den CSS/Desert Oasis/Desert-Oasis.css" /> */
@@ -70,6 +70,9 @@ body {
   background-size:cover;
   background-position:center;
   background-attachment:fixed;
+  font-family: "Macondo", cursive;
+  font-weight: 400;
+  font-style:normal;
 }
 
 .container.main {
