@@ -366,8 +366,8 @@ textarea:hover,
   border-collapse: separate;
 }
 
-#pageContainer .table th,
-#pageContainer .table .bottom {
+#pageContainer > center > form:nth-child(41) > table > tbody > tr > th,
+#editdetailspanel > table > tbody > tr:nth-child(8) > td {
   background:var(--bg-header-light) !important;
 }
 
@@ -465,4 +465,25 @@ textarea:hover,
 
 .channelSwitcher {
   color:var(--font-color-main) !important;
+}
+
+/*EVENT*/
+/*September*/
+#pageContainer > center > table:nth-child(2) {
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius);
+  overflow:hidden;
+  border-collapse: separate;
+}
+
+#pageContainer > center > table:nth-child(2) th {
+  background:var(--bg-header-dark);
+}
+
+#pageContainer > center > table:nth-child(2) .left.b.center {
+  background:var(--bg-panel-left);
+}
+
+#pageContainer > center > table:nth-child(2) .right.center {
+  background:var(--bg-panel-back);
 }
