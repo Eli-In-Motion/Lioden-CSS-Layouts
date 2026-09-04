@@ -464,6 +464,10 @@ textarea:hover,
 }
 
 /*ChatBox*/
+#fra_chatContainer {
+  overflow:hidden !important;
+}
+
 #chatMessageContainer {
   border:1px solid rgb(var(--border-color)) !important;
   border-radius:var(--border-radius) !important;
