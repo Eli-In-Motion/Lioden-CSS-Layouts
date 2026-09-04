@@ -251,10 +251,12 @@ textarea:hover,
 /*Caves and Mounds*/
 .cave-grid {
   background:var(--bg-header-dark);
+  border:var(--border-size-small) solid var(--border-color);
 }
 
 .mound-grid {
   background:var(--bg-header-dark);
+  border:var(--border-size-small) solid var(--border-color);
 }
 
 .mound-grid img {
