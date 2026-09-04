@@ -33,8 +33,8 @@ Free to use under Pexels Licensing
 
   --accent-color-light:194, 211, 237;
   --accent-color-dark:158, 195, 239;
-  --transparency-light:.50;
-  --transparency-heavy:.25;
+  --transparency-light:.80;
+  --transparency-heavy:.60;
 }
 
 /*Pagewide*/
@@ -83,7 +83,7 @@ textarea,
 #label_currentChannel,
 .navbar-toggle.collapsed,
 .navbar-toggle{ 
-  background:rgb(var(--bg-header-light)) !important;
+  background:rgba(var(--bg-header-light), var(--transparency-light)) !important;
   color:rgb(var(--font-color-main)) !important;
   border: 1px solid rgb(var(--border-color)) !important;
   border-radius:0px !important;
@@ -100,7 +100,7 @@ textarea:hover,
 #label_currentChannel:hover,
 .navbar-toggle.collapsed:hover,
 .navbar-toggle:hover {
-  background:rgb(var(--bg-header-dark)) !important;
+  background:rgba(var(--bg-header-dark), var(--transparency-light)) !important;
   color:rgb(var(--accent-color-light)) !important;
   border-color:rgb(var(--accent-color-light)) !important;
 }
@@ -117,7 +117,7 @@ textarea:hover,
 
 .navbar.navbar-default a:hover {
   color:rgb(var(--accent-color-light)) !important;
-  background:rgb(var(--accent-color-dark), var(--transparency-light)) !important;
+  background:rgba(var(--accent-color-dark), var(--transparency-heavy)) !important;
 }
 
 #bs-example-navbar-collapse-1 {
@@ -142,14 +142,14 @@ textarea:hover,
 
 /*Alerts*/
 .alert.alert-success {
-  background:rgb(var(--bg-panel-right));
+  background:rgba(var(--bg-panel-right), var(--transparency-heavy));
   color:rgb(var(--font-color-main));
   border:var(--border-size-small) solid rgb(var(--border-color));
   border-radius:var(--border-radius);
 }
 
 .alert.alert-danger {
-  background:rgb(var(--bg-panel-left));
+  background:rgba(var(--bg-panel-left), var(--transparency-heavy));
   color:rgb(var(--font-color-main));
   border: var(--border-size-small) solid rgb(var(--border-color));
   border-radius:var(--border-radius);
@@ -170,27 +170,27 @@ textarea:hover,
 }
 
 #commentBox::-webkit-scrollbar-track {
-  background:rgb(var(--bg-chat-dark));
+  background:rgba(var(--bg-chat-dark), var(--transparency-light));
   border-top-right-radius:var(--border-radius);
   border-bottom-right-radius:var(--border-radius);
 }
 
 #commentBox::-webkit-scrollbar-thumb {
-  background:rgb(var(--bg-chat-light));
+  background:rgba(var(--bg-chat-light), var(--transparency-light));
   border-top-right-radius:var(--border-radius);
   border-bottom-right-radius:var(--border-radius);
 }
 
 .comment {
-  background:rgb(var(--bg-chat-light));
+  background:rgba(var(--bg-chat-light), var(--transparency-light));
 }
 
 .comment:nth-child(even) {
-  background:rgb(var(--bg-chat-dark)) !important;
+  background:rgba(var(--bg-chat-dark), var(--transparency-light)) !important;
 }
 
 .comment:nth-child(odd) {
-  background:rgb(var(--bg-chat-light));
+  background:rgba(var(--bg-chat-light), var(--transparency-light));
 }
 
 #comment::placeholder,
@@ -208,19 +208,19 @@ textarea:hover,
 
 #about .top,
 #about .bottom {
-  background:rgb(var(--bg-header-light));
+  background:rgba(var(--bg-header-light), var(--transparency-heavy));
 }
 
 #about tr.right {
-  background:rgb(var(--bg-panel-back));
+  background:rgba(var(--bg-panel-back), var(--transparency-heavy));
 }
 
 #about .left {
-  background:rgb(var(--bg-panel-left));
+  background:rgba(var(--bg-panel-left), var(--transparency-heavy));
 }
 
 #about td .right {
-  background:rgb(var(--bg-panel-right));
+  background:rgba(var(--bg-panel-right), var(--transparency-heavy));
 }
 
 /*Player About*/
@@ -232,19 +232,19 @@ textarea:hover,
 }
 
 #player .top {
-  background:rgb(var(--bg-header-light));
+  background:rgba(var(--bg-header-light), var(--transparency-heavy));
 }
 
 #player tr.right {
-  background:rgb(var(--bg-panel-back));
+  background:rgba(var(--bg-panel-back), var(--transparency-heavy));
 }
 
 #player .left {
-  background:rgb(var(--bg-panel-left));
+  background:rgba(var(--bg-panel-left), var(--transparency-heavy));
 }
 
 #player td .right {
-  background:rgb(var(--bg-panel-right));
+  background:rgba(var(--bg-panel-right), var(--transparency-heavy));
 }
 
 #player .right hr {
@@ -257,12 +257,12 @@ textarea:hover,
 
 /*Caves and Mounds*/
 .cave-grid {
-  background:rgb(var(--bg-header-dark));
+  background:rgba(var(--bg-header-dark), var(--transparency-heavy));
   border:var(--border-size-small) solid rgb(var(--border-color));
 }
 
 .mound-grid {
-  background:rgb(var(--bg-header-dark));
+  background:rgba(var(--bg-header-dark), var(--transparency-heavy));
   border:var(--border-size-small) solid rgb(var(--border-color));
 }
 
@@ -280,15 +280,15 @@ textarea:hover,
 }
 
 #sparring th {
-  background:rgb(var(--bg-header-dark));
+  background:rgba(var(--bg-header-dark), var(--transparency-heavy));
 }
 
 #sparring tr {
-  background:rgb(var(--bg-panel-left));
+  background:rgba(var(--bg-panel-left), var(--transparency-heavy));
 }
 
 #sparring .right_odd {
-  background:rgb(var(--bg-panel-back));
+  background:rgba(var(--bg-panel-back), var(--transparency-heavy));
 }
 
 /*Reclaim Lions*/
@@ -301,20 +301,20 @@ textarea:hover,
 
 #reclaim th,
 #reclaim .bottom {
-  background:rgb(var(--bg-header-light));
+  background:rgba(var(--bg-header-light), var(--transparency-heavy));
 }
 
 #reclaim .left.b.center {
-  background:rgb(var(--bg-panel-left));
+  background:rgba(var(--bg-panel-left), var(--transparency-heavy));
 }
 
 #reclaim .right.center {
-  background:rgb(var(--bg-panel-back));
+  background:rgba(var(--bg-panel-back), var(--transparency-heavy));
 }
 
 /*FAPA*/
 .col-sm-6.col-xs-12 div {
-  background:rgb(var(--bg-panel-back));
+  background:rgba(var(--bg-panel-back), var(--transparency-heavy));
   border:var(--border-size-small) solid rgb(var(--border-color));
 }
 
@@ -331,7 +331,7 @@ textarea:hover,
 }
 
 #allies .top {
-  background:rgb(var(--bg-header-light));
+  background:rgba(var(--bg-header-light), var(--transparency-heavy));
 }
 
 #allies .left {
@@ -347,7 +347,7 @@ textarea:hover,
 }
 
 #clans .top {
-  background:rgb(var(--bg-header-light));
+  background:rgba(var(--bg-header-light), var(--transparency-heavy));
 }
 
 #clans .left {
@@ -356,14 +356,14 @@ textarea:hover,
 
 /*Dynasty Stuff*/
 .col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div {
-  background:rgb(var(--bg-header-dark));
+  background:rgba(var(--bg-header-dark), var(--transparency-heavy)) !important;
   border: var(--border-size-small) solid rgb(var(--border-color));
   width:fit-content;
 }
 
 /*Logs*/
 .col.col-sm-4 div {
-  background:rgb(var(--bg-header-dark));
+  background:rgba(var(--bg-header-dark), var(--transparency-heavy)) !important;
   border:var(--border-size-small) solid rgb(var(--border-color));
   border-radius:var(--border-radius);
 }
@@ -378,7 +378,7 @@ textarea:hover,
 
 #pageContainer > center > form:nth-child(41) > table > tbody > tr > th,
 #editdetailspanel > table > tbody > tr:nth-child(8) > td {
-  background:rgb(var(--bg-header-light)) !important;
+  background:rgba(var(--bg-header-light), var(--transparency-heavy)) !important;
 }
 
 #editdetailspanel .table {
@@ -392,16 +392,16 @@ textarea:hover,
 }
 
 #editdetailspanel .table .left.b {
-  background:rgb(var(--bg-panel-back));
+  background:rgba(var(--bg-panel-back), var(--transparency-heavy));
 }
 
 #editdetailspanel .table .right {
-  background:rgb(var(--bg-panel-right));
+  background:rgba(var(--bg-panel-right), var(--transparency-heavy));
 }
 
 /*Account Setting*/
 #pageContainer div.left {
-  background:rgb(var(--bg-header-light));
+  background:rgba(var(--bg-header-light), var(--transparency-heavy));
   border:var(--border-size-small) solid rgb(var(--border-color));
   border-radius:var(--border-radius);
 }
@@ -409,7 +409,7 @@ textarea:hover,
 /*Side Panel*/
 .panel-body.small,
 .panel-body.small.clear {
-  background:rgb(var(--bg-header-dark));
+  background:rgba(var(--bg-header-dark), var(--transparency-heavy));
   border:var(--border-size-small) solid rgb(var(--border-color));
   border-radius:var(--border-radius);
   box-shadow:none !important
@@ -432,20 +432,20 @@ textarea:hover,
 }
 
 #chatMessagePinned {
-  background:rgb(var(--bg-header-light)) !important;
+  background:rgba(var(--bg-header-light), var(--transparency-light)) !important;
   color:rgb(var(--font-color-main)) !important;
 }
 
 #chatMessageList::-webkit-scrollbar {
-  width:15px !important;
+  width:10px !important;
 }
 
 #chatMessageList::-webkit-scrollbar-track {
-  background:rgb(var(--bg-header-light));
+  background:rgba(var(--bg-header-light), var(--transparency-light));
 }
 
 #chatMessageList::-webkit-scrollbar-thumb {
-  background:rgb(var(--bg-header-dark));
+  background:rgba(var(--bg-header-dark), var(--transparency-light));
 }
 
 .s-chat-message_timestamp {
@@ -453,11 +453,11 @@ textarea:hover,
 }
 
 .s-chat-message:nth-child(even) {
-  background:rgb(var(--bg-chat-dark));
+  background:rgba(var(--bg-chat-dark), var(--transparency-light));
 }
 
 .s-chat-message:nth-child(odd) {
-  background:rgb(var(--bg-chat-light));
+  background:rgba(var(--bg-chat-light), var(--transparency-light));
 }
 
 .chatMenu-option {
@@ -465,8 +465,8 @@ textarea:hover,
 }
 
 .s-chat-message.hasContext {
-  background:rgb(var(--accent-color-light)) !important;
-  border-left-color:rgb(var(--accent-color-dark)) !important;
+  background:rgba(var(--accent-color-light), var(--transparency-light)) !important;
+  border-left-color:rgba(var(--accent-color-dark), var(--transparency-light)) !important;
 }
 
 .channelSwitcher {
@@ -487,13 +487,14 @@ textarea:hover,
 }
 
 #pageContainer > center > table:nth-child(2) th {
-  background:rgb(var(--bg-header-dark));
+  color:rgb(var(--font-color-main));
+  background:rgba(var(--bg-header-dark), var(--transparency-heavy));
 }
 
 #pageContainer > center > table:nth-child(2) .left.b.center {
-  background:rgb(var(--bg-panel-left));
+  background:rgba(var(--bg-panel-left), var(--transparency-heavy));
 }
 
 #pageContainer > center > table:nth-child(2) .right.center {
-  background:rgb(var(--bg-panel-back));
+  background:rgba(var(--bg-panel-back), var(--transparency-heavy));
 }
