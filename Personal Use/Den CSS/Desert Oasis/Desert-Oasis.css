@@ -3,11 +3,31 @@
 
 /*Credit Section
   Misc Debugging
+
 Shout out to my brother for helping me fight through the confusion as I learn CSS
+  
   Background Image
 https://www.pexels.com/photo/menara-gardens-in-morocco-17648182/
 Mr.Zembo on Pexels
 Uploaded on July 18th, 2023 at 8:47 AM
+Free to use under Pexels Licensing
+
+  Background Image for Unsorted, Pregnant, and Overview
+https://www.pexels.com/photo/tomb-of-sayed-rakneddin-in-yazd-23938370/
+SYDE Yvi on Pexels
+Uploaded on May 11th, 2024 at 10:11 AM
+Free to use under Pexels Licensing
+
+  Background Image for All other Caves
+https://www.pexels.com/photo/decorative-wooden-door-with-ornate-patterns-31455198/
+Darya Grey_Owl on Pexels
+Uploaded on April 2nd, 2025 at 1:46 PM
+Free to use under Pexels Licensing
+
+  Background Image for Beetle Mounds
+https://www.pexels.com/photo/golden-sand-dunes-at-sunset-in-a-desert-landscape-35970236/
+Stephen Leonardi on Pexels
+Uploaded on February 1st, 2026 at 9:38 PM
 Free to use under Pexels Licensing
 */
 
@@ -532,4 +552,20 @@ textarea:hover,
   background-image:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Den%20CSS/Desert%20Oasis/pexels-syde-23938370.jpg?raw=true);
   background-size:cover;
   background-position:center;
+}
+
+#fraCaveList > div div {
+  background-image:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Den%20CSS/Desert%20Oasis/pexels-darya-grey_owl-132130036-31455198.jpg?raw=true);
+  background-size:cover;
+  background-position:center top;
+}
+
+.mound-grid {
+  background-image:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Den%20CSS/Desert%20Oasis/pexels-stephen-leonardi-587681991-35970236.jpg?raw=true);
+  background-size:cover;
+  background-position:center top;
+}
+
+.mound-grid img {
+  visibility:hidden
 }
