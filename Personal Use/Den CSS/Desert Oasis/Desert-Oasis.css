@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+
 /*CSS by Eli in Motion #319237 please do not claim as your own or resell*/
 /*<link rel="stylesheet" type="text/css" href="https://eli-in-motion.github.io/Lioden-CSS-Layouts/Personal Use/Den CSS/Desert Oasis/Desert-Oasis.css" /> */
 
@@ -93,6 +95,17 @@ h3,
   border:none !important;
 }
 
+h1,
+h2,
+h3,
+.center.h3,
+.container.topbar,
+.navbar {
+  font-family: "Tapestry", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 a:hover {
   color:rgb(var(--accent-color-light)) !important;
 }
@@ -132,6 +145,10 @@ textarea:hover,
 /*Topbar with messages & links*/
 .container.topbar {
   background:transparent;
+}
+
+.container.topbar a {
+  font-size:larger;
 }
 
 /*Navbar*/
@@ -194,6 +211,12 @@ textarea:hover,
 /*____'s Den*/
 #pageContainer h1 {
   text-align:center;
+  font-size:0px;
+}
+
+#pageContainer h1::before {
+  content:"Welcome Wandering Soul";
+  font-size:50px;
 }
 
 /*Comment Box*/
