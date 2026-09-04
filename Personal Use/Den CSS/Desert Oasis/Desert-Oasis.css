@@ -30,6 +30,12 @@ https://www.pexels.com/photo/golden-sand-dunes-at-sunset-in-a-desert-landscape-3
 Stephen Leonardi on Pexels
 Uploaded on February 1st, 2026 at 9:38 PM
 Free to use under Pexels Licensing
+
+  Background for Dynasties
+https://www.pexels.com/photo/natural-arch-under-stars-on-night-sky-in-joshua-tree-national-park-in-usa-21608490/
+Mikey White on Pexels
+Uploaded on April 13th, 2024 at 5:54 PM
+Free to use under Pexels Licensing
 */
 
 :root {
@@ -614,8 +620,18 @@ textarea:hover,
   content:url("https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Den%20CSS/Desert%20Oasis/Lioden-logo-full-3.PNG?raw=true");
 }
 
+.row.dynastycollection > div:nth-child(n-2) > a > div > img {
+  visibility:hidden;
+}
+
+.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist:nth-child(-n+2) .left {
+  background-image:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Den%20CSS/Desert%20Oasis/pexels-mikey-white-922915629-21608490.jpg?raw=true) !important;
+  background-size:cover !important;
+  background-position:center !important;
+}
+
 @media (max-width: 991px) {
-    #fraOrganizationBlock > .col-xs-6 {
-        width: 33%;
-    }
+  #fraOrganizationBlock > .col-xs-6 {
+    width: 33%;
+  }
 }
