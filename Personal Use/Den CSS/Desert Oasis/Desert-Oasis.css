@@ -510,3 +510,14 @@ textarea:hover,
 #pageContainer > center > table:nth-child(2) .right.center {
   background:rgba(var(--bg-panel-back), var(--transparency-heavy));
 }
+
+/*Image Replacements*/
+.col-md-4.col-xs-6.center div img {
+  visibility:hidden;
+}
+
+#fraOrganizationBlock > div:nth-child(n-3) > a > div {
+  background-image:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Den%20CSS/Desert%20Oasis/pexels-syde-23938370.jpg?raw=true);
+  background-size:cover;
+  background-position:center;
+}
