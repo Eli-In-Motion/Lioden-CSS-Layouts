@@ -13,33 +13,33 @@ Free to use under Pexels Licensing
 
 :root {
   --bg-main-image:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Den%20CSS/Desert%20Oasis/pexels-mr-zembo-651918778-17648182.jpg?raw=true);
-  --bg-main-color:rgb(111 80 59);
+  --bg-main-color:111, 80, 59;
 
-  --bg-header-dark:rgb(167 145 134);
-  --bg-header-light:rgb(191 158 125);
-  --bg-panel-back:rgb(176 183 176);
-  --bg-panel-left:rgb(112 126 112);
-  --bg-panel-right:rgb(208 224 208);
-  --bg-chat-light:rgb(243 232 223);
-  --bg-chat-dark:rgb(213 187 166);
+  --bg-header-dark:167, 145, 134;
+  --bg-header-light:191, 158, 125;
+  --bg-panel-back:176, 183, 176;
+  --bg-panel-left:112, 126, 112;
+  --bg-panel-right:208, 224, 208;
+  --bg-chat-light:243, 232, 223;
+  --bg-chat-dark:213, 187, 166;
 
-  --font-color-main:rgb(243 229 220);
-  --font-color-small:rgb(200 189 182);
+  --font-color-main:243, 229, 220;
+  --font-color-small:200, 189, 182;
 
   --border-size-big:3px;
   --border-size-small:1px;
-  --border-color:rgb(230 191 126);
+  --border-color:230, 191, 126;
   --border-radius:10px;
 
-  --accent-color-light:rgb(194 211 237);
-  --accent-color-dark:rgb(158 195 239);
-  --transparency-light:.25;
-  --transparency-heavy:.50;
+  --accent-color-light:194, 211, 237;
+  --accent-color-dark:158, 195, 239;
+  --transparency-light:.50;
+  --transparency-heavy:.25;
 }
 
 /*Pagewide*/
 body {
-  background-color:var(--bg-main-color);
+  background-color:rgb(var(--bg-main-color));
   background-image:var(--bg-main-image);
   background-size:cover;
   background-position:center;
@@ -64,13 +64,13 @@ h3,
 .breadcrumb-item.active,
 .breadcrumb-item.active::before,
 .col-xs-10 {
-  color:var(--font-color-main) !important;
+  color:rgb(var(--font-color-main)) !important;
   text-decoration:none !important;
   border:none !important;
 }
 
 a:hover {
-  color:var(--accent-color-light) !important;
+  color:rgb(var(--accent-color-light)) !important;
 }
 
 input,
@@ -83,9 +83,9 @@ textarea,
 #label_currentChannel,
 .navbar-toggle.collapsed,
 .navbar-toggle{ 
-  background:var(--bg-header-light) !important;
-  color:var(--font-color-main) !important;
-  border: 1px solid var(--border-color) !important;
+  background:rgb(var(--bg-header-light)) !important;
+  color:rgb(var(--font-color-main)) !important;
+  border: 1px solid rgb(var(--border-color)) !important;
   border-radius:0px !important;
   text-shadow:none !important;
 }
@@ -100,9 +100,9 @@ textarea:hover,
 #label_currentChannel:hover,
 .navbar-toggle.collapsed:hover,
 .navbar-toggle:hover {
-  background:var(--bg-header-dark) !important;
-  color:var(--accent-color-light) !important;
-  border-color:var(--accent-color-light) !important;
+  background:rgb(var(--bg-header-dark)) !important;
+  color:rgb(var(--accent-color-light)) !important;
+  border-color:rgb(var(--accent-color-light)) !important;
 }
 
 /*Topbar with messages & links*/
@@ -116,8 +116,8 @@ textarea:hover,
 }
 
 .navbar.navbar-default a:hover {
-  color:var(--accent-color-light) !important;
-  background:var(--accent-color-dark) !important;
+  color:rgb(var(--accent-color-light)) !important;
+  background:rgb(var(--accent-color-dark), var(--transparency-light)) !important;
 }
 
 #bs-example-navbar-collapse-1 {
@@ -137,21 +137,21 @@ textarea:hover,
 .breadcrumb::after {
   content:"CSS by Eli in Motion #319237";
   float:right;
-  color:var(--font-color-main);
+  color:rgb(var(--font-color-main));
 }
 
 /*Alerts*/
 .alert.alert-success {
-  background:var(--bg-panel-right);
-  color:var(--font-color-main);
-  border: var(--border-size-small) solid var(--border-color);
+  background:rgb(var(--bg-panel-right));
+  color:rgb(var(--font-color-main));
+  border:var(--border-size-small) solid rgb(var(--border-color));
   border-radius:var(--border-radius);
 }
 
 .alert.alert-danger {
-  background:var(--bg-panel-left);
-  color:var(--font-color-main);
-  border: var(--border-size-small) solid var(--border-color);
+  background:rgb(var(--bg-panel-left));
+  color:rgb(var(--font-color-main));
+  border: var(--border-size-small) solid rgb(var(--border-color));
   border-radius:var(--border-radius);
 }
 
@@ -162,7 +162,7 @@ textarea:hover,
 
 /*Comment Box*/
 #commentBox {
-  border: 1px solid var(--border-color) !important;
+  border: 1px solid rgb(var(--border-color)) !important;
 }
 
 #commentBox::-webkit-scrollbar {
@@ -170,37 +170,37 @@ textarea:hover,
 }
 
 #commentBox::-webkit-scrollbar-track {
-  background:var(--bg-chat-dark);
+  background:rgb(var(--bg-chat-dark));
   border-top-right-radius:var(--border-radius);
   border-bottom-right-radius:var(--border-radius);
 }
 
 #commentBox::-webkit-scrollbar-thumb {
-  background:var(--bg-chat-light);
+  background:rgb(var(--bg-chat-light));
   border-top-right-radius:var(--border-radius);
   border-bottom-right-radius:var(--border-radius);
 }
 
 .comment {
-  background:var(--bg-chat-light)
+  background:rgb(var(--bg-chat-light));
 }
 
 .comment:nth-child(even) {
-  background:var(--bg-chat-dark) !important;
+  background:rgb(var(--bg-chat-dark)) !important;
 }
 
 .comment:nth-child(odd) {
-  background:var(--bg-chat-light);
+  background:rgb(var(--bg-chat-light));
 }
 
 #comment::placeholder,
 .text-muted {
-  color:var(--font-color-small);
+  color:rgb(var(--font-color-small));
 }
 
 /*Pride About*/
 #about {
-  border:var(--border-size-big) solid var(--border-color) !important;
+  border:var(--border-size-big) solid rgb(var(--border-color)) !important;
   border-radius:var(--border-radius);
   overflow: hidden;
   border-collapse: separate
@@ -208,43 +208,43 @@ textarea:hover,
 
 #about .top,
 #about .bottom {
-  background:var(--bg-header-light)
+  background:rgb(var(--bg-header-light));
 }
 
 #about tr.right {
-  background:var(--bg-panel-back);
+  background:rgb(var(--bg-panel-back));
 }
 
 #about .left {
-  background:var(--bg-panel-left);
+  background:rgb(var(--bg-panel-left));
 }
 
 #about td .right {
-  background:var(--bg-panel-right);
+  background:rgb(var(--bg-panel-right));
 }
 
 /*Player About*/
 #player {
-  border:var(--border-size-big) solid var(--border-color);
+  border:var(--border-size-big) solid rgb(var(--border-color));
   border-radius:var(--border-radius);
   overflow: hidden;
   border-collapse: separate;
 }
 
 #player .top {
-  background:var(--bg-header-light);
+  background:rgb(var(--bg-header-light));
 }
 
 #player tr.right {
-  background:var(--bg-panel-back);
+  background:rgb(var(--bg-panel-back));
 }
 
 #player .left {
-  background:var(--bg-panel-left);
+  background:rgb(var(--bg-panel-left));
 }
 
 #player td .right {
-  background:var(--bg-panel-right);
+  background:rgb(var(--bg-panel-right));
 }
 
 #player .right hr {
@@ -257,68 +257,69 @@ textarea:hover,
 
 /*Caves and Mounds*/
 .cave-grid {
-  background:var(--bg-header-dark);
-  border:var(--border-size-small) solid var(--border-color);
+  background:rgb(var(--bg-header-dark));
+  border:var(--border-size-small) solid rgb(var(--border-color));
 }
 
 .mound-grid {
-  background:var(--bg-header-dark);
-  border:var(--border-size-small) solid var(--border-color);
+  background:rgb(var(--bg-header-dark));
+  border:var(--border-size-small) solid rgb(var(--border-color));
 }
 
 .mound-grid img {
   width:100%;
-  height:100px;
+  height:80px;
 }
 
 /*Sparring*/
 #sparring {
-  border:var(--border-size-big) solid var(--border-color);
+  border:var(--border-size-big) solid rgb(var(--border-color));
   border-radius:var(--border-radius);
   overflow: hidden;
   border-collapse: separate;
 }
 
 #sparring th {
-  background:var(--bg-header-dark);
+  background:rgb(var(--bg-header-dark));
 }
 
 #sparring tr {
-  background:var(--bg-panel-left);
+  background:rgb(var(--bg-panel-left));
 }
 
 #sparring .right_odd {
-  background:var(--bg-panel-back);
+  background:rgb(var(--bg-panel-back));
 }
 
 /*Reclaim Lions*/
 #reclaim {
-  border:var(--border-size-small) solid var(--border-color);
+  border:var(--border-size-small) solid rgb(var(--border-color));
   border-radius:var(--border-radius);
   overflow: hidden;
   border-collapse: separate;
 }
 
-#reclaim th {
-  background:var(--bg-header-light);
+#reclaim th,
+#reclaim .bottom {
+  background:rgb(var(--bg-header-light));
 }
 
 #reclaim .left.b.center {
-  background:var(--bg-panel-left);
+  background:rgb(var(--bg-panel-left));
 }
 
 #reclaim .right.center {
-  background:var(--bg-panel-back);
+  background:rgb(var(--bg-panel-back));
 }
 
 /*FAPA*/
 .col-sm-6.col-xs-12 div {
-  background:var(--bg-panel-back);
-  border:var(--border-size-small) solid var(--border-color);
+  background:rgb(var(--bg-panel-back));
+  border:var(--border-size-small) solid rgb(var(--border-color));
 }
 
 #allies {
-  border:var(--border-size-big) solid var(--border-color);
+  border:var(--border-size-big) solid rgb(var(--border-color));
   border-radius:var(--border-radius);
   overflow: hidden;
   border-collapse: separate;
@@ -330,7 +331,7 @@ textarea:hover,
 }
 
 #allies .top {
-  background:var(--bg-header-light);
+  background:rgb(var(--bg-header-light));
 }
 
 #allies .left {
@@ -339,14 +340,14 @@ textarea:hover,
 
 /*Clans*/
 #clans {
-  border:var(--border-size-big) solid var(--border-color);
+  border:var(--border-size-big) solid rgb(var(--border-color));
   border-radius:var(--border-radius);
   overflow: hidden;
   border-collapse: separate;
 }
 
 #clans .top {
-  background:var(--bg-header-light)
+  background:rgb(var(--bg-header-light));
 }
 
 #clans .left {
@@ -355,21 +356,21 @@ textarea:hover,
 
 /*Dynasty Stuff*/
 .col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div {
-  background:var(--bg-header-dark);
-  border: var(--border-size-small) solid var(--border-color);
+  background:rgb(var(--bg-header-dark));
+  border: var(--border-size-small) solid rgb(var(--border-color));
   width:fit-content;
 }
 
 /*Logs*/
 .col.col-sm-4 div {
-  background:var(--bg-header-dark);
-  border:var(--border-size-small) solid var(--border-color);
+  background:rgb(var(--bg-header-dark));
+  border:var(--border-size-small) solid rgb(var(--border-color));
   border-radius:var(--border-radius);
 }
 
 /*Edit Details*/
 #pageContainer > center > form:nth-child(41) > table {
-  border:var(--border-size-small) solid var(--border-color);
+  border:var(--border-size-small) solid rgb(var(--border-color));
   border-radius:var(--border-radius) !important;
   overflow: hidden;
   border-collapse: separate;
@@ -377,13 +378,13 @@ textarea:hover,
 
 #pageContainer > center > form:nth-child(41) > table > tbody > tr > th,
 #editdetailspanel > table > tbody > tr:nth-child(8) > td {
-  background:var(--bg-header-light) !important;
+  background:rgb(var(--bg-header-light)) !important;
 }
 
 #editdetailspanel .table {
-  border-left:var(--border-size-big) solid var(--border-color);
-  border-right:var(--border-size-big) solid var(--border-color);
-  border-bottom:var(--border-size-big) solid var(--border-color);
+  border-left:var(--border-size-big) solid rgb(var(--border-color));
+  border-right:var(--border-size-big) solid rgb(var(--border-color));
+  border-bottom:var(--border-size-big) solid rgb(var(--border-color));
   border-top: none;
   border-radius:var(--border-radius);
   overflow: hidden;
@@ -391,25 +392,25 @@ textarea:hover,
 }
 
 #editdetailspanel .table .left.b {
-  background:var(--bg-panel-back);
+  background:rgb(var(--bg-panel-back));
 }
 
 #editdetailspanel .table .right {
-  background:var(--bg-panel-right);
+  background:rgb(var(--bg-panel-right));
 }
 
 /*Account Setting*/
 #pageContainer div.left {
-  background:var(--bg-header-light);
-  border:var(--border-size-small) solid var(--border-color);
+  background:rgb(var(--bg-header-light));
+  border:var(--border-size-small) solid rgb(var(--border-color));
   border-radius:var(--border-radius);
 }
 
 /*Side Panel*/
 .panel-body.small,
 .panel-body.small.clear {
-  background:var(--bg-header-dark);
-  border:var(--border-size-small) solid var(--border-color);
+  background:rgb(var(--bg-header-dark));
+  border:var(--border-size-small) solid rgb(var(--border-color));
   border-radius:var(--border-radius);
   box-shadow:none !important
 }
@@ -426,13 +427,13 @@ textarea:hover,
 
 /*ChatBox*/
 #chatMessageContainer {
-  border:1px solid var(--border-color) !important;
+  border:1px solid rgb(var(--border-color)) !important;
   border-radius:var(--border-radius) !important;
 }
 
 #chatMessagePinned {
-  background:var(--bg-header-light) !important;
-  color:var(--font-color-main) !important;
+  background:rgb(var(--bg-header-light)) !important;
+  color:rgb(var(--font-color-main)) !important;
 }
 
 #chatMessageList::-webkit-scrollbar {
@@ -440,23 +441,23 @@ textarea:hover,
 }
 
 #chatMessageList::-webkit-scrollbar-track {
-  background:var(--bg-header-light);
+  background:rgb(var(--bg-header-light));
 }
 
 #chatMessageList::-webkit-scrollbar-thumb {
-  background:var(--bg-header-dark)
+  background:rgb(var(--bg-header-dark));
 }
 
 .s-chat-message_timestamp {
-  color:var(--font-color-small);
+  color:rgb(var(--font-color-small));
 }
 
 .s-chat-message:nth-child(even) {
-  background:var(--bg-chat-dark);
+  background:rgb(var(--bg-chat-dark));
 }
 
 .s-chat-message:nth-child(odd) {
-  background:var(--bg-chat-light);
+  background:rgb(var(--bg-chat-light));
 }
 
 .chatMenu-option {
@@ -464,8 +465,8 @@ textarea:hover,
 }
 
 .s-chat-message.hasContext {
-  background:var(--accent-color-light) !important;
-  border-left-color:var(--accent-color-dark) !important;
+  background:rgb(var(--accent-color-light)) !important;
+  border-left-color:rgb(var(--accent-color-dark)) !important;
 }
 
 .channelSwitcher {
@@ -473,26 +474,26 @@ textarea:hover,
 }
 
 .channelSwitcher {
-  color:var(--font-color-main) !important;
+  color:rgb(var(--font-color-main)) !important;
 }
 
 /*EVENT*/
 /*September*/
 #pageContainer > center > table:nth-child(2) {
-  border:var(--border-size-small) solid var(--border-color);
+  border:var(--border-size-small) solid rgb(var(--border-color));
   border-radius:var(--border-radius);
   overflow:hidden;
   border-collapse: separate;
 }
 
 #pageContainer > center > table:nth-child(2) th {
-  background:var(--bg-header-dark);
+  background:rgb(var(--bg-header-dark));
 }
 
 #pageContainer > center > table:nth-child(2) .left.b.center {
-  background:var(--bg-panel-left);
+  background:rgb(var(--bg-panel-left));
 }
 
 #pageContainer > center > table:nth-child(2) .right.center {
-  background:var(--bg-panel-back);
+  background:rgb(var(--bg-panel-back));
 }
