@@ -13,28 +13,28 @@ Free to use under Pexels Licensing
 
 :root {
   --bg-main-image:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Den%20CSS/Desert%20Oasis/pexels-mr-zembo-651918778-17648182.jpg?raw=true);
-  --bg-main-color:111, 80, 59;
+  --bg-main-color:91, 80, 69;
 
-  --bg-header-dark:167, 145, 134;
-  --bg-header-light:191, 158, 125;
-  --bg-panel-back:176, 183, 176;
-  --bg-panel-left:112, 126, 112;
-  --bg-panel-right:208, 224, 208;
-  --bg-chat-light:243, 232, 223;
-  --bg-chat-dark:213, 187, 166;
+  --bg-header-dark:163, 129, 78;
+  --bg-header-light:212, 176, 123;
+  --bg-panel-back:180, 160, 141;
+  --bg-panel-left:132, 113, 98;
+  --bg-panel-right:214, 199, 182;
+  --bg-chat-light:178, 182, 166;
+  --bg-chat-dark:150, 158, 142;
 
-  --font-color-main:243, 229, 220;
-  --font-color-small:200, 189, 182;
+  --font-color-main:244, 236, 228;
+  --font-color-small:216, 196, 180;
 
   --border-size-big:3px;
   --border-size-small:1px;
-  --border-color:230, 191, 126;
+  --border-color:235, 198, 120;
   --border-radius:10px;
 
-  --accent-color-light:194, 211, 237;
-  --accent-color-dark:158, 195, 239;
-  --transparency-light:.80;
-  --transparency-heavy:.60;
+  --accent-color-light:188, 213, 235;
+  --accent-color-dark:136, 177, 219;
+  --transparency-light:.90;
+  --transparency-heavy:.80;
 }
 
 /*Pagewide*/
@@ -82,7 +82,7 @@ textarea,
 #fraChatChannelMenu,
 #label_currentChannel,
 .navbar-toggle.collapsed,
-.navbar-toggle{ 
+.navbar-toggle { 
   background:rgba(var(--bg-header-light), var(--transparency-light)) !important;
   color:rgb(var(--font-color-main)) !important;
   border: 1px solid rgb(var(--border-color)) !important;
@@ -123,6 +123,14 @@ textarea:hover,
 #bs-example-navbar-collapse-1 {
   border:none;
   box-shadow:none;
+}
+
+.navbar-toggle.collapsed span {
+  background:rgb(var(--border-color)) !important;
+}
+
+.navbar-toggle.collapsed:hover span {
+  background:rgb(var(--accent-color-light)) !important;
 }
 
 /*Breadcrumb, Bookmark, and Credit*/
@@ -314,7 +322,7 @@ textarea:hover,
 
 /*FAPA*/
 .col-sm-6.col-xs-12 div {
-  background:rgba(var(--bg-panel-back), var(--transparency-heavy));
+  background:rgba(var(--bg-header-dark), var(--transparency-heavy));
   border:var(--border-size-small) solid rgb(var(--border-color));
 }
 
