@@ -604,3 +604,6 @@ textarea:hover,
 .mound-grid img {
   visibility:hidden
 }
+.navbar-brand.visible-lg.visible-md img {
+  content:url("https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Den%20CSS/Desert%20Oasis/Lioden-logo-full-3.PNG?raw=true");
+}
