@@ -230,7 +230,7 @@ textarea:hover,
 }
 
 #pageContainer h1::before {
-  content:"Welcome Wandering Soul";
+  content:"𖤓 Welcome Wandering Soul 𖤓";
   font-size:50px;
 }
 
@@ -663,6 +663,12 @@ textarea:hover,
   }
 }
 
+@media (max-width: 768px) {
+  .container.main {
+    margin-top:10px !important;
+  }
+}
+
 .row.dynastycollection {
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -683,4 +689,22 @@ textarea:hover,
 .dynastycollection > .dynastylist:first-child,
 .dynastycollection > .dynastylist:nth-child(2) {
     margin-left: 50%;
+}
+
+.container.main {
+  margin-top:40px;
+}
+
+@media (max-width: 998px) {
+  .col-md-12.col-xs-6 {
+    margin-top:32px
+  }
+}
+
+.progress {
+  background:rgb(var(--bg-chat-dark));
+}
+
+.progress [role="progressbar"] {
+  background:rgb(var(--bg-chat-light));
 }
