@@ -699,6 +699,9 @@ textarea:hover,
   .col-md-12.col-xs-6 {
     margin-top:32px
   }
+  #pageSidebar {
+  padding-top:0px;
+}
 }
 
 .progress {
@@ -708,3 +711,8 @@ textarea:hover,
 .progress [role="progressbar"] {
   background:rgb(var(--bg-chat-light));
 }
+
+.col-md-9.col-xs-12 {
+  padding-bottom:0px;
+}
+
