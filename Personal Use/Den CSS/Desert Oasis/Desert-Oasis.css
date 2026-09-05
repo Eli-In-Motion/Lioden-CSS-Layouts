@@ -36,6 +36,12 @@ https://www.pexels.com/photo/natural-arch-under-stars-on-night-sky-in-joshua-tre
 Mikey White on Pexels
 Uploaded on April 13th, 2024 at 5:54 PM
 Free to use under Pexels Licensing
+
+  Background Image for Achievements, Showcase, and Beetle Book
+https://www.pexels.com/photo/old-book-with-handwriting-18491910/
+Adam Noor on Pexels
+Uploaded on September 24th, 2023 at 3:12 PM
+Free to use under Pexels Licensing
 */
 
 :root {
@@ -616,11 +622,12 @@ textarea:hover,
 .mound-grid img {
   visibility:hidden
 }
+
 .navbar-brand.visible-lg.visible-md img {
   content:url("https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Den%20CSS/Desert%20Oasis/Lioden-logo-full-3.PNG?raw=true");
 }
 
-.row.dynastycollection > div:nth-child(n-2) > a > div > img {
+.row.dynastycollection > div > a > div > img {
   visibility:hidden;
 }
 
@@ -628,6 +635,12 @@ textarea:hover,
   background-image:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Den%20CSS/Desert%20Oasis/pexels-mikey-white-922915629-21608490.jpg?raw=true) !important;
   background-size:cover !important;
   background-position:center !important;
+}
+
+.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist:nth-child(n+3) .left {
+  background-image:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Den%20CSS/Desert%20Oasis/pexels-adam-noor-3249667-18491910.jpg?raw=true) !important;
+  background-size:cover !important;
+  background-position:center top !important;
 }
 
 @media (max-width: 991px) {
