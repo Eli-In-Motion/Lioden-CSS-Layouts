@@ -719,3 +719,25 @@ textarea:hover,
   padding-bottom:0px;
 }
 
+.Bio {
+  display:grid;
+  height:200px;
+  gap:10px;
+}
+
+.Bio img {
+  width:100%;
+}
+
+.BioLeft {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.BioRightTop {
+  
+}
+
+.BioRightBottom {
+  
+}
