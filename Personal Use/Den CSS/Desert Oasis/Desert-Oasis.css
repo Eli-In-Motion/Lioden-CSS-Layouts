@@ -634,4 +634,18 @@ textarea:hover,
   #fraOrganizationBlock > .col-xs-6 {
     width: 33%;
   }
+  #fraOrganizationBlock > div:nth-child(n-3) > a > div {
+    height: 100px;
+    padding-top: 25px;
+  }
+
+  #fraCaveList {
+    display:inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #fraCaveList .cave-grid {
+    width:26.7vw;
+    min-width:158.1px;
+    max-width:207.6px;
+  }
 }
