@@ -700,8 +700,11 @@ textarea:hover,
     margin-top:32px
   }
   #pageSidebar {
-  padding-top:0px;
-}
+    padding-top:0px;
+  }
+  #pageContainer {
+    padding-top:0px;
+  }
 }
 
 .progress {
