@@ -815,6 +815,10 @@ form:nth-child(41) th {
   gap:30px;
 }
 
+.BioBottom:hover .BioScroll {
+  animation-play-state: paused;
+}
+
 .BioBottom .BioArt {
   height:70px;
   width:auto;
