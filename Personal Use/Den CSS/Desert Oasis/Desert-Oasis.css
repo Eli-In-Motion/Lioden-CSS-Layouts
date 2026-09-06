@@ -751,17 +751,34 @@ form:nth-child(40) th,
   background:rgba(var(--bg-header-light), var(--transparency-heavy));
   border:var(--border-size-small) solid rgb(var(--border-color));
   border-radius:var(--border-radius);
+  overflow-x:hidden;
+  overflow-y:scroll;
+}
+
+.BioLeft::-webkit-scrollbar {
+  display:none;
 }
 
 .BioRightTop {
   background:rgba(var(--bg-panel-back), var(--transparency-heavy));
   border:var(--border-size-small) solid rgb(var(--border-color));
   border-radius:var(--border-radius);
+  overflow-x:hidden;
+  overflow-y:scroll;
+}
+
+.BioRightTop::-webkit-scrollbar {
+  display:none;
 }
 
 .BioRightBottom {
   background:rgba(var(--bg-panel-right), var(--transparency-heavy));
   border:var(--border-size-small) solid rgb(var(--border-color));
-  border-radius:var(--border-radius);z
+  border-radius:var(--border-radius);
+  overflow-x:hidden;
+  overflow-y:scroll;
 }
 
+.BioRightBottom::-webkit-scrollbar {
+  display:none;
+}
