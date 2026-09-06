@@ -445,16 +445,23 @@ textarea:hover,
 }
 
 /*Edit Details*/
-#pageContainer > center > form:nth-child(41) > table {
+form:nth-child(41) table {
   border:var(--border-size-small) solid rgb(var(--border-color));
   border-radius:var(--border-radius) !important;
   overflow: hidden;
   border-collapse: separate;
 }
 
-#pageContainer > center > form:nth-child(41) > table > tbody > tr > th,
-#editdetailspanel > table > tbody > tr:nth-child(8) > td {
-  background:rgba(var(--bg-header-light), var(--transparency-heavy)) !important;
+form:nth-child(40) table {
+  border:var(--border-size-big) solid rgb(var(--border-color));
+  border-radius:var(--border-radius);
+  overflow: hidden;
+  border-collapse: separate;
+}
+
+form:nth-child(40) th,
+#editdetailspanel tr:nth-child(8) td {
+  background:rgba(var(--bg-header-light), var(--transparency-heavy));
 }
 
 #editdetailspanel .table {
