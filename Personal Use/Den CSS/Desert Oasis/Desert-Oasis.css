@@ -174,6 +174,7 @@ textarea:hover,
 .navbar.navbar-default a:hover {
   color:rgb(var(--accent-color-light)) !important;
   background:rgba(var(--accent-color-dark), var(--transparency-heavy)) !important;
+  border-radius:var(--border-radius);
 }
 
 .navbar-brand.visible-lg.visible-md:hover {
