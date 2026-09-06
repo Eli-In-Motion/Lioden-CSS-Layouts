@@ -584,6 +584,10 @@ form:nth-child(41) th {
 
 /*EVENT*/
 /*September*/
+#pageContainer > center > table:nth-child(3) {
+  display:none;
+}
+
 #pageContainer > center > table:nth-child(2) {
   border:var(--border-size-small) solid rgb(var(--border-color));
   border-radius:var(--border-radius);
@@ -735,7 +739,7 @@ form:nth-child(41) th {
 
 .Bio {
   display:grid;
-  height:300px;
+  height:400px;
   gap:10px;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -787,4 +791,40 @@ form:nth-child(41) th {
 
 .BioRightBottom::-webkit-scrollbar {
   display:none;
+}
+
+.BioBottom {
+  background:rgba(var(--bg-header-light), var(--transparency-heavy));
+  border:var(--border-size-small) solid rgb(var(--border-color));
+  border-radius:var(--border-radius);
+  width:60%;
+  height:70px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  overflow:hidden;
+  justify-self:center;
+}
+
+.BioScroll {
+  display: flex;
+  width: max-content;
+  animation-name: Scroll;
+  animation-duration:8s;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+  gap:30px;
+}
+
+.BioBottom .BioArt {
+  height:70px;
+  width:auto;
+}
+
+@keyframes Scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-51%); 
+  }
 }
