@@ -738,7 +738,9 @@ form:nth-child(40) th,
 }
 
 .Bio img {
-  width:100%;
+  display: block;
+  margin:auto;
+  width:80%;
 }
 
 .Bio br {
