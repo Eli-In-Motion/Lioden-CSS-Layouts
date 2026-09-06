@@ -721,23 +721,37 @@ textarea:hover,
 
 .Bio {
   display:grid;
-  height:200px;
+  height:300px;
   gap:10px;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .Bio img {
   width:100%;
 }
 
+.Bio br {
+  display:none !important;
+}
+
 .BioLeft {
   grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-end: 3;
+  background:rgba(var(--bg-header-light), var(--transparency-heavy));
+  border:var(--border-size-small) solid rgb(var(--border-color));
+  border-radius:var(--border-radius);
 }
 
 .BioRightTop {
-  
+  background:rgba(var(--bg-panel-back), var(--transparency-heavy));
+  border:var(--border-size-small) solid rgb(var(--border-color));
+  border-radius:var(--border-radius);
 }
 
 .BioRightBottom {
-  
+  background:rgba(var(--bg-panel-right), var(--transparency-heavy));
+  border:var(--border-size-small) solid rgb(var(--border-color));
+  border-radius:var(--border-radius);z
 }
+
