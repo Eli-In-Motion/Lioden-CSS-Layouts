@@ -517,6 +517,7 @@ form:nth-child(40) th,
 #chatMessagePinned {
   background:rgba(var(--bg-header-light), var(--transparency-light)) !important;
   color:rgb(var(--font-color-main)) !important;
+  border-bottom: var(--border-size-small) solid rgb(var(--border-color)) !important;
 }
 
 #chatMessageList::-webkit-scrollbar {
@@ -529,6 +530,8 @@ form:nth-child(40) th,
 
 #chatMessageList::-webkit-scrollbar-thumb {
   background:rgba(var(--bg-header-dark), var(--transparency-light));
+  border-top-right-radius:var(--border-radius);
+  border-bottom-right-radius:var(--border-radius);
 }
 
 .s-chat-message_timestamp {
