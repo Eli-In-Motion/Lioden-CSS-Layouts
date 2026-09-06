@@ -459,7 +459,11 @@ form:nth-child(40) table {
   border-collapse: separate;
 }
 
-form:nth-child(40) th,
+form:nth-child(41) th {
+  background:rgba(var(--bg-header-light), var(--transparency-heavy)) !important;
+}
+
+
 #editdetailspanel tr:nth-child(8) td {
   background:rgba(var(--bg-header-light), var(--transparency-heavy));
 }
