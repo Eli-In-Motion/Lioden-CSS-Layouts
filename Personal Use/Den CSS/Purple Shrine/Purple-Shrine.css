@@ -366,3 +366,119 @@ center > table:first-of-type {
 .mound-grid:hover {
   color:var(--accent-color-light)
 }
+
+/*Sparring*/
+#sparring {
+  color:var(--font-color-main);
+  border:var(--border-size-big) solid var(--border-color);
+  border-radius:var(--border-radius-big);
+  overflow:hidden;
+  border-collapse:separate;
+}
+
+#sparring th {
+  background:var(--bg-header-dark);
+  color:var(--font-color-main);
+}
+
+#sparring a {
+  color:var(--font-color-main);
+}
+
+#sparring a:hover {
+  color:var(--accent-color-light);
+}
+
+#sparring td:first-of-type {
+  background: var(--bg-panel-left);
+}
+
+#sparring .right_odd {
+  background:var(--bg-panel-right)
+}
+
+/*Sparring Dropdown*/
+#sparring select {
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+  border:1px solid var(--border-color);
+  border-radius:0px;
+}
+
+#sparring select:hover {
+  background:var(--bg-header-dark);
+  color:var(--accent-color-light);
+  border-color:var(--accent-color-light);
+}
+
+/*Sparring Spar Button*/
+#sparring input {
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+  text-shadow:none;
+  border:1px solid var(--border-color);
+  border-radius:0px;
+}
+
+#sparring input:hover {
+  background:var(--bg-header-dark);
+  color:var(--accent-color-light);
+  border-color:var(--accent-color-light);
+}
+
+/*Reclaim*/
+#reclaim {
+  color:var(--font-color-main);
+  border:var(--border-size-big) solid var(--border-color);
+  border-radius:var(--border-radius-big);
+  overflow:hidden;
+  border-collapse:separate;
+}
+
+#reclaim th {
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+}
+
+#reclaim .left.b.center {
+  background:var(--bg-panel-left);
+}
+
+#reclaim .right.center {
+  background:var(--bg-panel-right);
+}
+
+#reclaim .bottom {
+  display:none;
+}
+
+/*Reclaim Dropdown*/
+#reclaim select {
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+  border:1px solid var(--border-color);
+  border-radius:0px;
+}
+
+#reclaim select:hover {
+  background:var(--bg-header-dark);
+  color:var(--accent-color-light);
+  border-color:var(--accent-color-light);
+}
+
+/*Reclaim Buttons*/
+#reclaim input {
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+  text-shadow:none;
+  border:1px solid var(--border-color);
+  border-radius:0px;
+}
+
+#reclaim input:hover {
+  background:var(--bg-header-dark);
+  color:var(--accent-color-light);
+  border-color:var(--accent-color-light);
+}
+
+/#FAPA*/
