@@ -772,3 +772,81 @@ center > table:first-of-type {
   background:var(--bg-header-dark) !important;
   color:var(--accent-color-light);
 }
+
+#chatMessageContainer {
+  border:1px solid var(--border-color) !important;
+  border-radius:var(--border-radius-small) !important;
+}
+
+#chatMessageList::-webkit-scrollbar {
+  width:10px !important;
+}
+
+#chatMessageList::-webkit-scrollbar-track {
+  background:var(--bg-chat-light);
+}
+
+#chatMessageList::-webkit-scrollbar-thumb {
+  background:var(--bg-chat-dark);
+}
+
+/*Pinned Chat Message*/
+#chatMessagePinned {
+  background:var(--bg-header-dark) !important;
+  color:var(--font-color-main) !important;
+}
+
+#chatMessagePinned a {
+  color:var(--font-color-main);
+}
+
+#chatMessagePinned a:hover {
+  color:var(--accent-color-light);
+}
+
+/*Chat Messages*/
+.s-chat-message:nth-child(even) {
+  background:var(--bg-chat-dark);
+}
+
+.s-chat-message:nth-child(odd) {
+  background:var(--bg-chat-light);
+}
+
+.s-chat-message,
+.s-chat-message a {
+  color:var(--font-color-main);
+}
+
+.s-chat-message a:hover {
+  color:var(--accent-color-light);
+}
+
+.s-chat-message_timestamp {
+  color:var(--font-color-small);
+}
+
+/*ChatBox Bottom Row*/
+#txtChatContainer a,
+#lblCharacterCounter {
+  color:var(--font-color-main) !important;
+}
+
+#txtChatContainer a:hover {
+  color:var(--accent-color-light);
+}
+
+#txtChatInput,
+#btnChatSend {
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+  text-shadow:none;
+  border:1px solid var(--border-color) !important;
+}
+
+#txtChatInput:hover,
+#btnChatSend:hover {
+  background:var(--bg-header-dark) !important;
+  color:var(--accent-color-light) !important;
+  border-color:var(--accent-color-light) !important;
+}
