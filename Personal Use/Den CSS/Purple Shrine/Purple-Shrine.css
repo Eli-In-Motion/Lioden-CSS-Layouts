@@ -732,3 +732,43 @@ center > table:first-of-type {
 }
 
 /*Chat Box ;-;*/
+.col-md-12.col-xs-12 h3,
+.col-md-12.col-xs-12 a {
+  color:var(--font-color-main);
+}
+
+.col-md-12.col-xs-12 a:hover {
+  color:var(--accent-color-light);
+}
+
+#btnToggleSidebarChat {
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+  text-shadow:none;
+  border:1px solid var(--border-color);
+  border-radius:0px;
+}
+
+#label_currentChannel {
+  background:var(--bg-header-light) !important;
+  color:var(--font-color-main) !important;
+  text-shadow:none !important;
+  border:1px solid var(--border-color) !important;
+  border-radius:0px !important;
+}
+
+#fraChatChannelMenu {
+  background:var(--bg-header-light) !important;
+  border:1px solid var(--border-color) !important;
+}
+
+#fraChatChannelMenu button {
+  color:var(--font-color-main) !important;
+}
+
+.channelSwitcher.active,
+#label_currentChannel:hover,
+#fraChatChannelMenu button:hover {
+  background:var(--bg-header-dark) !important;
+  color:var(--accent-color-light);
+}
