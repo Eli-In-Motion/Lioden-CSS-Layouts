@@ -190,6 +190,7 @@ center > table:first-of-type {
 #pageContainer > h1:first-of-type {
   text-align:center;
   color:var(--accent-color-light);
+  margin:0px;
 }
 
 /*Comment Box*/
@@ -1063,4 +1064,25 @@ center > table:first-of-type {
 
 .navbar-brand.visible-lg.visible-md img {
   content:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Den%20CSS/Purple%20Shrine/Lioden%20Logo%20Purple%20Shrine.png?raw=true);
+}
+
+#pageContainer > h1:first-of-type {
+  font-size:0px;
+}
+
+#pageContainer > h1:first-of-type::after {
+  content: "Lair of the Undying";
+  font-size:50px;
+}
+
+.progress {
+  background: linear-gradient(0deg,rgba(160, 16, 186, 1) 0%, rgba(4, 14, 11, 1) 35%, rgba(4, 14, 11, 1) 65%, rgba(160, 16, 186, 1) 100%);
+}
+
+.progress-bar {
+  background:linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(160, 16, 186, 1) 25%, rgba(160, 16, 186, 1) 75%, rgba(0, 0, 0, 1) 100%);
+}
+
+.progress div {
+  color:var(--font-color-main);
 }
