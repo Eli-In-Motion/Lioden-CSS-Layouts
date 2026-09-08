@@ -73,6 +73,10 @@ body {
   color:var(--font-color-main) !important;
 }
 
+.topbar a:hover {
+  color:var(--accent-color-light) !important;
+}
+
 /*Navbar Big Screen*/
 .navbar.navbar-default {
   background:transparent;
@@ -80,12 +84,12 @@ body {
 
 .navbar.navbar-default a {
   color:var(--font-color-main) !important;
+  border-radius:var(--border-radius-small);
 }
 
 .navbar.navbar-default a:hover {
   background:var(--bg-header-light) !important;
-  color:var(--accent-color-light);
-  border-radius:var(--border-radius-small);
+  color:var(--accent-color-light) !important;
 }
 
 .navbar-brand.visible-lg.visible-md:hover {
@@ -225,6 +229,10 @@ center > table:first-of-type {
   background:var(--bg-chat-light);
 }
 
+.text-muted {
+  color:var(--font-color-small);
+}
+
 /*Comment Box X Button*/
 #commentBox .bad {
   background:var(--bg-header-dark);
@@ -255,10 +263,10 @@ center > table:first-of-type {
 /*Comment Box Post Button*/
 #postComment {
   background:var(--bg-header-light);
-  color:var(--border-color);
+  color:var(--font-color-main);
+  text-shadow:none;
   border:1px solid var(--border-color);
   border-radius:0px;
-  text-shadow:none;
 }
 
 #postComment:hover {
@@ -348,6 +356,11 @@ center > table:first-of-type {
 
 #player hr {
   display:none;
+}
+
+#player .right_odd,
+#player .right_odd.text-right {
+  background:var(--bg-header-light);
 }
 
 /*Caves*/
@@ -524,6 +537,55 @@ center > table:first-of-type {
 
 .col-sm-6.col-xs-12 .feature select:hover {
   background:var(--bg-header-dark);
+  color:var(--accent-color-light);
+  border-color:var(--accent-color-light);
+}
+
+/*Attack This Lion*/
+#attack {
+  color:var(--font-color-main);
+  border:var(--border-size-big) solid var(--border-color);
+  border-radius:var(--border-radius-big);
+  overflow:hidden;
+  border-collapse:separate;
+}
+
+#attack th,
+#attack .bottom,
+#attack center {
+  color:var(--font-color-main);
+}
+
+#attack a {
+  color:var(--font-color-main);
+}
+
+#attack a:hover {
+  color:var(--accent-color-light);
+}
+
+#attack th,
+#attack .bottom {
+  background:var(--bg-header-light);
+}
+
+#attack .right {
+  background:var(--bg-panel-back);
+}
+
+#attack select,
+#attack input,
+#attack option{
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+  text-shadow:none;
+  border:1px solid var(--border-color);
+  border-radius:0px;
+}
+
+#attack select:hover,
+#attack input:hover {
+  backgound:var(--bg-header-dark);
   color:var(--accent-color-light);
   border-color:var(--accent-color-light);
 }
@@ -754,6 +816,12 @@ center > table:first-of-type {
   text-shadow:none;
   border:1px solid var(--border-color);
   border-radius:0px;
+}
+
+#btnToggleSidebarChat:hover {
+  background:var(--bg-header-dark);
+  color:var(--accent-color-light);
+  border-color:var(--accent-color-light);
 }
 
 #label_currentChannel {
