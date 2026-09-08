@@ -1,5 +1,5 @@
 /*CSS by Eli in Motion #319237 please do not claim as your own or resell*/
-/*<link rel="stylesheet" type="text/css" href="https://eli-in-motion.github.io/Lioden-CSS-Layouts/Personal Use/Den CSS/Purple Shrine/Purple-Shrine.css" /> */
+/*<link rel="stylesheet" type="text/css" href="https://eli-in-motion.github.io/Lioden-CSS-Layouts/Personal Use/Den CSS/Desert Oasis/Desert-Oasis.css" /> */
 
 /*Credit Section
   Misc Debugging
@@ -1059,4 +1059,8 @@ center > table:first-of-type {
 
 .BioBottomRight a:hover {
   color:var(--accent-color-light);
+}
+
+.navbar-brand.visible-lg.visible-md img {
+  content:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Den%20CSS/Purple%20Shrine/Lioden%20Logo%20Purple%20Shrine.png?raw=true);
 }
