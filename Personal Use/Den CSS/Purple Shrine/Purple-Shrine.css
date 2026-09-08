@@ -481,4 +481,126 @@ center > table:first-of-type {
   border-color:var(--accent-color-light);
 }
 
-/#FAPA*/
+/*FAPA*/
+.col-sm-6.col-xs-12 .feature {
+  background:var(--bg-header-dark);
+  color:var(--font-color-main);
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius-small);
+}
+
+.col-sm-6.col-xs-12 .feature h3 {
+  color:var(--font-color-main);
+}
+
+/*FAPA Buttons*/
+.col-sm-6.col-xs-12 .feature input {
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+  text-shadow:none;
+  border:1px solid var(--border-color);
+  border-radius:0px;
+}
+
+.col-sm-6.col-xs-12 .feature input:hover {
+  background:var(--bg-header-dark);
+  color:var(--accent-color-light);
+  border-color:var(--accent-color-light);
+}
+
+/*FAPA Select*/
+.col-sm-6.col-xs-12 .feature select {
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+  border:1px solid var(--border-color);
+}
+
+.col-sm-6.col-xs-12 .feature select:hover {
+  background:var(--bg-header-dark);
+  color:var(--accent-color-light);
+  border-color:var(--accent-color-light);
+}
+
+/*Allies*/
+#allies {
+  color:var(--font-color-main);
+  border:none;
+  overflow:hidden;
+  border-collapse:separate;
+}
+
+#allies a {
+  color:var(--font-color-main);
+}
+
+#allies a:hover {
+  color:var(--accent-color-light)
+}
+
+#allies .top {
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+  border:var(--border-size-big) solid var(--border-color);
+  border-radius:var(--border-radius-big);
+}
+
+#allies .bottom {
+  background:transparent;
+  color:var(--font-color-main);
+}
+
+#allies .left {
+  display:none;
+}
+
+#allies .right {
+  color:var(--font-color-main;)
+}
+
+/*Clans*/
+#clans {
+  color:var(--font-color-main);
+  border:none;
+  overflow:hidden;
+  border-collapse:separate;
+}
+
+#clans a {
+  color:var(--font-color-main);
+}
+
+#clans a:hover {
+  color:var(--accent-color-light);
+}
+
+#clans .top {
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+  border:var(--border-size-big) solid var(--border-color);
+  border-radius:var(--border-radius-big);
+}
+
+#clans .left {
+  display:none;
+}
+
+/*Dynasty, Achievements, Showcase, and Beetle Book*/
+.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div {
+  background:var(--bg-header-dark);
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius-small);
+}
+
+.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div:hover {
+  border-color:var(--accent-color-light);
+}
+
+.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist h3 {
+  color:var(--font-color-main);
+}
+
+.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div:hover h3 {
+  color:var(--accent-color-light);
+}
+
+/*Logs*/
