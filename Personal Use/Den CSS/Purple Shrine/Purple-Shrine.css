@@ -592,6 +592,7 @@ center > table:first-of-type {
 }
 
 .col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div:hover {
+  background:var(--bg-header-light);
   border-color:var(--accent-color-light);
 }
 
@@ -604,3 +605,95 @@ center > table:first-of-type {
 }
 
 /*Logs*/
+.col.col-sm-4 .left {
+  background:var(--bg-header-dark);
+  color:var(--font-color-main);
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius-small);
+}
+
+.col.col-sm-4 .left:hover {
+  background:var(--bg-header-light);
+  color:var(--accent-color-light);
+  border-color:var(--accent-color-light);
+}
+
+.col.col-sm-4 .left h3 {
+  color:var(--font-color-main);
+}
+
+/*Edit Details*/
+#pageContainer > center > form:nth-child(40) table {
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius-small);
+  overflow:hidden;
+  border-collapse:separate;
+}
+
+#editdetailspanel a {
+  color:var(--font-color-main);
+}
+
+#editdetailspanel a:hover {
+  color:var(--accent-color-light);
+}
+
+#pageContainer > center > form:nth-child(40) table th {
+  background:var(--bg-header-light)
+}
+
+#pageContainer > center > form:nth-child(40) table th a {
+  color:var(--font-color-main);
+  border:none;
+}
+
+#pageContainer > center > form:nth-child(40) table th a:hover {
+  color:var(--accent-color-light);
+}
+
+#editdetailspanel .left.b {
+  background:var(--bg-panel-left);
+}
+
+#editdetailspanel .right {
+  background:var(--bg-panel-right);
+}
+
+#editdetailspanel .bottom {
+  background:var(--bg-header-light);
+}
+
+#editdetailspanel textarea,
+#editdetailspanel select, 
+#editdetailspanel input {
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+  text-shadow:none;
+  border:1px solid var(--border-color);
+  border-radius:0px;
+}
+
+#editdetailspanel textarea:hover,
+#editdetailspanel select:hover,
+#editdetailspanel input:hover {
+  background:var(--bg-header-dark);
+  color:var(--accent-color-light);
+  border-color:var(--accent-color-light);
+}
+
+/*Account Settings*/
+#pageContainer > center > form:nth-child(40) .left {
+  background:var(--bg-header-dark);
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius-small);
+}
+
+#pageContainer > center > form:nth-child(40) .left a {
+  color:var(--font-color-main);
+}
+
+#pageContainer > center > form:nth-child(40) .left a:hover {
+  color:var(--accent-color-light);
+}
+
+/*Side Panel*/
