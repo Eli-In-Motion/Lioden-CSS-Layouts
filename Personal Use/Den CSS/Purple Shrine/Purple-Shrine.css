@@ -16,32 +16,32 @@ Free for use under the Pixabay Content License
   --bg-main-image:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Den%20CSS/Purple%20Shrine/Purple%20Shrine%20Background%202.webp?raw=true);
   --bg-main-color:#040e0b;
 
-  --bg-header-dark:#2a1140;
-  --bg-header-light:#4b2068;
-  --bg-panel-back:#1a1430;
-  --bg-panel-left:#261b46;
-  --bg-panel-right:#3b2b63;
-  --bg-chat-light:#58456f;
-  --bg-chat-dark:#3b3153;
+  --bg-header-dark:#3c0961bd;
+  --bg-header-light:#5b2681bd;
+  --bg-panel-back:#4b2455bd;
+  --bg-panel-left:#44204ebd;
+  --bg-panel-right:#6e377dbd;
+  --bg-chat-light:#441860bd;
+  --bg-chat-dark:#2a0145bd;
 
-  --font-color-main:#f2eaff;
-  --font-color-small:#cfc2ea;
+  --font-color-main:#ece0ff;
+  --font-color-small:#ccbcec;
 
   --border-size-big:3px;
   --border-size-small:2px;
-  --border-color:#9a62ff;
+  --border-color:#a010ba;
   --border-radius-big:10px;
   --border-radius-small:5px;
 
-  --accent-color-light:#cfc2ea;
-  --accent-color-dark:#c1a9f4;
+  --accent-color-light:#ec9be4;
+  --accent-color-dark:#d17fc9;
   --transparency-light:.90;
   --transparency-heavy:.80;
 
-  --mod-bg-color:94, 107, 82;
-  --mod-font-color:244, 236, 228;
-  --ping-bg-color:;
-  --ping-font-color:;
+  --mod-bg-color:#040e0bbd;
+  --mod-font-color:#ece0ff;
+  --ping-bg-color:#040e0bbd;
+  --ping-font-color:#ece0ff;
 }
 
 /*Pagewide*/
@@ -193,7 +193,6 @@ center > table:first-of-type {
   border:1px solid var(--border-color) !important;
   color:var(--font-color-main);
   border-radius:var(--border-radius-small);
-  background:var(--bg-chat-light);
 }
 
 #commentBox a {
@@ -214,13 +213,21 @@ center > table:first-of-type {
 }
 
 #commentBox::-webkit-scrollbar-thumb {
-  background:var(--border-color);
+  background:var(--bg-chat-dark);
   border-radius:var(--border-radius-big);
+}
+
+.comment:nth-child(even) {
+  background:var(--bg-chat-dark) !important;
+}
+
+.comment:nth-child(odd) {
+  background:var(--bg-chat-light);
 }
 
 /*Comment Box X Button*/
 #commentBox .bad {
-  background:var(--bg-header-light);
+  background:var(--bg-header-dark);
   color:var(--border-color);
   border:1px solid var(--border-color);
   border-radius:0px;
@@ -794,6 +801,7 @@ center > table:first-of-type {
 #chatMessagePinned {
   background:var(--bg-header-dark) !important;
   color:var(--font-color-main) !important;
+  border-bottom: none;
 }
 
 #chatMessagePinned a {
