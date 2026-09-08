@@ -842,6 +842,7 @@ center > table:first-of-type {
   color:var(--font-color-main);
   text-shadow:none;
   border:1px solid var(--border-color) !important;
+  border-radius:0px;
 }
 
 #txtChatInput:hover,
@@ -849,4 +850,30 @@ center > table:first-of-type {
   background:var(--bg-header-dark) !important;
   color:var(--accent-color-light) !important;
   border-color:var(--accent-color-light) !important;
+}
+
+/*Bug Box Button*/
+.btn.btn-default.button {
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+  text-shadow:none;
+  border:1px solid var(--border-color);
+  border-radius:0px;
+}
+
+.btn.btn-default.button:hover {
+  background:var(--bg-header-dark) !important;
+  color:var(--accent-color-light) !important;
+  border-color:var(--accent-color-light) !important;
+}
+
+/*Lioden License and Links*/
+.col-xs-10,
+.col-xs-10 a{
+  color:var(--font-color-main);
+  border:none !important;
+}
+
+.col-xs-10 a:hover {
+  color:var(--accent-color-light);
 }
