@@ -835,6 +835,9 @@ center > table:first-of-type {
 }
 
 /*ChatBox Bottom Row*/
+#txtChatContainer {
+  margin-right:2px;
+}
 #txtChatContainer a,
 #lblCharacterCounter {
   color:var(--font-color-main) !important;
