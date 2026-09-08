@@ -1,0 +1,958 @@
+/*CSS by Eli in Motion #319237 please do not claim as your own or resell*/
+/*<link rel="stylesheet" type="text/css" href="https://eli-in-motion.github.io/Lioden-CSS-Layouts/Personal Use/Den CSS/Desert Oasis/Desert-Oasis.css" /> */
+
+/*Credit Section
+  Misc Debugging
+Shout out to my brother for helping me fight through the confusion as I learn CSS
+  
+  Background Image
+https://pixabay.com/videos/cave-flames-fantasy-rocks-pillars-171066/
+davidfoxx on Pixabay
+Published date July 12, 2023
+Free for use under the Pixabay Content License
+*/
+
+:root {
+  --bg-main-image:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Den%20CSS/Purple%20Shrine/Purple%20Shrine%20Background%202.webp?raw=true);
+  --bg-main-color:#040e0b;
+
+  --bg-header-dark:#3c0961bd;
+  --bg-header-light:#5b2681bd;
+  --bg-panel-back:#4b2455bd;
+  --bg-panel-left:#44204ebd;
+  --bg-panel-right:#6e377dbd;
+  --bg-chat-light:#441860bd;
+  --bg-chat-dark:#2a0145bd;
+
+  --font-color-main:#ece0ff;
+  --font-color-small:#ccbcec;
+
+  --border-size-big:3px;
+  --border-size-small:2px;
+  --border-color:#a010ba;
+  --border-radius-big:10px;
+  --border-radius-small:5px;
+
+  --accent-color-light:#ec9be4;
+  --accent-color-dark:#d17fc9;
+  --transparency-light:.90;
+  --transparency-heavy:.80;
+
+  --mod-bg-color:#040e0bbd;
+  --mod-font-color:#ece0ff;
+  --ping-bg-color:#040e0bbd;
+  --ping-font-color:#ece0ff;
+}
+
+/*Pagewide*/
+body {
+  background-color:rgb(var(--bg-main-color));
+  background-image:var(--bg-main-image);
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+  color:var(--font-color-main);
+}
+
+.container.main {
+  background:transparent;
+  box-shadow:none;
+}
+
+#pageContainer {
+  background:transparent;
+}
+
+/*Top Bar*/
+.topbar {
+  background:transparent;
+  color:var(--font-color-main)
+}
+
+.topbar a {
+  color:var(--font-color-main) !important;
+}
+
+.topbar a:hover {
+  color:var(--accent-color-light) !important;
+}
+
+/*Navbar Big Screen*/
+.navbar.navbar-default {
+  background:transparent;
+}
+
+.navbar.navbar-default a {
+  color:var(--font-color-main) !important;
+  border-radius:var(--border-radius-small);
+}
+
+.navbar.navbar-default a:hover {
+  background:var(--bg-header-light) !important;
+  color:var(--accent-color-light) !important;
+}
+
+.navbar-brand.visible-lg.visible-md:hover {
+  background:none !important;
+}
+
+/*Navbar Small Screen*/
+#bs-example-navbar-collapse-1 {
+  border:none;
+  box-shadow:none;
+}
+
+/*Navbar Button*/
+.navbar-toggle{
+  background:var(--bg-header-light);
+  border: 1px solid var(--border-color) !important;
+  border-radius:0px;
+}
+
+.navbar-toggle span {
+  background:var(--border-color) !important;
+}
+
+.navbar-toggle:hover,
+.navbar-toggle:focus {
+  background:var(--bg-header-dark) !important;
+  border-color:var(--accent-color-light) !important;
+}
+
+.navbar-toggle:hover span,
+.navbar-toggle:focus span {
+  background:var(--accent-color-light) !important;
+}
+
+/*Breadcrumb*/
+.breadcrumb {
+  background:transparent;
+}
+
+.breadcrumb-item.active {
+  color:var(--font-color-main);
+}
+
+.breadcrumb a {
+  color:var(--font-color-main);
+}
+
+.breadcrumb a:hover {
+  color:var(--accent-color-light);
+}
+
+/*Bookmark Button*/
+#pageContainer > .floatright:first-of-type {
+  display:none;
+}
+
+/*Credit*/
+.breadcrumb::after {
+  content:"CSS by Eli in Motion #319237";
+  float:right;
+}
+
+/*Green Alert*/
+.alert.alert-success {
+  background:var(--bg-panel-right);
+  color:var(--font-color-main);
+}
+
+.alert.alert-success a {
+  color:var(--font-color-main);
+}
+
+.alert.alert-success a:hover {
+  color:var(--accent-color-light);
+}
+
+/*Red Alerts*/
+.alert.alert-danger {
+  background:var(--bg-panel-back);
+  color:var(--font-color-main);
+}
+
+.alert.alert-danger a {
+  color:var(--font-color-main);
+}
+
+.alert.alert-danger a:hover {
+  color:var(--accent-color-light);
+}
+
+/*Event Pop-Ups*/
+/*September*/
+center > table:first-of-type {
+  display:none
+}
+
+/*____'s Den*/
+#pageContainer > h1:first-of-type {
+  text-align:center;
+  color:var(--accent-color-light);
+}
+
+/*Comment Box*/
+#commentBox {
+  border:1px solid var(--border-color) !important;
+  color:var(--font-color-main);
+  border-radius:var(--border-radius-small);
+}
+
+#commentBox a {
+  color:var(--font-color-main);
+}
+
+#commentBox a:hover {
+  color:var(--accent-color-light);
+}
+
+#commentBox::-webkit-scrollbar {
+  width:15px;
+}
+
+#commentBox::-webkit-scrollbar-track {
+  background:var(--bg-chat-light);
+  border-radius:var(--border-radius-big);
+}
+
+#commentBox::-webkit-scrollbar-thumb {
+  background:var(--bg-chat-dark);
+  border-radius:var(--border-radius-big);
+}
+
+.comment:nth-child(even) {
+  background:var(--bg-chat-dark) !important;
+}
+
+.comment:nth-child(odd) {
+  background:var(--bg-chat-light);
+}
+
+.text-muted {
+  color:var(--font-color-small);
+}
+
+/*Comment Box X Button*/
+#commentBox .bad {
+  background:var(--bg-header-dark);
+  color:var(--border-color);
+  border:1px solid var(--border-color);
+  border-radius:0px;
+  text-shadow:none;
+}
+
+#commentBox .bad:hover {
+  background:var(--bg-header-dark);
+  color:var(--accent-color-light);
+  border-color:var(--accent-color-light);
+}
+
+/*Comment Box Text Area*/
+#comment {
+  background:var(--bg-chat-light);
+  color:var(--font-color-main);
+  border:1px solid var(--border-color);
+  border-radius:0px;
+}
+
+#comment::placeholder {
+  color:var(--font-color-small);
+}
+
+/*Comment Box Post Button*/
+#postComment {
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+  text-shadow:none;
+  border:1px solid var(--border-color);
+  border-radius:0px;
+}
+
+#postComment:hover {
+  background:var(--bg-header-dark);
+  color:var(--accent-color-light);
+  border-color:var(--accent-color-light);
+}
+
+#about {
+  border:var(--border-size-big) solid var(--border-color);
+  border-radius:var(--border-radius-big);
+  overflow:hidden;
+  border-collapse:separate;
+}
+
+#about .top,
+#about .bottom {
+  background:var(--bg-header-light);
+}
+
+#about .top a,
+#about .bottom a {
+  color:var(--font-color-main);
+  text-decoration:none;
+}
+
+#about .top a:hover,
+#about .bottom a:hover {
+  color:var(--accent-color-light);
+}
+
+#about td .left {
+  background:var(--bg-panel-left);
+  color:var(--font-color-main);
+}
+
+#about td .right {
+  background:var(--bg-panel-right);
+  color:var(--font-color-main);
+}
+
+#about td .right a {
+  color:var(--font-color-main);
+}
+
+#about td .right a:hover {
+  color:var(--accent-color-light);
+}
+
+/*Player About Area*/
+#player {
+  border:var(--border-size-big) solid var(--border-color);
+  border-radius:var(--border-radius-big);
+  overflow:hidden;
+  border-collapse:separate;
+  color:var(--font-color-main)
+}
+
+#player a {
+  color:var(--font-color-main);
+}
+
+#player a:hover {
+  color:var(--accent-color-light);
+}
+
+#player .text-muted {
+  color:var(--font-color-small);
+}
+
+.center.xlarge {
+  margin-top:15px;
+}
+
+#player .top {
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+}
+
+#player td.left {
+  background:var(--bg-panel-left);
+}
+
+#player td .right {
+  background:var(--bg-panel-right);
+}
+
+#player hr {
+  display:none;
+}
+
+#player .right_odd,
+#player .right_odd.text-right {
+  background:var(--bg-header-light);
+}
+
+/*Caves*/
+.cave-grid {
+  background:var(--bg-panel-back);
+  color:var(--font-color-main);
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius-small);
+}
+
+.cave-grid:hover {
+  color:var(--accent-color-light);
+}
+
+/*Beetle Mounds*/
+.mound-grid {
+  background:var(--bg-panel-back);
+  color:var(--font-color-main);
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius-small);
+}
+
+.mound-grid:hover {
+  color:var(--accent-color-light)
+}
+
+/*Sparring*/
+#sparring {
+  color:var(--font-color-main);
+  border:var(--border-size-big) solid var(--border-color);
+  border-radius:var(--border-radius-big);
+  overflow:hidden;
+  border-collapse:separate;
+}
+
+#sparring th {
+  background:var(--bg-header-dark);
+  color:var(--font-color-main);
+}
+
+#sparring a {
+  color:var(--font-color-main);
+}
+
+#sparring a:hover {
+  color:var(--accent-color-light);
+}
+
+#sparring td:first-of-type {
+  background: var(--bg-panel-left);
+}
+
+#sparring .right_odd {
+  background:var(--bg-panel-right)
+}
+
+/*Sparring Dropdown*/
+#sparring select {
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+  border:1px solid var(--border-color);
+  border-radius:0px;
+}
+
+#sparring select:hover {
+  background:var(--bg-header-dark);
+  color:var(--accent-color-light);
+  border-color:var(--accent-color-light);
+}
+
+/*Sparring Spar Button*/
+#sparring input {
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+  text-shadow:none;
+  border:1px solid var(--border-color);
+  border-radius:0px;
+}
+
+#sparring input:hover {
+  background:var(--bg-header-dark);
+  color:var(--accent-color-light);
+  border-color:var(--accent-color-light);
+}
+
+/*Reclaim*/
+#reclaim {
+  color:var(--font-color-main);
+  border:var(--border-size-big) solid var(--border-color);
+  border-radius:var(--border-radius-big);
+  overflow:hidden;
+  border-collapse:separate;
+}
+
+#reclaim th {
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+}
+
+#reclaim .left.b.center {
+  background:var(--bg-panel-left);
+}
+
+#reclaim .right.center {
+  background:var(--bg-panel-right);
+}
+
+#reclaim .bottom {
+  display:none;
+}
+
+/*Reclaim Dropdown*/
+#reclaim select {
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+  border:1px solid var(--border-color);
+  border-radius:0px;
+}
+
+#reclaim select:hover {
+  background:var(--bg-header-dark);
+  color:var(--accent-color-light);
+  border-color:var(--accent-color-light);
+}
+
+/*Reclaim Buttons*/
+#reclaim input {
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+  text-shadow:none;
+  border:1px solid var(--border-color);
+  border-radius:0px;
+}
+
+#reclaim input:hover {
+  background:var(--bg-header-dark);
+  color:var(--accent-color-light);
+  border-color:var(--accent-color-light);
+}
+
+/*FAPA*/
+.col-sm-6.col-xs-12 .feature {
+  background:var(--bg-header-dark);
+  color:var(--font-color-main);
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius-small);
+}
+
+.col-sm-6.col-xs-12 .feature h3 {
+  color:var(--font-color-main);
+}
+
+/*FAPA Buttons*/
+.col-sm-6.col-xs-12 .feature input {
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+  text-shadow:none;
+  border:1px solid var(--border-color);
+  border-radius:0px;
+}
+
+.col-sm-6.col-xs-12 .feature input:hover {
+  background:var(--bg-header-dark);
+  color:var(--accent-color-light);
+  border-color:var(--accent-color-light);
+}
+
+/*FAPA Select*/
+.col-sm-6.col-xs-12 .feature select {
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+  border:1px solid var(--border-color);
+}
+
+.col-sm-6.col-xs-12 .feature select:hover {
+  background:var(--bg-header-dark);
+  color:var(--accent-color-light);
+  border-color:var(--accent-color-light);
+}
+
+/*Attack This Lion*/
+#attack {
+  color:var(--font-color-main);
+  border:var(--border-size-big) solid var(--border-color);
+  border-radius:var(--border-radius-big);
+  overflow:hidden;
+  border-collapse:separate;
+}
+
+#attack th,
+#attack .bottom,
+#attack center {
+  color:var(--font-color-main);
+}
+
+#attack a {
+  color:var(--font-color-main);
+}
+
+#attack a:hover {
+  color:var(--accent-color-light);
+}
+
+#attack th,
+#attack .bottom {
+  background:var(--bg-header-light);
+}
+
+#attack .right {
+  background:var(--bg-panel-back);
+}
+
+#attack select,
+#attack input,
+#attack option{
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+  text-shadow:none;
+  border:1px solid var(--border-color);
+  border-radius:0px;
+}
+
+#attack select:hover,
+#attack input:hover {
+  backgound:var(--bg-header-dark);
+  color:var(--accent-color-light);
+  border-color:var(--accent-color-light);
+}
+
+/*Allies*/
+#allies {
+  color:var(--font-color-main);
+  border:none;
+  overflow:hidden;
+  border-collapse:separate;
+}
+
+#allies a {
+  color:var(--font-color-main);
+}
+
+#allies a:hover {
+  color:var(--accent-color-light)
+}
+
+#allies .top {
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+  border:var(--border-size-big) solid var(--border-color);
+  border-radius:var(--border-radius-big);
+}
+
+#allies .bottom {
+  background:transparent;
+  color:var(--font-color-main);
+}
+
+#allies .left {
+  display:none;
+}
+
+#allies .right {
+  color:var(--font-color-main;)
+}
+
+/*Clans*/
+#clans {
+  color:var(--font-color-main);
+  border:none;
+  overflow:hidden;
+  border-collapse:separate;
+}
+
+#clans a {
+  color:var(--font-color-main);
+}
+
+#clans a:hover {
+  color:var(--accent-color-light);
+}
+
+#clans .top {
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+  border:var(--border-size-big) solid var(--border-color);
+  border-radius:var(--border-radius-big);
+}
+
+#clans .left {
+  display:none;
+}
+
+/*Dynasty, Achievements, Showcase, and Beetle Book*/
+.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div {
+  background:var(--bg-header-dark);
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius-small);
+}
+
+.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div:hover {
+  background:var(--bg-header-light);
+  border-color:var(--accent-color-light);
+}
+
+.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist h3 {
+  color:var(--font-color-main);
+}
+
+.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div:hover h3 {
+  color:var(--accent-color-light);
+}
+
+/*Logs*/
+.col.col-sm-4 .left {
+  background:var(--bg-header-dark);
+  color:var(--font-color-main);
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius-small);
+}
+
+.col.col-sm-4 .left:hover {
+  background:var(--bg-header-light);
+  color:var(--accent-color-light);
+  border-color:var(--accent-color-light);
+}
+
+.col.col-sm-4 .left h3 {
+  color:var(--font-color-main);
+}
+
+/*Edit Details*/
+#pageContainer > center > form:nth-child(40) table {
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius-small);
+  overflow:hidden;
+  border-collapse:separate;
+}
+
+#editdetailspanel a {
+  color:var(--font-color-main);
+}
+
+#editdetailspanel a:hover {
+  color:var(--accent-color-light);
+}
+
+#pageContainer > center > form:nth-child(40) table th {
+  background:var(--bg-header-light)
+}
+
+#pageContainer > center > form:nth-child(40) table th a {
+  color:var(--font-color-main);
+  border:none;
+}
+
+#pageContainer > center > form:nth-child(40) table th a:hover {
+  color:var(--accent-color-light);
+}
+
+#editdetailspanel .left.b {
+  background:var(--bg-panel-left);
+}
+
+#editdetailspanel .right {
+  background:var(--bg-panel-right);
+}
+
+#editdetailspanel .bottom {
+  background:var(--bg-header-light);
+}
+
+#editdetailspanel textarea,
+#editdetailspanel select, 
+#editdetailspanel input {
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+  text-shadow:none;
+  border:1px solid var(--border-color);
+  border-radius:0px;
+}
+
+#editdetailspanel textarea:hover,
+#editdetailspanel select:hover,
+#editdetailspanel input:hover {
+  background:var(--bg-header-dark);
+  color:var(--accent-color-light);
+  border-color:var(--accent-color-light);
+}
+
+/*Account Settings*/
+#pageContainer > center > form:nth-child(40) .left {
+  background:var(--bg-header-dark);
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius-small);
+}
+
+#pageContainer > center > form:nth-child(40) .left a {
+  color:var(--font-color-main);
+}
+
+#pageContainer > center > form:nth-child(40) .left a:hover {
+  color:var(--accent-color-light);
+}
+
+/*Side Panel*/
+.panel.panel-default,
+.panel {
+  background:var(--bg-header-dark);
+  color:var(--font-color-main);
+  border:var(--border-size-small) solid var(--border-color) !important;
+  box-shadow:none !important;
+}
+
+.panel.panel-default a,
+.panel a {
+  color:var(--font-color-main);
+}
+
+.panel.panel-default a:hover,
+.panel a:hover {
+  color:var(--accent-color-light);
+}
+
+.col-md-12.col-xs-6 h3,
+.col-md-12.col-xs-5 h3 {
+  color:var(--font-color-main);
+  text-shadow:none !important;
+}
+
+.col-md-12.col-xs-6 h3:hover,
+.col-md-12.col-xs-5 h3:hover {
+  color:var(--accent-color-light);
+}
+
+/*This Random Line I don't Like*/
+.clear.visible-xs.visible-sm {
+  display:none !important;
+}
+
+/*Chat Box ;-;*/
+.col-md-12.col-xs-12 h3,
+.col-md-12.col-xs-12 a {
+  color:var(--font-color-main);
+}
+
+.col-md-12.col-xs-12 a:hover {
+  color:var(--accent-color-light);
+}
+
+#btnToggleSidebarChat {
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+  text-shadow:none;
+  border:1px solid var(--border-color);
+  border-radius:0px;
+}
+
+#btnToggleSidebarChat:hover {
+  background:var(--bg-header-dark);
+  color:var(--accent-color-light);
+  border-color:var(--accent-color-light);
+}
+
+#label_currentChannel {
+  background:var(--bg-header-light) !important;
+  color:var(--font-color-main) !important;
+  text-shadow:none !important;
+  border:1px solid var(--border-color) !important;
+  border-radius:0px !important;
+}
+
+#fraChatChannelMenu {
+  background:var(--bg-header-light) !important;
+  border:1px solid var(--border-color) !important;
+}
+
+#fraChatChannelMenu button {
+  color:var(--font-color-main) !important;
+}
+
+.channelSwitcher.active,
+#label_currentChannel:hover,
+#fraChatChannelMenu button:hover {
+  background:var(--bg-header-dark) !important;
+  color:var(--accent-color-light);
+}
+
+#chatMessageContainer {
+  border:1px solid var(--border-color) !important;
+  border-radius:var(--border-radius-small) !important;
+}
+
+#chatMessageList::-webkit-scrollbar {
+  width:10px !important;
+}
+
+#chatMessageList::-webkit-scrollbar-track {
+  background:var(--bg-chat-light);
+}
+
+#chatMessageList::-webkit-scrollbar-thumb {
+  background:var(--bg-chat-dark);
+}
+
+/*Pinned Chat Message*/
+#chatMessagePinned {
+  background:var(--bg-header-dark) !important;
+  color:var(--font-color-main) !important;
+  border-bottom: none;
+}
+
+#chatMessagePinned a {
+  color:var(--font-color-main);
+}
+
+#chatMessagePinned a:hover {
+  color:var(--accent-color-light);
+}
+
+/*Chat Messages*/
+.s-chat-message:nth-child(even) {
+  background:var(--bg-chat-dark);
+}
+
+.s-chat-message:nth-child(odd) {
+  background:var(--bg-chat-light);
+}
+
+.s-chat-message,
+.s-chat-message a {
+  color:var(--font-color-main);
+}
+
+.s-chat-message a:hover {
+  color:var(--accent-color-light);
+}
+
+.s-chat-message_timestamp {
+  color:var(--font-color-small);
+}
+
+/*ChatBox Bottom Row*/
+#txtChatContainer {
+  margin-right:2px;
+}
+#txtChatContainer a,
+#lblCharacterCounter {
+  color:var(--font-color-main) !important;
+}
+
+#txtChatContainer a:hover {
+  color:var(--accent-color-light);
+}
+
+#txtChatInput,
+#btnChatSend {
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+  text-shadow:none;
+  border:1px solid var(--border-color) !important;
+  border-radius:0px;
+}
+
+#txtChatInput:hover,
+#btnChatSend:hover {
+  background:var(--bg-header-dark) !important;
+  color:var(--accent-color-light) !important;
+  border-color:var(--accent-color-light) !important;
+}
+
+/*Bug Box Button*/
+.btn.btn-default.button {
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+  text-shadow:none;
+  border:1px solid var(--border-color);
+  border-radius:0px;
+}
+
+.btn.btn-default.button:hover {
+  background:var(--bg-header-dark) !important;
+  color:var(--accent-color-light) !important;
+  border-color:var(--accent-color-light) !important;
+}
+
+/*Lioden License and Links*/
+.col-xs-10,
+.col-xs-10 a{
+  color:var(--font-color-main);
+  border:none !important;
+}
+
+.col-xs-10 a:hover {
+  color:var(--accent-color-light);
+}
