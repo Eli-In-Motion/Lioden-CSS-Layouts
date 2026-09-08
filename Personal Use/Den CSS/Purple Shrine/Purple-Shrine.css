@@ -697,3 +697,38 @@ center > table:first-of-type {
 }
 
 /*Side Panel*/
+.panel.panel-default,
+.panel {
+  background:var(--bg-header-dark);
+  color:var(--font-color-main);
+  border:var(--border-size-small) solid var(--border-color) !important;
+  box-shadow:none !important;
+}
+
+.panel.panel-default a,
+.panel a {
+  color:var(--font-color-main);
+}
+
+.panel.panel-default a:hover,
+.panel a:hover {
+  color:var(--accent-color-light);
+}
+
+.col-md-12.col-xs-6 h3,
+.col-md-12.col-xs-5 h3 {
+  color:var(--font-color-main);
+  text-shadow:none !important;
+}
+
+.col-md-12.col-xs-6 h3:hover,
+.col-md-12.col-xs-5 h3:hover {
+  color:var(--accent-color-light);
+}
+
+/*This Random Line I don't Like*/
+.clear.visible-xs.visible-sm {
+  display:none !important;
+}
+
+/*Chat Box ;-;*/
