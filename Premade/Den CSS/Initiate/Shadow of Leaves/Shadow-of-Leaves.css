@@ -69,6 +69,7 @@ body {
 .topbar {
   background:transparent;
   color:var(--font-color-main);
+  font-size:15px;
 }
 
 .topbar a {
@@ -548,6 +549,10 @@ textarea:hover,
 
 .col-md-12.col-xs-12 h3 {
   color:var(--font-color-main);
+}
+
+.col-md-12.col-xs-12 {
+  margin-top:20px;
 }
 
 #fra_chatContainer {
