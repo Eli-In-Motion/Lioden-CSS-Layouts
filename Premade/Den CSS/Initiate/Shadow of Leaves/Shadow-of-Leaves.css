@@ -485,13 +485,94 @@ textarea:hover,
   color:var(--font-color-main);
 }
 
+#fra_chatContainer {
+  margin-left:8px;
+  margin-right:8px;
+}
+
 #chatMessageContainer {
-  border:none !important;
-  box-shadow: 0px 0px 8px 2px #d8d3c8 !important;
+  border:none;
+  box-shadow: 0px 0px 6px 1px #d8d3c8;
+  margin-top:2px;
+  color:var(--font-color-main) !important
+}
+
+#chatMessageContainer a {
+  color:var(--font-color-main) !important;
+}
+
+#chatMessageContainer a:hover {
+  color:var(--accent-color-dark) !important;
 }
 
 #label_currentChannel {
   background:var(--bg-header-dark) !important;
+  color:var(--font-color-main);
+  border:none !important;
+  box-shadow: 0px 0px 5px 1px var(--border-color);
+  margin-top:5px;
+}
+#label_currentChannel:hover {
+  color:var(--accent-color-dark);
+  box-shadow: 0px 0px 5px 1px var(--accent-color-dark);
 }
 
-#fraChatChannelMenu
+#fraChatChannelMenu {
+  background:var(--bg-header-dark) !important;
+  border:1px solid var(--border-color);
+}
+
+.channelSwitcher {
+  color:var(--font-color-main) !important;
+}
+
+.channelSwitcher.active,
+.channelSwitcher:hover {
+  background:var(--bg-header-light) !important;
+  color:var(--accent-color-dark) !important;;
+}
+
+#chatMessagePinned {
+  background:var(--bg-header-dark) !important;
+  color:var(--font-color-main) !important;
+  border:none !important;
+}
+
+#chatMessageList::-webkit-scrollbar {
+  width:10px;
+}
+
+#chatMessageList::-webkit-scrollbar-track {
+  background:var(--bg-chat-light);
+}
+
+
+#chatMessageList::-webkit-scrollbar-thumb {
+  background:var(--bg-chat-dark);
+  box-shadow: 0px 0px 10px 1px #d8d3c8;
+  
+}
+
+.s-chat-message:nth-child(even) {
+  background:var(--bg-chat-dark);
+}
+
+.s-chat-message:nth-child(odd) {
+  background:var(--bg-chat-light);
+}
+
+#txtChatContainer a {
+  color:var(--font-color-main);
+}
+
+.emoteList.active {
+  background:var(--bg-header-dark);
+  border:1px solid var(--border-color);
+  border-radius:var(--border-radius-small) !important
+}
+
+.col-xs-10,
+.col-xs-10 a {
+  color:var(--font-color-main) !important;
+  border:none !important;
+}
