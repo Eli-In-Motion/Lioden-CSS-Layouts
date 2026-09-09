@@ -197,11 +197,27 @@ body {
   border-radius:var(--border-radius-small);
 }
 
+.alert.alert-success a {
+  color:var(--font-color-main);
+}
+
+.alert.alert-success a:hover {
+  color:var(--accent-color-dark);
+}
+
 .alert.alert-danger {
   background:var(--bg-header-dark);
   color:var(--font-color-main);
   border:var(--border-size-small) solid var(--border-color);
   border-radius:var(--border-radius-small);
+}
+
+.alert.alert-danger a {
+  color:var(--font-color-main);
+}
+
+.alert.alert-danger a:hover {
+  color:var(--accent-color-dark);
 }
 
 #commentBox {
