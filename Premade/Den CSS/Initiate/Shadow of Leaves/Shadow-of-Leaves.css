@@ -69,7 +69,6 @@ body {
 .topbar {
   background:transparent;
   color:var(--font-color-main);
-  font-size:15px;
 }
 
 .topbar a {
@@ -101,6 +100,10 @@ body {
 .navbar a:hover {
   background:var(--bg-header-light) !important;
   color:var(--accent-color-dark) !important;
+}
+
+.navbar-brand.visible-lg.visible-md img {
+  content:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Initiate/Shadow%20of%20Leaves/logo-full-2.png?raw=true);
 }
 
 .navbar-brand.visible-lg.visible-md:hover {
@@ -549,10 +552,6 @@ textarea:hover,
 
 .col-md-12.col-xs-12 h3 {
   color:var(--font-color-main);
-}
-
-.col-md-12.col-xs-12 {
-  margin-top:20px;
 }
 
 #fra_chatContainer {
