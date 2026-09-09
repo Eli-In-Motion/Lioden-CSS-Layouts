@@ -13,28 +13,28 @@ Free for use under the Pexels Content License
 */
 
 :root {
-  --bg-main-image:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Den%20CSS/Purple%20Shrine/Purple%20Shrine%20Background%202.webp?raw=true);
-  --bg-main-color:#040e0b;
+  --bg-main-image:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Initiate/Shadow%20of%20Leaves/pexels-plato-terentev-3804555-9963165.jpg?raw=true);
+  --bg-main-color:#0a0a0a;
 
-  --bg-header-dark:#3c0961bd;
-  --bg-header-light:#5b2681bd;
-  --bg-panel-back:#4b2455bd;
-  --bg-panel-left:#44204ebd;
-  --bg-panel-right:#6e377dbd;
-  --bg-chat-light:#441860bd;
-  --bg-chat-dark:#2a0145bd;
+  --bg-header-dark:#161616c2;
+  --bg-header-light:#2b2a28c2;
+  --bg-panel-back:#202020c2;
+  --bg-panel-left:#2b2a28c2;
+  --bg-panel-right:#393732c2;
+  --bg-chat-light:#514e46c2;
+  --bg-chat-dark:#2b2a28c2;
 
-  --font-color-main:#ece0ff;
-  --font-color-small:#ccbcec;
+  --font-color-main:#d8d3c8;
+  --font-color-small:#e0e0e0;
 
   --border-size-big:3px;
   --border-size-small:2px;
-  --border-color:#a010ba;
+  --border-color:#6a665d;
   --border-radius-big:10px;
   --border-radius-small:5px;
 
-  --accent-color-light:#ec9be4;
-  --accent-color-dark:#d17fc9;
+  --accent-color-light:#b5b28f;
+  --accent-color-dark:#9a9b7a;
   --transparency-light:.90;
   --transparency-heavy:.80;
 
@@ -51,5 +51,193 @@ body {
   background-size:cover;
   background-position:center;
   background-attachment:fixed;
+}
+
+.container.main {
+  background:var(--bg-header-light);
   color:var(--font-color-main);
+  box-shadow: 0px 0px 15px 3px #d8d3c8;
+  border-radius:var(--border-radius-big) !important;
+}
+
+#pageContainer {
+  background:transparent;
+}
+
+.topbar {
+  background:transparent;
+  color:var(--font-color-main);
+}
+
+.topbar a {
+  color:var(--font-color-main) !important;
+}
+
+.topbar a:hover {
+  color:var(--accent-color-dark) !important;
+}
+
+.navbar {
+  background:var(--bg-header-dark);
+  color:var(--font-color-main);
+  box-shadow: 0px 0px 15px 3px #d8d3c8;
+  border-radius:var(--border-radius-big) !important;
+}
+
+#bs-example-navbar-collapse-1 {
+  border-top:1px solid #d8d3c8 ;
+  box-shadow:none;
+}
+
+
+.navbar a {
+  color:var(--font-color-main) !important;
+  
+}
+
+.navbar a:hover {
+  background:var(--bg-header-light) !important;
+  color:var(--accent-color-dark) !important;
+}
+
+.navbar-toggle {
+  background: var(--bg-panel-right);
+  border:none;
+  box-shadow: 0px 0px 5px 1px #d8d3c8;
+}
+
+.navbar-toggle span {
+  background:#d8d3c8 !important;
+}
+
+.navbar-toggle:hover,
+.navbar-toggle:active,
+.navbar-toggle:focus {
+  background:var(--bg-panel-left) !important;
+  box-shadow: 0px 0px 5px 1px var(--font-color-small);
+}
+
+.navbar-toggle:hover span {
+  background:var(--font-color-small);
+}
+
+.breadcrumb {
+  background:none;
+}
+
+.breadcrumb a {
+  color:var(--font-color-main);
+}
+
+.breadcrumb-item.active,
+.breadcrumb-item.active::before {
+  color:var(--font-color-main);
+}
+
+.breadcrumb::after {
+  content:"CSS by Eli in Motion #319237";
+  float:right;
+}
+
+#pageContainer > div.floatright {
+  display:none;
+}
+
+#pageContainer h1 {
+  color:var(--font-color-main);
+  text-shadow: 3px 2px 3px rgb(0 0 0);
+  text-align:center;
+}
+
+.table {
+  box-shadow: 0px 0px 5px 1px #d8d3c8;
+  border-radius:var(--border-radius-big);
+  border:none;
+  overflow:hidden;
+  border-collapse:separate;
+}
+
+.table th,
+.table .top,
+.table .bottom {
+  background:var(--bg-header-dark);
+  color:var(--font-color-main);
+}
+
+.table th a,
+.table .top a,
+.table .bottom a {
+  color:var(--font-color-main) !important;
+  text-decoration:none !important;
+  border:none !important;
+}
+
+.table th a:hover,
+.table .top a:hover,
+.table .bottom a:hover {
+  color:var(--accent-color-dark) !important;
+}
+
+.left.b.center {
+  background:var(--bg-panel-left);
+  color:var(--font-color-main);
+}
+
+.right.center {
+  background:var(--bg-panel-right);
+  color:var(--font-color-main);
+}
+
+.alert.alert-success {
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius-small);
+}
+
+.alert.alert-danger {
+  background:var(--bg-header-dark);
+  color:var(--font-color-main);
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius-small);
+}
+
+#commentBox {
+  background:none;
+  color:var(--font-color-main);
+  border:none !important;
+  box-shadow: 0px 0px 10px 3px #d8d3c8;
+}
+
+#commentBox a {
+  color:var(--font-color-main);
+}
+
+#commentBox a:hover {
+  color:var(--accent-color-dark);
+}
+
+#commentBox::-webkit-scrollbar {
+  display:none;
+}
+
+.comment:nth-child(even) {
+  background: var(--bg-chat-dark) !important;
+}
+
+.comment:nth-child(odd) {
+  background:var(--bg-chat-light);
+}
+
+#commentBox .bad {
+  background:var(--bg-header-dark);
+  color:var(--border-color);
+  text-shadow:none;
+  border:1px solid var(--border-color);
+}
+
+#commentBox .bad:hover {
+  background:var(--bg-header-light);
+  color:var(--accent-color-dark);
+  box-shadow: 0px 0px 2px 1px var(--accent-color-light);
 }
