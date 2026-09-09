@@ -1,0 +1,55 @@
+/*CSS by Eli in Motion #319237 please do not claim as your own or resell*/
+/*<link rel="stylesheet" type="text/css" href="https://eli-in-motion.github.io/Lioden-CSS-Layouts/Personal Use/Den CSS/Desert Oasis/Desert-Oasis.css" /> */
+
+/*Credit Section
+  Misc Debugging
+Shout out to my brother for helping me fight through the confusion as I learn CSS
+  
+  Background Image
+https://www.pexels.com/photo/shadow-of-leaves-on-wall-9963165/
+Plato Terentev on Pexels
+Published date October 20th, 2021 at 5:56 AM
+Free for use under the Pexels Content License
+*/
+
+:root {
+  --bg-main-image:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Den%20CSS/Purple%20Shrine/Purple%20Shrine%20Background%202.webp?raw=true);
+  --bg-main-color:#040e0b;
+
+  --bg-header-dark:#3c0961bd;
+  --bg-header-light:#5b2681bd;
+  --bg-panel-back:#4b2455bd;
+  --bg-panel-left:#44204ebd;
+  --bg-panel-right:#6e377dbd;
+  --bg-chat-light:#441860bd;
+  --bg-chat-dark:#2a0145bd;
+
+  --font-color-main:#ece0ff;
+  --font-color-small:#ccbcec;
+
+  --border-size-big:3px;
+  --border-size-small:2px;
+  --border-color:#a010ba;
+  --border-radius-big:10px;
+  --border-radius-small:5px;
+
+  --accent-color-light:#ec9be4;
+  --accent-color-dark:#d17fc9;
+  --transparency-light:.90;
+  --transparency-heavy:.80;
+
+  --mod-bg-color:#040e0bbd;
+  --mod-font-color:#ece0ff;
+  --ping-bg-color:#040e0bbd;
+  --ping-font-color:#ece0ff;
+}
+
+/*Pagewide*/
+body {
+  background-color:rgb(var(--bg-main-color));
+  background-image:var(--bg-main-image);
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+  color:var(--font-color-main);
+}
