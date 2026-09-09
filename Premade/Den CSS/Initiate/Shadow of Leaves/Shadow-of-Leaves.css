@@ -16,16 +16,16 @@ Free for use under the Pexels Content License
   --bg-main-image:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Premade/Den%20CSS/Initiate/Shadow%20of%20Leaves/pexels-plato-terentev-3804555-9963165.jpg?raw=true);
   --bg-main-color:#0a0a0a;
 
-  --bg-header-dark:#161616c2;
-  --bg-header-light:#2b2a28c2;
+  --bg-header-dark:#10130fc2;
+  --bg-header-light:#272826c2;
   --bg-panel-back:#202020c2;
   --bg-panel-left:#2b2a28c2;
-  --bg-panel-right:#393732c2;
+  --bg-panel-right:#393832c2;
   --bg-chat-light:#514e46c2;
   --bg-chat-dark:#2b2a28c2;
 
-  --font-color-main:#d8d3c8;
-  --font-color-small:#e0e0e0;
+  --font-color-main:#d5dcd4;
+  --font-color-small:#d2cfcf;
 
   --border-size-big:3px;
   --border-size-small:2px;
@@ -54,7 +54,7 @@ body {
 }
 
 .container.main {
-  background:var(--bg-header-light);
+  background:var(--bg-header-dark);
   color:var(--font-color-main);
   box-shadow: 0px 0px 15px 3px #d8d3c8;
   border-radius:var(--border-radius-big) !important;
@@ -87,7 +87,7 @@ body {
 }
 
 #bs-example-navbar-collapse-1 {
-  border-top:1px solid #d8d3c8 ;
+  border-top:none;
   box-shadow:none;
 }
 
@@ -100,6 +100,10 @@ body {
 .navbar a:hover {
   background:var(--bg-header-light) !important;
   color:var(--accent-color-dark) !important;
+}
+
+.navbar-brand.visible-lg.visible-md:hover {
+  background:none !important;
 }
 
 .navbar-toggle {
@@ -224,7 +228,7 @@ body {
   background:none;
   color:var(--font-color-main);
   border:none !important;
-  box-shadow: 0px 0px 10px 3px #d8d3c8;
+  box-shadow: 0px 0px 8px 2px #d8d3c8;
 }
 
 #commentBox a {
@@ -281,6 +285,10 @@ textarea:hover,
   box-shadow: 0px 0px 5px 1px var(--accent-color-light) !important;
 }
 
+#about {
+  width:fit-content;
+}
+
 #about a {
   color:var(--font-color-main);
 }
@@ -295,6 +303,14 @@ textarea:hover,
 
 #about td .right {
   background:var(--bg-panel-right);
+}
+
+#about tr.right td:nth-child(1){
+  display:none;
+}
+
+#player {
+  width:fit-content;
 }
 
 #player a {
@@ -317,11 +333,16 @@ textarea:hover,
   background:var(--bg-panel-right);
 }
 
+#player td.right:nth-child(2) {
+  display:none
+}
+
 .cave-grid {
   background:var(--bg-header-dark);
   color:var(--font-color-main);
   border:var(--border-size-small) solid var(--border-color);
   border-radius:var(--border-radius-small);
+  padding:8px;
 }
 
 .cave-grid:hover {
@@ -329,16 +350,33 @@ textarea:hover,
   box-shadow: 0px 0px 10px 1px var(--accent-color-light) !important;
 }
 
+.cave-grid img {
+  display:none;
+}
+
+.cave-grid br {
+  display:none;
+}
+
 .mound-grid {
   background:var(--bg-header-dark);
   color:var(--font-color-main);
   border:var(--border-size-small) solid var(--border-color);
   border-radius:var(--border-radius-small);
+  padding:5px;
 }
 
 .mound-grid:hover {
   color:var(--accent-color-dark);
   box-shadow: 0px 0px 10px 1px var(--accent-color-light) !important;
+}
+
+.mound-grid img {
+  display:none;
+}
+
+.mound-grid br {
+  display:none;
 }
 
 #sparring td:nth-child(1) {
@@ -402,10 +440,13 @@ textarea:hover,
 .row.dynastycollection div div {
   background:var(--bg-header-light);
   border:var(--border-size-small) solid var(--border-color);
+  padding:5px;
+  margin-top:8px;
 }
 
 .row.dynastycollection div div h3 {
   color:var(--font-color-main);
+  margin:0px;
 }
 
 .row.dynastycollection div div:hover {
@@ -414,6 +455,10 @@ textarea:hover,
 
 .row.dynastycollection div div:hover h3 {
   color:var(--accent-color-dark)
+}
+
+.row.dynastycollection div div img {
+  display:none;
 }
 
 .col.col-sm-4 div {
@@ -483,6 +528,10 @@ textarea:hover,
 
 .clear.visible-xs.visible-sm {
   display:none !important;
+}
+
+.col-md-12.col-xs-6 {
+  margin-top:30px;
 }
 
 .progress div {
