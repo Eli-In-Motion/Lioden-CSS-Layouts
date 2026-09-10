@@ -35,11 +35,18 @@
 .Bio img {
   display: block;
   margin:auto;
-  width:80%;
+  width:100%;
 }
 
 .Bio div {
   border:2px solid red;
+}
+
+.Bio .Header h1 {
+  color:var(--font-color-main);
+  text-align:center;
+  font-size:40px;
+  margin:auto;
 }
 
 .Bio .BioMain {
@@ -49,16 +56,33 @@
   gap:10px;
 }
 
+.Bio .BioMain h2 {
+  color:var(--font-color-main);
+  text-align:center;
+  padding:5px;
+}
+
+.Bio .BioMain p {
+  color:var(--font-color-main);
+  text-align:left;
+  padding:5px;
+}
+
 .Bio .BioMainImg {
   margin:auto;
-  max-width:200px;
-  max-height:200px;
+  max-width:600px;
+  max-height:300px;
+  padding:5px
 }
 
 .Bio .BioFooter {
   display:grid;
   grid-template-rows:1fr;
-  grid-template-columns:1fr 1fr 1fr 1fr  1fr;
+  grid-template-columns:1fr 1fr 1fr 1fr ;
   padding:4px;
   gap:15px;
+}
+
+.Bio .BioLink {
+  margin:auto;
 }
