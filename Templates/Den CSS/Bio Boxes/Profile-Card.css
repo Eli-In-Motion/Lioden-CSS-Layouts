@@ -16,9 +16,10 @@
 .Bio {
   display:grid;
   height:400px;
+  width:85%;
   gap:10px;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 4fr 1fr;
+  grid-template-rows: 2fr 8fr 1fr;
 }
 
 .Bio img {
@@ -31,18 +32,33 @@
   display:none !important;
 }
 
+.Bio img {
+  display: block;
+  margin:auto;
+  width:80%;
+}
+
 .Bio div {
   border:2px solid red;
 }
 
-.Bio .BioHeader {
-}
-
 .Bio .BioMain {
   display:grid;
-  grid-template-columns:1fr 2fr;
   grid-template-rows:1fr;
+  grid-template-columns:2fr 1fr;
+  gap:10px;
+}
+
+.Bio .BioMainImg {
+  margin:auto;
+  max-width:200px;
+  max-height:200px;
 }
 
 .Bio .BioFooter {
+  display:grid;
+  grid-template-rows:1fr;
+  grid-template-columns:1fr 1fr 1fr 1fr  1fr;
+  padding:4px;
+  gap:15px;
 }
