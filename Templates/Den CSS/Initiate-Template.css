@@ -52,13 +52,13 @@ body {
 
 /*~~~~Secondary Main Background Area~~~~*/
 .container.main {
-  background:none;
+  background:var(--bg-main-color);
   border:var(--border-size-big) solid var(--border-color);
   border-radius:var(--border-radius-big);
 }
 
 #pageContainer {
-  background:var(--bg-main-color);
+  background:none;
   box-shadow:none;
 }
 
