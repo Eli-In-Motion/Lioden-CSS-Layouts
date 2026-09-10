@@ -4,3 +4,59 @@
 <div class="BioRightTop">Your stuff here</div>
 <div class="BioRightBottom">Your stuff here</div>
 </div>  */
+
+.Bio {
+  display:grid;
+  height:400px;
+  gap:10px;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.Bio img {
+  display: block;
+  margin:auto;
+  width:80%;
+}
+
+.Bio br {
+  display:none !important;
+}
+
+.BioLeft {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background:var(--bg-header-light);
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius);
+  overflow-x:hidden;
+  overflow-y:scroll;
+}
+
+.BioLeft::-webkit-scrollbar {
+  display:none;
+}
+
+.BioRightTop {
+  background:var(--bg-panel-back);
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius);
+  overflow-x:hidden;
+  overflow-y:scroll;
+}
+
+.BioRightTop::-webkit-scrollbar {
+  display:none;
+}
+
+.BioRightBottom {
+  background:var(--bg-panel-right);
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius);
+  overflow-x:hidden;
+  overflow-y:scroll;
+}
+
+.BioRightBottom::-webkit-scrollbar {
+  display:none;
+}
