@@ -7,3 +7,36 @@
 </div>
 */
 
+.Bio {
+  display:grid;
+  height:400px;
+  gap:10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 4fr 1fr;
+}
+
+.Bio img {
+  display: block;
+  margin:auto;
+  width:80%;
+}
+
+.Bio br {
+  display:none !important;
+}
+
+.Bio div {
+  border:2px solid red;
+}
+
+.Bio .BioHeader {
+}
+
+.Bio .BioMain {
+  display:grid;
+  grid-template-columns:1fr 2fr;
+  grid-template-rows:1fr;
+}
+
+.Bio .BioFooter {
+}
