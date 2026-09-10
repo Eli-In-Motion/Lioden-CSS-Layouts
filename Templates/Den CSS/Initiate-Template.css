@@ -443,3 +443,119 @@ input.floatright{
   color:var(--accent-color-light);
   border-color:var(--accent-color-light);
 }
+
+/*~~~~FAPA~~~~*/
+#pageContainer center b {
+  color:var(--font-color-main);
+}
+
+.col-sm-6.col-xs-12 div {
+  background:var(--bg-header-mid);
+  color:var(--font-color-main);
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius-small);
+}
+
+.col-sm-6.col-xs-12 input,
+.col-sm-6.col-xs-12 select {
+  background:var(--bg-chat-dark);
+  color:var(--font-color-main);
+  text-shadow:none;
+  border:1px solid var(--border-color);
+}
+
+.col-sm-6.col-xs-12 input:hover,
+.col-sm-6.col-xs-12 select:hover {
+  background:var(--accent-color-dark);
+  color:var(--accent-color-light);
+  border-color:var(--accent-color-light);
+}
+
+/*~~~~Allies~~~~*/
+#allies {
+  color:var(--font-color-main);
+  border:var(--border-size-big) solid var(--border-color);
+  border-radius:var(--border-radius-big);
+  overflow:hidden;
+  border-collapse:separate;
+}
+
+#allies a {
+  color:var(--font-color-main);
+  text-decoration:none;
+}
+
+#allies a:hover {
+  color:var(--accent-color-light);
+}
+
+#allies .top,
+#allies .bottom {
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+}
+
+#allies .left {
+  display:none;
+}
+
+#allies .right {
+  background:var(--bg-panel-left);
+}
+
+/*~~~~Clans~~~~*/
+#clans {
+  color:var(--font-color-main);
+  border:var(--border-size-big) solid var(--border-color);
+  border-radius:var(--border-radius-big);
+  overflow:hidden;
+  border-collapse:separate;
+}
+
+#clans a {
+  color:var(--font-color-main);
+}
+
+#clans a:hover {
+  color:var(--accent-color-light);
+}
+
+#clans .top {
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+}
+
+#clans .left {
+  display:none;
+}
+
+#clans .right {
+  background:var(--bg-panel-left);
+}
+
+/*~~~~Dynasty, Achievements, Showcase, Beetle Book~~~~*/
+.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div {
+  background:var(--bg-header-mid);
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius-small);
+}
+
+.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div h3 {
+  color:var(--font-color-main);
+}
+
+.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div:hover h3 {
+  color:var(--accent-color-light);
+}
+
+/*~~~~Reqs, Logs, Attacks~~~~*/
+.col.col-sm-4 div {
+  background:var(--bg-header-dark);
+  color:var(--font-color-main);
+}
+
+.col.col-sm-4 div:hover {
+  color:var(--accent-color-light);
+}
+
+/*~~~~Edit Details~~~~*/
