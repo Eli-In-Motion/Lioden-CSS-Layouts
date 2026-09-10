@@ -155,6 +155,38 @@ input.floatright{
   color:var(--font-color-main);
 }
 
+/*Green Alerts*/
+.alert.alert-success {
+  background:var(--accent-color-light);
+  color:var(--font-color-main);
+  border:var(--border-size-small) small var(--border-color);
+  border-radius:var(--border-radius-small);
+}
+
+.alert.alert-success a {
+  color:var(--font-color-main);
+}
+
+.alert.alert-success a:hover {
+  color:var(--bg-header-light);
+}
+
+/*~~~~Red Alerts~~~~*/
+.alert.alert-danger {
+  background:var(--accent-color-dark);
+  color:var(--font-color-main);
+  border:var(--border-size-small) small var(--border-color);
+  border-radius:var(--border-radius-small);
+}
+
+.alert.alert-danger a {
+  color:var(--font-color-main);
+}
+
+.alert.alert-danger a:hover {
+  color:var(--accent-color-light);
+}
+
 /*~~~~Event Pop-Ups~~~~*/
 /*~~September~~*/
 #pageContainer > center > table:nth-child(2) {
