@@ -126,3 +126,57 @@ body {
 .navbar-toggle:focus span {
   background:var(--accent-color-light) !important;
 }
+
+.breadcrumb,
+.breadcrumb a,
+.breadcrumb-item.active,
+.breadcrumb-item.active::before {
+  background:none;
+  color:var(--font-color-main);
+}
+
+.breadcrumb a:hover {
+  color:var(--accent-color-light);
+}
+
+/*~~~~Bookmark Button~~~~*/
+input.floatright{
+  display:none;
+}
+
+/*~~~~Credit~~~~*/
+.breadcrumb::after {
+  content:"CSS by Eli in Motion #319237";
+  float:right;
+}
+
+/*___'s Den*/
+#pageContainer h1 {
+  color:var(--font-color-main);
+}
+
+/*~~~~Event Pop-Ups~~~~*/
+/*~~September~~*/
+#pageContainer > center > table:nth-child(2) {
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius-small);
+  overflow:hidden;
+  border-collapse:separate;
+}
+
+#pageContainer > center > table:nth-child(2) th {
+  background:var(--bg-panel-left);
+  color:var(--font-color-main);
+}
+
+#pageContainer > center > table:nth-child(2) .left.b.center {
+  background:var(--bg-panel-back);
+  color:var(--font-color-main);
+}
+
+#pageContainer > center > table:nth-child(2) .right.center {
+  background:var(--bg-panel-right);
+  color:var(--font-color-main);
+}
+
+/*~~~~Comment Box~~~~*/
