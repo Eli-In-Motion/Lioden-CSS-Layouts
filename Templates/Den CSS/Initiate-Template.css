@@ -552,6 +552,7 @@ input.floatright{
 .col.col-sm-4 div {
   background:var(--bg-header-dark);
   color:var(--font-color-main);
+  border-radius:var(--border-radius-small);
 }
 
 .col.col-sm-4 div:hover {
@@ -559,3 +560,82 @@ input.floatright{
 }
 
 /*~~~~Edit Details~~~~*/
+#pageContainer > center > form:nth-child(40) > table {
+  border:none;
+  overflow:hidden;
+  border-collapse:separate;
+}
+#pageContainer > center > form:nth-child(40) > table > tbody > tr > th { /*This selector was copied via Dev Tools, I couldn't find another way ;-;*/
+  background:var(--bg-header-light);
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius-small); 
+}
+
+#pageContainer > center > form:nth-child(40) > table > tbody > tr > th a {
+  color:var(--font-color-main);
+  border:none;
+}
+
+#pageContainer > center > form:nth-child(40) > table > tbody > tr > th a:hover {
+  color:var(--accent-color-light);
+}
+
+/*~~~~Inner Edit Details Panel~~~~*/
+#editdetailspanel {
+  color:var(--font-color-main);
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius-small);
+}
+
+#editdetailspanel a {
+  color:var(--font-color-main);
+}
+
+#editdetailspanel a:hover {
+  color:var(--accent-color-light);
+}
+
+#editdetailspanel table {
+  border:none;
+  margin:0px;
+}
+
+#editdetailspanel .bottom {
+  background:var(--bg-header-light)
+}
+
+#editdetailspanel .left.b {
+  background:var(--bg-panel-left);
+}
+
+#editdetailspanel input,
+#editdetailspanel textarea,
+#editdetailspanel select {
+  background:var(--bg-chat-dark);
+  color:var(--font-color-main);
+  text-shadow:none;
+  border:1px solid var(--border-color);
+}
+
+#editdetailspanel input:hover,
+#editdetailspanel select:hover {
+  background:var(--accent-color-dark);
+  color:var(--accent-color-light);
+  border-color:var(--accent-color-light);
+}
+
+/*~~~~Account Settings~~~~*/
+.left:has(a[href="/account-settings.php"]) {
+  background:var(--bg-header-dark);
+  color:var(--font-color-main);
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius-small);
+}
+
+a[href="/account-settings.php"] {
+  color:var(--font-color-main);
+}
+
+.left:has(a[href="/account-settings.php"]):hover a {
+  color:var(--accent-color-light);
+}
