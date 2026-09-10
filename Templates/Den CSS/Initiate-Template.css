@@ -348,3 +348,98 @@ input.floatright{
 }
 
 /*~~~~Cave Grid~~~~*/
+.cave-grid {
+  background:var(--bg-header-dark);
+  color:var(--font-color-main);
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius-small);
+}
+
+.cave-grid:hover {
+  color:var(--accent-color-light);
+}
+
+/*~~~~Beetle Mounds~~~~*/
+.mound-grid {
+  background:var(--bg-header-dark);
+  color:var(--font-color-main);
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius-small);
+}
+
+.mound-grid:hover {
+  color:var(--accent-color-light);
+}
+
+/*~~~~Sparring~~~~*/
+#sparring {
+  color:var(--font-color-main);
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius-small);
+  overflow:auto;
+  border-collapse:separate;
+}
+
+#sparring th {
+  background:var(--bg-header-mid);
+}
+
+#sparring td:first-child {
+  background:var(--bg-panel-left);
+}
+
+#sparring .right_odd {
+  background:var(--bg-panel-right);
+}
+
+#sparring input,
+#sparring select {
+  background:var(--bg-chat-dark);
+  color:var(--font-color-main);
+  text-shadow:none;
+  border:1px solid var(--border-color);
+}
+
+#sparring input:hover,
+#sparring select:hover {
+  background:var(--accent-color-dark);
+  color:var(--accent-color-light);
+  border-color:var(--accent-color-light);
+}
+
+/*~~~~Reclaim Lionesses~~~~*/
+#reclaim {
+  color:var(--font-color-main);
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius-small);
+  overflow:hidden;
+  border-collapse:separate;
+}
+
+#reclaim th,
+#reclaim .bottom {
+  background:var(--bg-header-mid);
+}
+
+#reclaim .left.b.center {
+  background:var(--bg-panel-left);
+}
+
+#reclaim .right.center {
+  background:var(--bg-panel-right);
+}
+
+#reclaim input,
+#reclaim select {
+  background:var(--bg-chat-dark);
+  color:var(--font-color-main);
+  text-shadow:none;
+  border:1px solid var(--border-color);
+}
+
+#reclaim input:hover,
+#reclaim select:hover {
+  background:var(--accent-color-dark);
+  color:var(--accent-color-light);
+  border-color:var(--accent-color-light);
+}
