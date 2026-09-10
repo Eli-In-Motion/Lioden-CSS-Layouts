@@ -636,3 +636,75 @@ a[href="/account-settings.php"] {
 .left:has(a[href="/account-settings.php"]):hover a {
   color:var(--accent-color-light);
 }
+
+/*~~~~Side Panel~~~~*/
+
+.panel {
+  background:var(--bg-header-dark);
+  color:var(--font-color-main);
+  border:var(--border-size-small) solid var(--border-color) !important;
+  border-radius:var(--border-radius-small);
+  box-shadow:none !important;
+}
+
+.panel a {
+  color:var(--font-color-main);
+}
+
+.panel a:hover {
+  color:var(--accent-color-light);
+}
+
+#pageSidebar h3 {
+  color:var(--font-color-main);
+}
+
+#pageSidebar h3:hover {
+  color:var(--accent-color-light);
+}
+
+.clear.visible-xs.visible-sm {
+  display:none !important;
+}
+
+.col-md-12.col-xs-12 a,
+.col-md-12.col-xs-12 h3 {
+  color:var(--font-color-main) !important;
+}
+
+/*~~~~Hide/Show Chatbox Button~~~~*/
+#btnToggleSidebarChat {
+  background:var(--bg-chat-dark);
+  color:var(--font-color-main);
+  text-shadow:none;
+  border:1px solid var(--border-color);
+}
+
+#btnToggleSidebarChat:hover {
+  background:var(--accent-color-dark);
+  color:var(--accent-color-light);
+  border-color:var(--accent-color-light);
+}
+
+/*~~~~Bug Box Button~~~~*/
+.btn.btn-default.button {
+  background:var(--bg-chat-dark);
+  color:var(--font-color-main);
+  text-shadow:none;
+  border:1px solid var(--border-color);
+}
+
+.btn.btn-default.button:hover {
+  background:var(--accent-color-dark);
+  color:var(--accent-color-light);
+  border-color:var(--accent-color-light);
+}
+
+/*~~~~Lioden License and Links~~~~*/
+.col-xs-10,
+.col-xs-10 a {
+  color:var(--font-color-main) !important;
+  border:none !important;
+}
+
+/*~~~~End Initiate~~~~*/
