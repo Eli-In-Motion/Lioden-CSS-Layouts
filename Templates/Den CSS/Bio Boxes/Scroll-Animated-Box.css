@@ -1,0 +1,43 @@
+/*HTML
+
+*/
+
+.BioBottom {
+  background:rgba(var(--bg-header-light), var(--transparency-heavy));
+  border:var(--border-size-small) solid rgb(var(--border-color));
+  border-radius:var(--border-radius);
+  width:60%;
+  height:70px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  overflow:hidden;
+  justify-self:center;
+}
+
+.BioScroll {
+  display: flex;
+  width: max-content;
+  animation-name: Scroll;
+  animation-duration:8s;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+  gap:30px;
+}
+
+.BioBottom:hover .BioScroll {
+  animation-play-state: paused;
+}
+
+.BioBottom .BioArt {
+  height:70px;
+  width:auto;
+}
+
+@keyframes Scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-51%); 
+  }
+}
