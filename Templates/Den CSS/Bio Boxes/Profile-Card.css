@@ -17,9 +17,11 @@
   display:grid;
   height:400px;
   width:85%;
-  gap:10px;
   grid-template-columns: 1fr;
   grid-template-rows: 2fr 8fr 1fr;
+  border-radius:var(--border-radius);
+  overflow:hidden;
+  border-collapse:separate;
 }
 
 .Bio img {
@@ -38,15 +40,13 @@
   width:100%;
 }
 
-.Bio div {
-  border:2px solid red;
-}
-
-.Bio .Header h1 {
+.Bio .BioHeader {
+  background:var(--bg-header-dark);
   color:var(--font-color-main);
   text-align:center;
-  font-size:40px;
-  margin:auto;
+  font-size:50px;
+  border:var(--border-size-big) solid black;
+  border-radius:var(--border-radius);
 }
 
 .Bio .BioMain {
@@ -54,6 +54,9 @@
   grid-template-rows:1fr;
   grid-template-columns:2fr 1fr;
   gap:10px;
+  background:var(--bg-header-light);
+  border:var(--border-size-big) solid black;
+  border-radius:var(--border-radius);
 }
 
 .Bio .BioMain h2 {
@@ -81,6 +84,9 @@
   grid-template-columns:1fr 1fr 1fr 1fr ;
   padding:4px;
   gap:15px;
+  background:var(--bg-header-dark);
+  border:var(--border-size-big) solid black;
+  border-radius:var(--border-radius);
 }
 
 .Bio .BioLink {
