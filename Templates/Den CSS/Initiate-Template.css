@@ -311,3 +311,40 @@ input.floatright{
 #about tr.right {
   background:var(--bg-panel-back);
 }
+
+/*~~~~Player About Area~~~~*/
+#player {
+  color:var(--font-color-main);
+  border:var(--border-size-big) solid var(--border-color);
+  border-radius:var(--border-radius-big);
+  overflow:hidden;
+  border-collapse:separate;
+}
+
+#player a {
+  color:var(--font-color-main);
+}
+
+#player a:hover {
+  color:var(--accent-color-light);
+}
+
+#player .top,
+#player .bottom {
+  background:var(--bg-header-light);
+  color:var(--font-color-main);
+}
+
+#player .left {
+  background:var(--bg-panel-left);
+}
+
+#player td .right {
+  background:var(--bg-panel-right);
+}
+
+#player tr.right {
+  background:var(--bg-panel-back);
+}
+
+/*~~~~Cave Grid~~~~*/
