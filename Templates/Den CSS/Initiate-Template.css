@@ -212,3 +212,102 @@ input.floatright{
 }
 
 /*~~~~Comment Box~~~~*/
+#commentBox {
+  background:none;
+  color:var(--font-color-main);
+  border:var(--border-size-small) solid var(--border-color) !important;
+  border-radius:var(--border-radius-big);
+}
+
+#commentBox a {
+  color:var(--font-color-main);
+}
+
+#commentBox a:hover {
+  color:var(--accent-color-light);
+}
+
+#commentBox .text-muted {
+  color:var(--font-color-small);
+}
+
+#commentBox::-webkit-scrollbar {
+  width:10px;
+}
+
+#commentBox::-webkit-scrollbar-track {
+  background:var(--bg-chat-light);
+  border-top-right-radius:var(--border-radius-big);
+  border-bottom-right-radius:var(--border-radius-big);
+}
+
+#commentBox::-webkit-scrollbar-thumb {
+  background:var(--bg-chat-dark);
+  box-shadow:0px 0px 5px 1px var(--border-color);
+  border-radius:var(--border-radius-big);
+}
+
+#commentBox .bad {
+  background:var(--bg-header-dark);
+  color:var(--border-color);
+  text-shadow:none;
+  border:1px solid var(--border-color);
+}
+
+#commentBox .bad:hover {
+  background:var(--accent-color-dark);
+  color:var(--accent-color-light);
+  border-color:var(--accent-color-light);
+}
+
+#makeComment input {
+  background:var(--bg-chat-dark);
+  color:var(--font-color-main);
+  text-shadow:none;
+  border:1px solid var(--border-color);
+}
+
+#comment::placeholder {
+  color:var(--font-color-small);
+}
+
+#postComment:hover {
+  background:var(--accent-color-dark);
+  color:var(--accent-color-light);
+  border-color:var(--accent-color-light);
+}
+
+/*~~~~Pride About Area~~~~*/
+#about {
+  color:var(--font-color-main);
+  border:var(--border-size-big) solid var(--border-color);
+  border-radius:var(--border-radius-big);
+  overflow:hidden;
+  border-collapse:separate;
+}
+
+#about a {
+  color:var(--font-color-main);
+  text-decoration:none;
+}
+
+#about a:hover {
+  color:var(--accent-color-light);
+}
+
+#about .top,
+#about .bottom {
+  background:var(--bg-header-light);
+}
+
+#about .left {
+  background:var(--bg-panel-left);
+}
+
+#about td .right {
+  background:var(--bg-panel-right);
+}
+
+#about tr.right {
+  background:var(--bg-panel-back);
+}
