@@ -9,9 +9,10 @@ Shout out to my brother for helping me fight through the confusion as I learn CS
 
 */
 
+/*~~~~Variables~~~~*/
 :root {
   --bg-main-image:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Den%20CSS/Purple%20Shrine/Purple%20Shrine%20Background%202.webp?raw=true);
-  --bg-main-color:#040e0b;
+  --bg-main-color:#040e0b8c;
 
   --bg-header-dark:#3c0961bd;
   --bg-header-mid:#3c0961bd;
@@ -40,11 +41,31 @@ Shout out to my brother for helping me fight through the confusion as I learn CS
   --ping-font-color:#ece0ff;
 }
 
+/*~~~~Main Background~~~*/
 body {
   background-color:var(--bg-main-color);
   background-image:var(--bg-main-image);
   background-size:cover;
   background-position:center;
   background-attachment:fixed;
-  color:var(--font-color-main);
+}
+
+/*~~~~Secondary Main Background Area~~~~*/
+.container.main {
+  background:none;
+  border:var(--border-size-big) solid var(--border-color);
+  border-radius:var(--border-radius-big);
+}
+
+#pageContainer {
+  background:var(--bg-main-color);
+  box-shadow:none;
+}
+
+/*~~~~Topbar with Messages, Currency, ETc.~~~~*/
+.topbar {
+  background:var(--bg-header-dark);
+  border:var(--border-size-small) solid var(--border-color);
+  border-bottom-left-radius:var(--border-radius-small);
+  border-bottom-right-radius:var(--border-radius-small);
 }
