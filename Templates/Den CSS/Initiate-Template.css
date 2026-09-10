@@ -33,7 +33,7 @@ Shout out to my brother for helping me fight through the confusion as I learn CS
   --border-radius-small:5px;
 
   --accent-color-light:#ec9be4;
-  --accent-color-dark:#d17fc9;
+  --accent-color-dark:#8e4c88;
 
   --mod-bg-color:#040e0bbd;
   --mod-font-color:#ece0ff;
@@ -64,8 +64,65 @@ body {
 
 /*~~~~Topbar with Messages, Currency, ETc.~~~~*/
 .topbar {
-  background:var(--bg-header-dark);
+  background:var(--bg-header-light);
   border:var(--border-size-small) solid var(--border-color);
   border-bottom-left-radius:var(--border-radius-small);
   border-bottom-right-radius:var(--border-radius-small);
+  color:var(--font-color-main);
+}
+
+.topbar a {
+  color:var(--font-color-main) !important;
+}
+
+.topbar a:hover {
+  color:var(--accent-color-light) !important;
+}
+
+/*~~~~Navbar~~~~*/
+.navbar {
+  background:var(--bg-header-light);
+  border-bottom:var(--border-size-big) solid var(--border-color);
+  border-radius:var(--border-radius-small);
+  min-height:fit-content;
+}
+
+.navbar a {
+  color:var(--font-color-main) !important;
+}
+
+.navbar a:hover{
+  background:var(--accent-color-dark) !important;
+  color:var(--accent-color-light) !important;
+  border-radius:var(--border-radius-small);
+}
+
+#bs-example-navbar-collapse-1 {
+  border-top:1px solid var(--border-color);
+  box-shadow:none;
+}
+
+/*~~~~Navbar Collapse Button~~~~*/
+.navbar-toggle,
+.navbar-toggle.collapsed {
+  background:var(--bg-header-dark);
+  border:1px solid var(--border-color);
+}
+
+.navbar-toggle span,
+.navbar-toggle.collapsed span {
+  background:var(--border-color) !important;
+}
+
+.navbar-toggle:hover,
+.navbar-toggle:active,
+.navbar-toggle:focus {
+  background:var(--accent-color-dark) !important;
+  border-color:var(--accent-color-light);
+}
+
+.navbar-toggle:hover span,
+.navbar-toggle:active span,
+.navbar-toggle:focus span {
+  background:var(--accent-color-light) !important;
 }
