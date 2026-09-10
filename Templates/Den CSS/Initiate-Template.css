@@ -506,8 +506,7 @@ input.floatright{
 /*~~~~Clans~~~~*/
 #clans {
   color:var(--font-color-main);
-  border:var(--border-size-big) solid var(--border-color);
-  border-radius:var(--border-radius-big);
+  border:none;
   overflow:hidden;
   border-collapse:separate;
 }
@@ -523,14 +522,12 @@ input.floatright{
 #clans .top {
   background:var(--bg-header-light);
   color:var(--font-color-main);
+  border:var(--border-size-big) solid var(--border-color);
+  border-radius:var(--border-radius-big);
 }
 
 #clans .left {
   display:none;
-}
-
-#clans .right {
-  background:var(--bg-panel-left);
 }
 
 /*~~~~Dynasty, Achievements, Showcase, Beetle Book~~~~*/
