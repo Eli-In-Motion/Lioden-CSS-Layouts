@@ -188,25 +188,23 @@ input.floatright{
 }
 
 /*~~~~Event Pop-Ups~~~~*/
-/*~~September~~*/
-#pageContainer > center > table:nth-child(2) {
-  border:var(--border-size-small) solid var(--border-color);
+/*~~September Maybe Others? idk~~*/
+table:nth-child(2) {
+  border:var(--border-size-small) solid var(--border-color) !important;
   border-radius:var(--border-radius-small);
-  overflow:hidden;
-  border-collapse:separate;
 }
 
-#pageContainer > center > table:nth-child(2) th {
-  background:var(--bg-panel-left);
-  color:var(--font-color-main);
+table:nth-child(2) th {
+  border:none !important;
+  border-radius:0px !important;
 }
 
-#pageContainer > center > table:nth-child(2) .left.b.center {
+table .left.b.center {
   background:var(--bg-panel-back);
   color:var(--font-color-main);
 }
 
-#pageContainer > center > table:nth-child(2) .right.center {
+table .right.center {
   background:var(--bg-panel-right);
   color:var(--font-color-main);
 }
@@ -456,6 +454,10 @@ input.floatright{
   border-radius:var(--border-radius-small);
 }
 
+.col-sm-6.col-xs-12 div h3 {
+  color:var(--font-color-main);
+}
+
 .col-sm-6.col-xs-12 input,
 .col-sm-6.col-xs-12 select {
   background:var(--bg-chat-dark);
@@ -557,24 +559,25 @@ input.floatright{
 }
 
 /*~~~~Edit Details~~~~*/
-#pageContainer > center > form:nth-child(40) > table {
+#pageContainer table {
   border:none;
   overflow:hidden;
   border-collapse:separate;
+  border:none
 }
-#pageContainer > center > form:nth-child(40) > table > tbody > tr > th { /*This selector was copied via Dev Tools, I couldn't find another way ;-;*/
+#pageContainer th {
   background:var(--bg-header-light);
   border:var(--border-size-small) solid var(--border-color);
   border-radius:var(--border-radius-small); 
 }
 
-#pageContainer > center > form:nth-child(40) > table > tbody > tr > th a {
-  color:var(--font-color-main);
-  border:none;
+th a {
+  color:var(--font-color-main) !important;
+  border:none !important;
 }
 
-#pageContainer > center > form:nth-child(40) > table > tbody > tr > th a:hover {
-  color:var(--accent-color-light);
+ th a:hover {
+  color:var(--accent-color-light) !important;
 }
 
 /*~~~~Inner Edit Details Panel~~~~*/
