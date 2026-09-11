@@ -67,6 +67,15 @@
   padding:20px;
 }
 
+.Bio .BioJournal h2 {
+  font-size:20px;
+  text-align:center;
+}
+
+.Bio .BioJournal p {
+  text-align:left;
+}
+
 .Bio .BioJournal::-webkit-scrollbar {
   width:10px;
 }
