@@ -1,9 +1,9 @@
 /*HTML
 <div class="Bio">
 <div class="BioHeader">My CSS may look like trash while I work on it</div>
-<div class="BioMain"><div class="BioMainLeft""><h2>Name | Pronouns</h2>
+<div class="BioMain"><div class="BioMainLeft"><h2>Name | Pronouns</h2>
 <p>About you, goals, about your pride, lore, what ever you want!</p>
-<ul><li>Goal</li><li>Goal</li><li>Goal</li><li>Goal</li><li>Goal</li></ul></div>
+<ul><li>Goal</li><li>Goal</li><li>Goal</li><li>Goal</li><li>Goal</li><li>Goal</li><li>Goal</li><li>Goal</li><li>Goal</li><li>Goal</li><li>Goal</li><li>Goal</li><li>Goal</li><li>Goal</li><li>Goal</li><li>Goal</li><li>Goal</li><li>Goal</li><li>Goal</li><li>Goal</li><li>Goal</li><li>Goal</li><li>Goal</li><li>Goal</li></ul></div>
   <div class="BioMainImg"><img src="https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Images/Maia%20of%20Cylenne/Eli-Comm-Maia-of-Cylenne-by-Tabby-220032.png?raw=true" alt="" /></div>
 </div>
 <div class="BioFooter">
@@ -61,7 +61,6 @@
 .Bio .BioHeader h1 {
   text-align:center;
   font-size:40px;
-  
 }
 
 .Bio .BioMain {
@@ -71,12 +70,7 @@
   display:grid;
   grid-template-columns:4fr 3fr;
   gap:10px;
-}
-
-.Bio .BioMain h2,
-.Bio .BioMain p,
-.Bio .BioMain ul {
-  grid-column:1;
+  max-height:300px;
 }
 
 .Bio .BioMain div:nth-child(1) {
@@ -97,6 +91,7 @@
 }
   
 .Bio .BioMain h2 {
+  color:var(--font-color-main);
   text-align:center;
   padding:5px;
 }
@@ -109,11 +104,8 @@
 
 .Bio .BioMainImg {
   margin:auto;
-  max-width:600px;
-  max-height:300px;
   border:4px solid var(--border-color);
-  margin-left:5px;
-  margin-right:5px;
+  margin-right:10px
 }
 
 .Bio .BioFooter {
