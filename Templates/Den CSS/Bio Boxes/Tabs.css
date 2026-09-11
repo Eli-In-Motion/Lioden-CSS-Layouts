@@ -1,0 +1,76 @@
+/*HTML
+<div class="Bio">
+<div class="BioHeader"><h1>Header Title</h1>
+<p>Sub Title</p></div>
+<div class="BioTabRow">
+<div class="BioTab"><a href="https://www.lioden.com/territory.php">Tab</a></div>
+<div class="BioTab"><a href="https://www.lioden.com/territory.php">Tab</a></div>
+<div class="BioTab"><a href="https://www.lioden.com/territory.php">Tab</a></div>
+<div class="BioTab"><a href="https://www.lioden.com/territory.php">Tab</a></div></div>
+<div class="BioTabContent"><h2>Tab Content</h2>
+<p>Detailed Content for each tab goes here</p></div>
+</div>
+*/
+
+.Bio {
+  display:grid;
+  border:2px solid red;
+  border-radius:var(--border-radius-big);
+  gap:10px;
+}
+
+.Bio br {
+  display:none;
+}
+
+.Bio h1,
+.Bio h2,
+.Bio a,
+.Bio p {
+  color:var(--font-color-main);
+  margin:0px;
+  padding:5px;
+}
+
+.Bio a:hover {
+  color:var(--accent-color-light);
+}
+
+.Bio .BioHeader {
+  max-height:70px;
+  overflow:hidden;
+}
+
+.Bio .BioTabRow {
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  margin-left:10px;
+  margin-right:10px;
+  overflow:hidden;
+}
+
+.Bio .BioTab {
+  border:1px solid red;
+  font-size:20px;
+  overflow:hidden;
+  cursor:pointer;
+}
+
+.Bio .BioTabContent {
+  max-height:300px;
+  overflow-x:hidden;
+  overflow-y:scroll;
+}
+
+.Bio .BioTabContent::-webkit-scrollbar {
+  width:5px;
+}
+
+.Bio .BioTabContent::-webkit-scrollbar-track {
+  background:red;
+  border-bottom-right-radius:var(--border-radius-big);
+}
+
+.Bio .BioTabContent::-webkit-scrollbar-thumb {
+  background:black;
+}
