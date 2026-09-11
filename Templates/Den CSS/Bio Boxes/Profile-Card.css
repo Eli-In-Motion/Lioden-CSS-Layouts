@@ -1,7 +1,9 @@
 /*HTML
 <div class="Bio">
 <div class="BioHeader">My CSS may look like trash while I work on it</div>
-<div class="BioMain">Main Area
+<div class="BioMain"><div class="BioMainLeft""><h2>Name | Pronouns</h2>
+<p>About you, goals, about your pride, lore, what ever you want!</p>
+<ul><li>Goal</li><li>Goal</li><li>Goal</li><li>Goal</li><li>Goal</li></ul></div>
   <div class="BioMainImg"><img src="https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Images/Maia%20of%20Cylenne/Eli-Comm-Maia-of-Cylenne-by-Tabby-220032.png?raw=true" alt="" /></div>
 </div>
 <div class="BioFooter">
