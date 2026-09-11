@@ -1,22 +1,23 @@
 /*HTML
 <div class="Bio">
-<div class="BioHeader">Header</div>
+<div class="BioHeader">My CSS may look like trash while I work on it</div>
 <div class="BioMain">Main Area
-  <div class="BioMainImg">Main Area Image</div>
+  <div class="BioMainImg"><img src="https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Images/Maia%20of%20Cylenne/Eli-Comm-Maia-of-Cylenne-by-Tabby-220032.png?raw=true" alt="" /></div>
 </div>
-<div class="BioFooter">Footer
- <div class="BioLink">Link</div>
- <div class="BioLink">Link</div>
- <div class="BioLink">Link</div>
- <div class="BioLink">Link</div>
+<div class="BioFooter">
+ <div class="BioLink"><a href="https://www.lioden.com/territory.php">Link</a></div>
+ <div class="BioLink"><a href="https://www.lioden.com/territory.php">Link</a></div>
+ <div class="BioLink"><a href="https://www.lioden.com/territory.php">Link</a></div>
+ <div class="BioLink"><a href="https://www.lioden.com/territory.php">Link</a></div>
 </div>
 </div>
 */
 
 .Bio {
-  display:grid;
-  height:400px;
   width:85%;
+  height:400px;
+  color:var(--font-color-main);
+  display:grid;
   grid-template-columns: 1fr;
   grid-template-rows: 2fr 8fr 1fr;
   border-radius:var(--border-radius);
@@ -40,27 +41,38 @@
   width:100%;
 }
 
+.Bio a {
+  color:var(--font-color-main) !important;
+}
+
+.Bio a:hover {
+  color:var(--accent-color-light) !important;
+}
+
 .Bio .BioHeader {
   background:var(--bg-header-dark);
-  color:var(--font-color-main);
+  border:var(--border-size-big) solid var(--border-color);
+  border-top-left-radius:var(--border-radius-big);
+  border-top-right-radius:var(--border-radius-big);
+}
+
+.Bio .BioHeader h1 {
   text-align:center;
-  font-size:50px;
-  border:var(--border-size-big) solid black;
-  border-radius:var(--border-radius);
+  font-size:40px;
+  
 }
 
 .Bio .BioMain {
+  background:var(--bg-header-light);
+  text-align:left;
+  border:var(--border-size-big) solid var(--border-color);
   display:grid;
   grid-template-rows:1fr;
-  grid-template-columns:2fr 1fr;
+  grid-template-columns:4fr 3fr;
   gap:10px;
-  background:var(--bg-header-light);
-  border:var(--border-size-big) solid black;
-  border-radius:var(--border-radius);
 }
 
 .Bio .BioMain h2 {
-  color:var(--font-color-main);
   text-align:center;
   padding:5px;
 }
@@ -75,7 +87,9 @@
   margin:auto;
   max-width:600px;
   max-height:300px;
-  padding:5px
+  border:4px solid var(--border-color);
+  margin-left:5px;
+  margin-right:5px;
 }
 
 .Bio .BioFooter {
@@ -85,10 +99,27 @@
   padding:4px;
   gap:15px;
   background:var(--bg-header-dark);
-  border:var(--border-size-big) solid black;
-  border-radius:var(--border-radius);
+  border:var(--border-size-big) solid var(--border-color);
+  border-bottom-left-radius:var(--border-radius-big);
+  border-bottom-right-radius:var(--border-radius-big);
 }
 
 .Bio .BioLink {
-  margin:auto;
+  border:1px solid var(--border-color);
+  box-shadow:0px 0px 6px 2px var(--border-color) inset;
+  border-radius:var(--border-radius-small);
+}
+
+.Bio .BioLink:hover {
+  background:var(--bg-header-light);
+  border-color:var(--accent-color-light);
+  box-shadow:0px 0px 6px 2px var(--accent-color-light) inset;
+}
+
+.Bio .BioLink a {
+  font-size:17px;
+}
+
+.Bio .BioLink:hover a {
+  color:var(--accent-color-light) !important;
 }
