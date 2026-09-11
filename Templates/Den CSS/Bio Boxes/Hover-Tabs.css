@@ -1,0 +1,134 @@
+/*HTML
+<div class="Bio">
+<div class="BioHeader"><h1>Header Title</h1>
+<p>Sub Title</p></div>
+<div class="BioTabRow">
+<div class="BioTab1"><p>Tab one</p></div>
+<div class="BioTab2"><p>Tab two</p></div>
+<div class="BioTab3"><p>Tab three</p></div>
+<div class="BioTab4"><p>Tab four</p></div>
+<div class="BioTab1Content"><h2>Tab one Content</h2>
+<p>Detailed Content for each tab goes here</p></div><div class="BioTab2Content"><h2>Tab two Content</h2>
+<p>Detailed Content for each tab goes here</p></div><div class="BioTab3Content"><h2>Tab three Content</h2>
+<p>Detailed Content for each tab goes here</p></div><div class="BioTab4Content"><h2>Tab fourContent</h2>
+<p>Detailed Content for each tab goes here</p></div></div>
+</div>
+*/
+
+.Bio {
+  display:grid;
+  border:var(--border-size-big) solid var(--border-color);
+  border-radius:var(--border-radius-big);
+  overflow:hidden;
+  width:90%;
+}
+
+.Bio br {
+  display:none;
+}
+
+.Bio img{
+  width:80%;
+  margin:auto;
+}
+
+.Bio h1,
+.Bio h2 {
+  margin:0px;
+  padding:5px;
+  color:var(--font-color-main);
+ }
+
+.Bio a,
+.Bio p {
+  color:var(--font-color-main);
+  margin:0px;
+  padding:0px;
+}
+
+.Bio .BioTab1:hover,
+.Bio .BioTab2:hover,
+.Bio .BioTab3:hover,
+.Bio .BioTab4:hover {
+  box-shadow:0px 0px 8px 1px var(--accent-color-light);
+  border-color:var(--accent-color-light);
+  background:var(--bg-header-light)
+}
+
+.Bio .BioTab1:hover p,
+.Bio .BioTab2:hover p,
+.Bio .BioTab3:hover p,
+.Bio .BioTab4:hover p {
+  color:var(--accent-color-light) !important;
+}
+
+.Bio .BioHeader {
+  max-height:70px;
+  overflow:hidden;
+  background:var(--bg-header-light);
+}
+
+.Bio .BioTabRow {
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  background:var(--bg-panel-left);
+  padding:20px
+}
+
+.Bio .BioTab1,
+.Bio .BioTab2,
+.Bio .BioTab3,
+.Bio .BioTab4 {
+  background:var(--bg-panel-right);
+  border:1px solid var(--border-color);
+  font-size:20px;
+  overflow:hidden;
+  cursor:pointer;
+}
+
+.Bio .BioTab1Content,
+.Bio .BioTab2Content,
+.Bio .BioTab3Content,
+.Bio .BioTab4Content {
+  height:200px;
+  overflow-x:hidden;
+  overflow-y:scroll;
+  grid-column:1/5;
+  display:none;
+  padding:10px;
+  background:var(--bg-panel-back);
+  border:1px solid var(--border-color);
+}
+
+.Bio .BioTab1:hover ~ .BioTab1Content,
+.Bio .BioTab2:hover ~ .BioTab2Content,
+.Bio .BioTab3:hover ~ .BioTab3Content,
+.Bio .BioTab4:hover ~ .BioTab4Content,
+.Bio .BioTab1Content:hover,
+.Bio .BioTab2Content:hover,
+.Bio .BioTab3Content:hover,
+.Bio .BioTab4Content:hover {
+  display:block;
+}
+
+.Bio .BioTab1Content::-webkit-scrollbar,
+.Bio .BioTab2Content::-webkit-scrollbar,
+.Bio .BioTab3Content::-webkit-scrollbar,
+.Bio .BioTab4Content::-webkit-scrollbar {
+  width:10px;
+}
+
+.Bio .BioTab1Content::-webkit-scrollbar-track,
+.Bio .BioTab2Content::-webkit-scrollbar-track,
+.Bio .BioTab3Content::-webkit-scrollbar-track,
+.Bio .BioTab4Content::-webkit-scrollbar-track {
+  background:var(--bg-panel-right);
+  border-bottom-right-radius:var(--border-radius-big);
+}
+
+.Bio .BioTab1Content::-webkit-scrollbar-thumb,
+.Bio .BioTab2Content::-webkit-scrollbar-thumb,
+.Bio .BioTab3Content::-webkit-scrollbar-thumb,
+.Bio .BioTab4Content::-webkit-scrollbar-thumb {
+  background:var(--bg-panel-left);
+}
