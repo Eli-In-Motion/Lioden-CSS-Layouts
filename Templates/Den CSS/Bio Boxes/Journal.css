@@ -1,0 +1,80 @@
+/*HTML
+<div class="Bio">
+<div class="BioHeader"><h1>Header Title</h1>
+<p>Sub Title</p></div>
+<div class="BioBottom"><div class="BioJournal"><p>Scrolling Journal Area for large amounts of text. Could also be used for images.</p>
+<img src="https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Images/Maia%20of%20Cylenne/Eli-Comm-Maia-of-Cylenne-by-Tabby-220032.png?raw=true" alt="" /></div></div>
+</div>
+*/
+
+.Bio {
+  display:grid;
+  color:var(--font-color-main);
+  width:90%;
+  margin-bottom:10px;
+}
+
+.Bio a {
+  color:var(--font-color-main) !important;
+}
+
+.Bio a:hover {
+  color:var(--accent-color-light) !important;
+}
+
+.Bio img {
+  width:70%;
+  margin:auto;
+}
+
+.Bio br {
+  display:none;
+}
+
+.Bio .BioHeader {
+  background:var(--bg-header-light);
+  border:var(--border-size-small) solid var(--border-color);
+  border-top-left-radius:var(--border-radius-big);
+  border-top-right-radius:var(--border-radius-big);
+  max-height:90px;
+  overflow:hidden;
+}
+
+.Bio .BioHeader h1 {
+  margin:10px;
+}
+
+.Bio .BioHeader p {
+  margin-bottom:10px
+}
+
+.Bio .BioBottom {
+  background:var(--bg-panel-left);
+  border:var(--border-size-small) solid var(--border-color);
+  border-bottom-left-radius:var(--border-radius-big);
+  border-bottom-right-radius:var(--border-radius-big);
+}
+
+.Bio .BioJournal {
+  width:93%;
+  max-height:300px;
+  margin-top:20px;
+  margin-bottom:20px;
+  background:var(--bg-panel-right);
+  border:1px solid var(--border-color);
+  overflow-x:hidden;
+  overflow-y:scroll;
+  padding:20px;
+}
+
+.Bio .BioJournal::-webkit-scrollbar {
+  width:10px;
+}
+
+.Bio .BioJournal::-webkit-scrollbar-track {
+  background:var(--bg-panel-right);
+}
+
+.Bio .BioJournal::-webkit-scrollbar-thumb {
+  background:var(--bg-panel-left);
+}
