@@ -67,11 +67,33 @@
   text-align:left;
   border:var(--border-size-big) solid var(--border-color);
   display:grid;
-  grid-template-rows:1fr;
   grid-template-columns:4fr 3fr;
   gap:10px;
 }
 
+.Bio .BioMain h2,
+.Bio .BioMain p,
+.Bio .BioMain ul {
+  grid-column:1;
+}
+
+.Bio .BioMain div:nth-child(1) {
+  overflow-x:hidden;
+  overflow-y:scroll;
+}
+
+.Bio .BioMain div:nth-child(1)::-webkit-scrollbar {
+  width:4px;
+}
+
+.Bio .BioMain div:nth-child(1)::-webkit-scrollbar-track {
+  background:var(--border-color);
+}
+
+.Bio .BioMain div:nth-child(1)::-webkit-scrollbar-thumb {
+  background:var(--bg-header-dark);
+}
+  
 .Bio .BioMain h2 {
   text-align:center;
   padding:5px;
