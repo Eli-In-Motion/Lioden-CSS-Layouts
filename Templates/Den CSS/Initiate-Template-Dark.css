@@ -709,6 +709,8 @@ a[href="/account-settings.php"] {
   background:var(--accent-color-dark);
   color:var(--accent-color-light);
   border-color:var(--accent-color-light);
+  border-radius:0px;
+}
 }
 
 /*~~~~Lioden License and Links~~~~*/
