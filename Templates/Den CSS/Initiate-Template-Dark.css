@@ -201,24 +201,24 @@ input.floatright{
 
 /*~~~~Event Pop-Ups~~~~*/
 /*~~September Maybe Others? idk~~*/
-table:nth-child(2) {
-  border:var(--border-size-small) solid var(--border-color) !important;
-  border-radius:var(--border-radius-small);
-}
-
-table:nth-child(2) th {
-  border:none !important;
-  border-radius:0px !important;
-}
-
 table .left.b.center {
   background:var(--bg-panel-back);
   color:var(--font-color-main);
+  border:var(--border-size-small) solid var(--border-color);
 }
 
 table .right.center {
   background:var(--bg-panel-right);
   color:var(--font-color-main);
+  border:var(--border-size-small) solid var(--border-color);
+  border-bottom-left-radius:var(--border-radius-small);
+  border-bottom-right-radius:var(--border-radius-small);
+}
+
+/*Had to use copy selector from dev tools because it's too deep*/
+#pageContainer > center > table:nth-child(3) > tbody > tr:nth-child(1) > th {
+  border-bottom-left-radius:0px;
+  border-bottom-right-radius:0px;
 }
 
 /*~~~~Comment Box~~~~*/
@@ -579,10 +579,9 @@ table .right.center {
 
 /*~~~~Edit Details~~~~*/
 #pageContainer table {
-  border:none;
   overflow:hidden;
   border-collapse:separate;
-  border:none
+  border-radius:var(--border-radius-big);
 }
 
 #pageContainer th {
