@@ -584,6 +584,7 @@ table .right.center {
   border-collapse:separate;
   border:none
 }
+
 #pageContainer th {
   background:var(--bg-header-light);
   border:var(--border-size-small) solid var(--border-color);
@@ -625,6 +626,10 @@ th a {
 
 #editdetailspanel .left.b {
   background:var(--bg-panel-left);
+}
+
+#editdetailspanel .right {
+  background:var(--bg-panel-right)
 }
 
 #editdetailspanel input,
