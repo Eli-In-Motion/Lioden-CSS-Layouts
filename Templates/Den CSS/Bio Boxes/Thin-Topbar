@@ -1,0 +1,82 @@
+<div class="Bio">
+  <div class="BioTop">
+  <h1>Header deatils here</h1></div>
+  <div class="BioLeft">
+  <h2>Left box header here</h2>
+  <p>Left box Content Here</p></div>
+  <div class="BioRight">
+  <h2>Right box header here</h2>
+  <p>Right box content here</p></div>
+</div>
+
+.Bio {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows:1fr 2fr;
+  row-gap:20px;
+  column-gap:30px;
+  height:300px;
+  width:90%;
+}
+
+.Bio br {
+  display:none;
+}
+
+.Bio h1,
+.Bio h2,
+.Bio h3 {
+  margin:0px;
+  margin-bottom:20px;
+  color:var(--font-color-main);
+  text-align:center;
+}
+
+.Bio a {
+  color:var(--font-color-main);
+}
+
+.Bio a:hover {
+  color:var(--accent-color-light);
+}
+
+.Bio img {
+  width:80%;
+  margin:auto;
+}
+
+.Bio p {
+  color:var(--font-color-main);
+  text-align:left
+}
+
+.BioTop {
+  grid-column-start:1;
+  grid-column-end:3;
+  padding:10px;
+  border:var(--border-size-big) solid var(--border-color);
+  border-radius:var(--border-radius-big);
+  overflow:hidden;
+}
+
+.BioLeft {
+  border:var(--border-size-big) solid var(--border-color);
+  border-radius:var(--border-radius-big);
+  padding:15px;
+  padding-left:20px;
+  padding-right:20px;
+  overflow-x:hidden;
+  overflow-y:auto;
+  height:220px;
+}
+
+.BioRight {
+  border:var(--border-size-big) solid var(--border-color);
+  border-radius:var(--border-radius-big);
+  padding:15px;
+  padding-left:20px;
+  padding-right:20px;
+  overflow-x:hidden;
+  overflow-y:auto;
+  height:220px;
+}
