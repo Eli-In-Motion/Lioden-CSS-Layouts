@@ -45,6 +45,10 @@
   color:var(--font-color-main);
 }
 
+.Bio img {
+  width:80%;
+}
+
 .BioHeader {
   border:var(--border-size-small) solid var(--border-color);
   border-top-left-radius:var(--border-radius-big);
