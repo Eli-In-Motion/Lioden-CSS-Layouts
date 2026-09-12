@@ -1,0 +1,114 @@
+<div class="Bio">
+  <div class="BioLeft">
+  <h2>Left box header</h2>
+  <p>Left box content here</p>
+  </div>
+  <div class="BioTopRight">
+  <h2>Top right box header</h2>
+  <p>Top right box content here</p>
+  </div>
+  <div class="BioBottomRight">
+  <h2>Bottom right box header</h2>
+  <p>Bottom right content here</p>
+  </div>
+  <div class="BioBottomBar">
+  <a href="https://www.lioden.com/territory.php">Links can go here</a><p>Or normal text</p>
+  </div>
+</div>
+
+.Bio {
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  grid-template-rows:1fr 1fr 1fr;
+  gap:10px;
+  height:400px;
+}
+
+.Bio br {
+  display:none;
+}
+
+.Bio h1,
+.Bio h2,
+.Bio h3 {
+  color:var(--font-color-main);
+  text-align:center;
+  margin:0px;
+}
+
+.Bio p,
+.Bio a {
+  color:var(--font-color-main);
+  text-align:left;
+}
+
+.Bio a:hover {
+  color:var(--accent-color-light);
+}
+
+.Bio img {
+  width:80%;
+  margin:auto;
+}
+
+.BioLeft {
+  background:var(--bg-panel-left);
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius-small);
+  grid-row-start:1;
+  grid-row-end:3;
+  height:260px;
+  overflow-x:hidden;
+  overflow-y:auto;
+  padding-left:20px;
+  padding-right:20px;
+  padding-top:10px;
+}
+
+.BioTopRight {
+  background:var(--bg-panel-right);
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius-small);
+  overflow-x:hidden;
+  overflow-y:auto;
+  padding:10px;
+}
+
+.BioBottomRight {
+  background:var(--bg-panel-back);
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius-small);
+  overflow-x:hidden;
+  overflow-y:auto;
+  padding:10px;
+}
+
+.BioBottomBar {
+  background:var(--bg-header-dark);
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius-small);
+  grid-column-start:1;
+  grid-column-end:3;
+  height:50px;
+  overflow:hidden;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.BioLeft::-webkit-scrollbar,
+.BioTopRight::-webkit-scrollbar,
+.BioBottomRight::-webkit-scrollbar {
+  width:10px;
+}
+
+.BioLeft::-webkit-scrollbar-track,
+.BioTopRight::-webkit-scrollbar-track,
+.BioBottomRight::-webkit-scrollbar-track {
+  background:var(--bg-header-light);
+}
+
+.BioLeft::-webkit-scrollbar-thumb,
+.BioTopRight::-webkit-scrollbar-thumb,
+.BioBottomRight::-webkit-scrollbar-thumb {
+  background:var(--bg-header-light);
+}
