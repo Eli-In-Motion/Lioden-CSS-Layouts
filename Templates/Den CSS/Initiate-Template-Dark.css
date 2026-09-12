@@ -10,8 +10,20 @@ Shout out to my brother for helping me fight through the confusion as I learn CS
 */
 
 /*~~~~Variables~~~~*/
+/*CSS by Eli in Motion #319237 please do not claim as your own or resell*/
+/*<link rel="stylesheet" type="text/css" href="https://eli-in-motion.github.io/Lioden-CSS-Layouts/" /> */
+
+/*Credit Section
+  Misc Debugging
+Shout out to my brother for helping me fight through the confusion as I learn CSS
+  
+  Background Image
+
+*/
+
+/*~~~~Variables~~~~*/
 :root {
-  --bg-main-image:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Den%20CSS/Purple%20Shrine/Purple%20Shrine%20Background%202.webp?raw=true);
+  --bg-main-image:none;
   --bg-main-color:#040e0b8c;
 
   --bg-header-dark:#3c0961bd;
@@ -225,6 +237,13 @@ table .right.center {
   color:var(--accent-color-light);
 }
 
+#commentBox .comment:nth-child(even) {
+  background:var(--bg-chat-dark);
+}
+
+#commentBox .comment:nth-child(odd) {
+  background:var(--bg-chat-light);
+}
 #commentBox .text-muted {
   color:var(--font-color-small);
 }
