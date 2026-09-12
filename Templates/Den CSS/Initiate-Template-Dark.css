@@ -221,6 +221,20 @@ table .right.center {
   border-bottom-right-radius:0px;
 }
 
+#pageContainer > center > table:nth-child(3) > tbody > tr:nth-child(3) > td {
+  background:var(--bg-panel-right);
+  border:var(--border-size-small) solid var(--border-color);
+  color:var(--font-color-main);
+}
+
+#pageContainer > center > table:nth-child(3) > tbody > tr:nth-child(3) > td > a {
+  color:var(--font-color-main);
+}
+
+#pageContainer > center > table:nth-child(3) > tbody > tr:nth-child(3) > td > a:hover {
+  color:var(--accent-color-light);
+}
+
 /*~~~~Comment Box~~~~*/
 #commentBox {
   background:none;
