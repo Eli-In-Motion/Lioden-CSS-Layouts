@@ -1,10 +1,25 @@
 <div class="Bio">
   <div class="BioHeader"><h1>Header</h1><h2>Subheader</h2></div>
   <div class="BioTabs">
-      <div class="Tab1">
+      <div class="Tab">
         <input type="checkbox" />
-        <div class="BioTab1">Tab 1</div>
-        <div class="BioTab1Content">Tab 1 Content</div>
+        <div class="BioTab"><h3>Tab 1</h3></div>
+        <div class="BioTabContent"><h3>Tab 1 Content</h3><p>Content details</p></div>
+      </div>
+      <div class="Tab">
+        <input type="checkbox" />
+        <div class="BioTab"><h3>Tab 2</h3></div>
+        <div class="BioTabContent"><h3>Tab 2 Content</h3><h3></h3><p>Content details</p></div>
+      </div>
+      <div class="Tab">
+        <input type="checkbox" />
+        <div class="BioTab"><h3>Tab 3</h3></div>
+        <div class="BioTabContent"><h3>Tab 3 Content</h3><p>Content details</p></div>
+      </div>
+      <div class="Tab">
+        <input type="checkbox" />
+        <div class="BioTab"><h3>Tab 4</h3></div>
+        <div class="BioTabContent"><h3>Tab 4 Content</h3><p>Content details</p></div>
       </div>
    </div>
   </div>
@@ -30,11 +45,16 @@
   color:var(--font-color-main);
 }
 
+.Bio img {
+  width:80%;
+  margin:auto;
+}
+
 .BioHeader {
   background:var(--bg-header-light);
   border:var(--border-size-small) solid var(--border-color);
   border-radius:var(--border-radius-small);
-  margin:15px;
+  margin:30px;
   overflow:hidden;
 }
 
@@ -42,40 +62,34 @@
   position:relative;
   border:var(--border-size-small) solid var(--border-color);
   border-radius:var(--border-radius-small);
-  margin:25px;
+  margin-bottom:20px;
+  width:85%
 }
 
 .Tab input {
   position:absolute;
   width:100%;
+  height:100%;
   top:0px;
   left:0px;
-  opacity:0;
-  z-index:10;
+  appearance:none;
+  z-index:2;
   cursor:pointer;
+  margin:0px;
+  border-radius:var(--border-radius-small);
 }
 
 .BioTab {
   background:var(--bg-header-dark);
-  border-bottom:var(--border-size-small) solid var(--border-color);
+  padding:5px;
 }
 
 .BioTab h3 {
   text-align:center;
 }
 
-.BioTabContent {
-  background:var(--bg-panel-right);
-  text-align:left;
-  height:100px;
-  display:none;
-  overflow-x:hidden;
-  overflow-y:auto;
-  padding:20px
-}
-
-.BioTabContent h3 {
-  text-align:center;
+.Tab input:hover {
+  box-shadow:0px 0px 10px 2px var(--accent-color-light);
 }
 
 .Tab input:checked ~ .BioTabContent {
@@ -86,6 +100,17 @@
   border:none;
 }
 
-.Tab1 input:checked ~ .BioTab1Content {
-  display:block;
+.BioTabContent {
+  background:var(--bg-panel-right);
+  text-align:left;
+  height:150px;
+  display:none;
+  overflow-x:hidden;
+  overflow-y:auto;
+  padding:20px;
+  padding-top:15px;
+}
+
+.BioTabContent h3 {
+  text-align:center;
 }
