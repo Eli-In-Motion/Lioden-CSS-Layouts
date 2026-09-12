@@ -80,6 +80,7 @@
   font-size:20px;
   box-sizing: border-box;
   background:var(--bg-panel-left);
+  cursor:pointer;
 }
 
 .BioTab4 {
@@ -91,9 +92,9 @@
 .BioTab3:hover,
 .BioTab4:hover {
   color:var(--accent-color-light);
-  border-color:var(--accent-color-light);
   background:var(--bg-panel-back);
   box-shadow:0px 0px 10px 2px var(--accent-color-light);
+  z-index: 10;
 }
 
 .BioTabContent {
@@ -125,6 +126,8 @@
   overflow-x:hidden;
   overflow-y:auto;
   padding:20px;
+  padding-left:30px;
+  padding-right:30px;
   background:var(--bg-panel-right);
   border-bottom-right-radius:var(--border-radius-big);
 }
