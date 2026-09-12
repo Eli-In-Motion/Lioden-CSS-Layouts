@@ -201,38 +201,9 @@ input.floatright{
 
 /*~~~~Event Pop-Ups~~~~*/
 /*~~September Maybe Others? idk~~*/
-table .left.b.center {
-  background:var(--bg-panel-back);
-  color:var(--font-color-main);
-  border:var(--border-size-small) solid var(--border-color);
-}
-
-table .right.center {
-  background:var(--bg-panel-right);
-  color:var(--font-color-main);
-  border:var(--border-size-small) solid var(--border-color);
-  border-bottom-left-radius:var(--border-radius-small);
-  border-bottom-right-radius:var(--border-radius-small);
-}
-
-/*Had to use copy selector from dev tools because it's too deep*/
-#pageContainer > center > table:nth-child(3) > tbody > tr:nth-child(1) > th {
-  border-bottom-left-radius:0px;
-  border-bottom-right-radius:0px;
-}
-
-#pageContainer > center > table:nth-child(3) > tbody > tr:nth-child(3) > td {
-  background:var(--bg-panel-right);
-  border:var(--border-size-small) solid var(--border-color);
-  color:var(--font-color-main);
-}
-
-#pageContainer > center > table:nth-child(3) > tbody > tr:nth-child(3) > td > a {
-  color:var(--font-color-main);
-}
-
-#pageContainer > center > table:nth-child(3) > tbody > tr:nth-child(3) > td > a:hover {
-  color:var(--accent-color-light);
+/*I have decided that I hate this pop-up so it must die*/
+#pageContainer > center > table:nth-child(2) {
+  display:none;
 }
 
 /*~~~~Comment Box~~~~*/
