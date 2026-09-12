@@ -10,7 +10,13 @@
   </div>
 
 .Bio {
-  border:1px solid red;
+  width:90%;
+  height:fit-content;
+  background:var(--bg-panel-left);
+  border:var(--border-size-big) solid var(--border-color);
+  border-radius:var(--border-radius-big);
+  color:var(--font-color-main);
+  overflow:hidden;
 }
 
 .Bio br {
@@ -18,24 +24,28 @@
 }
 
 .Bio h1,
-.Bio h2 {
+.Bio h2,
+.Bio h3 {
   margin:0px;
+  color:var(--font-color-main);
 }
 
 .BioHeader {
-  background:green;
+  background:var(--bg-header-light);
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius-small);
+  margin:15px;
+  overflow:hidden;
 }
 
-.BioTabs {
-  width:90%;
-}
-
-.Tab1 {
+.Tab {
   position:relative;
-  background:blue;
+  border:var(--border-size-small) solid var(--border-color);
+  border-radius:var(--border-radius-small);
+  margin:25px;
 }
 
-.Tab1 input {
+.Tab input {
   position:absolute;
   width:100%;
   top:0px;
@@ -45,9 +55,35 @@
   cursor:pointer;
 }
 
-.BioTab1Content {
+.BioTab {
+  background:var(--bg-header-dark);
+  border-bottom:var(--border-size-small) solid var(--border-color);
+}
+
+.BioTab h3 {
+  text-align:center;
+}
+
+.BioTabContent {
+  background:var(--bg-panel-right);
+  text-align:left;
+  height:100px;
   display:none;
-  background:pink;
+  overflow-x:hidden;
+  overflow-y:auto;
+  padding:20px
+}
+
+.BioTabContent h3 {
+  text-align:center;
+}
+
+.Tab input:checked ~ .BioTabContent {
+  display:block;
+}
+
+.Tab input:not(:checked) ~ .BioTab {
+  border:none;
 }
 
 .Tab1 input:checked ~ .BioTab1Content {
