@@ -1,0 +1,55 @@
+<div class="Bio">
+  <div class="BioHeader"><h1>Header</h1><h2>Subheader</h2></div>
+  <div class="BioTabs">
+      <div class="Tab1">
+        <input type="checkbox" />
+        <div class="BioTab1">Tab 1</div>
+        <div class="BioTab1Content">Tab 1 Content</div>
+      </div>
+   </div>
+  </div>
+
+.Bio {
+  border:1px solid red;
+}
+
+.Bio br {
+  display:none;
+}
+
+.Bio h1,
+.Bio h2 {
+  margin:0px;
+}
+
+.BioHeader {
+  background:green;
+}
+
+.BioTabs {
+  width:90%;
+}
+
+.Tab1 {
+  position:relative;
+  background:blue;
+}
+
+.Tab1 input {
+  position:absolute;
+  width:100%;
+  top:0px;
+  left:0px;
+  opacity:0;
+  z-index:10;
+  cursor:pointer;
+}
+
+.BioTab1Content {
+  display:none;
+  background:pink;
+}
+
+.Tab1 input:checked ~ .BioTab1Content {
+  display:block;
+}
