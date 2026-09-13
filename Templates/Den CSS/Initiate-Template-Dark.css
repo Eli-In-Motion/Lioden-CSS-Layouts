@@ -201,9 +201,22 @@ input.floatright{
 
 /*~~~~Event Pop-Ups~~~~*/
 /*~~September Maybe Others? idk~~*/
-/*I have decided that I hate this pop-up so it must die*/
-#pageContainer > center > table:nth-child(2) {
-  display:none;
+/*This event will be the end of my sanity*/
+#pageContainer > center > table {
+  border:var(--border-size-big) solid var(--border-color);
+  color:var(--font-color-main);
+}
+
+#pageContainer > center > table .left.b.center {
+  background:var(--bg-panel-left);
+}
+
+#pageContainer > center > table .right.center {
+  background:var(--bg-panel-right);
+}
+
+#pageContainer > center > table th {
+  border:none;
 }
 
 /*~~~~Comment Box~~~~*/
@@ -710,7 +723,6 @@ a[href="/account-settings.php"] {
   color:var(--accent-color-light);
   border-color:var(--accent-color-light);
   border-radius:0px;
-}
 }
 
 /*~~~~Lioden License and Links~~~~*/
