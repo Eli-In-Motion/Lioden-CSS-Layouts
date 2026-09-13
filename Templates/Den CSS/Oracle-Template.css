@@ -1,3 +1,4 @@
+/*~~~~Oracle~~~~*/
 .pagedoll {
   width:200px;
   position:fixed;
@@ -16,4 +17,34 @@
 
 .progress div {
   color:var(--font-color-main);
+}
+
+/*Options to pick*/
+/*body-wide font*/
+.body {
+  font:;
+}
+
+/*Bio only font*/
+.Bio {
+  font:;
+}
+
+/*Cursor*/
+body {
+  cursor:;
+  cursor:pointer;
+}
+
+/*Free upgrade to premium Bio Box*/
+
+/*Hover glow over caves, mounds, allies, clans, dynsaty*/
+.cave-grid:hover {
+  border-color:var(--accent-color-light);
+  box-shadow:0px 0px 10px 2px var(--accent-color-light);
+}
+
+.mound-grid:hover {
+  box-shadow:0px 0px 10px 2px var(--accent-color-light);
+  border-color:var(--accent-color-light);
 }
