@@ -5,6 +5,7 @@
   bottom:0;
   left:0;
   z-index:9999;
+  pointer-events:none;
 }
 
 .progress {
@@ -45,7 +46,7 @@ body {
 }
 
 .mound-grid:hover {
-  box-shadow:0px 0px 10px 2px var(--accent-glow-heavy);
+  box-shadow:0px 0px 10px 1px var(--accent-glow-heavy);
   border-color:var(--accent-glow-heavy);
 }
 
@@ -55,4 +56,17 @@ body {
 
 #clans .right:has(.bigger:hover) {
   background: radial-gradient(var(--accent-glow-heavy) 0%, var(--accent-glow-light) 30%, var(--bg-panel-left) 70%) !important;
+}
+
+.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist:hover div {
+  box-shadow:0px 0px 10px 1px var(--accent-glow-heavy);
+  border-color:var(--accent-glow-heavy);
+}
+
+input:hover,
+.btn.btn-default.button:hover,
+#btnChatSend:hover,
+.navbar-toggle:hover,
+.navbar-toggle.collapsed:hover {
+  box-shadow:0px 0px 10px 2px var(--accent-glow-heavy) !important;
 }
