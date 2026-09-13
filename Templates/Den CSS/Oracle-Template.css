@@ -52,3 +52,7 @@ body {
 #allies .right:has(.bigger:hover){
   background: radial-gradient(var(--accent-glow-heavy) 0%, var(--accent-glow-light) 30%, var(--bg-panel-left) 70%) !important;
 }
+
+#clans .right:has(.bigger:hover) {
+  background: radial-gradient(var(--accent-glow-heavy) 0%, var(--accent-glow-light) 30%, var(--bg-panel-left) 70%) !important;
+}
