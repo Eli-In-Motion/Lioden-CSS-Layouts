@@ -1,6 +1,19 @@
 .pagedoll {
+  width:200px;
   position:fixed;
-  z-index:9999;
-  right:0;
+  bottom:0;
   left:0;
+  z-index:9999;
+}
+
+.progress {
+  background:var(--bg-panel-left);
+}
+
+.progress-bar {
+  background:var(--bg-header-light);
+}
+
+.progress div {
+  color:var(--font-color-main);
 }
