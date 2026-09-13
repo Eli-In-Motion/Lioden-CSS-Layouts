@@ -102,3 +102,22 @@ input:hover,
   border:var(--border-size-big) solid var(--border-color);
   border-radius:var(--border-radius-small);
 }
+
+
+/*Cursor*/
+body,
+.container.topbar,
+.container.topbar::before,
+.container.topbar::after{
+  cursor: url('https://cdn.cursors-4u.net/previews/sun-4-4b391f82-32.webp') 31 31, auto !important;
+}
+
+a,
+input,
+select,
+button,
+textarea,
+button.navbar-toggle,
+.navbar-toggle.collapsed{
+  cursor: url('https://cdn.cursors-4u.net/previews/sun-4-4b391f82-32.webp') 32 32, pointer !important;
+}
