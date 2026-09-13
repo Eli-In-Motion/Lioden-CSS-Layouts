@@ -22,13 +22,23 @@
 
 /*Options to pick*/
 /*body-wide font*/
-.body {
-  font:;
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
+h1,
+h2,
+h3 {
+  font-family: "Charm", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /*Bio only font*/
-.Bio {
-  font:;
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
+.Bio h1,
+.Bio h2,
+.Bio h3 {
+  font-family: "Charm", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /*Cursor*/
