@@ -40,11 +40,15 @@ body {
 
 /*Hover glow over caves, mounds, allies, clans, dynsaty*/
 .cave-grid:hover {
-  border-color:var(--accent-color-light);
-  box-shadow:0px 0px 10px 2px var(--accent-color-light);
+  border-color:var(--accent-glow-heavy);
+  box-shadow:0px 0px 10px 2px var(--accent-glow-heavy);
 }
 
 .mound-grid:hover {
-  box-shadow:0px 0px 10px 2px var(--accent-color-light);
-  border-color:var(--accent-color-light);
+  box-shadow:0px 0px 10px 2px var(--accent-glow-heavy);
+  border-color:var(--accent-glow-heavy);
+}
+
+#allies .right:has(.bigger:hover){
+  background: radial-gradient(var(--accent-glow-heavy) 0%, var(--accent-glow-light) 30%, var(--bg-panel-left) 70%) !important;
 }
