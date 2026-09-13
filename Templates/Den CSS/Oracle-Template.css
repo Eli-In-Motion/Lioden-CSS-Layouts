@@ -11,7 +11,7 @@
 }
 
 .progress-bar {
-  background:var(--bg-header-light);
+  background:var(--bg-panel-right);
 }
 
 .progress div {
