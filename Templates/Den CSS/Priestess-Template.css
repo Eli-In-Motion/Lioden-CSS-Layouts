@@ -13,6 +13,13 @@
   height:20px;
 }
 
+/*Lioden Logo*/
+.navbar-brand.visible-lg.visible-md img {
+  content:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Images/money.png?raw=true);
+  width:192px;
+  height:120px;
+}
+
 /*King Icon Image Replacement*/
 .lion-image-block img {
   content:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Images/Maia%20of%20Cylenne/Maia-by-Ysera1.png?raw=true) !important;
