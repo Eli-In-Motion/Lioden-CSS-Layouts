@@ -21,7 +21,7 @@
 }
 
 /*Options to pick*/
-/*body-wide font*/
+/*body-wide header font*/
 @import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
 h1,
 h2,
@@ -36,7 +36,7 @@ h3,
   font-style: normal;
 }
 
-/*Bio only font*/
+/*Bio only header font*/
 @import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
 .Bio h1,
 .Bio h2,
@@ -44,12 +44,6 @@ h3,
   font-family: "Charm", cursive;
   font-weight: 400;
   font-style: normal;
-}
-
-/*Cursor*/
-body {
-  cursor:;
-  cursor:pointer;
 }
 
 /*Free upgrade to premium Bio Box*/
@@ -78,6 +72,8 @@ body {
   border-color:var(--accent-glow-heavy);
 }
 
+
+/*Button hover glow*/
 input:hover,
 .btn.btn-default.button:hover,
 #btnChatSend:hover,
@@ -105,10 +101,7 @@ input:hover,
 
 
 /*Cursor*/
-body,
-.container.topbar,
-.container.topbar::before,
-.container.topbar::after{
+body {
   cursor: url('https://cdn.cursors-4u.net/previews/sun-4-4b391f82-32.webp') 31 31, auto !important;
 }
 
