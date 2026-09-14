@@ -555,6 +555,10 @@ input.floatright{
   display:none;
 }
 
+#clans {
+  border:none !important;
+}
+
 /*~~~~Dynasty, Achievements, Showcase, Beetle Book~~~~*/
 .col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div {
   background:var(--bg-header-mid);
