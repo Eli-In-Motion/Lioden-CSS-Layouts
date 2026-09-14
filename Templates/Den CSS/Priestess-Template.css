@@ -1,0 +1,14 @@
+/*~~~~Priestess~~~~*/
+/*King Icon Image Replacement*/
+.lion-image-block img {
+  content:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Images/Maia%20of%20Cylenne/Maia-by-Ysera1.png?raw=true) !important;
+  width:200px !important;
+  height:200px !important;
+}
+
+/*Player Icon Image Replacement*/
+#player td.right:nth-child(2) img {
+  content:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Images/Maia%20of%20Cylenne/Maia-by-Ysera1.png?raw=true) !important;
+  width:150px;
+  height:150px;
+}
