@@ -138,6 +138,13 @@ img[src="//static.lioden.com/img/layout/icon-time-day.png"]{
   height:20px;
 }
 
+/*Only Nighttime Weather Icon*/
+img[src="//static.lioden.com/img/layout/icon-time-night.png"] {
+  content:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Images/money.png?raw=true);
+  width:20px;
+  height:20px;
+}
+
 /*Only Dry Season Weather Icon*/
 img[src="//static.lioden.com/img/layout/icon-season-dry.png"]{
   content:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Images/money.png?raw=true);
