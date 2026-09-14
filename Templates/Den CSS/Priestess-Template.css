@@ -1,4 +1,18 @@
 /*~~~~Priestess~~~~*/
+/*SB Icon*/
+.toplinks li:has(a[href="/spend-history.php?type=sb"]) .icon {
+  content:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Images/money.png?raw=true);
+  width:20px;
+  height:20px;
+}
+
+/*GB Icon*/
+.toplinks li:has(a[href="/spend-history.php?type=gb"]) .icon {
+  content:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Images/money.png?raw=true);
+  width:20px;
+  height:20px;
+}
+
 /*King Icon Image Replacement*/
 .lion-image-block img {
   content:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Images/Maia%20of%20Cylenne/Maia-by-Ysera1.png?raw=true) !important;
