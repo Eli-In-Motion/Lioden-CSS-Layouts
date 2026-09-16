@@ -57,7 +57,7 @@ Animations
 }
 
 WIPWIPWIPWIP
-~~~~~~~~~~Slide in on check tab
+~~~~~~~~~~Slide in on hover tab
 .Bio {
   border:1px solid red;
   color:var(--font-color-main);
@@ -167,21 +167,28 @@ WIPWIPWIPWIP
   grid-column-start:2;
   grid-row-start:1;
   grid-row-end:5;
-  display:none;
+  opacity:0;
+  pointer-events:none;
+  transition:opacity 2s, width 1s;
+  width:0px;
 }
 
 .Bio .BioTab1:hover ~ .BioTab1Content,
 .Bio .BioTab2:hover ~ .BioTab2Content,
 .Bio .BioTab3:hover ~ .BioTab3Content,
 .Bio .BioTab4:hover ~ .BioTab4Content {
-  display:block;
+  opacity:1;
+  pointer-events:auto;
+  width:100%;
 }
 
 .Bio .BioTab1Content:hover,
 .Bio .BioTab2Content:hover,
 .Bio .BioTab3Content:hover,
 .Bio .BioTab4Content:hover {
-  display:block;
+  opacity:1;
+  pointer-events:auto;
+  width:100%;
 }
 
 .Bio .BioTab1:hover ~ .BioPlaceholder,
@@ -192,5 +199,6 @@ WIPWIPWIPWIP
 .Bio .BioTab2Content:hover ~ .BioPlaceholder,
 .Bio .BioTab3Content:hover ~ .BioPlaceholder,
 .Bio .BioTab4Content:hover ~ .BioPlaceholder {
-  display:none;
+  opacity:0;
+  pointer-events:none;
 }
