@@ -57,190 +57,116 @@ Animations
 }
 
 WIPWIPWIPWIP
-~~~~~~~~~~Slide in on hover tab
-
+~~~~~~~~~~Slide in on check tab
 .Bio {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  grid-template-rows:auto 100px 200px 200px;
-  row-gap:20px;
-  margin-bottom:30px;
-  width:90%;
+  border:1px solid red;
   color:var(--font-color-main);
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  grid-template-rows:auto 150px 200px auto;
+  gap:10px;
+  width:90%;
 }
 
 .Bio br {
   display:none;
 }
 
+.Bio img {
+  max-width:80%;
+}
+
 .Bio .BioHeader {
+  border:1px solid blue;
   padding:10px;
-  border-width:1px 0px 1px 1px;
-  border-style:solid;
-  background:var(--bg-header-light);
-  border-color:var(--border-color);
 }
 
 .Bio .BioHeader h1 {
   margin:0;
 }
 
-.Bio .BioHeader p {
-  margin:0;
+.Bio .BioHeader2 {
+  border:1px solid blue;
+  padding:10px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
-.Bio .BioHeader2 {
-  display: flex;
-  align-items: center;
-  justify-content:center;
-  background:var(--bg-header-light);
-  border-width:1px 1px 1px 0px;
-  border-style:solid;
-  border-color:var(--border-color);
+.Bio .BioHeader2 p {
+  margin:0;
 }
 
 .Bio .BioLeft {
+  border:1px solid green;
   grid-row-start:2;
   grid-row-end:4;
-  margin-right:10px;
   overflow-x:hidden;
   overflow-y:auto;
-  border:var(--border-size-small) solid var(--border-color);
-}
-
-.Bio .BioLeft img {
-  width:90%;
-}
-
-.Bio .BioLeft::-webkit-scrollbar {
-  width:10px;
-}
-
-.Bio .BioLeft::-webkit-scrollbar-track {
-  background:var(--bg-header-light);
-}
-
-.Bio .BioLeft::-webkit-scrollbar-thumb {
-  background:var(--bg-header-dark);
 }
 
 .Bio .BioRightTop {
-  border:var(--border-size-small) solid var(--border-color);
+  border:1px solid green;
   overflow-x:hidden;
   overflow-y:auto;
-  margin-left:10px;
-  padding:10px;
-}
-
-.Bio .BioRightTop:hover {
-  
 }
 
 .Bio .BioRightTop h2 {
-  color:var(--font-color-main);
   margin:0;
+  color:var(--font-color-main);
 }
 
-.Bio .BioRightTop::-webkit-scrollbar {
-  width:10px;
-}
-
-.Bio .BioRightTop::-webkit-scrollbar-track {
-  background:var(--bg-header-light);
-}
-
-.Bio .BioRightTop::-webkit-scrollbar-thumb {
-  background:var(--bg-header-dark);
+.Bio .BioRightTop p {
+  margin:0;
+  text-align:left;
 }
 
 .Bio .BioRightBottom {
-  border:var(--border-size-small) solid var(--border-color);
+  border:1px solid green;
   overflow-x:hidden;
   overflow-y:auto;
-  margin-left:10px;
-  padding:20px
 }
 
 .Bio .BioRightBottom h2 {
-  color:var(--font-color-main);
   margin:0;
+  color:var(--font-color-main);
 }
 
-.Bio .BioRightBottom::-webkit-scrollbar {
-  width:10px;
-}
-
-.Bio .BioRightBottom::-webkit-scrollbar-track {
-  background:var(--bg-header-light);
-}
-
-.Bio .BioRightBottom::-webkit-scrollbar-thumb {
-  background:var(--bg-header-dark);
+.Bio .BioRightBottom p {
+  margin:0;
+  text-align:left;
 }
 
 .Bio .BioBottom {
+  border:1px solid yellow;
   grid-column-start:1;
   grid-column-end:3;
   display:grid;
   grid-template-columns:auto 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap:0;border:var(--border-size-small) solid var(--border-color);
-}
-
-.BioPlaceholder {
-  grid-column-start:2;
-  grid-row-start:1;;
-  grid-row-end:5;
+  grid-template-rows: repeat(4, 1fr);
 }
 
 .Bio .BioTab1,
 .Bio .BioTab2,
 .Bio .BioTab3,
 .Bio .BioTab4 {
+  border:1px solid pink;
   grid-column-start:1;
-  border-style:none solid solid none;border-width:var(--border-size-small);
-  border-color:var(--border-color);
-  display: flex;
-  align-items: center;
-  justify-content:center;
 }
 
-.Bio .BioTab4 {
-  border-bottom:none;
+.Bio .BioPlaceholder {
+  grid-column-start:2;
+  grid-row-start:1;
+  grid-row-end:5;
 }
 
 .Bio .BioTab1Content,
 .Bio .BioTab2Content,
 .Bio .BioTab3Content,
 .Bio .BioTab4Content {
+  border:1px solid teal;
   grid-column-start:2;
   grid-row-start:1;
   grid-row-end:5;
-  border:1px solid yellow;
-  background:red;
-  opacity:0;
-  clip-path: inset(0 100% 0 0);
-}
-
-@keyframes slide {
-  from {clip-path: inset(0% 100% 0% 0%)}
-  to {clip-path: inset(0% 0% 0% 0%)}
-}
-
-.Bio .BioTab1:hover ~ .BioTab1Content,
-.Bio .BioTab2:hover ~ .BioTab2Content,
-.Bio .BioTab3:hover ~ .BioTab3Content,
-.Bio .BioTab4:hover  ~ .BioTab4Content {
-  opacity:1;
-  pointer-events: auto;
-  animation:slide 2s forwards;
-}
-
-.Bio .BioTab1Content:hover,
-.Bio .BioTab2Content:hover,
-.Bio .BioTab3Content:hover,
-.Bio .BioTab4Content:hover {
-  opacity:1;
-  pointer-events: auto;
-  animation:slide 2s forwards;
+  display:none;
 }
