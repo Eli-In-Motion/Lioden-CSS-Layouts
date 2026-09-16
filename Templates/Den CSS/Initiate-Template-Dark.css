@@ -706,6 +706,19 @@ a[href="/account-settings.php"] {
   color:var(--font-color-main) !important;
 }
 
+.panel-body.small.center input {
+  background:var(--bg-chat-dark);
+  color:var(--font-color-main);
+  text-shadow:none;
+  border:1px solid var(--border-color);
+}
+
+.panel-body.small.center input:hover {
+  background:var(--accent-color-dark);
+  color:var(--accent-color-light);
+  border-color:var(--accent-color-light);
+}
+
 /*~~~~Hide/Show Chatbox Button~~~~*/
 #btnToggleSidebarChat {
   background:var(--bg-chat-dark);
