@@ -73,6 +73,22 @@ Animations
   100% {transform:scaleX(1)}
 }
 
+~~~~~~~~~Spinning Pagedoll
+.pagedoll {
+  width:250px;
+  position:fixed;
+  bottom:-70px;
+  left:-30px;
+  z-index:1000;
+  pointer-events:none;
+  animation:flip 8s linear infinite;
+}
+
+@keyframes flip {
+  0% { transform:rotate(0deg)}
+  100% { transform:rotate(360deg)}
+}
+
 WIPWIPWIPWIP
 ~~~~~~~~~~Slide in on hover tab
 .Bio {
