@@ -59,13 +59,16 @@ Animations
 WIPWIPWIPWIP
 ~~~~~~~~~~Slide in on hover tab
 .Bio {
-  border:1px solid red;
+  background:var(--bg-panel-left);
   color:var(--font-color-main);
+  border:var(--border-size-big) solid var(--border-color);
+  border-radius:var(--border-radius-big);
   display:grid;
   grid-template-columns:2fr 1fr;
-  grid-template-rows:auto 150px 200px auto;
-  gap:10px;
+  grid-template-rows:auto 150px 200px 200px;
+  grid-row-gap:10px;
   width:90%;
+  padding:20px;
 }
 
 .Bio br {
@@ -77,7 +80,10 @@ WIPWIPWIPWIP
 }
 
 .Bio .BioHeader {
-  border:1px solid blue;
+  background:var(--bg-header-light);
+  border-style:solid none solid solid;
+  border-width:var(--border-size-small);
+  border-color:var(--border-color);
   padding:10px;
 }
 
@@ -86,7 +92,10 @@ WIPWIPWIPWIP
 }
 
 .Bio .BioHeader2 {
-  border:1px solid blue;
+  background:var(--bg-header-light);
+  border-style:solid solid solid none;
+  border-width:var(--border-size-small);
+  border-color:var(--border-color);
   padding:10px;
   display:flex;
   justify-content:center;
@@ -98,15 +107,30 @@ WIPWIPWIPWIP
 }
 
 .Bio .BioLeft {
-  border:1px solid green;
+  background:var(--bg-panel-right);
+  border:var(--border-size-small) solid var(--border-color);
   grid-row-start:2;
   grid-row-end:4;
   overflow-x:hidden;
   overflow-y:auto;
+  margin-right:20px;
+}
+
+.Bio .BioLeft::-webkit-scrollbar {
+  width:10px;
+}
+
+.Bio .BioLeft::-webkit-scrollbar-track {
+  background:var(--bg-header-light);
+}
+
+.Bio .BioLeft::-webkit-scrollbar-thumb {
+  background:var(--bg-header-dark);
 }
 
 .Bio .BioRightTop {
-  border:1px solid green;
+  background:var(--bg-chat-dark);
+  border:var(--border-size-small) solid var(--border-color);
   overflow-x:hidden;
   overflow-y:auto;
 }
@@ -122,7 +146,8 @@ WIPWIPWIPWIP
 }
 
 .Bio .BioRightBottom {
-  border:1px solid green;
+  background:var(--bg-chat-light);
+  border:var(--border-size-small) solid var(--border-color);
   overflow-x:hidden;
   overflow-y:auto;
 }
@@ -149,28 +174,39 @@ WIPWIPWIPWIP
 .Bio .BioTab2,
 .Bio .BioTab3,
 .Bio .BioTab4 {
-  border:1px solid pink;
+  border:var(--border-size-small) solid var(--border-color);
   grid-column-start:1;
+  display:flex;
+  justify-items:center;
+  align-items:center;
+  background:var(--bg-panel-right);
 }
 
 .Bio .BioPlaceholder {
   grid-column-start:2;
   grid-row-start:1;
   grid-row-end:5;
+  background:var(--accent-color-light);
+  opacity:1;
+  transition:opacity 1s width .75s;
+  width:100%;
 }
 
 .Bio .BioTab1Content,
 .Bio .BioTab2Content,
 .Bio .BioTab3Content,
 .Bio .BioTab4Content {
-  border:1px solid teal;
   grid-column-start:2;
   grid-row-start:1;
   grid-row-end:5;
   opacity:0;
   pointer-events:none;
-  transition:opacity 2s, width 1s;
+  transition:opacity 1s, width .75s;
   width:0px;
+  overflow-x:hidden;
+  overflow-y:auto;
+  background:var(--accent-color-light);
+  border:var(--border-size-small) solid var(--border-color);
 }
 
 .Bio .BioTab1:hover ~ .BioTab1Content,
@@ -201,4 +237,5 @@ WIPWIPWIPWIP
 .Bio .BioTab4Content:hover ~ .BioPlaceholder {
   opacity:0;
   pointer-events:none;
+  width:0%
 }
