@@ -9,22 +9,26 @@
   <div class="BioTab2">Tab 2</div>
   <div class="BioTab3">Tab 3</div>
   <div class="BioTab4">Tab 4</div>
-  <div class="BioPlaceholder">Placeholder</div>
   <div class="BioTab1Content">Tab 1 Content</div>
   <div class="BioTab2Content">Tab 2 Content</div>
   <div class="BioTab3Content">Tab 3 Content</div>
   <div class="BioTab4Content">Tab 4 Content</div>
+  <div class="BioPlaceholder">Placeholder</div>
 </div>
 </div>
 
 .Bio {
+  background:var(--bg-panel-back);
+  border:var(--border-size-big) solid var(--border-color);
+  border-radius:var(--border-radius-big);
+  color:var(--font-color-main);
   display:grid;
   grid-template-columns:1fr 1fr;
   grid-template-rows:auto 100px 200px 200px;
-  row-gap:20px;
+  row-gap:15px;
   margin-bottom:30px;
-  width:90%;
-  color:var(--font-color-main);
+  width:95%;
+  padding:20px;
 }
 
 .Bio br {
@@ -32,46 +36,44 @@
 }
 
 .Bio .BioHeader {
-  padding:10px;
-  border-width:1px 0px 1px 1px;
-  border-style:solid;
   background:var(--bg-header-light);
   border-color:var(--border-color);
+  border-width:1px 0px 1px 1px;
+  border-style:solid;
+  padding:10px;
 }
 
-.Bio .BioHeader h1 {
-  margin:0;
-}
-
-.Bio .BioHeader p {
+.Bio .BioHeader h1,
+.Bio .BioHeader p{
   margin:0;
 }
 
 .Bio .BioHeader2 {
-  display: flex;
-  align-items: center;
-  justify-content:center;
   background:var(--bg-header-light);
   border-width:1px 1px 1px 0px;
   border-style:solid;
   border-color:var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content:center;
 }
 
 .Bio .BioLeft {
+  background:var(--bg-panel-left);
+  border:var(--border-size-small) solid var(--border-color);
   grid-row-start:2;
   grid-row-end:4;
-  margin-right:10px;
+  margin-right:5px;
   overflow-x:hidden;
   overflow-y:auto;
-  border:var(--border-size-small) solid var(--border-color);
 }
 
 .Bio .BioLeft img {
-  width:90%;
+  max-width:90%;
 }
 
 .Bio .BioLeft::-webkit-scrollbar {
-  width:10px;
+  width:8px;
 }
 
 .Bio .BioLeft::-webkit-scrollbar-track {
@@ -83,10 +85,11 @@
 }
 
 .Bio .BioRightTop {
+  background:var(--bg-panel-right);
   border:var(--border-size-small) solid var(--border-color);
   overflow-x:hidden;
   overflow-y:auto;
-  margin-left:10px;
+  margin-left:5px;
   padding:10px
 }
 
@@ -96,7 +99,7 @@
 }
 
 .Bio .BioRightTop::-webkit-scrollbar {
-  width:10px;
+  width:8px;
 }
 
 .Bio .BioRightTop::-webkit-scrollbar-track {
@@ -108,10 +111,11 @@
 }
 
 .Bio .BioRightBottom {
+  background:var(--bg-chat-light);
   border:var(--border-size-small) solid var(--border-color);
   overflow-x:hidden;
   overflow-y:auto;
-  margin-left:10px;
+  margin-left:5px;
   padding:20px
 }
 
@@ -121,7 +125,7 @@
 }
 
 .Bio .BioRightBottom::-webkit-scrollbar {
-  width:10px;
+  width:8px;
 }
 
 .Bio .BioRightBottom::-webkit-scrollbar-track {
@@ -138,44 +142,45 @@
   display:grid;
   grid-template-columns:auto 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap:0;border:var(--border-size-small) solid var(--border-color);
-}
-
-.BioPlaceholder {
-  grid-column-start:2;
-  grid-row-start:1;;
-  grid-row-end:5;
+  gap:0;
 }
 
 .Bio .BioTab1,
 .Bio .BioTab2,
 .Bio .BioTab3,
 .Bio .BioTab4 {
-  grid-column-start:1;
-  border-style:none solid solid none;border-width:var(--border-size-small);
+  background:var(--bg-chat-dark);
+  border-style:solid none none solid;
+  border-width:var(--border-size-small);
   border-color:var(--border-color);
+  grid-column-start:1;
   display: flex;
   align-items: center;
   justify-content:center;
 }
 
 .Bio .BioTab4 {
-  border-bottom:none;
+  border-bottom:var(--border-size-small) solid var(--border-color);
+}
+
+.Bio .BioTab1:hover,
+.Bio .BioTab2:hover,
+.Bio .BioTab3:hover,
+.Bio .BioTab4:hover {
+  background:var(--bg-chat-light);
 }
 
 .Bio .BioTab1Content,
 .Bio .BioTab2Content,
 .Bio .BioTab3Content,
 .Bio .BioTab4Content {
+  border:var(--border-size-small) solid var(--border-color);
   grid-column-start:2;
   grid-row-start:1;
   grid-row-end:5;
-  border:1px solid yellow;
   opacity:0;
-  transition:opacity 1s;
   clip-path: inset(0 100% 0 0);
-  transition: clip-path .55s;
-  pointer-events:none;
+  transition: clip-path .55s, opacity .25s;
 }
 
 .Bio .BioTab1:hover ~ .BioTab1Content,
@@ -194,4 +199,28 @@
   opacity:1;
   pointer-events:auto;
   clip-path: inset(0 0 0 0);
+}
+
+.BioPlaceholder {
+  background:var(--bg-panel-left);
+  border:var(--border-size-small) solid var(--border-color);
+  grid-column-start:2;
+  grid-row-start:1;;
+  grid-row-end:5;
+  clip-path: inset(0 0 0 0);
+  transition: clip-path .55s, opacity .25s;
+}
+
+.Bio .BioTab1:hover ~ .BioPlaceholder,
+.Bio .BioTab2:hover ~ .BioPlaceholder,
+.Bio .BioTab3:hover ~ .BioPlaceholder,
+.Bio .BioTab4:hover ~ .BioPlaceholder {
+  clip-path: inset(0 0 0 100%);
+}
+
+.Bio .BioTab1Content:hover ~ .BioPlaceholder,
+.Bio .BioTab2Content:hover ~ .BioPlaceholder,
+.Bio .BioTab3Content:hover ~ .BioPlaceholder,
+.Bio .BioTab4Content:hover ~ .BioPlaceholder {
+  clip-path: inset(0 100% 0 0);
 }
