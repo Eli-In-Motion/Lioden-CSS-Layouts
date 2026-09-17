@@ -132,3 +132,27 @@
   margin:5px;
   padding:5px;
 }
+
+~~~~~~~~~~~~~~~~~Sinlge Row Logs
+#pageContainer > center > div:nth-child(38) {
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows:1fr;
+}
+
+#pageContainer > center > div:nth-child(38) br {
+  display:none;
+}
+
+.row .col.col-sm-4 {
+  grid-row-start:1;
+  width:100%;
+  
+}
+
+.row .col.col-sm-4 .left {
+  height:50px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
