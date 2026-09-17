@@ -156,3 +156,13 @@
   justify-content:center;
   align-items:center;
 }
+
+~~~~~~~~~~~~~~~~~Alert Links Grow on hover
+.alert a {
+  font-size:auto;
+  transition:font-size .75s;
+}
+
+.alert a:hover {
+  font-size:medium;
+}
