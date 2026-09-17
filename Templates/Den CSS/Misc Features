@@ -1,0 +1,134 @@
+~~~~~~~~~~~~ Hide Allies Except on Hover
+#allies tr:nth-last-child(-n+6) {
+  display:none !important;
+}
+
+#allies tr:first-child:hover ~ tr:nth-last-child(-n+6) {
+  display:revert !important;
+}
+
+#allies:has(tr:nth-last-child(-n+6):hover) tr:nth-last-child(-n+6) {
+  display:revert !important;
+}
+
+~~~~~~~~~~~~~~~Hide Clans Except on Hover
+#clans tr:nth-last-child(-n+5) {
+  clip-path:inset(0 0 100% 0);
+  visibility:collapse;
+  transition:clip-path 1s, visibility .5s ease-out;
+}
+
+#clans tr:first-child:hover ~ tr:nth-last-child(-n+5) {
+  clip-path:inset(0 0 0 0);
+  visibility:visible;
+}
+
+#clans:has(tr:nth-last-child(-n+5):hover) tr:nth-last-child(-n+5) {
+  clip-path:inset(0 0 0 0);
+  visibility:visible;
+}
+
+~~~~~~~~~Circle King Icon {
+.lion-image-block {
+  clip-path:circle();
+}
+
+~~~~~~~~~~~~~~~~~~ Restack Caves and Mounds
+#fraOrganizationBlock {
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows:auto 1fr;
+}
+
+#fraOrganizationBlock > br {
+  display:none;
+}
+
+#fraOrganizationBlock > .col-md-4.col-xs-6.center .cave-grid {
+  grid-row-start:1;
+  background:red !important;
+}
+
+#fraCaveList {
+  grid-column-start:1;
+  grid-column-end:4;
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+}
+
+.col-md-4.col-xs-6.center {
+  width:100%;
+}
+
+#fraMoundList {
+  grid-column-start:1;
+  grid-column-end:4;
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.col-md-3.col-xs-4.center {
+  width:100%;
+}
+
+~~~~~~~~~~~~~~~Restack Dynasty
+.row.dynastycollection {
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows:1fr 1fr;
+}
+
+.row.dynastycollection::before {
+  display:none;
+}
+
+.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist {
+  width:100%;
+}
+
+.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist:nth-child(3) {
+  grid-column-start:1;
+}
+.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist:nth-child(-n+2) {
+  margin-left:50%;
+}
+
+~~~~~~~~~~~~~~~Single Row Dynasty
+.row.dynastycollection {
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows:70px;
+}
+
+.row.dynastycollection br {
+  display:none;
+}
+
+.row.dynastycollection::before {
+  display:none;
+}
+
+.row.dynastycollection img {
+  display:none;
+}
+
+.row.dynastycollection h3 {
+  margin:0;
+  font-size:18px;
+}
+
+.row.dynastycollection .left {
+  padding:3px;
+  margin:0px !important;
+  height: 100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist {
+  width:100%;
+  margin:5px;
+  padding:5px;
+}
