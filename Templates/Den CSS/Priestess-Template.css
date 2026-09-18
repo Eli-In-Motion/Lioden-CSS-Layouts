@@ -27,11 +27,52 @@
   height:200px !important;
 }
 
+/*Circle King Icon*/
+.lion-image-block {
+  clip-path:circle();
+}
+
 /*Player Icon Image Replacement*/
 #player td.right:nth-child(2) img {
   content:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Images/Maia%20of%20Cylenne/Maia-by-Ysera1.png?raw=true) !important;
   width:150px;
   height:150px;
+}
+
+/*Hide Donator Star*/
+img[src="//static.lioden.com/images/layout/donator.png"] {
+  display:none;
+  width:17px;
+  height:17px;
+}
+
+/*Hide Active Tracker*/
+.member-online {
+  display:none;
+  background:none;
+  width:10px;
+  height:10px;
+}
+
+/*Both Refer a Friend and Wishlist Images*/
+.center.xlarge img {
+  display:noe;
+  width:24px;
+  height:24px;
+}
+
+/*Just Refer a Friend Image*/
+.center.xlarge img[src="//static.lioden.com/images/layout/icon_den_friend.png"] {
+  display:none;
+  width:24px;
+  height:24px;
+}
+
+/*Just Wishlist Image*/
+.center.xlarge img[src="//static.lioden.com/images/layout/icon_den_wishlist.png"]{
+  display:none;
+  width:24px;
+  height:24px;
 }
 
 /*All Caves Together*/
