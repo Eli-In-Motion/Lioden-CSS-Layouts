@@ -152,7 +152,12 @@ img[src="//static.lioden.com/img/layout/icon-season-dry.png"]{
   height:20px;
 }
 
-
+/*Only Wet Season Weather Icon*/
+img[src="//static.lioden.com/img/layout/icon-season-wet.png"]{
+  content:url(https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Images/money.png?raw=true);
+  width:20px;
+  height:20px;
+}
 
 /*All Event Currency Icons*/
 .panel-body.small.center img {
