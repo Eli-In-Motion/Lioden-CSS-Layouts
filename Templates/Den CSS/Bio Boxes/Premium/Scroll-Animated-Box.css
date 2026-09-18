@@ -1,43 +1,70 @@
 /*HTML
-
+<div class="Bio">
+<div class="BioBottom">
+  <div class="BioScroll">
+  <div class="BioArt">
+    <img src="https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Images/Maia%20of%20Cylenne/Eli-Comm-Maia-of-Cylenne-by-Tabby-220032.png?raw=true" alt="" /><p>Art by: Tabby</p>
+    <img src="https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Images/Maia%20of%20Cylenne/FWhj4eL.png?raw=true" alt="" /><p>Art by: </p>
+  <img src="https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Images/Maia%20of%20Cylenne/Maia-by-Ysera1.png?raw=true" alt="" /><p>Art by: Ysera</p>
+  <img src="https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Images/Maia%20of%20Cylenne/abduPNs.png?raw=true" alt="" /><p>Art by: </p>
+  <img src="https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Images/Maia%20of%20Cylenne/%D0%91%D0%B5%D0%B7%20%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F17_20260822195143.png?raw=true" alt="" /><p>Art by: </p></div><div class="BioArt"><img src="https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Images/Maia%20of%20Cylenne/Eli-Comm-Maia-of-Cylenne-by-Tabby-220032.png?raw=true" alt="" /><p>Art by: Tabby</p>
+    <img src="https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Images/Maia%20of%20Cylenne/FWhj4eL.png?raw=true" alt="" /><p>Art by: </p>
+  <img src="https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Images/Maia%20of%20Cylenne/Maia-by-Ysera1.png?raw=true" alt="" /><p>Art by: Ysera</p>
+  <img src="https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Images/Maia%20of%20Cylenne/abduPNs.png?raw=true" alt="" /><p>Art by: </p>
+  <img src="https://github.com/Eli-In-Motion/Lioden-CSS-Layouts/blob/main/Personal%20Use/Images/Maia%20of%20Cylenne/%D0%91%D0%B5%D0%B7%20%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F17_20260822195143.png?raw=true" alt="" /><p>Art by: </p></div>
+</div>
+</div>
+</div>
 */
 
+.Bio {
+  width:90%;
+  height:400px;
+}
+
+.Bio br {
+  display:none;
+}
+
 .BioBottom {
-  background:rgba(var(--bg-header-light), var(--transparency-heavy));
-  border:var(--border-size-small) solid rgb(var(--border-color));
-  border-radius:var(--border-radius);
-  width:60%;
-  height:70px;
-  grid-column-start: 1;
-  grid-column-end: 3;
+  width:100%;
+  height:100%;
   overflow:hidden;
-  justify-self:center;
+  color:red;
 }
 
-.BioScroll {
-  display: flex;
-  width: max-content;
-  animation-name: Scroll;
-  animation-duration:8s;
-  animation-iteration-count:infinite;
-  animation-timing-function:linear;
-  gap:30px;
+.BioBottom p {
+  padding:0px;
+  margin:0px;
 }
 
-.BioBottom:hover .BioScroll {
-  animation-play-state: paused;
-}
-
-.BioBottom .BioArt {
-  height:70px;
+.BioBottom img {
+  height:80px;
   width:auto;
+  padding:0px;
+  margin:0px;
+}
+
+.BioBottom .BioScroll {
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  animation:Scroll 10s infinite linear;
+}
+
+.BioScroll .BioArt {
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  padding-bottom:15px;
+  width:fit-content;
 }
 
 @keyframes Scroll {
   0% {
-    transform: translateX(0);
+    transform: translateY(0%);
   }
   100% {
-    transform: translateX(-51%); 
+    transform: translateY(-50%); 
   }
 }
